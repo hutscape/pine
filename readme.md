@@ -1,4 +1,4 @@
-# Palm
+# Pine
 
 > 🌲 Control aircon by monitoring temperature in other parts of the room 🎐
 
