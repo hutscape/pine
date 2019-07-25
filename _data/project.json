@@ -1,0 +1,9 @@
+{
+   "power": "AA",
+   "wireless":"Infrared",
+   "sensor": "Temperature",
+   "mcu": "EFM32",
+   "version": "1.0",
+
+   "status": "ongoing"
+}

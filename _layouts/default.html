@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+{%- include head.html -%}
+<body>
+{%- include navbar.html -%}
+{%- include header.html -%}
+{%- include tabs.html -%}
+
+{% if page.url == "/" %}
+  {%- include start.html -%}
+{% elsif page.url == "/hardware" %}
+  {%- include hardware.html -%}
+{% elsif page.url == "/software" %}
+  {%- include software.html -%}
+{% elsif page.url == "/bom" %}
+  {%- include bom.html -%}
+{% elsif page.url == "/design" %}
+  {%- include design.html -%}
+{% elsif page.url == "/schedule" %}
+  {%- include schedule.html -%}
+{% elsif page.url == "/lessons" %}
+  {%- include lessons.html -%}
+{% elsif page.url == "/references" %}
+  {%- include references.html -%}
+{% endif %}
+
+{{ content }}
+{%- include footer.html -%}
+
+<!-- Scripts -->
+{%- include menu-mobile.html -%}
+
+<script src="//use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.js"></script>
+<script>anchors.add()</script>
+
+{% if page.url == "/software" %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endif %}
+
+{% if page.url == "/schedule" %}
+  {%- include schedule-script.html -%}
+{% endif %}
+
+{% if page.url == "/bom" %}
+  {%- include bom-script.html -%}
+{% endif %}
+
+{%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- include google-analytics.html -%}
+{%- endif -%}
+</body>
+</html>
