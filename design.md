@@ -3,6 +3,8 @@ layout: default
 title: Design
 permalink: /design
 sequence: 5
+power_tree: false
+state_machine: false
 user_stories:
   - user: first-time user
     actions:
@@ -29,29 +31,3 @@ user_stories:
       - goal: place the device on a vertical surface in line of sight with the aircon
         reason: it can communicate with the aircon via infrared
 ---
-
-<section class="section is-small">
-  <div class="container">
-    <h2 class="title is-1">User Stories</h2>
-
-    {% for story in page.user_stories %}
-      <p class="subtitle is-3">{{ story.user | capitalize }}</p>
-      <hr>
-
-      <div class="columns is-multiline">
-      {% for action in story.actions %}
-        <div class="column is-4">
-          <div class="card">
-            <div class="card-content">
-              <p class="subtitle">
-                As a {{ story.user }}, I want to <strong>{{ action.goal }}</strong> so that <em>{{ action.reason }}</em>.
-              </p>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-      </div>
-    {% endfor %}
-
-  </div>
-</section>
