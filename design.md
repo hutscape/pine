@@ -17,9 +17,9 @@ user_stories:
   - user: user
     actions:
       - goal: turn ON the device
-        reason: it can measure the current temperature and turn ON/OFF the aircon accordingly
+        reason: it can measure the current temperature and turn ON/OFF the aircon periodically
       - goal: turn OFF the device
-        reason: it can measure the current temperature and turn ON/OFF the aircon accordingly
+        reason: it can measure the current temperature and turn ON/OFF the aircon periodically
       - goal: replace the battery
         reason: the device can be powered again
       - goal: turn ON the aircon automatically
