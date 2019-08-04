@@ -34,4 +34,11 @@ references:
         url: https://github.com/im-tomu/tomu-samples
       - name: Tomu bootloader
         url: https://github.com/im-tomu/tomu-bootloader
+
+  - topic: Design
+    list:
+      - name: On-Off controller
+        url: http://www.eeeguide.com/on-off-controller/
+      - name: PID controller
+        url: https://en.wikipedia.org/wiki/PID_controller
 ---
