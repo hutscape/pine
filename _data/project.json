@@ -2,7 +2,7 @@
    "power": "AA",
    "wireless":"Infrared",
    "sensor": "Temperature",
-   "mcu": "EFM32",
+   "mcu": "Atmega328",
    "version": "1.0",
 
    "status": "ongoing"
