@@ -26,6 +26,17 @@ references:
       - name: 171 Arduino Guide to Infrared (IR) Communication also for ESP32 and ESP8266 by Andreas Spiess
         url: https://www.youtube.com/watch?v=gADIb1Xw8PE
 
+  - topic: Web USB
+    list:
+      - name: Access USB Devices on the Web
+        url: https://developers.google.com/web/updates/2016/03/access-usb-devices-on-the-web
+      - name: webusb arduino
+        url: https://github.com/webusb/arduino
+      - name: List of USB ID's
+        url: http://www.linux-usb.org/usb.ids
+      - name: Why Arduino UNO cannot be used with webusb
+        url: https://forum.arduino.cc/index.php?topic=464751.0
+
   - topic: EFM32
     list:
       - name: EFM32 HG Datasheet page 112/168, Section 5.6.1 Pinout
