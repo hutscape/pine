@@ -2,7 +2,7 @@
    "power": "AA",
    "wireless":"Infrared",
    "sensor": "Temperature",
-   "mcu": "Atmega328",
+   "mcu": "ATmega32U4",
    "version": "1.0",
 
    "status": "ongoing"
