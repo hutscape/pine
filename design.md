@@ -30,4 +30,23 @@ user_stories:
         reason: the room becomes warmer towards my ideal temperature
       - goal: place the device on a vertical surface in line of sight with the aircon
         reason: it can communicate with the aircon via infrared
+features:
+  - name: Store 2 arrays of about 300 elements of 12-bit integer for raw IR code
+  - name: Flash in a program with sufficient memory containing IRLib2 with both IR emitter and receiver, compression algorithm
+  - name: Sleep and wakeup periodically with a timer
+  - name: Support Web USB protocol
+  - name: Support I2C protocol for temperature sensor
 ---
+
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-1">Required features</h2>
+    <div class="content is-medium">
+      <ol>
+        {% for f in page.features %}
+        <li>{{ f.name }}</li>
+        {% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
