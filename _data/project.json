@@ -2,7 +2,7 @@
    "power": "AA",
    "wireless":"Infrared",
    "sensor": "Temperature",
-   "mcu": "ATmega32U4",
+   "mcu": "SAMD21",
    "version": "1.0",
 
    "status": "ongoing"
