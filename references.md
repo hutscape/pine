@@ -52,4 +52,13 @@ references:
         url: http://www.eeeguide.com/on-off-controller/
       - name: PID controller
         url: https://en.wikipedia.org/wiki/PID_controller
+
+  - topic: SAMD21
+    list:
+      - name: Arduino Zero
+        url: https://store.arduino.cc/usa/arduino-zero
+      - name: MKR Zero board goes to sleep mode and wake up periodically
+        url: https://forum.arduino.cc/index.php?topic=626452.0
+      - name: Arduino RTC Library for SAMD21 based boards
+        url: https://github.com/arduino-libraries/RTCZero
 ---
