@@ -61,4 +61,6 @@ references:
         url: https://forum.arduino.cc/index.php?topic=626452.0
       - name: Arduino RTC Library for SAMD21 based boards
         url: https://github.com/arduino-libraries/RTCZero
+      - name: ATmel SAMD21 Datasheet
+        url: https://www.electrokit.com/uploads/productfile/41014/Atmel-42181-SAM-D21_Datasheet.pdf
 ---

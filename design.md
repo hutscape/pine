@@ -40,6 +40,29 @@ features:
   - name: Sleep and wakeup periodically with a timer
   - name: Support Web USB protocol
   - name: Support I2C protocol for temperature sensor
+
+comparison:
+  - title: Arduino board
+    samd21: <a href="https://store.arduino.cc/usa/arduino-mkrzero">Arduino Mkr Zero</a>
+    atmega328p: <a href="https://store.arduino.cc/usa/arduino-uno-rev3">Arduino UNO Rev3</a>
+  - title: Flash (usage)
+    samd21: 256 kB Flash (program and config)
+    atmega328p: 32 kB Flash (program)
+  - title: EEPROM (usage)
+    samd21: no EEPROM
+    atmega328p: 1 kB EEPROM (config)
+  - title: RAM (usage)
+    samd21: 32KB (variables)
+    atmega328p: 2KB (variables)
+  - title: RTC
+    samd21: 32-bit
+  - title: Sleep modes
+    samd21: IDLE / STANDBY (<a href="https://www.electrokit.com/uploads/productfile/41014/Atmel-42181-SAM-D21_Datasheet.pdf">Section 18.6.8 Sleep Mode Operation</a>)
+  - title: USB
+    samd21: USB 2.0 host and device interface
+  - title: I2C
+    samd21: yes
+    atmega328p: yes
 ---
 
 <section class="section is-small">
@@ -51,6 +74,32 @@ features:
         <li>{{ f.name }}</li>
         {% endfor %}
       </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-1">SAMD21 vs ATmega328p</h2>
+    <div class="table-container">
+      <table class="table is-fullwidth is-hoverable">
+      <thead>
+        <tr>
+          <th></th>
+          <th>SAMD21</th>
+          <th>ATmega328p</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for chip in page.comparison %}
+        <tr>
+          <td><strong>{{ chip.title }}</strong></td>
+          <td>{{ chip.samd21 }}</td>
+          <td>{{ chip.atmega328p }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+      </table>
     </div>
   </div>
 </section>
