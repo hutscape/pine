@@ -1,3 +1,11 @@
+.PHONY: serve build install bom
+
+serve: build
+	jekyll serve
+
+build:
+	jekyll build
+
 install:
 	echo "Installing git-secrets from awslabs..."
 	brew install git-secrets
@@ -8,14 +16,6 @@ install:
 	echo "Making pre-commit hook executable"
 	chmod u+x .git/hooks/pre-commit
 
-build:
-	jekyll build
-
-serve: build
-	jekyll serve
-
 bom:
 	rm -f bill_of_materials.csv
 	python bom/bom.py hardware/Palm.xml _data/bill_of_materials.csv
-
-.PHONY: compile upload bom clean
