@@ -61,13 +61,13 @@ def total_cost(unit_cost, quantity):
 
 def get_datasheet(datasheet):
     if datasheet == "~":
-        return 0
+        return None
 
     return datasheet
 
 def get_mpn(mpn):
     if len(mpn) == 0:
-        return "Datasheet"
+        return None
 
     return mpn
 
