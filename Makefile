@@ -1,3 +1,6 @@
+PROJECT=Pine
+BOM_PATH=_data/bill_of_materials.csv
+
 .PHONY: serve build install bom
 
 serve: build
@@ -17,5 +20,5 @@ install:
 	chmod u+x .git/hooks/pre-commit
 
 bom:
-	rm -f bill_of_materials.csv
-	python bom/bom.py hardware/Palm.xml _data/bill_of_materials.csv
+	rm -f $(BOM_PATH)
+	python scripts/bom.py hardware/$(PROJECT).xml $(BOM_PATH)

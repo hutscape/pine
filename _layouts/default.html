@@ -12,6 +12,8 @@
   {%- include hardware.html -%}
 {% elsif page.url == "/software" %}
   {%- include software.html -%}
+{% elsif page.url == "/bom" %}
+  {%- include bom.html -%}
 {% elsif page.url == "/schedule" %}
   {%- include schedule.html -%}
 {% elsif page.url == "/design" %}
@@ -37,6 +39,10 @@
 
 {% if page.url == "/schedule" %}
   {%- include schedule-script.html -%}
+{% endif %}
+
+{% if page.url == "/bom" %}
+  {%- include bom-script.html -%}
 {% endif %}
 
 {%- if jekyll.environment == 'production' and site.google_analytics -%}
