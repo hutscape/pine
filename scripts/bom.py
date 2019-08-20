@@ -59,6 +59,18 @@ def total_cost(unit_cost, quantity):
 
     return float(unit_cost) * int(quantity)
 
+def get_datasheet(datasheet):
+    if datasheet == "~":
+        return 0
+
+    return datasheet
+
+def get_mpn(mpn):
+    if len(mpn) == 0:
+        return "Datasheet"
+
+    return mpn
+
 # Output all of the component information
 for group in grouped:
     refs = ""
@@ -78,8 +90,8 @@ for group in grouped:
         c.getField("Category"),
         c.getField("Stock"),
         c.getField("Manufacturer"),
-        c.getField("Part No."),
-        c.getDatasheet(),
+        get_mpn(c.getField("Part No.")),
+        get_datasheet(c.getDatasheet()),
         c.getField("Vendor"),
         c.getField("Vendor link"),
         c.getField("Unit cost"),
