@@ -1,0 +1,8 @@
+hardware: true
+software: true
+bom: true
+design: true
+power: false
+schedule: true
+lessons: false
+references: true
