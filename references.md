@@ -26,6 +26,21 @@ references:
       - name: 171 Arduino Guide to Infrared (IR) Communication also for ESP32 and ESP8266 by Andreas Spiess
         url: https://www.youtube.com/watch?v=gADIb1Xw8PE
 
+  - topic: SAMD21
+    list:
+      - name: Arduino Zero
+        url: https://store.arduino.cc/usa/arduino-zero
+      - name: MKR Zero board goes to sleep mode and wake up periodically
+        url: https://forum.arduino.cc/index.php?topic=626452.0
+      - name: Arduino RTC Library for SAMD21 based boards
+        url: https://github.com/arduino-libraries/RTCZero
+      - name: ATmel SAMD21 Datasheet
+        url: https://www.electrokit.com/uploads/productfile/41014/Atmel-42181-SAM-D21_Datasheet.pdf
+      - name: RobotDyn SAMD21 M0-Mini
+        url: https://robotdyn.com/samd21-m0-mini.html
+      - name: RobotDyn SAMD21 M0-Mini pinout
+        url: https://robotdyn.com/pub/media/0G-00005516==SAMD21-MINI/DOCS/PINOUT==0G-00005516==SAMD21-MINI.jpg
+
   - topic: Web USB
     list:
       - name: Access USB Devices on the Web
@@ -53,14 +68,4 @@ references:
       - name: PID controller
         url: https://en.wikipedia.org/wiki/PID_controller
 
-  - topic: SAMD21
-    list:
-      - name: Arduino Zero
-        url: https://store.arduino.cc/usa/arduino-zero
-      - name: MKR Zero board goes to sleep mode and wake up periodically
-        url: https://forum.arduino.cc/index.php?topic=626452.0
-      - name: Arduino RTC Library for SAMD21 based boards
-        url: https://github.com/arduino-libraries/RTCZero
-      - name: ATmel SAMD21 Datasheet
-        url: https://www.electrokit.com/uploads/productfile/41014/Atmel-42181-SAM-D21_Datasheet.pdf
 ---

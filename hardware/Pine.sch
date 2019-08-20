@@ -17,56 +17,56 @@ $EndDescr
 $Comp
 L Interface_Optical:TSOP43xx U1
 U 1 1 5D38286F
-P 1750 1750
-F 0 "U1" V 1350 1350 50  0000 L CNN
-F 1 "TSOP4838" V 1250 1600 50  0000 L CNN
-F 2 "OptoDevice:Vishay_MOLD-3Pin" H 1700 1375 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/82460/tsop45.pdf" H 2400 2050 50  0001 C CNN
-F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-F 5 "Vishay" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "5" H 0   0   50  0001 C CNN "Minimum Order"
-F 7 "TH" H 0   0   50  0001 C CNN "Package"
-F 8 "TSOP4838" H 0   0   50  0001 C CNN "Part No."
-F 9 "1.876" H 0   0   50  0001 C CNN "Unit cost"
-F 10 "RS Components" H 0   0   50  0001 C CNN "Vendor"
-F 11 "https://sg.rs-online.com/web/p/ir-receivers/7085115/?sra=pstk" H 0   0   50  0001 C CNN "Vendor link"
-	1    1750 1750
+P 4750 1750
+F 0 "U1" V 4350 1350 50  0000 L CNN
+F 1 "TSOP4838" V 4250 1600 50  0000 L CNN
+F 2 "OptoDevice:Vishay_MOLD-3Pin" H 4700 1375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/82460/tsop45.pdf" H 5400 2050 50  0001 C CNN
+F 4 "Electronics" H 3000 0   50  0001 C CNN "Category"
+F 5 "Vishay" H 3000 0   50  0001 C CNN "Manufacturer"
+F 6 "5" H 3000 0   50  0001 C CNN "Minimum Order"
+F 7 "TH" H 3000 0   50  0001 C CNN "Package"
+F 8 "TSOP4838" H 3000 0   50  0001 C CNN "Part No."
+F 9 "1.876" H 3000 0   50  0001 C CNN "Unit cost"
+F 10 "RS Components" H 3000 0   50  0001 C CNN "Vendor"
+F 11 "https://sg.rs-online.com/web/p/ir-receivers/7085115/?sra=pstk" H 3000 0   50  0001 C CNN "Vendor link"
+	1    4750 1750
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5D387A81
-P 1550 2200
-F 0 "#PWR01" H 1550 1950 50  0001 C CNN
-F 1 "GND" H 1555 2027 50  0000 C CNN
-F 2 "" H 1550 2200 50  0001 C CNN
-F 3 "" H 1550 2200 50  0001 C CNN
-	1    1550 2200
+P 4550 2200
+F 0 "#PWR01" H 4550 1950 50  0001 C CNN
+F 1 "GND" H 4555 2027 50  0000 C CNN
+F 2 "" H 4550 2200 50  0001 C CNN
+F 3 "" H 4550 2200 50  0001 C CNN
+	1    4550 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR02
 U 1 1 5D387BD5
-P 2100 2150
-F 0 "#PWR02" H 2100 2000 50  0001 C CNN
-F 1 "+5V" H 2115 2323 50  0000 C CNN
-F 2 "" H 2100 2150 50  0001 C CNN
-F 3 "" H 2100 2150 50  0001 C CNN
-	1    2100 2150
+P 5100 2150
+F 0 "#PWR02" H 5100 2000 50  0001 C CNN
+F 1 "+5V" H 5115 2323 50  0000 C CNN
+F 2 "" H 5100 2150 50  0001 C CNN
+F 3 "" H 5100 2150 50  0001 C CNN
+	1    5100 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 2150 1550 2200
+	4550 2150 4550 2200
 Wire Wire Line
-	1950 2150 2100 2150
-Text GLabel 1750 2550 0    50   Input ~ 0
+	4950 2150 5100 2150
+Text GLabel 4750 2550 0    50   Input ~ 0
 Arduino_M0_Pin_5
 Wire Wire Line
-	1750 2150 1750 2550
-Text Notes 950  1050 0    79   ~ 0
+	4750 2150 4750 2550
+Text Notes 3950 1050 0    79   ~ 0
 IR Receiver
 $Bitmap
-Pos 2900 1850
+Pos 5900 1850
 Scale 0.600000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 02 BC 00 00 01 F4 08 02 00 00 00 50 3B 69 
@@ -5758,97 +5758,97 @@ $EndBitmap
 $Comp
 L Transistor_BJT:2N2219 Q1
 U 1 1 5D3886A5
-P 5400 2150
-F 0 "Q1" H 5200 2250 50  0000 L CNN
-F 1 "2N2222" H 5600 2150 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-39-3" H 5600 2075 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 5400 2150 50  0001 L CNN
-F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-F 5 "ON Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "TH" H 0   0   50  0001 C CNN "Package"
-F 7 "2N2222" H 0   0   50  0001 C CNN "Part No."
-F 8 "ON Semi" H 0   0   50  0001 C CNN "Vendor"
-	1    5400 2150
+P 8400 2150
+F 0 "Q1" H 8200 2250 50  0000 L CNN
+F 1 "2N2222" H 8600 2150 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 8600 2075 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 8400 2150 50  0001 L CNN
+F 4 "Electronics" H 3000 0   50  0001 C CNN "Category"
+F 5 "ON Semiconductor" H 3000 0   50  0001 C CNN "Manufacturer"
+F 6 "TH" H 3000 0   50  0001 C CNN "Package"
+F 7 "2N2222" H 3000 0   50  0001 C CNN "Part No."
+F 8 "ON Semi" H 3000 0   50  0001 C CNN "Vendor"
+	1    8400 2150
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 5D38A326
-P 5500 2500
-F 0 "#PWR04" H 5500 2250 50  0001 C CNN
-F 1 "GND" H 5505 2327 50  0000 C CNN
-F 2 "" H 5500 2500 50  0001 C CNN
-F 3 "" H 5500 2500 50  0001 C CNN
-	1    5500 2500
+P 8500 2500
+F 0 "#PWR04" H 8500 2250 50  0001 C CNN
+F 1 "GND" H 8505 2327 50  0000 C CNN
+F 2 "" H 8500 2500 50  0001 C CNN
+F 3 "" H 8500 2500 50  0001 C CNN
+	1    8500 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 5D38A758
-P 4850 2150
-F 0 "R1" V 4750 2150 50  0000 C CNN
-F 1 "470R" V 4950 2150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4850 2150 50  0001 C CNN
-F 3 "~" H 4850 2150 50  0001 C CNN
-F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-	1    4850 2150
+P 7850 2150
+F 0 "R1" V 7750 2150 50  0000 C CNN
+F 1 "470R" V 7950 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7850 2150 50  0001 C CNN
+F 3 "~" H 7850 2150 50  0001 C CNN
+F 4 "Electronics" H 3000 0   50  0001 C CNN "Category"
+	1    7850 2150
 	0    1    1    0   
 $EndComp
-Text GLabel 4650 2150 0    50   Input ~ 0
+Text GLabel 7650 2150 0    50   Input ~ 0
 Arduino_M0_Pin_9
 Wire Wire Line
-	4650 2150 4750 2150
+	7650 2150 7750 2150
 Wire Wire Line
-	4950 2150 5200 2150
+	7950 2150 8200 2150
 Wire Wire Line
-	5500 2350 5500 2500
+	8500 2350 8500 2500
 $Comp
 L LED:LD274 D1
 U 1 1 5D38C59F
-P 5500 1500
-F 0 "D1" V 5496 1423 50  0000 R CNN
-F 1 "IR LED Emitter" V 5405 1423 50  0000 R CNN
-F 2 "LED_THT:LED_D5.0mm_IRGrey" H 5500 1675 50  0001 C CNN
-F 3 "https://docs-apac.rs-online.com/webdocs/1674/0900766b816747ad.pdf" H 5450 1500 50  0001 C CNN
-F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-F 5 "ROHM" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "10" H 0   0   50  0001 C CNN "Minimum Order"
-F 7 "TH" H 0   0   50  0001 C CNN "Package"
-F 8 "SIR-56ST3F " H 0   0   50  0001 C CNN "Part No."
-F 9 "9" H 0   0   50  0001 C CNN "Stock"
-F 10 "0.778" H 0   0   50  0001 C CNN "Unit cost"
-F 11 "RS Components" H 0   0   50  0001 C CNN "Vendor"
-F 12 "https://sg.rs-online.com/web/p/ir-leds/1780575/?sra=pstk" H 0   0   50  0001 C CNN "Vendor link"
-	1    5500 1500
+P 8500 1500
+F 0 "D1" V 8496 1423 50  0000 R CNN
+F 1 "IR LED Emitter" V 8405 1423 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_IRGrey" H 8500 1675 50  0001 C CNN
+F 3 "https://docs-apac.rs-online.com/webdocs/1674/0900766b816747ad.pdf" H 8450 1500 50  0001 C CNN
+F 4 "Electronics" H 3000 0   50  0001 C CNN "Category"
+F 5 "ROHM" H 3000 0   50  0001 C CNN "Manufacturer"
+F 6 "10" H 3000 0   50  0001 C CNN "Minimum Order"
+F 7 "TH" H 3000 0   50  0001 C CNN "Package"
+F 8 "SIR-56ST3F " H 3000 0   50  0001 C CNN "Part No."
+F 9 "9" H 3000 0   50  0001 C CNN "Stock"
+F 10 "0.778" H 3000 0   50  0001 C CNN "Unit cost"
+F 11 "RS Components" H 3000 0   50  0001 C CNN "Vendor"
+F 12 "https://sg.rs-online.com/web/p/ir-leds/1780575/?sra=pstk" H 3000 0   50  0001 C CNN "Vendor link"
+	1    8500 1500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5500 1700 5500 1950
-Text Notes 5600 2000 0    50   ~ 0
+	8500 1700 8500 1950
+Text Notes 8600 2000 0    50   ~ 0
 collector
-Text Notes 5600 2400 0    50   ~ 0
+Text Notes 8600 2400 0    50   ~ 0
 emitter
-Text Notes 5200 2350 0    50   ~ 0
+Text Notes 8200 2350 0    50   ~ 0
 base
-Text Notes 5050 1750 0    50   ~ 0
+Text Notes 8050 1750 0    50   ~ 0
 Cathode\n(short leg)
-Text Notes 5050 1400 0    50   ~ 0
+Text Notes 8050 1400 0    50   ~ 0
 Anode\n(long leg)
 $Comp
 L power:+5V #PWR03
 U 1 1 5D38EA0F
-P 5500 1250
-F 0 "#PWR03" H 5500 1100 50  0001 C CNN
-F 1 "+5V" H 5515 1423 50  0000 C CNN
-F 2 "" H 5500 1250 50  0001 C CNN
-F 3 "" H 5500 1250 50  0001 C CNN
-	1    5500 1250
+P 8500 1250
+F 0 "#PWR03" H 8500 1100 50  0001 C CNN
+F 1 "+5V" H 8515 1423 50  0000 C CNN
+F 2 "" H 8500 1250 50  0001 C CNN
+F 3 "" H 8500 1250 50  0001 C CNN
+	1    8500 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 1250 5500 1400
+	8500 1250 8500 1400
 $Bitmap
-Pos 6400 2150
+Pos 9400 2150
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 00 E1 00 00 00 E1 08 02 00 00 00 B1 D1 45 
@@ -6572,23 +6572,138 @@ A6 00 00 00 00 49 45 4E 44 AE 42 60 82
 EndData
 $EndBitmap
 Wire Notes Line
-	900  900  6750 900 
+	9750 900  9750 2950
+Wire Notes Line
+	3900 2950 3900 900 
+Wire Notes Line
+	4700 900  4700 1100
+Wire Notes Line
+	4700 1100 3900 1100
 Wire Notes Line
 	6750 900  6750 2950
-Wire Notes Line
-	6750 2950 900  2950
-Wire Notes Line
-	900  2950 900  900 
-Wire Notes Line
-	1700 900  1700 1100
-Wire Notes Line
-	1700 1100 900  1100
-Wire Notes Line
-	3750 900  3750 2950
-Text Notes 3800 1050 0    79   ~ 0
+Text Notes 6800 1050 0    79   ~ 0
 IR Emitter
 Wire Notes Line
-	4500 900  4500 1100
+	7500 900  7500 1100
 Wire Notes Line
-	4500 1100 3750 1100
+	7500 1100 6750 1100
+$Comp
+L MCU_Module:Arduino_Leonardo A1
+U 1 1 5D5BD0A4
+P 2150 1900
+F 0 "A1" V 2700 2800 50  0000 R CNN
+F 1 "RobotDyn Arduino SAMD21 M0 Mini" V 1300 2500 50  0000 R CNN
+F 2 "Module:Arduino_UNO_R3" H 2300 850 50  0001 L CNN
+F 3 "https://robotdyn.com/samd21-m0-mini.html" V 1200 1850 50  0000 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "RobotDyn" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "1" H 0   0   50  0001 C CNN "Minimum Order"
+F 7 "TH" H 0   0   50  0001 C CNN "Package"
+F 8 "18.70" H 0   0   50  0001 C CNN "Unit cost"
+F 9 "AliExpress" H 0   0   50  0001 C CNN "Vendor"
+F 10 "https://www.aliexpress.com/item/32779698644.html?spm=a2g0s.9042311.0.0.3da24c4dmAE7OD" H 0   0   50  0001 C CNN "Vendor link"
+	1    2150 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5D5D6AE6
+P 1050 1950
+F 0 "#PWR05" H 1050 1800 50  0001 C CNN
+F 1 "+5V" H 950 2050 50  0000 C CNN
+F 2 "" H 1050 1950 50  0001 C CNN
+F 3 "" H 1050 1950 50  0001 C CNN
+	1    1050 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5D5D73A8
+P 3300 2100
+F 0 "#PWR06" H 3300 1850 50  0001 C CNN
+F 1 "GND" H 3305 1927 50  0000 C CNN
+F 2 "" H 3300 2100 50  0001 C CNN
+F 3 "" H 3300 2100 50  0001 C CNN
+	1    3300 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2000 1050 2000
+Wire Wire Line
+	1050 2000 1050 1950
+Wire Wire Line
+	3250 2000 3300 2000
+Wire Wire Line
+	3300 2000 3300 2100
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5D5D810F
+P 1050 2000
+F 0 "#FLG01" H 1050 2075 50  0001 C CNN
+F 1 "PWR_FLAG" V 950 1950 50  0000 L CNN
+F 2 "" H 1050 2000 50  0001 C CNN
+F 3 "~" H 1050 2000 50  0001 C CNN
+	1    1050 2000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1050 2000
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5D5D8AF5
+P 3300 2000
+F 0 "#FLG02" H 3300 2075 50  0001 C CNN
+F 1 "PWR_FLAG" V 3300 2128 50  0000 L CNN
+F 2 "" H 3300 2000 50  0001 C CNN
+F 3 "~" H 3300 2000 50  0001 C CNN
+	1    3300 2000
+	0    1    1    0   
+$EndComp
+Connection ~ 3300 2000
+Text GLabel 2650 1250 0    50   Input ~ 0
+Arduino_M0_Pin_5
+Wire Wire Line
+	2650 1250 2650 1400
+Text GLabel 2450 2600 0    50   Input ~ 0
+Arduino_M0_Pin_9
+Wire Wire Line
+	2450 2400 2450 2600
+NoConn ~ 1150 1800
+NoConn ~ 1150 1700
+NoConn ~ 1550 1400
+NoConn ~ 1750 1400
+NoConn ~ 1950 1400
+NoConn ~ 2150 1400
+NoConn ~ 2250 1400
+NoConn ~ 2350 1400
+NoConn ~ 2450 1400
+NoConn ~ 2550 1400
+NoConn ~ 2850 1400
+NoConn ~ 2950 1400
+NoConn ~ 3250 1800
+NoConn ~ 3250 1900
+NoConn ~ 1550 2400
+NoConn ~ 1650 2400
+NoConn ~ 1750 2400
+NoConn ~ 1850 2400
+NoConn ~ 1950 2400
+NoConn ~ 2050 2400
+NoConn ~ 2150 2400
+NoConn ~ 2250 2400
+NoConn ~ 2350 2400
+NoConn ~ 2550 2400
+NoConn ~ 2650 2400
+NoConn ~ 2750 2400
+NoConn ~ 2850 2400
+Wire Notes Line
+	700  900  700  2950
+Wire Notes Line
+	700  900  9750 900 
+Wire Notes Line
+	700  2950 9750 2950
+Text Notes 750  1050 0    79   ~ 0
+MCU SAMD21
+Wire Notes Line
+	700  1100 1600 1100
+Wire Notes Line
+	1600 1100 1600 900 
 $EndSCHEMATC
