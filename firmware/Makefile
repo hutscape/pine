@@ -1,12 +1,12 @@
-BOARD?=arduino:avr:uno
-PORT?=/dev/cu.usbmodem14101
+BOARD?=arduino:samd:mzero_bl
+PORT?=/dev/cu.usbmodem14102
 
-.PHONY: default lint all flash clean
+.PHONY: lint compile upload clean
 
 default: lint all flash clean
 
 lint:
-	cpplint --extensions=ino --filter=-legal/copyright *.ino
+	cpplint --extensions=ino --filter=-legal/copyright,-whitespace/line_length *.ino
 
 all:
 	arduino-cli compile --fqbn $(BOARD) ./

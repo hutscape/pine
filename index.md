@@ -24,8 +24,8 @@ manufacturing: false
           <div class="tile is-parent">
             <article class="tile is-child notification">
               <p class="title">Step 2</p>
-              <p class="subtitle">Flash the <a href="software#firmware">firmware</a> onto the Arduino board.</p>
-              <a href="{{site.url}}/images/prototype/prototype-1.jpg"><img src="{{site.url}}/images/prototype/prototype-1.jpg" alt="Hardware prototype"></a>
+              <p class="subtitle">Flash the <a href="software#firmware">firmware</a> onto the Arduino compatible M0 board with SAMD21 micro-controller.</p>
+              <a href="{{site.url}}/images/prototype/prototype-3.jpg"><img src="{{site.url}}/images/prototype/prototype-3.jpg" alt="Hardware prototype"></a>
             </article>
           </div>
           <div class="tile is-parent">
