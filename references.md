@@ -41,6 +41,15 @@ references:
       - name: RobotDyn SAMD21 M0-Mini pinout
         url: https://robotdyn.com/pub/media/0G-00005516==SAMD21-MINI/DOCS/PINOUT==0G-00005516==SAMD21-MINI.jpg
 
+  - topic: Power
+    list:
+      - name: switch between battery and usb power no microcontroller circuit
+        url: https://electronics.stackexchange.com/questions/96059/switch-between-battery-and-usb-power-no-microcontroller-circuit
+      - name: Powering MCU from both USB or Battery
+        url: https://electronics.stackexchange.com/questions/245087/powering-mcu-from-both-usb-or-battery
+      - name: LTC4412
+        url: https://www.analog.com/en/products/ltc4412.html#product-overview
+
   - topic: Web USB
     list:
       - name: Access USB Devices on the Web
