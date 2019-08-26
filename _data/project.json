@@ -1,9 +1,12 @@
 {
-   "power": "AA",
-   "wireless":"Infrared",
-   "sensor": "Temperature",
-   "mcu": "SAMD21",
-   "version": "1.0",
+  "name": "Pine",
+  "description": "🌲 Control aircon by monitoring temperature in other parts of the room 🎐",
+  "version": "1.0",
 
-   "status": "ongoing"
+  "power": "AA",
+  "wireless":"Infrared",
+  "sensor": "Temperature",
+  "mcu": "SAMD21",
+
+  "status": "ongoing"
 }
