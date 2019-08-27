@@ -2,6 +2,7 @@
 #include <IRLibSendBase.h>
 #include <IRLib_HashRaw.h>
 #include "Adafruit_Si7021.h"
+#include <FlashStorage.h>
 #include "./data.h"
 
 // https://github.com/cyborg5/IRLib2/blob/master/IRLibProtocols/IRLibSAMD21.h#L38-L39
@@ -15,6 +16,14 @@
 IRrecvPCI myReceiver(IR_RECEIVE_PIN);
 IRsendRaw mySender;
 Adafruit_Si7021 sensor = Adafruit_Si7021();
+
+typedef struct {
+  int sizeofON;
+  uint16_t rawDataON[400];
+  int sizeofOFF;
+  uint16_t rawDataOFF[400];
+} IRRawCode;
+FlashStorage(my_flash_store, IRRawCode);
 
 void setup() {
   SerialUSB.begin(9600);
@@ -72,44 +81,38 @@ void loop() {
 }
 
 void storeIRCode() {
-  String irRawCode = String(rawDataON[0], HEX);
-
-  SerialUSB.print("Length of IR raw code: ");
-  SerialUSB.println(sizeof(rawDataON));
-
-  // TODO: Store in flash
-  // Why length is 584 and not 292?
-  // Store index 0 in one address ?
-  // Store indexes 1 and 2 in the next address?
-  // Struct definition? https://github.com/cmaglie/FlashStorage/blob/master/examples/StoreNameAndSurname/StoreNameAndSurname.ino#L14-L18
-
-  // typedef struct {
-  //   int sizeofON;
-  //   uint16_t rawDataON[400];
-  //   int sizeofOFF;
-  //   uint16_t rawDataOFF[400];
-  // } IRRawCode;
+  IRRawCode airconCode;
+  IRRawCode airconCodeRead;
 
   for (int i = 0; i < RAW_DATA_LEN; i++) {
-    SerialUSB.print(rawDataON[i]);
-    SerialUSB.print(" [");
-    SerialUSB.print(String(rawDataON[i], HEX)[0]);
-    SerialUSB.print(", ");
-    SerialUSB.print(String(rawDataON[i], HEX)[1]);
-    SerialUSB.print(String(rawDataON[i], HEX)[2]);
-    SerialUSB.print("], ");
+    airconCode.rawDataON[i] = rawDataON[i];
+    airconCode.rawDataOFF[i] = rawDataOFF[i];
   }
 
-  SerialUSB.print("\nManipulating IR raw code:");
-  SerialUSB.print(rawDataON[0]);
-  SerialUSB.print(" to HEX ");
-  SerialUSB.println(irRawCode);
+  airconCode.sizeofON = RAW_DATA_LEN;
+  airconCode.sizeofOFF = RAW_DATA_LEN;
 
-  SerialUSB.print("String length: ");
-  SerialUSB.println(irRawCode.length());
+  my_flash_store.write(airconCode);
+  SerialUSB.println("Writing in flash completed.");
 
-  SerialUSB.println(irRawCode[0]);
-  SerialUSB.println(irRawCode[1]);
-  SerialUSB.println(irRawCode[2]);
-  SerialUSB.println(irRawCode[3]);
+  airconCodeRead = my_flash_store.read();
+
+  SerialUSB.print("\nLength of rawDataON: ");
+  SerialUSB.println(airconCodeRead.sizeofON);
+  SerialUSB.print("\nLength of rawDataOFF: ");
+  SerialUSB.println(airconCodeRead.sizeofOFF);
+
+  SerialUSB.println("\nrawDataON array: ");
+  for (int i = 0; i < RAW_DATA_LEN; i++) {
+    SerialUSB.print(airconCodeRead.rawDataON[i]);
+    SerialUSB.print(", ");
+  }
+
+  SerialUSB.println("\nrawDataOFF array: ");
+  for (int i = 0; i < RAW_DATA_LEN; i++) {
+    SerialUSB.print(airconCodeRead.rawDataOFF[i]);
+    SerialUSB.print(", ");
+  }
+
+  SerialUSB.println("\n\n");
 }
