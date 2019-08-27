@@ -22,6 +22,8 @@ void setup() {
   delay(100);
   SerialUSB.println("Start!");
 
+  storeIRCode();
+
   if (!sensor.begin()) {
     SerialUSB.println("Did not find Si7021 sensor!");
   } else {
@@ -67,4 +69,47 @@ void loop() {
     mySender.send(rawDataOFF, RAW_DATA_LEN, 36);
     SerialUSB.println("Sent Turn OFF Aircon");
   }
+}
+
+void storeIRCode() {
+  String irRawCode = String(rawDataON[0], HEX);
+
+  SerialUSB.print("Length of IR raw code: ");
+  SerialUSB.println(sizeof(rawDataON));
+
+  // TODO: Store in flash
+  // Why length is 584 and not 292?
+  // Store index 0 in one address ?
+  // Store indexes 1 and 2 in the next address?
+  // Struct definition? https://github.com/cmaglie/FlashStorage/blob/master/examples/StoreNameAndSurname/StoreNameAndSurname.ino#L14-L18
+
+  // typedef struct {
+  //   int sizeofON;
+  //   uint16_t rawDataON[400];
+  //   int sizeofOFF;
+  //   uint16_t rawDataOFF[400];
+  // } IRRawCode;
+
+  for (int i = 0; i < RAW_DATA_LEN; i++) {
+    SerialUSB.print(rawDataON[i]);
+    SerialUSB.print(" [");
+    SerialUSB.print(String(rawDataON[i], HEX)[0]);
+    SerialUSB.print(", ");
+    SerialUSB.print(String(rawDataON[i], HEX)[1]);
+    SerialUSB.print(String(rawDataON[i], HEX)[2]);
+    SerialUSB.print("], ");
+  }
+
+  SerialUSB.print("\nManipulating IR raw code:");
+  SerialUSB.print(rawDataON[0]);
+  SerialUSB.print(" to HEX ");
+  SerialUSB.println(irRawCode);
+
+  SerialUSB.print("String length: ");
+  SerialUSB.println(irRawCode.length());
+
+  SerialUSB.println(irRawCode[0]);
+  SerialUSB.println(irRawCode[1]);
+  SerialUSB.println(irRawCode[2]);
+  SerialUSB.println(irRawCode[3]);
 }
