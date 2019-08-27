@@ -59,8 +59,6 @@ Wire Wire Line
 	4550 2150 4550 2200
 Wire Wire Line
 	4950 2150 5100 2150
-Text GLabel 4750 2550 0    50   Input ~ 0
-Arduino_M0_Pin_5
 Wire Wire Line
 	4750 2150 4750 2550
 Text Notes 3950 1050 0    79   ~ 0
@@ -5787,15 +5785,13 @@ L Device:R_Small R1
 U 1 1 5D38A758
 P 7850 2150
 F 0 "R1" V 7750 2150 50  0000 C CNN
-F 1 "470R" V 7950 2150 50  0000 C CNN
+F 1 "220R" V 7950 2150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7850 2150 50  0001 C CNN
 F 3 "~" H 7850 2150 50  0001 C CNN
 F 4 "Electronics" H 3000 0   50  0001 C CNN "Category"
 	1    7850 2150
 	0    1    1    0   
 $EndComp
-Text GLabel 7650 2150 0    50   Input ~ 0
-Arduino_M0_Pin_9
 Wire Wire Line
 	7650 2150 7750 2150
 Wire Wire Line
@@ -6574,13 +6570,9 @@ $EndBitmap
 Wire Notes Line
 	9750 900  9750 2950
 Wire Notes Line
-	3900 2950 3900 900 
-Wire Notes Line
 	4700 900  4700 1100
 Wire Notes Line
 	4700 1100 3900 1100
-Wire Notes Line
-	6750 900  6750 2950
 Text Notes 6800 1050 0    79   ~ 0
 IR Emitter
 Wire Notes Line
@@ -6659,15 +6651,8 @@ F 3 "~" H 3300 2000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 3300 2000
-Text GLabel 2650 1250 0    50   Input ~ 0
-Arduino_M0_Pin_5
-Wire Wire Line
-	2650 1250 2650 1400
-Text GLabel 2450 2600 0    50   Input ~ 0
-Arduino_M0_Pin_9
 Wire Wire Line
 	2450 2400 2450 2600
-NoConn ~ 1150 1800
 NoConn ~ 1150 1700
 NoConn ~ 1550 1400
 NoConn ~ 1750 1400
@@ -6677,8 +6662,6 @@ NoConn ~ 2250 1400
 NoConn ~ 2350 1400
 NoConn ~ 2450 1400
 NoConn ~ 2550 1400
-NoConn ~ 2850 1400
-NoConn ~ 2950 1400
 NoConn ~ 3250 1800
 NoConn ~ 3250 1900
 NoConn ~ 1550 2400
@@ -6686,7 +6669,6 @@ NoConn ~ 1650 2400
 NoConn ~ 1750 2400
 NoConn ~ 1850 2400
 NoConn ~ 1950 2400
-NoConn ~ 2050 2400
 NoConn ~ 2150 2400
 NoConn ~ 2250 2400
 NoConn ~ 2350 2400
@@ -6706,4 +6688,88 @@ Wire Notes Line
 	700  1100 1600 1100
 Wire Notes Line
 	1600 1100 1600 900 
+$Comp
+L Adafruit_Si7021_breakout:Si7021_breakout U2
+U 1 1 5D64F026
+P 5300 3750
+F 0 "U2" H 5050 4000 50  0000 L CNN
+F 1 "Si7021_breakout" H 5400 3400 50  0000 L CNN
+F 2 "" H 5300 3150 50  0000 C CNN
+F 3 "https://learn.adafruit.com/adafruit-si7021-temperature-plus-humidity-sensor/overview" H 5300 3550 50  0001 C CNN
+	1    5300 3750
+	1    0    0    -1  
+$EndComp
+Text Label 4650 2550 2    50   ~ 0
+IR_Receiver
+Wire Wire Line
+	4650 2550 4750 2550
+Text Label 1950 2600 2    50   ~ 0
+IR_Receiver
+Text Label 2550 2600 0    50   ~ 0
+IR_Emitter
+Text Label 7650 2150 2    50   ~ 0
+IR_Emitter
+NoConn ~ 5650 3700
+$Comp
+L power:GND #PWR0101
+U 1 1 5D652F63
+P 5300 4150
+F 0 "#PWR0101" H 5300 3900 50  0001 C CNN
+F 1 "GND" H 5305 3977 50  0000 C CNN
+F 2 "" H 5300 4150 50  0001 C CNN
+F 3 "" H 5300 4150 50  0001 C CNN
+	1    5300 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4150 5300 4100
+Text Label 850  1800 2    50   ~ 0
+3V3
+Wire Wire Line
+	850  1800 1150 1800
+Text Label 5200 3350 2    50   ~ 0
+3V3
+Wire Wire Line
+	5200 3350 5300 3350
+Wire Wire Line
+	5300 3350 5300 3450
+Text Label 3050 1350 0    50   ~ 0
+SCL
+Text Label 3050 1200 0    50   ~ 0
+SDA
+Wire Wire Line
+	2950 1400 2950 1350
+Wire Wire Line
+	2950 1350 3050 1350
+Wire Wire Line
+	2850 1400 2850 1200
+Wire Wire Line
+	2850 1200 3050 1200
+Text Label 4800 3800 2    50   ~ 0
+SCL
+Text Label 4800 3700 2    50   ~ 0
+SDA
+Wire Wire Line
+	4800 3800 4950 3800
+Wire Wire Line
+	4800 3700 4950 3700
+Text Notes 3950 3100 0    79   ~ 0
+Temperature Sensor
+Wire Notes Line
+	3900 4550 6750 4550
+Wire Notes Line
+	3900 900  3900 4550
+Wire Notes Line
+	6750 900  6750 4550
+Wire Notes Line
+	3900 3150 5200 3150
+Wire Notes Line
+	5200 3150 5200 2950
+Wire Wire Line
+	2450 2600 2550 2600
+Wire Wire Line
+	1950 2600 2050 2600
+Wire Wire Line
+	2050 2600 2050 2400
+NoConn ~ 2650 1400
 $EndSCHEMATC

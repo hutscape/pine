@@ -1,5 +1,5 @@
 BOARD?=arduino:samd:mzero_bl
-PORT := $(shell ls /dev/cu.usbmodem141*)
+PORT := $(shell ls /dev/cu.usbmodem*)
 
 .PHONY: lint compile upload clean
 

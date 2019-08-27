@@ -1,6 +1,7 @@
 #include <IRLibAll.h>
 #include <IRLibSendBase.h>
 #include <IRLib_HashRaw.h>
+#include "Adafruit_Si7021.h"
 #include "./data.h"
 
 // https://github.com/cyborg5/IRLib2/blob/master/IRLibProtocols/IRLibSAMD21.h#L38-L39
@@ -13,14 +14,28 @@
 
 IRrecvPCI myReceiver(IR_RECEIVE_PIN);
 IRsendRaw mySender;
+Adafruit_Si7021 sensor = Adafruit_Si7021();
 
 void setup() {
   SerialUSB.begin(9600);
+  while (!SerialUSB) { }
   delay(100);
   SerialUSB.println("Start!");
 
+  if (!sensor.begin()) {
+    SerialUSB.println("Did not find Si7021 sensor!");
+  } else {
+    SerialUSB.print("Humidity: ");
+    SerialUSB.print(sensor.readHumidity(), 2);
+    SerialUSB.println(" RH%");
+
+    SerialUSB.print("Temperature: ");
+    SerialUSB.print(sensor.readTemperature(), 2);
+    SerialUSB.println(" C");
+  }
+
   myReceiver.enableIRIn();
-  SerialUSB.println("Ready to receive IR signals...");
+  SerialUSB.println("\nReady to receive and send IR signals...");
 }
 
 void loop() {
