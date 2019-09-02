@@ -3,7 +3,7 @@ layout: default
 title: Design
 permalink: /design
 sequence: 5
-power_tree: false
+power_tree: true
 state_machine: true
 terminologies:
   - term: Device
