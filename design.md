@@ -14,6 +14,8 @@ user_stories:
         reason: it can be stored and replayed
       - goal: configure the interval time for checking the room temperature
         reason: it can wakeup periodically to check the temperature
+      - goal: configure the total period of time when the device should be checking the temperature
+        reason: it can stop checking the temperature to regulate the room environment after a while
       - goal: configure the ideal room temperature
         reason: it can turn ON/OFF the aircon according to the measured temperature
   - user: user
@@ -30,9 +32,8 @@ user_stories:
         reason: the room becomes warmer towards my ideal temperature
       - goal: place the device on a vertical surface in line of sight with the aircon
         reason: it can communicate with the aircon via infrared
-      - goal: know that the room temperature is warmer than the ideal temperature through an on-board RGB LED
         reason: it can send the ON command to the aircon
-      - goal: know that the room temperature is colder than the ideal temperature through an on-board RGB LED
+      - goal: know whether the room temperature is colder or warmer than the ideal temperature through an on-board LED
         reason: it can send the OFF command to the aircon
 features:
   - name: Store 2 arrays of about 300 elements of 12-bit integer for raw IR code
