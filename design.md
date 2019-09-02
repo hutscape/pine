@@ -5,6 +5,28 @@ permalink: /design
 sequence: 5
 power_tree: false
 state_machine: true
+terminologies:
+  - term: Device
+    definition: Pine, the entire electronics with embedded firmware and associated software
+  - term: Ideal temperature
+    definition: Desired room temperature as configured by the first-time user
+  - term: Power on
+    definition: A DPST switch to power on the entire device
+  - term: Power off
+    definition: A DPST switch to power off the entire device
+  - term: Start button
+    definition: A push button to start the device function every interval for total period of time
+  - term: ON command
+    definition: Array of raw IR code to turn on the aircon at a certain temperature
+  - term: OFF command
+    definition: Array of raw IR code to turn off the aircon
+  - term: Interval
+    definition: Time period after which the device will check for room temperature and turn on or off the aircon E.g. 30 minutes
+  - term: Total period
+    definition: Duration of time during which the device will start functioning and then stop until it is started again
+  - term: Ideal temperature
+    definition: Desired room temperature as configured by the first-time user
+
 user_stories:
   - user: first-time user
     actions:
