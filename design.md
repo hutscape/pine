@@ -4,7 +4,7 @@ title: Design
 permalink: /design
 sequence: 5
 power_tree: false
-state_machine: false
+state_machine: true
 user_stories:
   - user: first-time user
     actions:
