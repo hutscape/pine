@@ -50,10 +50,11 @@ void setup() {
 void loop() {
   // IR Receive
   if (myReceiver.getResults()) {
-    SerialUSB.println("Received user IR code..."));
+    SerialUSB.println("Received user IR code...");
     SerialUSB.print(F("\n#define RAW_DATA_LEN "));
     SerialUSB.println(recvGlobal.recvLength, DEC);
     SerialUSB.print(F("uint16_t rawData[RAW_DATA_LEN]={\n"));
+
     for (bufIndex_t i = 1; i < recvGlobal.recvLength; i++) {
       SerialUSB.print(recvGlobal.recvBuffer[i], DEC);
       SerialUSB.print(F(", "));
@@ -61,9 +62,17 @@ void loop() {
         SerialUSB.print(F("\n"));
       }
     }
+
+    WebUSBSerial.write((const uint8_t *)recvGlobal.recvBuffer,
+      recvGlobal.recvLength*2);
     SerialUSB.println(F("1000};"));
+    // WebUSBSerial.write("1000");
+    WebUSBSerial.flush();
+
     myReceiver.enableIRIn();
   }
+
+  // Send user config from MCU to browser
 
   // IR Emit
   char input = SerialUSB.read();
@@ -112,7 +121,6 @@ void initSerial() {
 void initWebUSBSerial() {
   while (!WebUSBSerial) {}
   WebUSBSerial.begin(9600);
-  WebUSBSerial.write("Sketch begins.\r\n");
   WebUSBSerial.flush();
 }
 

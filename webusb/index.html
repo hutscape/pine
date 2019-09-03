@@ -101,7 +101,14 @@ connectButton.addEventListener('click', function() {
         console.log('Pine Vendor ID: 0x' + port.device_.vendorId.toString(16))
 
         connectButton.textContent = 'Disconnect'
-        port.onReceive = data => { console.log(textDecoder.decode(data))}
+        port.onReceive = data => {
+
+          // Other texts
+          // console.log(textDecoder.decode(data))
+
+          // IR Code array
+          console.log(new Int16Array(data.buffer))
+        }
         port.onReceiveError = error => { console.log('Receive error: ' + error)}
       }, error => { console.log('Connection error: ' + error) })
     }).catch(error => { console.log('Connection error: ' + error) })
