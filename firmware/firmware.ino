@@ -26,27 +26,13 @@ typedef struct {
 FlashStorage(my_flash_store, IRRawCode);
 
 void setup() {
-  SerialUSB.begin(9600);
-  while (!SerialUSB) { }
-  delay(100);
-  SerialUSB.println("Start!");
+  initSerial();
 
-  storeIRCode();
-
-  if (!sensor.begin()) {
-    SerialUSB.println("Did not find Si7021 sensor!");
-  } else {
-    SerialUSB.print("Humidity: ");
-    SerialUSB.print(sensor.readHumidity(), 2);
-    SerialUSB.println(" RH%");
-
-    SerialUSB.print("Temperature: ");
-    SerialUSB.print(sensor.readTemperature(), 2);
-    SerialUSB.println(" C");
+  if (initSensor()) {
+    readSensor();
   }
 
-  myReceiver.enableIRIn();
-  SerialUSB.println("\nReady to receive and send IR signals...");
+  initIR();
 }
 
 void loop() {
@@ -78,6 +64,37 @@ void loop() {
     mySender.send(rawDataOFF, RAW_DATA_LEN, 36);
     SerialUSB.println("Sent Turn OFF Aircon");
   }
+}
+
+void initSerial() {
+  SerialUSB.begin(9600);
+  while (!SerialUSB) { }
+  delay(100);
+  SerialUSB.println("Start!");
+}
+
+bool initSensor() {
+  if (!sensor.begin()) {
+    SerialUSB.println("Did not find Si7021 sensor!");
+    return false;
+  }
+
+  return true;
+}
+
+void initIR() {
+  myReceiver.enableIRIn();
+  SerialUSB.println("\nReady to receive and send IR signals...");
+}
+
+void readSensor() {
+  SerialUSB.print("Humidity: ");
+  SerialUSB.print(sensor.readHumidity(), 2);
+  SerialUSB.println(" RH%");
+
+  SerialUSB.print("Temperature: ");
+  SerialUSB.print(sensor.readTemperature(), 2);
+  SerialUSB.println(" C");
 }
 
 void storeIRCode() {
