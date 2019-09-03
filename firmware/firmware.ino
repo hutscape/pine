@@ -4,6 +4,7 @@
 #include "Adafruit_Si7021.h"
 #include <FlashStorage.h>
 #include "./data.h"
+#include <WebUSB.h>
 
 // https://github.com/cyborg5/IRLib2/blob/master/IRLibProtocols/IRLibSAMD21.h#L38-L39
 // For SAMD21 boards: We are recommending using Pin 5 for receiving
@@ -15,6 +16,7 @@
 
 IRrecvPCI myReceiver(IR_RECEIVE_PIN);
 IRsendRaw mySender;
+
 Adafruit_Si7021 sensor = Adafruit_Si7021();
 
 typedef struct {
@@ -22,11 +24,21 @@ typedef struct {
   uint16_t rawDataON[400];
   int sizeofOFF;
   uint16_t rawDataOFF[400];
+  int interval;
+  int duration;
+  int temperature;
 } IRRawCode;
 FlashStorage(my_flash_store, IRRawCode);
+IRRawCode userConfig;
+IRRawCode userConfigRead;
+
+WebUSB WebUSBSerial(1, "webusb.github.io/arduino/demos/rgb");
+int config[3];
+int configIndex;
 
 void setup() {
   initSerial();
+  initWebUSBSerial();
 
   if (initSensor()) {
     readSensor();
@@ -38,8 +50,7 @@ void setup() {
 void loop() {
   // IR Receive
   if (myReceiver.getResults()) {
-    SerialUSB.println(F("Do a cut-and-paste of the following lines into the "));
-    SerialUSB.println(F("designated location in rawSend.ino"));
+    SerialUSB.println("Received user IR code..."));
     SerialUSB.print(F("\n#define RAW_DATA_LEN "));
     SerialUSB.println(recvGlobal.recvLength, DEC);
     SerialUSB.print(F("uint16_t rawData[RAW_DATA_LEN]={\n"));
@@ -64,6 +75,31 @@ void loop() {
     mySender.send(rawDataOFF, RAW_DATA_LEN, 36);
     SerialUSB.println("Sent Turn OFF Aircon");
   }
+
+  // Read user config from browser
+  if (WebUSBSerial && WebUSBSerial.available()) {
+    config[configIndex++] = WebUSBSerial.read();
+    if (configIndex == 3) {
+      SerialUSB.print("Interval: ");
+      SerialUSB.print(config[0]);
+      SerialUSB.println(" minutes");
+      userConfig.interval = config[0];
+
+      SerialUSB.print("Duration: ");
+      SerialUSB.print(config[1]);
+      SerialUSB.println(" hours");
+      userConfig.duration = config[1];
+
+      SerialUSB.print("Ideal temperature: ");
+      SerialUSB.print(config[2]);
+      SerialUSB.println(" C");
+      userConfig.temperature = config[2];
+
+      WebUSBSerial.print("Received interval, duration and ideal temperature:");
+      WebUSBSerial.flush();
+      configIndex = 0;
+    }
+  }
 }
 
 void initSerial() {
@@ -71,6 +107,13 @@ void initSerial() {
   while (!SerialUSB) { }
   delay(100);
   SerialUSB.println("Start!");
+}
+
+void initWebUSBSerial() {
+  while (!WebUSBSerial) {}
+  WebUSBSerial.begin(9600);
+  WebUSBSerial.write("Sketch begins.\r\n");
+  WebUSBSerial.flush();
 }
 
 bool initSensor() {
@@ -84,7 +127,7 @@ bool initSensor() {
 
 void initIR() {
   myReceiver.enableIRIn();
-  SerialUSB.println("\nReady to receive and send IR signals...");
+  SerialUSB.println("\nReady to user config...");
 }
 
 void readSensor() {
@@ -98,36 +141,33 @@ void readSensor() {
 }
 
 void storeIRCode() {
-  IRRawCode airconCode;
-  IRRawCode airconCodeRead;
-
   for (int i = 0; i < RAW_DATA_LEN; i++) {
-    airconCode.rawDataON[i] = rawDataON[i];
-    airconCode.rawDataOFF[i] = rawDataOFF[i];
+    userConfig.rawDataON[i] = rawDataON[i];
+    userConfig.rawDataOFF[i] = rawDataOFF[i];
   }
 
-  airconCode.sizeofON = RAW_DATA_LEN;
-  airconCode.sizeofOFF = RAW_DATA_LEN;
+  userConfig.sizeofON = RAW_DATA_LEN;
+  userConfig.sizeofOFF = RAW_DATA_LEN;
 
-  my_flash_store.write(airconCode);
+  my_flash_store.write(userConfig);
   SerialUSB.println("Writing in flash completed.");
 
-  airconCodeRead = my_flash_store.read();
+  userConfigRead = my_flash_store.read();
 
   SerialUSB.print("\nLength of rawDataON: ");
-  SerialUSB.println(airconCodeRead.sizeofON);
+  SerialUSB.println(userConfigRead.sizeofON);
   SerialUSB.print("\nLength of rawDataOFF: ");
-  SerialUSB.println(airconCodeRead.sizeofOFF);
+  SerialUSB.println(userConfigRead.sizeofOFF);
 
   SerialUSB.println("\nrawDataON array: ");
   for (int i = 0; i < RAW_DATA_LEN; i++) {
-    SerialUSB.print(airconCodeRead.rawDataON[i]);
+    SerialUSB.print(userConfigRead.rawDataON[i]);
     SerialUSB.print(", ");
   }
 
   SerialUSB.println("\nrawDataOFF array: ");
   for (int i = 0; i < RAW_DATA_LEN; i++) {
-    SerialUSB.print(airconCodeRead.rawDataOFF[i]);
+    SerialUSB.print(userConfigRead.rawDataOFF[i]);
     SerialUSB.print(", ");
   }
 

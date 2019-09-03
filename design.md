@@ -15,15 +15,15 @@ terminologies:
   - term: Power off
     definition: A DPST switch to power off the entire device
   - term: Start button
-    definition: A push button to start the device function every interval for total period of time
+    definition: A push button to start the device function every interval for a duration of time
   - term: ON command
     definition: Array of raw IR code to turn on the aircon at a certain temperature
   - term: OFF command
     definition: Array of raw IR code to turn off the aircon
   - term: Interval
     definition: Time period after which the device will check for room temperature and turn on or off the aircon E.g. 30 minutes
-  - term: Total period
-    definition: Duration of time during which the device will start functioning and then stop until it is started again
+  - term: Duration
+    definition: Length of total time during which the device will start functioning and then stop until it is started again
   - term: Ideal temperature
     definition: Desired room temperature as configured by the first-time user
 

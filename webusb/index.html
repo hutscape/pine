@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+  <title>Web BLE</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+</head>
+<body>
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="subtitle is-1">Configure Pine@Hutscape</h2>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
+    <div class="control">
+      <button class="button is-info is-large" id="connect">Connect to Pine</button>
+      <div class="content is-large">
+        <p id="info"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small is-hidden" id="configure">
+  <div class="container">
+    <div class="field">
+      <label class="label is-large">Interval (minutes)</label>
+      <div class="control">
+        <input class="input is-large" id="interval" type="number" min=10 placeholder="Interval (mins)">
+        <p class="help">Pine will check for the room temperature every interval set. Example every 20 minutes.</p>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label is-large">Total duration (hours)</label>
+      <div class="control">
+        <input class="input is-large" id="duration" type="number" min=1 placeholder="Total period (hours)">
+        <p class="help">Pine will check for the room temperature every interval set for a total of this duration.</p>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label is-large">Ideal room temperature (C)</label>
+      <div class="control">
+        <input class="input is-large" id="temperature" type="number" min=15 max=28 placeholder="Ideal temperature (C)">
+        <p class="help">Pine will turn on or off the aircon according to this temperature.</p>
+      </div>
+    </div>
+
+    <div class="control">
+      <button class="button is-primary is-large" id="submit">Submit</button>
+    </div>
+  </div>
+</section>
+
+<script src="serial.js"></script>
+<script>
+var port
+let connectButton = document.querySelector('#connect')
+let submitButton = document.querySelector('#submit')
+let configureSection = document.querySelector('#configure')
+let infoSection = document.querySelector('#info')
+let textEncoder = new TextEncoder()
+let textDecoder = new TextDecoder()
+let intervalValue = document.getElementById("interval").value
+
+submitButton.addEventListener('click', function(event) {
+  if (port !== undefined) {
+    let config = new Uint8Array(3)
+    config[0] = document.getElementById("interval").value
+    config[1] = document.getElementById("duration").value
+    config[2] = document.getElementById("temperature").value
+    port.send(config);
+
+    console.log('Submitting interval, duration and temperature.')
+  }
+})
+
+connectButton.addEventListener('click', function() {
+  if (port) { // If port is already connected, disconnect it
+    connectButton.textContent = 'Connect'
+    configureSection.classList.add("is-hidden")
+    infoSection.innerHTML = ''
+    port.disconnect()
+    port = null
+    console.log('Pine is disconnected.')
+  } else { // If there is no port, then connect to a new port
+    serial.requestPort().then(selectedPort => {
+      port = selectedPort
+      configureSection.classList.remove("is-hidden")
+      port.connect().then(() => {
+        infoSection.innerHTML = '<br><strong>Pine is now connected via Web USB!</strong>' +
+          '<br>Product ID: 0x' + port.device_.productId.toString(16) +
+          '<br>Vendor ID: 0x' + port.device_.vendorId.toString(16)
+
+        console.log('Pine is now connected via Web USB!')
+        console.log('Pine Product ID: 0x' + port.device_.productId.toString(16))
+        console.log('Pine Vendor ID: 0x' + port.device_.vendorId.toString(16))
+
+        connectButton.textContent = 'Disconnect'
+        port.onReceive = data => { console.log(textDecoder.decode(data))}
+        port.onReceiveError = error => { console.log('Receive error: ' + error)}
+      }, error => { console.log('Connection error: ' + error) })
+    }).catch(error => { console.log('Connection error: ' + error) })
+  }
+})
+</script>
+</body>
