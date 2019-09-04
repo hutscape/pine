@@ -66,6 +66,7 @@ let infoSection = document.querySelector('#info')
 let textEncoder = new TextEncoder()
 let textDecoder = new TextDecoder()
 let intervalValue = document.getElementById("interval").value
+var irCode = []
 
 submitButton.addEventListener('click', function(event) {
   if (port !== undefined) {
@@ -101,18 +102,38 @@ connectButton.addEventListener('click', function() {
         console.log('Pine Vendor ID: 0x' + port.device_.vendorId.toString(16))
 
         connectButton.textContent = 'Disconnect'
-        port.onReceive = data => {
-
-          // Other texts
-          // console.log(textDecoder.decode(data))
-
-          // IR Code array
-          console.log(new Int16Array(data.buffer))
-        }
+        port.onReceive = data => { processReceievedData(data) }
         port.onReceiveError = error => { console.log('Receive error: ' + error)}
       }, error => { console.log('Connection error: ' + error) })
     }).catch(error => { console.log('Connection error: ' + error) })
   }
 })
+
+function processReceievedData(data) {
+  // Other texts
+  // console.log(textDecoder.decode(data))
+
+  // IR Code array
+  var irCodeReceieved = new Int16Array(data.buffer)
+
+  if (irCodeReceieved.length == 32) {
+    irCodeReceieved.forEach(function(el) {
+      irCode.push(el)
+    })
+  } else if (irCodeReceieved.length < 32 && irCodeReceieved.length > 0) {
+    irCodeReceieved.forEach(function(el) {
+      irCode.push(el)
+    })
+
+    irCode.shift() // Remove the first element which is always garbage
+    irCode.push(1000) // Add 1000 as the last element
+
+    if (irCode.length == 292) { // Valid IR Code is 292
+      console.log(irCode)
+    }
+
+    irCode = [] // Clear array
+  }
+}
 </script>
 </body>

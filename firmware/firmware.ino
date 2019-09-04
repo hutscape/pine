@@ -49,7 +49,7 @@ void setup() {
 
 void loop() {
   // IR Receive
-  if (myReceiver.getResults()) {
+  if (myReceiver.getResults() && recvGlobal.recvLength == 292) {
     SerialUSB.println("Received user IR code...");
     SerialUSB.print(F("\n#define RAW_DATA_LEN "));
     SerialUSB.println(recvGlobal.recvLength, DEC);
