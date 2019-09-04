@@ -1,3 +1,4 @@
+// Reference: https://github.com/webusb/arduino/blob/gh-pages/demos/serial.js
 var serial = {};
 
 serial.getPorts = function() {
