@@ -49,7 +49,7 @@ void setup() {
 
 void loop() {
   // IR Receive
-  if (myReceiver.getResults() && recvGlobal.recvLength == 292) {
+  if (myReceiver.getResults()) {
     SerialUSB.println("Received user IR code...");
     SerialUSB.print(F("\n#define RAW_DATA_LEN "));
     SerialUSB.println(recvGlobal.recvLength, DEC);
@@ -66,7 +66,6 @@ void loop() {
     WebUSBSerial.write((const uint8_t *)recvGlobal.recvBuffer,
       recvGlobal.recvLength*2);
     SerialUSB.println(F("1000};"));
-    // WebUSBSerial.write("1000");
     WebUSBSerial.flush();
 
     myReceiver.enableIRIn();
