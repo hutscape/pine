@@ -113,14 +113,15 @@ void loop() {
 
 void initSerial() {
   SerialUSB.begin(9600);
-  while (!SerialUSB) { }
   delay(100);
+
   SerialUSB.println("Start!");
 }
 
 void initWebUSBSerial() {
-  while (!WebUSBSerial) {}
   WebUSBSerial.begin(9600);
+  delay(100);
+
   WebUSBSerial.flush();
 }
 

@@ -102,11 +102,13 @@ submitButton.addEventListener('click', function() {
 
 recordONButton.addEventListener('click', function() {
   recordONButton.classList.add("is-warning")
+  recordONButton.textContent = 'Recording ON Command...'
   isRecordingON = true
 })
 
 recordOFFButton.addEventListener('click', function() {
   recordOFFButton.classList.add("is-warning")
+  recordOFFButton.textContent = 'Recording OFF Command...'
   isRecordingOFF = true
 })
 
@@ -127,15 +129,12 @@ connectButton.addEventListener('click', function() {
           '<br>Product ID: 0x' + port.device_.productId.toString(16) +
           '<br>Vendor ID: 0x' + port.device_.vendorId.toString(16)
 
-        console.log('Pine is now connected via Web USB!')
-        console.log('Pine Product ID: 0x' + port.device_.productId.toString(16))
-        console.log('Pine Vendor ID: 0x' + port.device_.vendorId.toString(16))
+        // console.log('Pine is now connected via Web USB!')
+        // console.log('Pine Product ID: 0x' + port.device_.productId.toString(16))
+        // console.log('Pine Vendor ID: 0x' + port.device_.vendorId.toString(16))
 
         connectButton.textContent = 'Disconnect'
-        port.onReceive = data => {
-          console.log("Receiving...")
-          processReceievedData(data)
-        }
+        port.onReceive = data => { processReceievedData(data) }
         port.onReceiveError = error => { console.log('Receive error: ' + error)}
       }, error => { console.log('Connection error: ' + error) })
     }).catch(error => { console.log('Connection error: ' + error) })
@@ -162,17 +161,17 @@ function processReceievedData(data) {
     irCode.push(1000) // Add 1000 as the last element
 
     if (irCode.length == 292) { // Valid IR Code is 292
-      console.log(irCode)
-
       if (isRecordingON) {
         document.getElementById('on-command').innerText = "Received ON command: [" + irCode.join(', ') + "]"
         recordONButton.classList.remove("is-warning")
+        recordONButton.textContent = 'Record ON Command'
         isRecordingON = false
       }
 
       if (isRecordingOFF) {
         document.getElementById('off-command').innerText = "Received OFF command: [" + irCode.join(', ') + "]"
         recordOFFButton.classList.remove("is-warning")
+        recordOFFButton.textContent = 'Record OFF Command'
         isRecordingOFF = false
       }
     }
