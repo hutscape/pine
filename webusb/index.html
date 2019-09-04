@@ -39,7 +39,7 @@
       <p class="help">Point the aircon remote controller to Pine and press the off button.</p>
       <p id="off-command"></p>
     </div>
-    
+
     <div class="field">
       <label class="label is-large">Interval (minutes)</label>
       <div class="control">
@@ -167,13 +167,14 @@ function processReceievedData(data) {
       if (isRecordingON) {
         document.getElementById('on-command').innerText = "Received ON command: [" + irCode.join(', ') + "]"
         recordONButton.classList.remove("is-warning")
+        isRecordingON = false
       }
 
       if (isRecordingOFF) {
         document.getElementById('off-command').innerText = "Received OFF command: [" + irCode.join(', ') + "]"
         recordOFFButton.classList.remove("is-warning")
+        isRecordingOFF = false
       }
-
     }
 
     irCode = [] // Clear array

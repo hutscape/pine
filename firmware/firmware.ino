@@ -32,7 +32,7 @@ FlashStorage(my_flash_store, IRRawCode);
 IRRawCode userConfig;
 IRRawCode userConfigRead;
 
-WebUSB WebUSBSerial(1, "webusb.github.io/arduino/demos/rgb");
+WebUSB WebUSBSerial(1, "hutscape.com/pine/webusb/");
 int config[3];
 int configIndex;
 
@@ -88,6 +88,7 @@ void loop() {
   if (WebUSBSerial && WebUSBSerial.available()) {
     config[configIndex++] = WebUSBSerial.read();
     if (configIndex == 3) {
+      SerialUSB.println("\nReceived user config...");
       SerialUSB.print("Interval: ");
       SerialUSB.print(config[0]);
       SerialUSB.println(" minutes");
@@ -134,10 +135,12 @@ bool initSensor() {
 
 void initIR() {
   myReceiver.enableIRIn();
-  SerialUSB.println("\nReady to user config...");
+  SerialUSB.println("\nReady to receive user config...");
 }
 
 void readSensor() {
+  SerialUSB.println("\nReading sensor data... ");
+
   SerialUSB.print("Humidity: ");
   SerialUSB.print(sensor.readHumidity(), 2);
   SerialUSB.println(" RH%");
