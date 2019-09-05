@@ -1,5 +1,5 @@
-PROJECT=Pine
-BOM_PATH=_data/bill_of_materials.csv
+BOM_PATH?=_data/bill_of_materials.csv
+KICAD_XML?=hardware/Pine.xml
 
 .PHONY: serve build install bom
 
@@ -18,7 +18,10 @@ install:
 	touch .git/hooks/pre-commit || exit
 	echo "Making pre-commit hook executable"
 	chmod u+x .git/hooks/pre-commit
+	echo "Adding .gitignore..."
+	cat scripts/gitignore > .gitignore
 
 bom:
 	rm -f $(BOM_PATH)
-	python scripts/bom.py hardware/$(PROJECT).xml $(BOM_PATH)
+	python scripts/bom.py $(KICAD_XML) $(BOM_PATH)
+	node scripts/bom_info.js
