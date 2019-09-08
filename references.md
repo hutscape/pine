@@ -30,18 +30,20 @@ references:
     list:
       - name: Arduino Zero
         url: https://store.arduino.cc/usa/arduino-zero
-      - name: MKR Zero board goes to sleep mode and wake up periodically
-        url: https://forum.arduino.cc/index.php?topic=626452.0
-      - name: Arduino RTC Library for SAMD21 based boards
-        url: https://github.com/arduino-libraries/RTCZero
       - name: ATmel SAMD21 Datasheet
         url: https://www.electrokit.com/uploads/productfile/41014/Atmel-42181-SAM-D21_Datasheet.pdf
       - name: RobotDyn SAMD21 M0-Mini
         url: https://robotdyn.com/samd21-m0-mini.html
       - name: RobotDyn SAMD21 M0-Mini pinout
         url: https://robotdyn.com/pub/media/0G-00005516==SAMD21-MINI/DOCS/PINOUT==0G-00005516==SAMD21-MINI.jpg
+      - name: Arduino M0 Schematic
+        url: https://www.arduino.cc/en/uploads/Main/arduino-M0-schematic.pdf
+      - name: RobotDyn M0 Mini Schematic
+        url: https://robotdyn.com/pub/media/0G-00005516==SAMD21-MINI/DOCS/Schematic==0G-00005516==SAMD21-MINI.pdf
+      - name: Adafruit M0 Express Schematic
+        url: https://cdn-learn.adafruit.com/assets/assets/000/040/553/original/arduino_schem.png?1490994398
 
-  - topic: Power
+  - topic: Power and sleep
     list:
       - name: switch between battery and usb power no microcontroller circuit
         url: https://electronics.stackexchange.com/questions/96059/switch-between-battery-and-usb-power-no-microcontroller-circuit
@@ -49,6 +51,10 @@ references:
         url: https://electronics.stackexchange.com/questions/245087/powering-mcu-from-both-usb-or-battery
       - name: LTC4412
         url: https://www.analog.com/en/products/ltc4412.html#product-overview
+      - name: MKR Zero board goes to sleep mode and wake up periodically
+        url: https://forum.arduino.cc/index.php?topic=626452.0
+      - name: Arduino RTC Library for SAMD21 based boards
+        url: https://github.com/arduino-libraries/RTCZero
 
   - topic: Web USB
     list:
