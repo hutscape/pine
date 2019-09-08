@@ -1,0 +1,11 @@
+{
+  "bom-uniq": 5,
+  "bom-total": 5,
+  "bom-cost": "21.35",
+  "vendors": 3,
+  "vendor-names": [
+    "AliExpress",
+    "RS Components",
+    "ON Semi"
+  ]
+}

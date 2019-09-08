@@ -2,5 +2,5 @@
 "A1, ","RobotDyn Arduino SAMD21 M0 Mini","1","TH","Electronics","","RobotDyn","","https://robotdyn.com/samd21-m0-mini.html","AliExpress","https://www.aliexpress.com/item/32779698644.html?spm=a2g0s.9042311.0.0.3da24c4dmAE7OD","18.70","18.7","1","Arduino_Leonardo: Arduino LEONARDO Microcontroller Module"
 "D1, ","IR LED Emitter","1","TH","Electronics","9","ROHM","SIR-56ST3F ","https://docs-apac.rs-online.com/webdocs/1674/0900766b816747ad.pdf","RS Components","https://sg.rs-online.com/web/p/ir-leds/1780575/?sra=pstk","0.778","0.778","10","LD274: 950nm IR-LED, 5mm"
 "Q1, ","2N2222","1","TH","Electronics","","ON Semiconductor","2N2222","http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF","ON Semi","","","0","","2N2219: 800mA Ic, 50V Vce, NPN Transistor, TO-39"
-"R1, ","470R","1","","Electronics","","","","","","","","0","","R_Small: Resistor, small symbol"
+"R1, ","470R","1","","Electronics","","","","~","","","","0","","R_Small: Resistor, small symbol"
 "U1, ","TSOP4838","1","TH","Electronics","","Vishay","TSOP4838","http://www.vishay.com/docs/82460/tsop45.pdf","RS Components","https://sg.rs-online.com/web/p/ir-receivers/7085115/?sra=pstk","1.876","1.876","5","TSOP43xx: IR Receiver Modules for Remote Control Systems"
