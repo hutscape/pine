@@ -113,6 +113,7 @@ void loop() {
 
 void initSerial() {
   SerialUSB.begin(9600);
+  while (!SerialUSB) {}
   delay(100);
 
   SerialUSB.println("Start!");

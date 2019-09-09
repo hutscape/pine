@@ -44,17 +44,6 @@ F 3 "" H 4550 2200 50  0001 C CNN
 	1    4550 2200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR02
-U 1 1 5D387BD5
-P 5100 2150
-F 0 "#PWR02" H 5100 2000 50  0001 C CNN
-F 1 "+5V" H 5115 2323 50  0000 C CNN
-F 2 "" H 5100 2150 50  0001 C CNN
-F 3 "" H 5100 2150 50  0001 C CNN
-	1    5100 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4550 2150 4550 2200
 Wire Wire Line
@@ -5830,17 +5819,6 @@ Text Notes 8050 1750 0    50   ~ 0
 Cathode\n(short leg)
 Text Notes 8050 1400 0    50   ~ 0
 Anode\n(long leg)
-$Comp
-L power:+5V #PWR03
-U 1 1 5D38EA0F
-P 8500 1250
-F 0 "#PWR03" H 8500 1100 50  0001 C CNN
-F 1 "+5V" H 8515 1423 50  0000 C CNN
-F 2 "" H 8500 1250 50  0001 C CNN
-F 3 "" H 8500 1250 50  0001 C CNN
-	1    8500 1250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8500 1250 8500 1400
 $Bitmap
@@ -6582,100 +6560,100 @@ Wire Notes Line
 $Comp
 L MCU_Module:Arduino_Leonardo A1
 U 1 1 5D5BD0A4
-P 2150 1900
-F 0 "A1" V 2700 2800 50  0000 R CNN
-F 1 "RobotDyn Arduino SAMD21 M0 Mini" V 1300 2500 50  0000 R CNN
-F 2 "Module:Arduino_UNO_R3" H 2300 850 50  0001 L CNN
-F 3 "https://robotdyn.com/samd21-m0-mini.html" V 1200 1850 50  0000 C CNN
-F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-F 5 "RobotDyn" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "1" H 0   0   50  0001 C CNN "Minimum Order"
-F 7 "TH" H 0   0   50  0001 C CNN "Package"
-F 8 "18.70" H 0   0   50  0001 C CNN "Unit cost"
-F 9 "AliExpress" H 0   0   50  0001 C CNN "Vendor"
-F 10 "https://www.aliexpress.com/item/32779698644.html?spm=a2g0s.9042311.0.0.3da24c4dmAE7OD" H 0   0   50  0001 C CNN "Vendor link"
-	1    2150 1900
+P 2200 1800
+F 0 "A1" V 2750 2700 50  0000 R CNN
+F 1 "RobotDyn Arduino SAMD21 M0 Mini" V 1350 2400 50  0000 R CNN
+F 2 "Module:Arduino_UNO_R3" H 2350 750 50  0001 L CNN
+F 3 "https://robotdyn.com/samd21-m0-mini.html" V 1250 1750 50  0000 C CNN
+F 4 "Electronics" H 50  -100 50  0001 C CNN "Category"
+F 5 "RobotDyn" H 50  -100 50  0001 C CNN "Manufacturer"
+F 6 "1" H 50  -100 50  0001 C CNN "Minimum Order"
+F 7 "TH" H 50  -100 50  0001 C CNN "Package"
+F 8 "18.70" H 50  -100 50  0001 C CNN "Unit cost"
+F 9 "AliExpress" H 50  -100 50  0001 C CNN "Vendor"
+F 10 "https://www.aliexpress.com/item/32779698644.html?spm=a2g0s.9042311.0.0.3da24c4dmAE7OD" H 50  -100 50  0001 C CNN "Vendor link"
+	1    2200 1800
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR05
 U 1 1 5D5D6AE6
-P 1050 1950
-F 0 "#PWR05" H 1050 1800 50  0001 C CNN
-F 1 "+5V" H 950 2050 50  0000 C CNN
-F 2 "" H 1050 1950 50  0001 C CNN
-F 3 "" H 1050 1950 50  0001 C CNN
-	1    1050 1950
+P 1100 1850
+F 0 "#PWR05" H 1100 1700 50  0001 C CNN
+F 1 "+5V" H 1000 1950 50  0000 C CNN
+F 2 "" H 1100 1850 50  0001 C CNN
+F 3 "" H 1100 1850 50  0001 C CNN
+	1    1100 1850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 5D5D73A8
-P 3300 2100
-F 0 "#PWR06" H 3300 1850 50  0001 C CNN
-F 1 "GND" H 3305 1927 50  0000 C CNN
-F 2 "" H 3300 2100 50  0001 C CNN
-F 3 "" H 3300 2100 50  0001 C CNN
-	1    3300 2100
+P 3350 2000
+F 0 "#PWR06" H 3350 1750 50  0001 C CNN
+F 1 "GND" H 3355 1827 50  0000 C CNN
+F 2 "" H 3350 2000 50  0001 C CNN
+F 3 "" H 3350 2000 50  0001 C CNN
+	1    3350 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 2000 1050 2000
+	1200 1900 1100 1900
 Wire Wire Line
-	1050 2000 1050 1950
+	1100 1900 1100 1850
 Wire Wire Line
-	3250 2000 3300 2000
+	3300 1900 3350 1900
 Wire Wire Line
-	3300 2000 3300 2100
+	3350 1900 3350 2000
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5D5D810F
-P 1050 2000
-F 0 "#FLG01" H 1050 2075 50  0001 C CNN
-F 1 "PWR_FLAG" V 950 1950 50  0000 L CNN
-F 2 "" H 1050 2000 50  0001 C CNN
-F 3 "~" H 1050 2000 50  0001 C CNN
-	1    1050 2000
+P 1100 1900
+F 0 "#FLG01" H 1100 1975 50  0001 C CNN
+F 1 "PWR_FLAG" V 1000 1850 50  0000 L CNN
+F 2 "" H 1100 1900 50  0001 C CNN
+F 3 "~" H 1100 1900 50  0001 C CNN
+	1    1100 1900
 	0    -1   -1   0   
 $EndComp
-Connection ~ 1050 2000
+Connection ~ 1100 1900
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5D5D8AF5
-P 3300 2000
-F 0 "#FLG02" H 3300 2075 50  0001 C CNN
-F 1 "PWR_FLAG" V 3300 2128 50  0000 L CNN
-F 2 "" H 3300 2000 50  0001 C CNN
-F 3 "~" H 3300 2000 50  0001 C CNN
-	1    3300 2000
+P 3350 1900
+F 0 "#FLG02" H 3350 1975 50  0001 C CNN
+F 1 "PWR_FLAG" V 3350 2028 50  0000 L CNN
+F 2 "" H 3350 1900 50  0001 C CNN
+F 3 "~" H 3350 1900 50  0001 C CNN
+	1    3350 1900
 	0    1    1    0   
 $EndComp
-Connection ~ 3300 2000
+Connection ~ 3350 1900
 Wire Wire Line
-	2450 2400 2450 2600
-NoConn ~ 1150 1700
-NoConn ~ 1550 1400
-NoConn ~ 1750 1400
-NoConn ~ 1950 1400
-NoConn ~ 2150 1400
-NoConn ~ 2250 1400
-NoConn ~ 2350 1400
-NoConn ~ 2450 1400
-NoConn ~ 2550 1400
-NoConn ~ 3250 1800
-NoConn ~ 3250 1900
-NoConn ~ 1550 2400
-NoConn ~ 1650 2400
-NoConn ~ 1750 2400
-NoConn ~ 1850 2400
-NoConn ~ 1950 2400
-NoConn ~ 2150 2400
-NoConn ~ 2250 2400
-NoConn ~ 2350 2400
-NoConn ~ 2550 2400
-NoConn ~ 2650 2400
-NoConn ~ 2750 2400
-NoConn ~ 2850 2400
+	2500 2300 2500 2500
+NoConn ~ 1200 1600
+NoConn ~ 1600 1300
+NoConn ~ 1800 1300
+NoConn ~ 2000 1300
+NoConn ~ 2200 1300
+NoConn ~ 2300 1300
+NoConn ~ 2400 1300
+NoConn ~ 2500 1300
+NoConn ~ 2600 1300
+NoConn ~ 3300 1700
+NoConn ~ 3300 1800
+NoConn ~ 1600 2300
+NoConn ~ 1700 2300
+NoConn ~ 1800 2300
+NoConn ~ 1900 2300
+NoConn ~ 2000 2300
+NoConn ~ 2200 2300
+NoConn ~ 2300 2300
+NoConn ~ 2400 2300
+NoConn ~ 2600 2300
+NoConn ~ 2700 2300
+NoConn ~ 2800 2300
+NoConn ~ 2900 2300
 Wire Notes Line
 	700  900  700  2950
 Wire Notes Line
@@ -6703,9 +6681,9 @@ Text Label 4650 2550 2    50   ~ 0
 IR_Receiver
 Wire Wire Line
 	4650 2550 4750 2550
-Text Label 1950 2600 2    50   ~ 0
+Text Label 2000 2500 2    50   ~ 0
 IR_Receiver
-Text Label 2550 2600 0    50   ~ 0
+Text Label 2600 2500 0    50   ~ 0
 IR_Emitter
 Text Label 7650 2150 2    50   ~ 0
 IR_Emitter
@@ -6723,28 +6701,28 @@ F 3 "" H 5300 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 4150 5300 4100
-Text Label 850  1800 2    50   ~ 0
+Text Label 900  1700 2    50   ~ 0
 3V3
 Wire Wire Line
-	850  1800 1150 1800
+	900  1700 1200 1700
 Text Label 5200 3350 2    50   ~ 0
 3V3
 Wire Wire Line
 	5200 3350 5300 3350
 Wire Wire Line
 	5300 3350 5300 3450
-Text Label 3050 1350 0    50   ~ 0
+Text Label 3100 1250 0    50   ~ 0
 SCL
-Text Label 3050 1200 0    50   ~ 0
+Text Label 3100 1100 0    50   ~ 0
 SDA
 Wire Wire Line
-	2950 1400 2950 1350
+	3000 1300 3000 1250
 Wire Wire Line
-	2950 1350 3050 1350
+	3000 1250 3100 1250
 Wire Wire Line
-	2850 1400 2850 1200
+	2900 1300 2900 1100
 Wire Wire Line
-	2850 1200 3050 1200
+	2900 1100 3100 1100
 Text Label 4800 3800 2    50   ~ 0
 SCL
 Text Label 4800 3700 2    50   ~ 0
@@ -6766,10 +6744,16 @@ Wire Notes Line
 Wire Notes Line
 	5200 3150 5200 2950
 Wire Wire Line
-	2450 2600 2550 2600
+	2500 2500 2600 2500
 Wire Wire Line
-	1950 2600 2050 2600
+	2000 2500 2100 2500
 Wire Wire Line
-	2050 2600 2050 2400
-NoConn ~ 2650 1400
+	2100 2500 2100 2300
+NoConn ~ 2700 1300
+Text Label 5100 2150 0    50   ~ 0
+3V3
+Text Label 8500 1250 0    50   ~ 0
+3V3
+Text Notes 750  2150 0    50   ~ 0
+USB powered
 $EndSCHEMATC
