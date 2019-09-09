@@ -2,7 +2,7 @@ hardware: true
 software: true
 bom: true
 design: true
-power: false
+power: true
 schedule: true
 lessons: false
 references: true

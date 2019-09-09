@@ -40,6 +40,12 @@
   {% endif %}
 {% endif %}
 
+{% if site.data.pages.power == true %}
+  {% if page.url == "/power" %}
+    {%- include power.html -%}
+  {% endif %}
+{% endif %}
+
 {% if site.data.pages.references == true %}
   {% if page.url == "/references" %}
     {%- include references.html -%}
