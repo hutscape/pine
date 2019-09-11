@@ -1,10 +1,9 @@
 {
-  "bom-uniq": 5,
-  "bom-total": 5,
-  "bom-cost": "21.35",
-  "vendors": 3,
+  "bom-uniq": 19,
+  "bom-total": 23,
+  "bom-cost": "2.65",
+  "vendors": 2,
   "vendor-names": [
-    "AliExpress",
     "RS Components",
     "ON Semi"
   ]
