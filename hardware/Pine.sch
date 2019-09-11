@@ -6545,48 +6545,36 @@ EndData
 $EndBitmap
 Text Notes 4650 4150 0    79   ~ 16
 IR Emitter
-$Comp
-L Adafruit_Si7021_breakout:Si7021_breakout U5
-U 1 1 5D64F026
-P 9350 4950
-F 0 "U5" H 9100 5200 50  0000 L CNN
-F 1 "Si7021_breakout" H 9450 4600 50  0000 L CNN
-F 2 "" H 9350 4350 50  0000 C CNN
-F 3 "https://learn.adafruit.com/adafruit-si7021-temperature-plus-humidity-sensor/overview" H 9350 4750 50  0001 C CNN
-F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-	1    9350 4950
-	1    0    0    -1  
-$EndComp
 Text Label 2000 5650 2    50   ~ 0
 IR_Receiver
 Wire Wire Line
 	2000 5650 2100 5650
 Text Label 5450 5200 2    50   ~ 0
 IR_Emitter
-NoConn ~ 9700 4900
+NoConn ~ 9450 5250
 $Comp
 L power:GND #PWR010
 U 1 1 5D652F63
-P 9350 5350
-F 0 "#PWR010" H 9350 5100 50  0001 C CNN
-F 1 "GND" H 9355 5177 50  0000 C CNN
-F 2 "" H 9350 5350 50  0001 C CNN
-F 3 "" H 9350 5350 50  0001 C CNN
-	1    9350 5350
+P 9250 5300
+F 0 "#PWR010" H 9250 5050 50  0001 C CNN
+F 1 "GND" H 9255 5127 50  0000 C CNN
+F 2 "" H 9250 5300 50  0001 C CNN
+F 3 "" H 9250 5300 50  0001 C CNN
+	1    9250 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 5350 9350 5300
+	9250 5300 9250 5250
 Wire Wire Line
 	9350 4550 9350 4650
-Text Label 8850 5000 2    50   ~ 0
+Text Label 8700 5050 2    50   ~ 0
 SCL
-Text Label 8850 4900 2    50   ~ 0
+Text Label 8700 4850 2    50   ~ 0
 SDA
 Wire Wire Line
-	8850 5000 9000 5000
+	8700 5050 8850 5050
 Wire Wire Line
-	8850 4900 9000 4900
+	8700 4850 8850 4850
 Text Notes 8050 4150 0    79   ~ 16
 Temperature Sensor
 $Comp
@@ -6752,6 +6740,7 @@ F 1 "BSS83P" V 2602 2850 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2550 2775 50  0001 L CIN
 F 3 "http://www.farnell.com/datasheets/1835997.pdf" H 2350 2850 50  0001 L CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "BSS83P" H 0   0   50  0001 C CNN "Part No."
 	1    2350 2850
 	0    -1   -1   0   
 $EndComp
@@ -6764,6 +6753,7 @@ F 1 "74AUC2G04" V 1900 2500 50  0000 L CNN
 F 2 "" H 2000 2350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 2000 2350 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "74AUC2G04" H 0   0   50  0001 C CNN "Part No."
 	1    2000 2350
 	0    1    1    0   
 $EndComp
@@ -6806,6 +6796,7 @@ F 1 "AP2112K-2.6" H 3550 1901 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3550 1975 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 3550 1750 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "AP2112K-2.6" H 0   0   50  0001 C CNN "Part No."
 	1    3550 1650
 	1    0    0    -1  
 $EndComp
@@ -6894,6 +6885,7 @@ F 1 "ATSAMD21G18A-AUT" V 9300 800 50  0000 C CNN
 F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 7500 350 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf" H 8450 3100 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "ATSAMD21G18A-AUT" H 0   0   50  0001 C CNN "Part No."
 	1    8450 2100
 	0    -1   -1   0   
 $EndComp
@@ -7186,4 +7178,17 @@ Wire Wire Line
 	8900 3650 9250 3650
 Wire Wire Line
 	8900 3850 9350 3850
+$Comp
+L Sensor_Humidity:Si7021-A20 U5
+U 1 1 5D78D887
+P 9350 4950
+F 0 "U5" H 9794 4996 50  0000 L CNN
+F 1 "Si7021-A20" H 9794 4905 50  0000 L CNN
+F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 9350 4550 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/Si7021-A20.pdf" H 9150 5250 50  0001 C CNN
+F 4 "Si7021-A20" H 0   0   50  0001 C CNN "Part No."
+F 5 "Electronics" H 0   0   50  0001 C CNN "Category"
+	1    9350 4950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

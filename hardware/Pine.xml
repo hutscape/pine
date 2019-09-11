@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 September 11, Wednesday 15:34:51</date>
+    <date>2019 September 11, Wednesday 16:04:07</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -82,16 +82,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D38C59F</tstamp>
     </comp>
-    <comp ref="U5">
-      <value>Si7021_breakout</value>
-      <datasheet>https://learn.adafruit.com/adafruit-si7021-temperature-plus-humidity-sensor/overview</datasheet>
-      <fields>
-        <field name="Category">Electronics</field>
-      </fields>
-      <libsource lib="Adafruit_Si7021_breakout" part="Si7021_breakout" description="Si7021 Temperature and Humidity Sensor breakout board"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5D64F026</tstamp>
-    </comp>
     <comp ref="R4">
       <value>10k</value>
       <datasheet>~</datasheet>
@@ -168,6 +158,7 @@
       <datasheet>http://www.farnell.com/datasheets/1835997.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="Part No.">BSS83P</field>
       </fields>
       <libsource lib="Transistor_FET" part="BSS83P" description="-0.33A Id, -60V Vds, P-Channel MOSFET, SOT-23-3"/>
       <sheetpath names="/" tstamps="/"/>
@@ -178,6 +169,7 @@
       <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="Part No.">74AUC2G04</field>
       </fields>
       <libsource lib="74xGxx" part="74AUC2G04" description="Dual NOT Gate, Low-Voltage CMOS"/>
       <sheetpath names="/" tstamps="/"/>
@@ -199,6 +191,7 @@
       <datasheet>https://www.diodes.com/assets/Datasheets/AP2112.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="Part No.">AP2112K-2.6</field>
       </fields>
       <libsource lib="Regulator_Linear" part="AP2112K-2.6" description="600mA low dropout linear regulator, with enable pin, 3.1V-6V input voltage range, 2.6V fixed positive output, SOT-23-5 package"/>
       <sheetpath names="/" tstamps="/"/>
@@ -230,6 +223,7 @@
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="Part No.">ATSAMD21G18A-AUT</field>
       </fields>
       <libsource lib="MCU_Microchip_SAMD" part="ATSAMD21G18A-AUT" description="SAM D21 Microchip SMART ARM-based Flash MCU, 48Mhz, 256K Flash, 32K SRAM, TQFP-48"/>
       <sheetpath names="/" tstamps="/"/>
@@ -275,6 +269,18 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DB59128</tstamp>
     </comp>
+    <comp ref="U5">
+      <value>Si7021-A20</value>
+      <footprint>Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm</footprint>
+      <datasheet>https://www.silabs.com/documents/public/data-sheets/Si7021-A20.pdf</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Part No.">Si7021-A20</field>
+      </fields>
+      <libsource lib="Sensor_Humidity" part="Si7021-A20" description="I2C Humidity and Temperature Sensor, DFN-6"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D78D887</tstamp>
+    </comp>
   </components>
   <libparts>
     <libpart lib="74xGxx" part="74LVC2G04">
@@ -300,24 +306,6 @@
         <pin num="4" name="~" type="output"/>
         <pin num="5" name="VCC" type="power_in"/>
         <pin num="6" name="~" type="output"/>
-      </pins>
-    </libpart>
-    <libpart lib="Adafruit_Si7021_breakout" part="Si7021_breakout">
-      <description>Si7021 Temperature and Humidity Sensor breakout board</description>
-      <docs>https://learn.adafruit.com/adafruit-si7021-temperature-plus-humidity-sensor/overview</docs>
-      <footprints>
-        <fp>AMS?LGA*EP*2.7x4mm*P0.6mm*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">Si7021_breakout</field>
-      </fields>
-      <pins>
-        <pin num="1" name="SDA" type="BiDi"/>
-        <pin num="2" name="SCL" type="input"/>
-        <pin num="3" name="GND" type="power_in"/>
-        <pin num="4" name="3Vo" type="power_out"/>
-        <pin num="5" name="Vin" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="Connector" part="USB_B_Micro">
@@ -573,6 +561,30 @@
         <pin num="5" name="VOUT" type="power_out"/>
       </pins>
     </libpart>
+    <libpart lib="Sensor_Humidity" part="Si7020-A20">
+      <aliases>
+        <alias>Si7021-A20</alias>
+      </aliases>
+      <description>I2C Humidity and Temperature Sensor, DFN-6</description>
+      <docs>https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf</docs>
+      <footprints>
+        <fp>DFN*1EP*3x3mm*P1mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">Si7020-A20</field>
+        <field name="Footprint">Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDA" type="BiDi"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="NC" type="NotConnected"/>
+        <pin num="4" name="NC" type="NotConnected"/>
+        <pin num="5" name="VDD" type="power_in"/>
+        <pin num="6" name="SCL" type="input"/>
+        <pin num="7" name="PAD" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Switch" part="SW_Push">
       <description>Push button switch, generic, two pins</description>
       <docs>~</docs>
@@ -648,9 +660,6 @@
     <library logical="74xGxx">
       <uri>/Library/Application Support/kicad/library/74xGxx.lib</uri>
     </library>
-    <library logical="Adafruit_Si7021_breakout">
-      <uri>/Users/sayanee/Documents/hutscape/kicad-library/Si7021_breakout_board.lib</uri>
-    </library>
     <library logical="Connector">
       <uri>/Library/Application Support/kicad/library/Connector.lib</uri>
     </library>
@@ -669,6 +678,9 @@
     <library logical="Regulator_Linear">
       <uri>/Library/Application Support/kicad/library/Regulator_Linear.lib</uri>
     </library>
+    <library logical="Sensor_Humidity">
+      <uri>/Library/Application Support/kicad/library/Sensor_Humidity.lib</uri>
+    </library>
     <library logical="Switch">
       <uri>/Library/Application Support/kicad/library/Switch.lib</uri>
     </library>
@@ -681,23 +693,23 @@
   </libraries>
   <nets>
     <net code="1" name="GND">
-      <node ref="U2" pin="2"/>
-      <node ref="U3" pin="2"/>
-      <node ref="Q2" pin="1"/>
-      <node ref="BT1" pin="2"/>
-      <node ref="U1" pin="2"/>
-      <node ref="U4" pin="5"/>
-      <node ref="U5" pin="3"/>
-      <node ref="U4" pin="42"/>
-      <node ref="C3" pin="2"/>
-      <node ref="U4" pin="35"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="SW2" pin="2"/>
-      <node ref="R1" pin="1"/>
       <node ref="C4" pin="1"/>
-      <node ref="U4" pin="18"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U5" pin="2"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="U3" pin="2"/>
       <node ref="J1" pin="5"/>
+      <node ref="U4" pin="5"/>
+      <node ref="U4" pin="42"/>
+      <node ref="U4" pin="35"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="U4" pin="18"/>
     </net>
     <net code="2" name="Net-(Q2-Pad2)">
       <node ref="R3" pin="1"/>
@@ -711,53 +723,53 @@
       <node ref="D3" pin="1"/>
       <node ref="Q2" pin="3"/>
     </net>
-    <net code="5" name="Net-(U5-Pad4)">
-      <node ref="U5" pin="4"/>
-    </net>
-    <net code="6" name="/IR_Receiver">
+    <net code="5" name="/IR_Receiver">
       <node ref="U4" pin="24"/>
       <node ref="U2" pin="1"/>
     </net>
+    <net code="6" name="Net-(U5-Pad7)">
+      <node ref="U5" pin="7"/>
+    </net>
     <net code="7" name="/SCL">
+      <node ref="U5" pin="6"/>
       <node ref="U4" pin="32"/>
-      <node ref="U5" pin="2"/>
     </net>
     <net code="8" name="/SDA">
-      <node ref="U5" pin="1"/>
       <node ref="U4" pin="31"/>
+      <node ref="U5" pin="1"/>
     </net>
     <net code="9" name="Net-(C4-Pad2)">
-      <node ref="U4" pin="43"/>
       <node ref="C4" pin="2"/>
+      <node ref="U4" pin="43"/>
     </net>
     <net code="10" name="Net-(J1-Pad4)">
-      <node ref="U1" pin="1"/>
       <node ref="J1" pin="4"/>
+      <node ref="U1" pin="1"/>
     </net>
     <net code="11" name="Net-(J1-Pad6)">
       <node ref="J1" pin="6"/>
     </net>
     <net code="12" name="Net-(D1-Pad2)">
-      <node ref="J1" pin="1"/>
       <node ref="D1" pin="2"/>
+      <node ref="J1" pin="1"/>
     </net>
     <net code="13" name="Net-(D2-Pad2)">
-      <node ref="D2" pin="2"/>
       <node ref="Q1" pin="2"/>
+      <node ref="D2" pin="2"/>
     </net>
     <net code="14" name="VCC">
       <node ref="U1" pin="5"/>
     </net>
     <net code="15" name="Net-(Q1-Pad1)">
       <node ref="Q1" pin="1"/>
-      <node ref="U1" pin="6"/>
       <node ref="R1" pin="2"/>
+      <node ref="U1" pin="6"/>
     </net>
     <net code="16" name="Net-(D1-Pad1)">
-      <node ref="D2" pin="1"/>
-      <node ref="U3" pin="1"/>
       <node ref="D1" pin="1"/>
       <node ref="R2" pin="2"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U3" pin="1"/>
     </net>
     <net code="17" name="Net-(U3-Pad4)">
       <node ref="U3" pin="4"/>
@@ -767,8 +779,8 @@
       <node ref="Q1" pin="3"/>
     </net>
     <net code="19" name="Net-(BT1-Pad1)">
-      <node ref="BT1" pin="1"/>
       <node ref="SW1" pin="1"/>
+      <node ref="BT1" pin="1"/>
     </net>
     <net code="20" name="Net-(U4-Pad1)">
       <node ref="U4" pin="1"/>
@@ -835,8 +847,8 @@
       <node ref="J1" pin="2"/>
     </net>
     <net code="41" name="/USB_D+">
-      <node ref="J1" pin="3"/>
       <node ref="U4" pin="34"/>
+      <node ref="J1" pin="3"/>
     </net>
     <net code="42" name="Net-(U4-Pad37)">
       <node ref="U4" pin="37"/>
@@ -880,26 +892,32 @@
       <node ref="U4" pin="9"/>
     </net>
     <net code="55" name="Net-(R2-Pad1)">
-      <node ref="R2" pin="1"/>
       <node ref="U3" pin="3"/>
+      <node ref="R2" pin="1"/>
     </net>
     <net code="56" name="/2V6">
-      <node ref="U2" pin="3"/>
-      <node ref="U4" pin="17"/>
       <node ref="U3" pin="5"/>
-      <node ref="U4" pin="44"/>
-      <node ref="C2" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="D3" pin="2"/>
       <node ref="L1" pin="1"/>
-      <node ref="R4" pin="2"/>
-      <node ref="U4" pin="36"/>
       <node ref="U5" pin="5"/>
+      <node ref="C2" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="D3" pin="2"/>
+      <node ref="U4" pin="17"/>
+      <node ref="U4" pin="36"/>
+      <node ref="U4" pin="44"/>
     </net>
     <net code="57" name="Net-(C3-Pad1)">
-      <node ref="L1" pin="2"/>
-      <node ref="C3" pin="1"/>
       <node ref="U4" pin="6"/>
+      <node ref="C3" pin="1"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="58" name="Net-(U5-Pad3)">
+      <node ref="U5" pin="3"/>
+    </net>
+    <net code="59" name="Net-(U5-Pad4)">
+      <node ref="U5" pin="4"/>
     </net>
   </nets>
 </export>
