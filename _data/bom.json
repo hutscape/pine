@@ -1,10 +1,10 @@
 {
-  "bom-uniq": 19, 
+  "bom-uniq": 23, 
   "bom-cost": 2.66, 
   "vendors": 2, 
   "vendor-names": [
     "RS Components", 
     "ON Semi"
   ], 
-  "bom-total": 23
+  "bom-total": 32
 }

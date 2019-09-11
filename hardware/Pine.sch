@@ -7230,6 +7230,7 @@ F 0 "D4" V 8489 4433 50  0000 R CNN
 F 1 "TX" V 8398 4433 50  0000 R CNN
 F 2 "" H 8450 4550 50  0001 C CNN
 F 3 "~" H 8450 4550 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	1    8450 4550
 	0    -1   -1   0   
 $EndComp
@@ -7245,6 +7246,7 @@ F 0 "D5" V 9039 4433 50  0000 R CNN
 F 1 "RX" V 8948 4433 50  0000 R CNN
 F 2 "" H 9000 4550 50  0001 C CNN
 F 3 "~" H 9000 4550 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	1    9000 4550
 	0    -1   -1   0   
 $EndComp
@@ -7276,6 +7278,7 @@ F 0 "D6" V 9539 4433 50  0000 R CNN
 F 1 "RX" V 9448 4433 50  0000 R CNN
 F 2 "" H 9500 4550 50  0001 C CNN
 F 3 "~" H 9500 4550 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	1    9500 4550
 	0    -1   -1   0   
 $EndComp
@@ -7320,6 +7323,7 @@ F 0 "D7" V 10139 4433 50  0000 R CNN
 F 1 "RX" V 10048 4433 50  0000 R CNN
 F 2 "" H 10100 4550 50  0001 C CNN
 F 3 "~" H 10100 4550 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	1    10100 4550
 	0    -1   -1   0   
 $EndComp
@@ -7354,6 +7358,7 @@ F 0 "Q3" H 10406 5204 50  0000 L CNN
 F 1 "2N7002" H 10406 5295 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 10400 5175 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 10200 5250 50  0001 L CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	1    10200 5250
 	-1   0    0    1   
 $EndComp
