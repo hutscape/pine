@@ -24,4 +24,3 @@ install:
 bom:
 	rm -f $(BOM_PATH)
 	python scripts/bom.py $(KICAD_XML) $(BOM_PATH)
-	node scripts/bom_info.js
