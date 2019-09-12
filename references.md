@@ -43,6 +43,13 @@ references:
       - name: Adafruit M0 Express Schematic
         url: https://cdn-learn.adafruit.com/assets/assets/000/040/553/original/arduino_schem.png?1490994398
 
+  - topic: Bootloader
+    list:
+      - name: How to burn / flash a bootloader into an external ATSAMD21
+        url: https://www.avdweb.nl/arduino/samd21/samd21-programmer
+      - name: SWD Header pinout
+        url: https://wiki.paparazziuav.org/wiki/STLink#SWD_Header
+
   - topic: Power and sleep
     list:
       - name: switch between battery and usb power no microcontroller circuit
