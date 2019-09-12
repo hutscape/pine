@@ -6742,7 +6742,7 @@ F 3 "http://www.farnell.com/datasheets/1835997.pdf" H 2350 2850 50  0001 L CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "BSS83P" H 0   0   50  0001 C CNN "Part No."
 	1    2350 2850
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L 74xGxx:74AUC2G04 U2
@@ -7360,7 +7360,7 @@ F 2 "Package_TO_SOT_SMD:SOT-23" H 10400 5175 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 10200 5250 50  0001 L CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	1    10200 5250
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8450 4700 8450 4800
@@ -7392,4 +7392,16 @@ Text Label 10400 5250 0    50   ~ 0
 LED
 Text Notes 10000 4600 1    39   ~ 0
 blue
+Text Notes 2350 2950 0    39   ~ 0
+G
+Text Notes 2200 2750 0    39   ~ 0
+S
+Text Notes 2450 2750 0    39   ~ 0
+D
+Text Notes 10250 5250 0    39   ~ 0
+G
+Text Notes 10050 5450 0    39   ~ 0
+S
+Text Notes 10050 5150 0    39   ~ 0
+D
 $EndSCHEMATC
