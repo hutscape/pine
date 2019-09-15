@@ -51,7 +51,7 @@ Wire Wire Line
 Text Notes 1100 4150 0    79   ~ 16
 IR Receiver
 $Bitmap
-Pos 2950 4900
+Pos 3000 4900
 Scale 0.600000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 02 BC 00 00 01 F4 08 02 00 00 00 50 3B 69 
@@ -5768,10 +5768,10 @@ F 3 "" H 5000 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R3
+L Device:R_Small R5
 U 1 1 5D38A758
 P 4350 5150
-F 0 "R3" V 4250 5150 50  0000 C CNN
+F 0 "R5" V 4250 5150 50  0000 C CNN
 F 1 "220R" V 4450 5150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4350 5150 50  0001 C CNN
 F 3 "~" H 4350 5150 50  0001 C CNN
@@ -6589,10 +6589,10 @@ F 3 "" H 10550 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R8
+L Device:R_Small R12
 U 1 1 5D77E188
 P 10150 3300
-F 0 "R8" V 10250 3250 50  0000 L CNN
+F 0 "R12" V 10250 3250 50  0000 L CNN
 F 1 "10k" V 10050 3250 50  0000 L CNN
 F 2 "" H 10150 3300 50  0001 C CNN
 F 3 "~" H 10150 3300 50  0001 C CNN
@@ -6776,10 +6776,10 @@ Wire Wire Line
 Wire Wire Line
 	8900 3400 9050 3400
 $Comp
-L Device:R_Small R1
+L Device:R_Small R2
 U 1 1 5D85EFAF
 P 2700 3250
-F 0 "R1" H 2600 3250 50  0000 C CNN
+F 0 "R2" H 2600 3250 50  0000 C CNN
 F 1 "10k" H 2850 3250 50  0000 C CNN
 F 2 "" H 2700 3250 50  0001 C CNN
 F 3 "~" H 2700 3250 50  0001 C CNN
@@ -6943,10 +6943,10 @@ NoConn ~ 7250 1250
 NoConn ~ 7350 1250
 NoConn ~ 7450 1250
 $Comp
-L Device:R_Small R2
+L Device:R_Small R3
 U 1 1 5DA3ACF8
 P 3050 1650
-F 0 "R2" V 3150 1650 50  0000 C CNN
+F 0 "R3" V 3150 1650 50  0000 C CNN
 F 1 "100k" V 3250 1650 50  0000 C CNN
 F 2 "" H 3050 1650 50  0001 C CNN
 F 3 "~" H 3050 1650 50  0001 C CNN
@@ -6986,12 +6986,8 @@ Wire Notes Line
 	6200 4200 7600 4200
 Wire Notes Line
 	7600 4200 7600 3950
-Wire Wire Line
-	2100 5250 2100 5100
-Wire Wire Line
-	1900 5250 2100 5250
 NoConn ~ 2100 2350
-Text Label 4050 1550 0    50   ~ 0
+Text Label 4350 1550 0    50   ~ 0
 2V6
 Wire Wire Line
 	1450 3150 1450 3450
@@ -7014,11 +7010,11 @@ Wire Wire Line
 	5750 1550 5750 1350
 Text Label 10300 3100 0    50   ~ 0
 2V6
-Text Label 7100 4550 0    50   ~ 0
+Text Label 7550 4550 0    50   ~ 0
 2V6
-Text Label 5000 4250 0    50   ~ 0
+Text Label 5500 4250 0    50   ~ 0
 2V6
-Text Label 2100 5100 0    50   ~ 0
+Text Label 2200 5100 0    50   ~ 0
 2V6
 $Comp
 L power:PWR_FLAG #FLG02
@@ -7035,8 +7031,6 @@ Connection ~ 6350 2150
 Wire Wire Line
 	6350 2150 6550 2150
 Wire Wire Line
-	3850 1550 4050 1550
-Wire Wire Line
 	6550 2450 6550 2500
 Wire Wire Line
 	5200 1900 5200 2300
@@ -7046,7 +7040,7 @@ Connection ~ 5200 2300
 Wire Wire Line
 	5200 2300 5200 2500
 Wire Wire Line
-	6550 2500 5200 2500
+	6550 2500 6400 2500
 Wire Wire Line
 	5350 2150 5450 2150
 $Comp
@@ -7211,10 +7205,10 @@ Wire Notes Line
 Text Label 8450 5600 2    50   ~ 0
 TX_LED
 $Comp
-L Device:R_Small R4
+L Device:R_Small R8
 U 1 1 5D80AD25
 P 8450 4900
-F 0 "R4" H 8500 4900 50  0000 L CNN
+F 0 "R8" H 8500 4900 50  0000 L CNN
 F 1 "470R" H 8200 4900 50  0000 L CNN
 F 2 "" H 8450 4900 50  0001 C CNN
 F 3 "~" H 8450 4900 50  0001 C CNN
@@ -7251,10 +7245,10 @@ F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R5
+L Device:R_Small R9
 U 1 1 5D813FF5
 P 9000 4900
-F 0 "R5" H 9050 4900 50  0000 L CNN
+F 0 "R9" H 9050 4900 50  0000 L CNN
 F 1 "470R" H 8750 4900 50  0000 L CNN
 F 2 "" H 9000 4900 50  0001 C CNN
 F 3 "~" H 9000 4900 50  0001 C CNN
@@ -7283,10 +7277,10 @@ F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R6
+L Device:R_Small R10
 U 1 1 5D81D0F9
 P 9500 4900
-F 0 "R6" H 9550 4900 50  0000 L CNN
+F 0 "R10" H 9550 4900 50  0000 L CNN
 F 1 "470R" H 9250 4900 50  0000 L CNN
 F 2 "" H 9500 4900 50  0001 C CNN
 F 3 "~" H 9500 4900 50  0001 C CNN
@@ -7328,10 +7322,10 @@ F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R7
+L Device:R_Small R11
 U 1 1 5D839392
 P 10100 4900
-F 0 "R7" H 10150 4900 50  0000 L CNN
+F 0 "R11" H 10150 4900 50  0000 L CNN
 F 1 "470R" H 9850 4900 50  0000 L CNN
 F 2 "" H 10100 4900 50  0001 C CNN
 F 3 "~" H 10100 4900 50  0001 C CNN
@@ -7404,4 +7398,110 @@ Text Notes 10050 5450 0    39   ~ 0
 S
 Text Notes 10050 5150 0    39   ~ 0
 D
+$Comp
+L Device:R_Small R4
+U 1 1 5D7E7CD8
+P 4050 1550
+F 0 "R4" V 4150 1550 50  0000 C CNN
+F 1 "0R" V 3945 1550 50  0000 C CNN
+F 2 "" H 4050 1550 50  0001 C CNN
+F 3 "~" H 4050 1550 50  0001 C CNN
+	1    4050 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 1550 4350 1550
+Wire Wire Line
+	3950 1550 3850 1550
+Text Notes 3900 1850 0    28   Italic 0
+populate after \ntesting power \nmanagement circuit\n
+Text Notes 2150 5400 0    28   Italic 0
+populate after \ntesting power \nmanagement circuit\n
+$Comp
+L Device:R_Small R1
+U 1 1 5D7F81C2
+P 2050 5250
+F 0 "R1" V 2150 5250 50  0000 C CNN
+F 1 "0R" V 1945 5250 50  0000 C CNN
+F 2 "" H 2050 5250 50  0001 C CNN
+F 3 "~" H 2050 5250 50  0001 C CNN
+	1    2050 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 5250 1950 5250
+Wire Wire Line
+	2150 5250 2200 5250
+Wire Wire Line
+	2200 5250 2200 5100
+$Comp
+L Device:R_Small R6
+U 1 1 5D7FF53D
+P 5250 4250
+F 0 "R6" V 5350 4250 50  0000 C CNN
+F 1 "0R" V 5145 4250 50  0000 C CNN
+F 2 "" H 5250 4250 50  0001 C CNN
+F 3 "~" H 5250 4250 50  0001 C CNN
+	1    5250 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 4250 5150 4250
+Wire Wire Line
+	5350 4250 5500 4250
+Text Notes 5100 4100 0    28   Italic 0
+populate after \ntesting power \nmanagement circuit\n
+$Comp
+L Device:R_Small R7
+U 1 1 5D8066D7
+P 7300 4550
+F 0 "R7" V 7400 4550 50  0000 C CNN
+F 1 "0R" V 7195 4550 50  0000 C CNN
+F 2 "" H 7300 4550 50  0001 C CNN
+F 3 "~" H 7300 4550 50  0001 C CNN
+	1    7300 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 4550 7200 4550
+Wire Wire Line
+	7400 4550 7550 4550
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D80B2E8
+P 7100 4550
+F 0 "#FLG0101" H 7100 4625 50  0001 C CNN
+F 1 "PWR_FLAG" V 7100 4677 50  0000 L CNN
+F 2 "" H 7100 4550 50  0001 C CNN
+F 3 "~" H 7100 4550 50  0001 C CNN
+	1    7100 4550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7100 4550
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D814B22
+P 1900 5250
+F 0 "#FLG0102" H 1900 5325 50  0001 C CNN
+F 1 "PWR_FLAG" H 1900 5423 50  0000 C CNN
+F 2 "" H 1900 5250 50  0001 C CNN
+F 3 "~" H 1900 5250 50  0001 C CNN
+	1    1900 5250
+	-1   0    0    1   
+$EndComp
+Connection ~ 1900 5250
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5D8154F9
+P 6400 2500
+F 0 "#FLG0103" H 6400 2575 50  0001 C CNN
+F 1 "PWR_FLAG" H 6400 2673 50  0000 C CNN
+F 2 "" H 6400 2500 50  0001 C CNN
+F 3 "~" H 6400 2500 50  0001 C CNN
+	1    6400 2500
+	-1   0    0    1   
+$EndComp
+Connection ~ 6400 2500
+Wire Wire Line
+	6400 2500 5200 2500
 $EndSCHEMATC
