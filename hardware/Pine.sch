@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pine"
-Date "2019-09-11"
+Date "2019-09-16"
 Rev "V1.0"
 Comp "Hutscape"
 Comment1 "Control aircon by monitoring temperature in other parts of the room"
@@ -7230,76 +7230,76 @@ F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 $EndComp
 Text Label 8450 4350 2    50   ~ 0
 2V6
-Text Label 9000 4350 2    50   ~ 0
+Text Label 9050 4350 2    50   ~ 0
 2V6
 $Comp
 L Device:LED D5
 U 1 1 5D81359F
-P 9000 4550
-F 0 "D5" V 9039 4433 50  0000 R CNN
-F 1 "RX" V 8948 4433 50  0000 R CNN
-F 2 "" H 9000 4550 50  0001 C CNN
-F 3 "~" H 9000 4550 50  0001 C CNN
-F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-	1    9000 4550
+P 9050 4550
+F 0 "D5" V 9089 4433 50  0000 R CNN
+F 1 "RX" V 8998 4433 50  0000 R CNN
+F 2 "" H 9050 4550 50  0001 C CNN
+F 3 "~" H 9050 4550 50  0001 C CNN
+F 4 "Electronics" H 50  0   50  0001 C CNN "Category"
+	1    9050 4550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R9
 U 1 1 5D813FF5
-P 9000 4900
-F 0 "R9" H 9050 4900 50  0000 L CNN
-F 1 "470R" H 8750 4900 50  0000 L CNN
-F 2 "" H 9000 4900 50  0001 C CNN
-F 3 "~" H 9000 4900 50  0001 C CNN
-F 4 "Electronics" H -1150 1750 50  0001 C CNN "Category"
-	1    9000 4900
+P 9050 4900
+F 0 "R9" H 9100 4900 50  0000 L CNN
+F 1 "470R" H 8800 4900 50  0000 L CNN
+F 2 "" H 9050 4900 50  0001 C CNN
+F 3 "~" H 9050 4900 50  0001 C CNN
+F 4 "Electronics" H -1100 1750 50  0001 C CNN "Category"
+	1    9050 4900
 	1    0    0    -1  
 $EndComp
-Text Label 9000 5600 2    50   ~ 0
+Text Label 9050 5600 2    50   ~ 0
 RX_LED
 Text Notes 8350 4650 1    39   ~ 0
 yellow
-Text Notes 8900 4650 1    39   ~ 0
+Text Notes 8950 4650 1    39   ~ 0
 yellow
-Text Label 9500 4350 2    50   ~ 0
+Text Label 9600 4350 2    50   ~ 0
 2V6
 $Comp
 L Device:LED D6
 U 1 1 5D81C9CF
-P 9500 4550
-F 0 "D6" V 9539 4433 50  0000 R CNN
-F 1 "RX" V 9448 4433 50  0000 R CNN
-F 2 "" H 9500 4550 50  0001 C CNN
-F 3 "~" H 9500 4550 50  0001 C CNN
-F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-	1    9500 4550
+P 9600 4550
+F 0 "D6" V 9639 4433 50  0000 R CNN
+F 1 "RX" V 9548 4433 50  0000 R CNN
+F 2 "" H 9600 4550 50  0001 C CNN
+F 3 "~" H 9600 4550 50  0001 C CNN
+F 4 "Electronics" H 100 0   50  0001 C CNN "Category"
+	1    9600 4550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R10
 U 1 1 5D81D0F9
-P 9500 4900
-F 0 "R10" H 9550 4900 50  0000 L CNN
-F 1 "470R" H 9250 4900 50  0000 L CNN
-F 2 "" H 9500 4900 50  0001 C CNN
-F 3 "~" H 9500 4900 50  0001 C CNN
-F 4 "Electronics" H -650 1750 50  0001 C CNN "Category"
-	1    9500 4900
+P 9600 4900
+F 0 "R10" H 9650 4900 50  0000 L CNN
+F 1 "470R" H 9350 4900 50  0000 L CNN
+F 2 "" H 9600 4900 50  0001 C CNN
+F 3 "~" H 9600 4900 50  0001 C CNN
+F 4 "Electronics" H -550 1750 50  0001 C CNN "Category"
+	1    9600 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 5D822E57
-P 9500 5500
-F 0 "#PWR011" H 9500 5250 50  0001 C CNN
-F 1 "GND" H 9400 5500 50  0000 C CNN
-F 2 "" H 9500 5500 50  0001 C CNN
-F 3 "" H 9500 5500 50  0001 C CNN
-	1    9500 5500
+P 9600 5500
+F 0 "#PWR011" H 9600 5250 50  0001 C CNN
+F 1 "GND" H 9600 5350 50  0000 C CNN
+F 2 "" H 9600 5500 50  0001 C CNN
+F 3 "" H 9600 5500 50  0001 C CNN
+	1    9600 5500
 	1    0    0    -1  
 $EndComp
-Text Notes 9400 4650 1    39   ~ 0
+Text Notes 9500 4650 1    39   ~ 0
 green
 Text Label 8150 3650 2    50   ~ 0
 LED
@@ -7307,96 +7307,63 @@ Wire Wire Line
 	8550 3250 8550 3650
 Wire Wire Line
 	8550 3650 8150 3650
-Text Label 10100 4350 2    50   ~ 0
+Text Label 10200 4350 2    50   ~ 0
 2V6
 $Comp
 L Device:LED D7
 U 1 1 5D8386A1
-P 10100 4550
-F 0 "D7" V 10139 4433 50  0000 R CNN
-F 1 "RX" V 10048 4433 50  0000 R CNN
-F 2 "" H 10100 4550 50  0001 C CNN
-F 3 "~" H 10100 4550 50  0001 C CNN
-F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-	1    10100 4550
+P 10200 4550
+F 0 "D7" V 10239 4433 50  0000 R CNN
+F 1 "RX" V 10148 4433 50  0000 R CNN
+F 2 "" H 10200 4550 50  0001 C CNN
+F 3 "~" H 10200 4550 50  0001 C CNN
+F 4 "Electronics" H 100 0   50  0001 C CNN "Category"
+	1    10200 4550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R11
 U 1 1 5D839392
-P 10100 4900
-F 0 "R11" H 10150 4900 50  0000 L CNN
-F 1 "470R" H 9850 4900 50  0000 L CNN
-F 2 "" H 10100 4900 50  0001 C CNN
-F 3 "~" H 10100 4900 50  0001 C CNN
-F 4 "Electronics" H -50 1750 50  0001 C CNN "Category"
-	1    10100 4900
+P 10200 4900
+F 0 "R11" H 10250 4900 50  0000 L CNN
+F 1 "470R" H 9950 4900 50  0000 L CNN
+F 2 "" H 10200 4900 50  0001 C CNN
+F 3 "~" H 10200 4900 50  0001 C CNN
+F 4 "Electronics" H 50  1750 50  0001 C CNN "Category"
+	1    10200 4900
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 5D8399B2
-P 10100 5500
-F 0 "#PWR013" H 10100 5250 50  0001 C CNN
-F 1 "GND" H 10000 5500 50  0000 C CNN
-F 2 "" H 10100 5500 50  0001 C CNN
-F 3 "" H 10100 5500 50  0001 C CNN
-	1    10100 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:2N7002 Q3
-U 1 1 5D83A393
-P 10200 5250
-F 0 "Q3" H 10406 5204 50  0000 L CNN
-F 1 "2N7002" H 10406 5295 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10400 5175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 10200 5250 50  0001 L CNN
-F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-	1    10200 5250
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8450 4700 8450 4800
 Wire Wire Line
 	8450 4350 8450 4400
 Wire Wire Line
-	9000 4350 9000 4400
+	9050 4350 9050 4400
 Wire Wire Line
-	9500 4350 9500 4400
+	9600 4350 9600 4400
 Wire Wire Line
-	10100 4350 10100 4400
+	10200 4350 10200 4400
 Wire Wire Line
-	10100 4700 10100 4800
+	10200 4700 10200 4800
 Wire Wire Line
-	9500 4700 9500 4800
+	9600 4700 9600 4800
 Wire Wire Line
-	9000 4700 9000 4800
+	9050 4700 9050 4800
 Wire Wire Line
 	8450 5000 8450 5600
 Wire Wire Line
-	9000 5000 9000 5600
+	9050 5000 9050 5600
 Wire Wire Line
-	9500 5000 9500 5500
-Wire Wire Line
-	10100 5000 10100 5050
-Wire Wire Line
-	10100 5450 10100 5500
-Text Label 10400 5250 0    50   ~ 0
+	9600 5000 9600 5500
+Text Label 10200 5600 2    50   ~ 0
 LED
-Text Notes 10000 4600 1    39   ~ 0
+Text Notes 10100 4600 1    39   ~ 0
 blue
 Text Notes 2350 2950 0    39   ~ 0
 G
 Text Notes 2200 2750 0    39   ~ 0
 S
 Text Notes 2450 2750 0    39   ~ 0
-D
-Text Notes 10250 5250 0    39   ~ 0
-G
-Text Notes 10050 5450 0    39   ~ 0
-S
-Text Notes 10050 5150 0    39   ~ 0
 D
 $Comp
 L Device:R_Small R4
@@ -7504,4 +7471,6 @@ $EndComp
 Connection ~ 6400 2500
 Wire Wire Line
 	6400 2500 5200 2500
+Wire Wire Line
+	10200 5000 10200 5600
 $EndSCHEMATC
