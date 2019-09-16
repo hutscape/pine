@@ -45,10 +45,22 @@ references:
 
   - topic: Bootloader
     list:
+      - name: Arduino M0 bootloader
+        url: https://github.com/arduino/ArduinoCore-samd/tree/master/bootloaders/zero
+      - name: Adafruit Adalink to automate flashing ARM CPUs with new program code using a Segger J-link or STMicro STLink V2 device
+        url: https://github.com/adafruit/Adafruit_Adalink
       - name: How to burn / flash a bootloader into an external ATSAMD21
         url: https://www.avdweb.nl/arduino/samd21/samd21-programmer
       - name: SWD Header pinout
         url: https://wiki.paparazziuav.org/wiki/STLink#SWD_Header
+      - name: How to burn Arduino Zero bootloader to an Atmel ATSAMD21G18-based custom dev board
+        url: https://www.youtube.com/watch?v=VQWhjzLoHB8
+      - name: ATSAMD21g18 Bootloader With J-link Debugger
+        url: https://www.instructables.com/id/ATSAMD21g18-Bootloader-With-J-link-Debugger/
+      - name: Converting an STM32F103 board to a Black Magic Probe
+        url: https://medium.com/@paramaggarwal/converting-an-stm32f103-board-to-a-black-magic-probe-c013cf2cc38c
+      - name: JTAG/SWD debugging via Black Magic Probe on an STM32 blue pill and blinking a LED using STM32CubeMX, libopencm3, and bare metal C
+        url: https://satoshinm.github.io/blog/171223_jtagswdpillblink_jtagswd_debugging_via_black_magic_probe_on_an_stm32_blue_pill_and_blinking_a_led_using_stm32cubemx_libopencm3_and_bare_metal_c.html
 
   - topic: Power and sleep
     list:
