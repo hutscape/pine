@@ -5752,9 +5752,7 @@ F 2 "Package_TO_SOT_THT:TO-39-3" H 5100 5275 50  0001 L CIN
 F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 4900 5350 50  0001 L CNN
 F 4 "Electronics" H -500 3200 50  0001 C CNN "Category"
 F 5 "ON Semiconductor" H -500 3200 50  0001 C CNN "Manufacturer"
-F 6 "TH" H -500 3200 50  0001 C CNN "Package"
-F 7 "2N2222" H -500 3200 50  0001 C CNN "Part No."
-F 8 "ON Semi" H -500 3200 50  0001 C CNN "Vendor"
+F 6 "2N2222" H -500 3200 50  0001 C CNN "Part No."
 	1    4900 5350
 	1    0    0    -1  
 $EndComp
@@ -6600,40 +6598,40 @@ $EndComp
 $Comp
 L Device:R_Small R7
 U 1 1 5D77E188
-P 10150 3250
-F 0 "R7" V 10250 3200 50  0000 L CNN
-F 1 "10k" V 10050 3200 50  0000 L CNN
-F 2 "" H 10150 3250 50  0001 C CNN
-F 3 "~" H 10150 3250 50  0001 C CNN
-F 4 "Electronics" H 0   100 50  0001 C CNN "Category"
-F 5 "0805" H 0   0   50  0001 C CNN "Package"
-	1    10150 3250
+P 10150 3450
+F 0 "R7" V 10250 3400 50  0000 L CNN
+F 1 "10k" V 10050 3400 50  0000 L CNN
+F 2 "" H 10150 3450 50  0001 C CNN
+F 3 "~" H 10150 3450 50  0001 C CNN
+F 4 "Electronics" H 0   300 50  0001 C CNN "Category"
+F 5 "0805" H 0   200 50  0001 C CNN "Package"
+	1    10150 3450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5D77FC5D
-P 9950 3450
-F 0 "SW2" V 9950 3600 50  0000 L CNN
-F 1 "SW_Push" V 10050 3600 50  0000 L CNN
-F 2 "" H 9950 3650 50  0001 C CNN
-F 3 "~" H 9950 3650 50  0001 C CNN
-F 4 "Connector" H 0   -50 50  0001 C CNN "Category"
-F 5 "SMD" H 0   0   50  0001 C CNN "Package"
-F 6 "7" H 0   0   50  0001 C CNN "Stock"
-F 7 "14" H 0   0   50  0001 C CNN "Stock No."
-	1    9950 3450
+P 9950 3700
+F 0 "SW2" V 9950 3850 50  0000 L CNN
+F 1 "SW_Push" V 10050 3850 50  0000 L CNN
+F 2 "" H 9950 3900 50  0001 C CNN
+F 3 "~" H 9950 3900 50  0001 C CNN
+F 4 "Connector" H 0   200 50  0001 C CNN "Category"
+F 5 "SMD" H 0   250 50  0001 C CNN "Package"
+F 6 "7" H 0   250 50  0001 C CNN "Stock"
+F 7 "14" H 0   250 50  0001 C CNN "Stock No."
+	1    9950 3700
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR014
 U 1 1 5D78151A
-P 9950 3650
-F 0 "#PWR014" H 9950 3400 50  0001 C CNN
-F 1 "GND" H 9955 3477 50  0000 C CNN
-F 2 "" H 9950 3650 50  0001 C CNN
-F 3 "" H 9950 3650 50  0001 C CNN
-	1    9950 3650
+P 9950 3900
+F 0 "#PWR014" H 9950 3650 50  0001 C CNN
+F 1 "GND" H 9955 3727 50  0000 C CNN
+F 2 "" H 9950 3900 50  0001 C CNN
+F 3 "" H 9950 3900 50  0001 C CNN
+	1    9950 3900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -6927,17 +6925,10 @@ F 5 "ATSAMD21G18A-AUT" H 0   100 50  0001 C CNN "Part No."
 F 6 "6.05" H 0   0   50  0001 C CNN "Unit cost"
 F 7 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 8 "https://lcsc.com/product-detail/ATMEL-AVR_ATMEL_ATSAMD21G18A-AU_ATSAMD21G18A-AU_C78624.html" H 0   0   50  0001 C CNN "Vendor link"
+F 9 "TQFN-48" H 0   0   50  0001 C CNN "Package"
 	1    8450 2200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9950 3200 9950 3250
-Wire Wire Line
-	10050 3250 9950 3250
-Wire Wire Line
-	10250 3250 10300 3250
-Wire Wire Line
-	10300 3250 10300 3050
 Wire Wire Line
 	6400 1850 6550 1850
 Wire Wire Line
@@ -7008,8 +6999,6 @@ Wire Notes Line
 Wire Notes Line
 	2950 3400 4550 3400
 Wire Notes Line
-	10650 1150 10650 6100
-Wire Notes Line
 	1050 6100 10650 6100
 Wire Notes Line
 	1050 4400 1850 4400
@@ -7045,7 +7034,7 @@ Text Label 5750 1300 0    50   ~ 0
 2V6
 Wire Wire Line
 	5750 1500 5750 1300
-Text Label 10300 3050 0    50   ~ 0
+Text Label 10450 3450 0    50   ~ 0
 2V6
 Text Label 7700 4750 0    50   ~ 0
 2V6
@@ -7218,7 +7207,6 @@ F 7 "5" H 0   0   50  0001 C CNN "Stock No."
 $EndComp
 Text Label 8900 3750 2    50   ~ 0
 TX_LED
-Connection ~ 9950 3250
 Wire Wire Line
 	9150 3200 9150 3450
 Wire Wire Line
@@ -7511,18 +7499,19 @@ SWD Programming
 $Comp
 L Connector:Conn_01x06_Male J2
 U 1 1 5D7FC57C
-P 2350 6750
-F 0 "J2" H 2250 6950 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 2500 6350 50  0000 C CNN
-F 2 "" H 2350 6750 50  0001 C CNN
-F 3 "~" H 2350 6750 50  0001 C CNN
-F 4 "Connector" H 350 50  50  0001 C CNN "Category"
-F 5 "TH" H 350 50  50  0001 C CNN "Package"
-	1    2350 6750
+P 2150 6850
+F 0 "J2" H 2050 7050 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 2300 6450 50  0000 C CNN
+F 2 "" H 2150 6850 50  0001 C CNN
+F 3 "~" H 2150 6850 50  0001 C CNN
+F 4 "Connector" H 150 150 50  0001 C CNN "Category"
+F 5 "TH" H 150 150 50  0001 C CNN "Package"
+F 6 "Yes" H -200 100 50  0001 C CNN "DNP"
+	1    2150 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 6550 2700 6550
+	2350 6650 2500 6650
 Text Label 8900 3850 2    50   ~ 0
 SWCLK
 Wire Wire Line
@@ -7543,52 +7532,49 @@ Wire Wire Line
 	9750 3950 9750 3200
 Wire Notes Line
 	4550 950  4550 4150
-Text Label 2700 6650 0    50   ~ 0
+Text Label 2500 6750 0    50   ~ 0
 SWCLK
 Wire Wire Line
-	2550 6650 2700 6650
-Text Label 2700 6850 0    50   ~ 0
+	2350 6750 2500 6750
+Text Label 2500 6950 0    50   ~ 0
 SWDIO
 Wire Wire Line
-	2550 6850 2700 6850
+	2350 6950 2500 6950
 Wire Wire Line
-	2550 6750 3100 6750
+	2350 6850 2900 6850
 Wire Wire Line
-	3100 6750 3100 6900
+	2900 6850 2900 7000
 $Comp
 L power:GND #PWR05
 U 1 1 5D87EFCF
-P 3100 6900
-F 0 "#PWR05" H 3100 6650 50  0001 C CNN
-F 1 "GND" H 3105 6727 50  0000 C CNN
-F 2 "" H 3100 6900 50  0001 C CNN
-F 3 "" H 3100 6900 50  0001 C CNN
-	1    3100 6900
+P 2900 7000
+F 0 "#PWR05" H 2900 6750 50  0001 C CNN
+F 1 "GND" H 2905 6827 50  0000 C CNN
+F 2 "" H 2900 7000 50  0001 C CNN
+F 3 "" H 2900 7000 50  0001 C CNN
+	1    2900 7000
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
 	1050 7350 3700 7350
-Wire Notes Line
-	1050 1150 1050 7350
 Wire Notes Line
 	3700 4150 3700 7350
 Wire Notes Line
 	1050 6350 2300 6350
 Wire Notes Line
 	2300 6350 2300 6100
-NoConn ~ 2550 6950
-NoConn ~ 2550 7050
+NoConn ~ 2350 7150
 Wire Notes Line
 	1050 4150 10650 4150
 $Comp
 L power:+3V3 #PWR04
 U 1 1 5D8087D7
-P 2700 6550
-F 0 "#PWR04" H 2700 6400 50  0001 C CNN
-F 1 "+3V3" H 2715 6723 50  0000 C CNN
-F 2 "" H 2700 6550 50  0001 C CNN
-F 3 "" H 2700 6550 50  0001 C CNN
-	1    2700 6550
+P 2500 6450
+F 0 "#PWR04" H 2500 6300 50  0001 C CNN
+F 1 "+3V3" H 2515 6623 50  0000 C CNN
+F 2 "" H 2500 6450 50  0001 C CNN
+F 3 "" H 2500 6450 50  0001 C CNN
+	1    2500 6450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -7602,6 +7588,7 @@ F 3 "~" H 4050 1550 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
 F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
+F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    4050 1550
 	1    0    0    -1  
 $EndComp
@@ -7620,6 +7607,7 @@ F 3 "~" H 2050 5450 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
 F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
+F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    2050 5450
 	1    0    0    -1  
 $EndComp
@@ -7640,6 +7628,7 @@ F 3 "~" H 5350 4450 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
 F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
+F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    5350 4450
 	1    0    0    -1  
 $EndComp
@@ -7658,9 +7647,50 @@ F 3 "~" H 7350 4750 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
 F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
+F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    7350 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	7500 4750 7700 4750
+Wire Wire Line
+	9950 3200 9950 3450
+Wire Wire Line
+	9950 3450 10050 3450
+Connection ~ 9950 3450
+Wire Wire Line
+	9950 3450 9950 3500
+Wire Wire Line
+	10250 3450 10450 3450
+Wire Wire Line
+	9950 3200 10200 3200
+Connection ~ 9950 3200
+Text Label 10200 3200 0    50   ~ 0
+RST
+Text Label 2500 7050 0    50   ~ 0
+RST
+Wire Wire Line
+	2350 7050 2500 7050
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D845F3C
+P 2500 6550
+F 0 "#FLG0101" H 2500 6625 50  0001 C CNN
+F 1 "PWR_FLAG" V 2500 6678 50  0000 L CNN
+F 2 "" H 2500 6550 50  0001 C CNN
+F 3 "~" H 2500 6550 50  0001 C CNN
+	1    2500 6550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 6450 2500 6550
+Connection ~ 2500 6550
+Wire Wire Line
+	2500 6550 2500 6650
+Wire Notes Line
+	1050 950  1050 7350
+Wire Notes Line
+	10650 950  10650 6100
+Text Notes 1650 7000 0    28   Italic 0
+DNP: Pogopins\nwill be used for\nprogramming\nthe bootloader
 $EndSCHEMATC

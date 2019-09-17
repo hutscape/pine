@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 September 17, Tuesday 16:11:29</date>
+    <date>2019 September 17, Tuesday 17:56:36</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -46,9 +46,7 @@
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">ON Semiconductor</field>
-        <field name="Package">TH</field>
         <field name="Part No.">2N2222</field>
-        <field name="Vendor">ON Semi</field>
       </fields>
       <libsource lib="Transistor_BJT" part="2N2219" description="800mA Ic, 50V Vce, NPN Transistor, TO-39"/>
       <sheetpath names="/" tstamps="/"/>
@@ -261,6 +259,7 @@
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="Package">TQFN-48</field>
         <field name="Part No.">ATSAMD21G18A-AUT</field>
         <field name="Unit cost">6.05</field>
         <field name="Vendor">LCSC</field>
@@ -481,6 +480,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Connector</field>
+        <field name="DNP">Yes</field>
         <field name="Package">TH</field>
       </fields>
       <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
@@ -492,6 +492,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
         <field name="Unit cost">0.00</field>
       </fields>
@@ -504,6 +505,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
         <field name="Unit cost">0.00</field>
       </fields>
@@ -516,6 +518,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
         <field name="Unit cost">0.00</field>
       </fields>
@@ -528,6 +531,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
         <field name="Unit cost">0.00</field>
       </fields>
@@ -1002,59 +1006,59 @@
   <nets>
     <net code="1" name="GND">
       <node ref="U1" pin="2"/>
-      <node ref="Q2" pin="1"/>
-      <node ref="U5" pin="18"/>
       <node ref="U4" pin="2"/>
-      <node ref="BT1" pin="2"/>
-      <node ref="U5" pin="35"/>
+      <node ref="Q2" pin="1"/>
       <node ref="U3" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U5" pin="18"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U5" pin="35"/>
+      <node ref="C1" pin="2"/>
       <node ref="SW2" pin="2"/>
       <node ref="C4" pin="1"/>
-      <node ref="R1" pin="1"/>
-      <node ref="J2" pin="3"/>
-      <node ref="C1" pin="2"/>
       <node ref="C2" pin="2"/>
-      <node ref="U5" pin="42"/>
-      <node ref="J1" pin="5"/>
-      <node ref="U5" pin="5"/>
-      <node ref="R6" pin="2"/>
-      <node ref="U2" pin="2"/>
       <node ref="C3" pin="2"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="J1" pin="5"/>
+      <node ref="J2" pin="3"/>
+      <node ref="U5" pin="5"/>
+      <node ref="U5" pin="42"/>
     </net>
     <net code="2" name="Net-(Q2-Pad2)">
-      <node ref="Q2" pin="2"/>
       <node ref="R3" pin="1"/>
+      <node ref="Q2" pin="2"/>
     </net>
     <net code="3" name="/IR_Emitter">
       <node ref="U5" pin="12"/>
       <node ref="R3" pin="2"/>
     </net>
     <net code="4" name="Net-(D3-Pad1)">
-      <node ref="Q2" pin="3"/>
       <node ref="D3" pin="1"/>
+      <node ref="Q2" pin="3"/>
     </net>
     <net code="5" name="/IR_Receiver">
-      <node ref="U1" pin="1"/>
       <node ref="U5" pin="24"/>
+      <node ref="U1" pin="1"/>
     </net>
     <net code="6" name="Net-(U4-Pad7)">
       <node ref="U4" pin="7"/>
     </net>
     <net code="7" name="Net-(JP4-Pad1)">
-      <node ref="JP4" pin="1"/>
       <node ref="U4" pin="5"/>
+      <node ref="JP4" pin="1"/>
     </net>
     <net code="8" name="/SCL">
       <node ref="U4" pin="6"/>
       <node ref="U5" pin="32"/>
     </net>
     <net code="9" name="/SDA">
-      <node ref="U5" pin="31"/>
       <node ref="U4" pin="1"/>
+      <node ref="U5" pin="31"/>
     </net>
     <net code="10" name="Net-(C4-Pad2)">
-      <node ref="C4" pin="2"/>
       <node ref="U5" pin="43"/>
+      <node ref="C4" pin="2"/>
     </net>
     <net code="11" name="Net-(J1-Pad4)">
       <node ref="U2" pin="1"/>
@@ -1064,12 +1068,12 @@
       <node ref="J1" pin="6"/>
     </net>
     <net code="13" name="Net-(D1-Pad2)">
-      <node ref="J1" pin="1"/>
       <node ref="D1" pin="2"/>
+      <node ref="J1" pin="1"/>
     </net>
     <net code="14" name="Net-(D2-Pad2)">
-      <node ref="Q1" pin="3"/>
       <node ref="D2" pin="2"/>
+      <node ref="Q1" pin="3"/>
     </net>
     <net code="15" name="VCC">
       <node ref="U2" pin="5"/>
@@ -1080,10 +1084,10 @@
       <node ref="Q1" pin="1"/>
     </net>
     <net code="17" name="Net-(D1-Pad1)">
-      <node ref="D2" pin="1"/>
       <node ref="D1" pin="1"/>
-      <node ref="R2" pin="2"/>
       <node ref="U3" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="R2" pin="2"/>
     </net>
     <net code="18" name="Net-(U3-Pad4)">
       <node ref="U3" pin="4"/>
@@ -1093,8 +1097,8 @@
       <node ref="SW1" pin="2"/>
     </net>
     <net code="20" name="Net-(BT1-Pad1)">
-      <node ref="SW1" pin="1"/>
       <node ref="BT1" pin="1"/>
+      <node ref="SW1" pin="1"/>
     </net>
     <net code="21" name="Net-(U5-Pad1)">
       <node ref="U5" pin="1"/>
@@ -1139,8 +1143,8 @@
       <node ref="U5" pin="25"/>
     </net>
     <net code="35" name="/LED">
-      <node ref="U5" pin="26"/>
       <node ref="R8" pin="2"/>
+      <node ref="U5" pin="26"/>
     </net>
     <net code="36" name="Net-(U5-Pad27)">
       <node ref="U5" pin="27"/>
@@ -1158,8 +1162,8 @@
       <node ref="U5" pin="30"/>
     </net>
     <net code="41" name="/USB_D-">
-      <node ref="U5" pin="33"/>
       <node ref="J1" pin="2"/>
+      <node ref="U5" pin="33"/>
     </net>
     <net code="42" name="/USB_D+">
       <node ref="U5" pin="34"/>
@@ -1178,10 +1182,11 @@
     <net code="46" name="Net-(U5-Pad4)">
       <node ref="U5" pin="4"/>
     </net>
-    <net code="47" name="Net-(R7-Pad1)">
+    <net code="47" name="/RST">
       <node ref="SW2" pin="1"/>
-      <node ref="U5" pin="40"/>
       <node ref="R7" pin="1"/>
+      <node ref="U5" pin="40"/>
+      <node ref="J2" pin="5"/>
     </net>
     <net code="48" name="Net-(U5-Pad41)">
       <node ref="U5" pin="41"/>
@@ -1218,66 +1223,63 @@
       <node ref="U4" pin="4"/>
     </net>
     <net code="58" name="/RX_LED">
-      <node ref="U5" pin="48"/>
       <node ref="R5" pin="2"/>
+      <node ref="U5" pin="48"/>
     </net>
     <net code="59" name="Net-(D4-Pad1)">
-      <node ref="D4" pin="1"/>
       <node ref="R4" pin="1"/>
+      <node ref="D4" pin="1"/>
     </net>
     <net code="60" name="Net-(D5-Pad1)">
       <node ref="D5" pin="1"/>
       <node ref="R5" pin="1"/>
     </net>
     <net code="61" name="Net-(D6-Pad1)">
-      <node ref="D6" pin="1"/>
       <node ref="R6" pin="1"/>
+      <node ref="D6" pin="1"/>
     </net>
     <net code="62" name="Net-(D7-Pad1)">
-      <node ref="D7" pin="1"/>
       <node ref="R8" pin="1"/>
+      <node ref="D7" pin="1"/>
     </net>
-    <net code="63" name="+3V3">
-      <node ref="J2" pin="1"/>
-    </net>
-    <net code="64" name="Net-(J2-Pad5)">
-      <node ref="J2" pin="5"/>
-    </net>
-    <net code="65" name="Net-(J2-Pad6)">
+    <net code="63" name="Net-(J2-Pad6)">
       <node ref="J2" pin="6"/>
     </net>
-    <net code="66" name="/SWDIO">
-      <node ref="J2" pin="4"/>
+    <net code="64" name="/SWDIO">
       <node ref="U5" pin="46"/>
+      <node ref="J2" pin="4"/>
     </net>
-    <net code="67" name="Net-(JP2-Pad1)">
-      <node ref="JP2" pin="1"/>
+    <net code="65" name="Net-(JP2-Pad1)">
       <node ref="U3" pin="5"/>
+      <node ref="JP2" pin="1"/>
     </net>
-    <net code="68" name="/2V6">
-      <node ref="JP4" pin="2"/>
-      <node ref="D4" pin="2"/>
-      <node ref="L1" pin="1"/>
-      <node ref="U5" pin="44"/>
-      <node ref="D7" pin="2"/>
-      <node ref="C2" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="U5" pin="36"/>
+    <net code="66" name="/2V6">
       <node ref="R7" pin="2"/>
-      <node ref="JP3" pin="2"/>
-      <node ref="U5" pin="17"/>
+      <node ref="L1" pin="1"/>
+      <node ref="D7" pin="2"/>
       <node ref="D6" pin="2"/>
       <node ref="D5" pin="2"/>
+      <node ref="D4" pin="2"/>
+      <node ref="U5" pin="44"/>
+      <node ref="C1" pin="1"/>
       <node ref="JP2" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U5" pin="17"/>
       <node ref="JP1" pin="2"/>
+      <node ref="JP4" pin="2"/>
+      <node ref="U5" pin="36"/>
+      <node ref="JP3" pin="2"/>
     </net>
-    <net code="69" name="Net-(JP1-Pad1)">
+    <net code="67" name="Net-(JP1-Pad1)">
       <node ref="JP1" pin="1"/>
       <node ref="U1" pin="3"/>
     </net>
-    <net code="70" name="Net-(D3-Pad2)">
+    <net code="68" name="Net-(D3-Pad2)">
       <node ref="JP3" pin="1"/>
       <node ref="D3" pin="2"/>
+    </net>
+    <net code="69" name="+3V3">
+      <node ref="J2" pin="1"/>
     </net>
   </nets>
 </export>
