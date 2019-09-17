@@ -6,7 +6,6 @@ sequence: 6
 power_tree: true
 ---
 
-
 <section class="section is-small">
   <div class="container">
     <h2 class="title is-1">Main components</h2>
@@ -53,5 +52,18 @@ power_tree: true
         </tr>
       </tbody>
     </table>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
+    <h2 class="title is-1">Circuit simulation</h2>
+    <p class="subtitle">Simulation of the power management circuit with <a href="https://www.falstad.com/circuit/circuitjs.html">Falstad</a> [File > Import from Text]. </p>
+
+    <a class="button is-primary" href="{{site.github.repository_url}}/tree/master/power">Download code</a>
+
+    {% highlight text %}{%- include_relative power/circuit-falstald.txt -%}{% endhighlight %}
+
+    <img src="{{ site.url }}/images/power/power-management.png" alt="Power management circuit simulation">
   </div>
 </section>
