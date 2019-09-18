@@ -28,7 +28,7 @@ F 6 "5" H -150 3300 50  0001 C CNN "Minimum Order"
 F 7 "TH" H -150 3300 50  0001 C CNN "Package"
 F 8 "TSOP4838" H -150 3300 50  0001 C CNN "Part No."
 F 9 "1.876" H -150 3300 50  0001 C CNN "Unit cost"
-F 10 "RS Components" H -150 3300 50  0001 C CNN "Vendor"
+F 10 "Internal stock" H -150 3300 50  0001 C CNN "Vendor"
 F 11 "https://sg.rs-online.com/web/p/ir-receivers/7085115/?sra=pstk" H -150 3300 50  0001 C CNN "Vendor link"
 F 12 "4" H -100 0   50  0001 C CNN "Stock"
 F 13 "38" H -100 0   50  0001 C CNN "Stock No."
@@ -5806,7 +5806,7 @@ F 7 "TH" H -500 3200 50  0001 C CNN "Package"
 F 8 "SIR-56ST3F " H -500 3200 50  0001 C CNN "Part No."
 F 9 "9" H -500 3200 50  0001 C CNN "Stock"
 F 10 "0.778" H -500 3200 50  0001 C CNN "Unit cost"
-F 11 "RS Components" H -500 3200 50  0001 C CNN "Vendor"
+F 11 "Internal stock" H -500 3200 50  0001 C CNN "Vendor"
 F 12 "https://sg.rs-online.com/web/p/ir-leds/1780575/?sra=pstk" H -500 3200 50  0001 C CNN "Vendor link"
 F 13 "39" H 0   0   50  0001 C CNN "Stock No."
 	1    5000 4700
@@ -6605,6 +6605,9 @@ F 2 "" H 10150 3450 50  0001 C CNN
 F 3 "~" H 10150 3450 50  0001 C CNN
 F 4 "Electronics" H 0   300 50  0001 C CNN "Category"
 F 5 "0805" H 0   200 50  0001 C CNN "Package"
+F 6 "5" H 0   0   50  0001 C CNN "Stock"
+F 7 "31" H 0   0   50  0001 C CNN "Stock No."
+F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 	1    10150 3450
 	0    -1   -1   0   
 $EndComp
@@ -6620,6 +6623,7 @@ F 4 "Connector" H 0   200 50  0001 C CNN "Category"
 F 5 "SMD" H 0   250 50  0001 C CNN "Package"
 F 6 "7" H 0   250 50  0001 C CNN "Stock"
 F 7 "14" H 0   250 50  0001 C CNN "Stock No."
+F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 	1    9950 3700
 	0    1    1    0   
 $EndComp
@@ -6670,7 +6674,7 @@ P 5750 1650
 F 0 "L1" H 5650 1600 50  0000 L CNN
 F 1 "MH2029-300Y" H 5200 1700 50  0000 L CNN
 F 2 "" H 5750 1650 50  0001 C CNN
-F 3 "~" H 5750 1650 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/mh.pdf" H 5750 1650 50  0001 C CNN
 F 4 "Electronics" H 0   -200 50  0001 C CNN "Category"
 	1    5750 1650
 	1    0    0    -1  
@@ -6813,6 +6817,9 @@ F 2 "" H 2600 3250 50  0001 C CNN
 F 3 "~" H 2600 3250 50  0001 C CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
 F 5 "0805" H -100 0   50  0001 C CNN "Package"
+F 6 "5" H 0   0   50  0001 C CNN "Stock"
+F 7 "31" H 0   0   50  0001 C CNN "Stock No."
+F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 	1    2600 3250
 	-1   0    0    1   
 $EndComp
@@ -7202,6 +7209,7 @@ F 4 "Si7021-A20" H -2250 200 50  0001 C CNN "Part No."
 F 5 "Electronics" H -2250 200 50  0001 C CNN "Category"
 F 6 "1" H 0   0   50  0001 C CNN "Stock"
 F 7 "5" H 0   0   50  0001 C CNN "Stock No."
+F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 	1    7100 5150
 	1    0    0    -1  
 $EndComp
@@ -7507,6 +7515,7 @@ F 3 "~" H 2150 6850 50  0001 C CNN
 F 4 "Connector" H 150 150 50  0001 C CNN "Category"
 F 5 "TH" H 150 150 50  0001 C CNN "Package"
 F 6 "Yes" H -200 100 50  0001 C CNN "DNP"
+F 7 "DNP" H 0   0   50  0001 C CNN "Vendor"
 	1    2150 6850
 	1    0    0    -1  
 $EndComp
@@ -7589,6 +7598,7 @@ F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
 F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
 F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 8 "DNP" H 0   0   50  0001 C CNN "Vendor"
 	1    4050 1550
 	1    0    0    -1  
 $EndComp
@@ -7608,6 +7618,7 @@ F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
 F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
 F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 8 "DNP" H 0   0   50  0001 C CNN "Vendor"
 	1    2050 5450
 	1    0    0    -1  
 $EndComp
@@ -7629,6 +7640,7 @@ F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
 F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
 F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 8 "DNP" H 0   0   50  0001 C CNN "Vendor"
 	1    5350 4450
 	1    0    0    -1  
 $EndComp
@@ -7648,6 +7660,7 @@ F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
 F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
 F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 8 "DNP" H 0   0   50  0001 C CNN "Vendor"
 	1    7350 4750
 	1    0    0    -1  
 $EndComp

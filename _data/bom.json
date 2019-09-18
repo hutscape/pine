@@ -1,11 +1,10 @@
 {
   "bom-total-populate": 31, 
   "vendor-names": [
-    "LCSC", 
-    "RS Components"
+    "LCSC"
   ], 
   "bom-uniq": 23, 
-  "vendors": 2, 
+  "vendors": 1, 
   "bom-cost": 9.81, 
   "bom-uniq-populate": 21, 
   "bom-total": 36

@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 September 17, Tuesday 17:56:36</date>
+    <date>2019 September 18, Wednesday 16:25:24</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -32,7 +32,7 @@
         <field name="Stock">4</field>
         <field name="Stock No.">38</field>
         <field name="Unit cost">1.876</field>
-        <field name="Vendor">RS Components</field>
+        <field name="Vendor">Internal stock</field>
         <field name="Vendor link">https://sg.rs-online.com/web/p/ir-receivers/7085115/?sra=pstk</field>
       </fields>
       <libsource lib="Interface_Optical" part="TSOP43xx" description="IR Receiver Modules for Remote Control Systems"/>
@@ -82,7 +82,7 @@
         <field name="Stock">9</field>
         <field name="Stock No.">39</field>
         <field name="Unit cost">0.778</field>
-        <field name="Vendor">RS Components</field>
+        <field name="Vendor">Internal stock</field>
         <field name="Vendor link">https://sg.rs-online.com/web/p/ir-leds/1780575/?sra=pstk</field>
       </fields>
       <libsource lib="LED" part="LD274" description="950nm IR-LED, 5mm"/>
@@ -95,6 +95,9 @@
       <fields>
         <field name="Category">Electronics</field>
         <field name="Package">0805</field>
+        <field name="Stock">5</field>
+        <field name="Stock No.">31</field>
+        <field name="Vendor">Internal stock</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
@@ -108,6 +111,7 @@
         <field name="Package">SMD</field>
         <field name="Stock">7</field>
         <field name="Stock No.">14</field>
+        <field name="Vendor">Internal stock</field>
       </fields>
       <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
       <sheetpath names="/" tstamps="/"/>
@@ -131,7 +135,7 @@
     </comp>
     <comp ref="L1">
       <value>MH2029-300Y</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.bourns.com/docs/Product-Datasheets/mh.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
       </fields>
@@ -209,6 +213,9 @@
       <fields>
         <field name="Category">Electronics</field>
         <field name="Package">0805</field>
+        <field name="Stock">5</field>
+        <field name="Stock No.">31</field>
+        <field name="Vendor">Internal stock</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
@@ -342,6 +349,7 @@
         <field name="Part No.">Si7021-A20</field>
         <field name="Stock">1</field>
         <field name="Stock No.">5</field>
+        <field name="Vendor">Internal stock</field>
       </fields>
       <libsource lib="Sensor_Humidity" part="Si7021-A20" description="I2C Humidity and Temperature Sensor, DFN-6"/>
       <sheetpath names="/" tstamps="/"/>
@@ -482,6 +490,7 @@
         <field name="Category">Connector</field>
         <field name="DNP">Yes</field>
         <field name="Package">TH</field>
+        <field name="Vendor">DNP</field>
       </fields>
       <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -495,6 +504,7 @@
         <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
         <field name="Unit cost">0.00</field>
+        <field name="Vendor">DNP</field>
       </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
@@ -508,6 +518,7 @@
         <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
         <field name="Unit cost">0.00</field>
+        <field name="Vendor">DNP</field>
       </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
@@ -521,6 +532,7 @@
         <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
         <field name="Unit cost">0.00</field>
+        <field name="Vendor">DNP</field>
       </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
@@ -534,6 +546,7 @@
         <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
         <field name="Unit cost">0.00</field>
+        <field name="Vendor">DNP</field>
       </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
       <sheetpath names="/" tstamps="/"/>
