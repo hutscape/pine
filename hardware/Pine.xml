@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 September 18, Wednesday 16:25:24</date>
+    <date>2019 September 18, Wednesday 17:01:10</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -251,10 +251,12 @@
     </comp>
     <comp ref="BT1">
       <value>4.5V</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://docs-apac.rs-online.com/webdocs/1659/0900766b81659aed.pdf</datasheet>
       <fields>
         <field name="Category">Power</field>
         <field name="Package">AA</field>
+        <field name="Vendor">RS Components</field>
+        <field name="Vendor link">https://sg.rs-online.com/web/p/products/1756075/</field>
       </fields>
       <libsource lib="Device" part="Battery" description="Multiple-cell battery"/>
       <sheetpath names="/" tstamps="/"/>

@@ -1,5 +1,5 @@
 "Designator","Value","Q","Package","Category","Stock","Manufacturer","MPN","Datasheet","Vendor","Link","Unit","Total","MOQ","Description","DNP"
-"BT1, ","4.5V","1","AA","Power","","","","","","","","0","","Battery: Multiple-cell battery",""
+"BT1, ","4.5V","1","AA","Power","","","","https://docs-apac.rs-online.com/webdocs/1659/0900766b81659aed.pdf","RS Components","https://sg.rs-online.com/web/p/products/1756075/","","0","","Battery: Multiple-cell battery",""
 "C3, C2, C1, ","100nF","3","0805","Electronics","","Murata Electronics","GCM21BR72A104KA37L","","LCSC","https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GCM21BR72A104KA37L_100nF-104-10-100V-Car-level_C85866.html","0.030","0.09","","C_Small: Unpolarized capacitor, small symbol",""
 "C4, ","1uF","1","0805","Electronics","","Samsung Electro-Mechanics","CL21B105KOFNNNE","","LCSC","https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html","0.028","0.03","","C_Small: Unpolarized capacitor, small symbol",""
 "D1, D2, ","D_Schottky","2","","Electronics","","","","","","","","0","","D_Schottky: Schottky diode",""

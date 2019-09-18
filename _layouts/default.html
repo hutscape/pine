@@ -46,6 +46,12 @@
   {% endif %}
 {% endif %}
 
+{% if site.data.pages.mechanical == true %}
+  {% if page.url == "/mechanical" %}
+    {%- include mechanical.html -%}
+  {% endif %}
+{% endif %}
+
 {% if site.data.pages.references == true %}
   {% if page.url == "/references" %}
     {%- include references.html -%}
