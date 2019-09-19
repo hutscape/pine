@@ -62,7 +62,7 @@ references:
       - name: JTAG/SWD debugging via Black Magic Probe on an STM32 blue pill and blinking a LED using STM32CubeMX, libopencm3, and bare metal C
         url: https://satoshinm.github.io/blog/171223_jtagswdpillblink_jtagswd_debugging_via_black_magic_probe_on_an_stm32_blue_pill_and_blinking_a_led_using_stm32cubemx_libopencm3_and_bare_metal_c.html
 
-  - topic: Power and sleep
+  - topic: Power and battery
     list:
       - name: switch between battery and usb power no microcontroller circuit
         url: https://electronics.stackexchange.com/questions/96059/switch-between-battery-and-usb-power-no-microcontroller-circuit
@@ -70,6 +70,11 @@ references:
         url: https://electronics.stackexchange.com/questions/245087/powering-mcu-from-both-usb-or-battery
       - name: LTC4412
         url: https://www.analog.com/en/products/ltc4412.html#product-overview
+      - name: Measuring battery voltage in Adafruit feather M0
+        url: https://learn.adafruit.com/adafruit-feather-m0-adalogger/power-management#measuring-battery-4-9
+
+  - topic: Sleep
+    list:
       - name: MKR Zero board goes to sleep mode and wake up periodically
         url: https://forum.arduino.cc/index.php?topic=626452.0
       - name: Arduino RTC Library for SAMD21 based boards

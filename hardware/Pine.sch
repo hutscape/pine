@@ -6558,10 +6558,10 @@ Text Label 4150 5350 2    50   ~ 0
 IR_Emitter
 NoConn ~ 7200 5450
 $Comp
-L power:GND #PWR012
+L power:GND #PWR013
 U 1 1 5D652F63
 P 7000 5500
-F 0 "#PWR012" H 7000 5250 50  0001 C CNN
+F 0 "#PWR013" H 7000 5250 50  0001 C CNN
 F 1 "GND" H 7005 5327 50  0000 C CNN
 F 2 "" H 7000 5500 50  0001 C CNN
 F 3 "" H 7000 5500 50  0001 C CNN
@@ -6583,10 +6583,10 @@ Wire Wire Line
 Text Notes 6300 4350 0    79   ~ 16
 Temperature Sensor
 $Comp
-L power:GND #PWR015
+L power:GND #PWR016
 U 1 1 5D77CBEB
 P 10550 2400
-F 0 "#PWR015" H 10550 2150 50  0001 C CNN
+F 0 "#PWR016" H 10550 2150 50  0001 C CNN
 F 1 "GND" H 10555 2227 50  0000 C CNN
 F 2 "" H 10550 2400 50  0001 C CNN
 F 3 "" H 10550 2400 50  0001 C CNN
@@ -6594,10 +6594,10 @@ F 3 "" H 10550 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R7
+L Device:R_Small R9
 U 1 1 5D77E188
 P 10150 3450
-F 0 "R7" V 10250 3400 50  0000 L CNN
+F 0 "R9" V 10250 3400 50  0000 L CNN
 F 1 "10k" V 10050 3400 50  0000 L CNN
 F 2 "" H 10150 3450 50  0001 C CNN
 F 3 "~" H 10150 3450 50  0001 C CNN
@@ -6626,10 +6626,10 @@ F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR014
+L power:GND #PWR015
 U 1 1 5D78151A
 P 9950 3900
-F 0 "#PWR014" H 9950 3650 50  0001 C CNN
+F 0 "#PWR015" H 9950 3650 50  0001 C CNN
 F 1 "GND" H 9955 3727 50  0000 C CNN
 F 2 "" H 9950 3900 50  0001 C CNN
 F 3 "" H 9950 3900 50  0001 C CNN
@@ -6655,10 +6655,10 @@ F 10 "0.028" H 0   0   50  0001 C CNN "Unit cost"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR011
+L power:GND #PWR012
 U 1 1 5D7A4936
 P 6000 1850
-F 0 "#PWR011" H 6000 1600 50  0001 C CNN
+F 0 "#PWR012" H 6000 1600 50  0001 C CNN
 F 1 "GND" H 6000 1900 50  0000 C CNN
 F 2 "" H 6000 1850 50  0001 C CNN
 F 3 "" H 6000 1850 50  0001 C CNN
@@ -6761,10 +6761,8 @@ Text Label 8150 3400 2    50   ~ 0
 IR_Receiver
 Wire Wire Line
 	8350 3200 8350 3400
-Text Label 7400 3400 2    50   ~ 0
+Text Label 7400 3600 2    50   ~ 0
 IR_Emitter
-Wire Wire Line
-	7550 3200 7550 3400
 Wire Wire Line
 	8150 3400 8350 3400
 Text Label 8900 3450 2    50   ~ 0
@@ -6792,10 +6790,10 @@ F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Regulator_Linear:AP2112K-2.6 U3
+L Regulator_Linear:AP2112K-2.6 U2
 U 1 1 5D85FB5D
 P 3450 1650
-F 0 "U3" H 3450 1992 50  0000 C CNN
+F 0 "U2" H 3450 1992 50  0000 C CNN
 F 1 "AP2112K-2.6" H 3450 1901 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3450 1975 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 3450 1750 50  0001 C CNN
@@ -6882,12 +6880,12 @@ Connection ~ 10550 2300
 Wire Wire Line
 	10550 2300 10550 2400
 Wire Wire Line
-	7400 3400 7550 3400
+	7400 3600 7550 3600
 $Comp
-L MCU_Microchip_SAMD:ATSAMD21G18A-AUT U5
+L MCU_Microchip_SAMD:ATSAMD21G18A-AUT U4
 U 1 1 5D778115
 P 8450 2200
-F 0 "U5" V 9300 2150 50  0000 C CNN
+F 0 "U4" V 9300 2150 50  0000 C CNN
 F 1 "ATSAMD21G18A-AUT" V 9300 900 50  0000 C CNN
 F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 7500 450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf" H 8450 3200 50  0001 C CNN
@@ -6916,7 +6914,6 @@ NoConn ~ 7050 3200
 NoConn ~ 7150 3200
 NoConn ~ 7250 3200
 NoConn ~ 7350 3200
-NoConn ~ 7450 3200
 NoConn ~ 7650 3200
 NoConn ~ 7750 3200
 NoConn ~ 7850 3200
@@ -7012,10 +7009,10 @@ Text Label 5750 4450 0    50   ~ 0
 Text Label 2200 5200 0    50   ~ 0
 2V6
 $Comp
-L power:PWR_FLAG #FLG03
+L power:PWR_FLAG #FLG04
 U 1 1 5DAFE5AB
 P 6350 2100
-F 0 "#FLG03" H 6350 2175 50  0001 C CNN
+F 0 "#FLG04" H 6350 2175 50  0001 C CNN
 F 1 "PWR_FLAG" H 6100 2150 50  0000 C CNN
 F 2 "" H 6350 2100 50  0001 C CNN
 F 3 "~" H 6350 2100 50  0001 C CNN
@@ -7140,10 +7137,10 @@ Wire Wire Line
 	2700 1550 2900 1550
 Connection ~ 2900 1550
 $Comp
-L power:PWR_FLAG #FLG02
+L power:PWR_FLAG #FLG03
 U 1 1 5DB1A789
 P 2900 1550
-F 0 "#FLG02" H 2900 1625 50  0001 C CNN
+F 0 "#FLG03" H 2900 1625 50  0001 C CNN
 F 1 "PWR_FLAG" H 2900 1723 50  0000 C CNN
 F 2 "" H 2900 1550 50  0001 C CNN
 F 3 "~" H 2900 1550 50  0001 C CNN
@@ -7158,10 +7155,10 @@ Connection ~ 5750 2100
 Wire Wire Line
 	5750 2100 6350 2100
 $Comp
-L Sensor_Humidity:Si7021-A20 U4
+L Sensor_Humidity:Si7021-A20 U3
 U 1 1 5D78D887
 P 7100 5150
-F 0 "U4" H 7544 5196 50  0000 L CNN
+F 0 "U3" H 7544 5196 50  0000 L CNN
 F 1 "Si7021-A20" H 7544 5105 50  0000 L CNN
 F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 7100 4750 50  0001 C CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/Si7021-A20.pdf" H 6900 5450 50  0001 C CNN
@@ -7200,8 +7197,6 @@ Wire Wire Line
 Wire Wire Line
 	6950 1050 6950 1200
 Wire Notes Line
-	6200 4150 6200 6100
-Wire Notes Line
 	8050 4150 8050 6100
 Text Notes 8100 4350 0    79   ~ 16
 LEDs
@@ -7212,10 +7207,10 @@ Wire Notes Line
 Text Label 8450 5800 2    50   ~ 0
 TX_LED
 $Comp
-L Device:R_Small R4
+L Device:R_Small R6
 U 1 1 5D80AD25
 P 8450 5100
-F 0 "R4" H 8500 5100 50  0000 L CNN
+F 0 "R6" H 8500 5100 50  0000 L CNN
 F 1 "470R" H 8200 5100 50  0000 L CNN
 F 2 "" H 8450 5100 50  0001 C CNN
 F 3 "~" H 8450 5100 50  0001 C CNN
@@ -7273,10 +7268,10 @@ F 11 "Yes" H 0   0   50  0001 C CNN "DNP"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R5
+L Device:R_Small R7
 U 1 1 5D813FF5
 P 9050 5100
-F 0 "R5" H 9100 5100 50  0000 L CNN
+F 0 "R7" H 9100 5100 50  0000 L CNN
 F 1 "470R" H 8800 5100 50  0000 L CNN
 F 2 "" H 9050 5100 50  0001 C CNN
 F 3 "~" H 9050 5100 50  0001 C CNN
@@ -7314,10 +7309,10 @@ F 10 "0.058" H 0   0   50  0001 C CNN "Unit cost"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R6
+L Device:R_Small R8
 U 1 1 5D81D0F9
 P 9600 5100
-F 0 "R6" H 9650 5100 50  0000 L CNN
+F 0 "R8" H 9650 5100 50  0000 L CNN
 F 1 "470R" H 9350 5100 50  0000 L CNN
 F 2 "" H 9600 5100 50  0001 C CNN
 F 3 "~" H 9600 5100 50  0001 C CNN
@@ -7332,10 +7327,10 @@ F 10 "0.0049" H 0   0   50  0001 C CNN "Unit cost"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR013
+L power:GND #PWR014
 U 1 1 5D822E57
 P 9600 5600
-F 0 "#PWR013" H 9600 5350 50  0001 C CNN
+F 0 "#PWR014" H 9600 5350 50  0001 C CNN
 F 1 "GND" H 9600 5450 50  0000 C CNN
 F 2 "" H 9600 5600 50  0001 C CNN
 F 3 "" H 9600 5600 50  0001 C CNN
@@ -7369,10 +7364,10 @@ F 10 "0.058" H 0   0   50  0001 C CNN "Unit cost"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R8
+L Device:R_Small R10
 U 1 1 5D839392
 P 10200 5100
-F 0 "R8" H 10250 5100 50  0000 L CNN
+F 0 "R10" H 10250 5100 50  0000 L CNN
 F 1 "470R" H 9950 5100 50  0000 L CNN
 F 2 "" H 10200 5100 50  0001 C CNN
 F 3 "~" H 10200 5100 50  0001 C CNN
@@ -7423,10 +7418,10 @@ solder after \ntesting power \nmanagement circuit\n
 Wire Wire Line
 	7100 4750 7200 4750
 $Comp
-L power:PWR_FLAG #FLG05
+L power:PWR_FLAG #FLG06
 U 1 1 5D80B2E8
 P 7100 4750
-F 0 "#FLG05" H 7100 4825 50  0001 C CNN
+F 0 "#FLG06" H 7100 4825 50  0001 C CNN
 F 1 "PWR_FLAG" V 7100 4877 50  0000 L CNN
 F 2 "" H 7100 4750 50  0001 C CNN
 F 3 "~" H 7100 4750 50  0001 C CNN
@@ -7447,10 +7442,10 @@ F 3 "~" H 1800 5750 50  0001 C CNN
 $EndComp
 Connection ~ 1800 5450
 $Comp
-L power:PWR_FLAG #FLG04
+L power:PWR_FLAG #FLG05
 U 1 1 5D8154F9
 P 6400 2450
-F 0 "#FLG04" H 6400 2525 50  0001 C CNN
+F 0 "#FLG05" H 6400 2525 50  0001 C CNN
 F 1 "PWR_FLAG" H 6400 2623 50  0000 C CNN
 F 2 "" H 6400 2450 50  0001 C CNN
 F 3 "~" H 6400 2450 50  0001 C CNN
@@ -7526,8 +7521,6 @@ F 3 "" H 2900 7000 50  0001 C CNN
 	1    2900 7000
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	1050 7350 3700 7350
 Wire Notes Line
 	3700 4150 3700 7350
 Wire Notes Line
@@ -7645,10 +7638,10 @@ RST
 Wire Wire Line
 	2350 7050 2500 7050
 $Comp
-L power:PWR_FLAG #FLG0101
+L power:PWR_FLAG #FLG02
 U 1 1 5D845F3C
 P 2500 6550
-F 0 "#FLG0101" H 2500 6625 50  0001 C CNN
+F 0 "#FLG02" H 2500 6625 50  0001 C CNN
 F 1 "PWR_FLAG" V 2500 6678 50  0000 L CNN
 F 2 "" H 2500 6550 50  0001 C CNN
 F 3 "~" H 2500 6550 50  0001 C CNN
@@ -7698,4 +7691,78 @@ Text Notes 8850 5250 0    50   ~ 0
 DNP
 Text Notes 8150 6050 0    43   ~ 0
 optional to populate TX / RX LEDs
+Text Label 7400 3400 2    50   ~ 0
+Batt
+Wire Wire Line
+	7450 3200 7450 3400
+Wire Wire Line
+	7450 3400 7400 3400
+Wire Wire Line
+	7550 3200 7550 3600
+Text Label 5400 6700 2    50   ~ 0
+Batt
+Text Notes 3750 6300 0    79   ~ 16
+Measure battery voltage
+$Comp
+L Device:R_Small R4
+U 1 1 5D85783A
+P 5700 6500
+F 0 "R4" H 5759 6546 50  0000 L CNN
+F 1 "100k" H 5759 6455 50  0000 L CNN
+F 2 "" H 5700 6500 50  0001 C CNN
+F 3 "~" H 5700 6500 50  0001 C CNN
+F 4 "LCSC" H 0   0   50  0001 C CNN "Vendor"
+F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 0   0   50  0001 C CNN "Vendor link"
+F 6 "Electronics" H 0   0   50  0001 C CNN "Category"
+	1    5700 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5D858007
+P 5700 6850
+F 0 "R5" H 5759 6896 50  0000 L CNN
+F 1 "100k" H 5759 6805 50  0000 L CNN
+F 2 "" H 5700 6850 50  0001 C CNN
+F 3 "~" H 5700 6850 50  0001 C CNN
+F 4 "LCSC" H 0   0   50  0001 C CNN "Vendor"
+F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 0   0   50  0001 C CNN "Vendor link"
+F 6 "Electronics" H 0   0   50  0001 C CNN "Category"
+	1    5700 6850
+	1    0    0    -1  
+$EndComp
+Text Label 5700 6250 0    50   ~ 0
+2V6
+Wire Wire Line
+	5700 6250 5700 6400
+Wire Wire Line
+	5700 6600 5700 6700
+Wire Wire Line
+	5400 6700 5700 6700
+Connection ~ 5700 6700
+Wire Wire Line
+	5700 6700 5700 6750
+$Comp
+L power:GND #PWR011
+U 1 1 5D865CC1
+P 5700 7000
+F 0 "#PWR011" H 5700 6750 50  0001 C CNN
+F 1 "GND" H 5705 6827 50  0000 C CNN
+F 2 "" H 5700 7000 50  0001 C CNN
+F 3 "" H 5700 7000 50  0001 C CNN
+	1    5700 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 6950 5700 7000
+Wire Notes Line
+	3700 6350 5250 6350
+Wire Notes Line
+	5250 6350 5250 6100
+Wire Notes Line
+	6200 4150 6200 7350
+Wire Notes Line
+	1050 7350 6200 7350
+Text Notes 3850 7050 0    50   ~ 0
+Read the battery voltage\nfrom this analog pin Batt.\n\nMeasured battery voltage\n= analogRead(Batt) * 2 * 2.6 / 1024\n\n
 $EndSCHEMATC
