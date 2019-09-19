@@ -60,13 +60,11 @@ power_tree: true
     <h2 class="title is-1">Circuit simulation</h2>
     <p class="subtitle">Simulation of the power management circuit with <a href="https://www.falstad.com/circuit/circuitjs.html">Falstad</a> [File > Import from Text]. </p>
 
-    <iframe width="560" height="315" style="height:315px !important" src="https://www.youtube-nocookie.com/embed/VLRCR1IatUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
     <br>
     <a class="button is-primary" href="{{site.github.repository_url}}/tree/master/power">Download code</a>
 
     {% highlight text %}{%- include_relative power/circuit-falstald.txt -%}{% endhighlight %}
 
-    <img src="{{ site.url }}/images/power/power-management.png" alt="Power management circuit simulation">
+    <img src="{{ site.url }}/images/power/power-management.gif" alt="Power management circuit simulation">
   </div>
 </section>

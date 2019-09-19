@@ -48,8 +48,6 @@ F 3 "" H 1400 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1400 5450 1400 5500
-Wire Wire Line
-	1600 5450 1600 5850
 Text Notes 1100 4350 0    79   ~ 16
 IR Receiver
 $Bitmap
@@ -6668,18 +6666,6 @@ F 3 "" H 6000 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L L1
-U 1 1 5D7A93EB
-P 5750 1650
-F 0 "L1" H 5650 1600 50  0000 L CNN
-F 1 "MH2029-300Y" H 5200 1700 50  0000 L CNN
-F 2 "" H 5750 1650 50  0001 C CNN
-F 3 "https://www.bourns.com/docs/Product-Datasheets/mh.pdf" H 5750 1650 50  0001 C CNN
-F 4 "Electronics" H 0   -200 50  0001 C CNN "Category"
-	1    5750 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:USB_B_Micro J1
 U 1 1 5D7EA3D5
 P 1350 1750
@@ -6771,24 +6757,6 @@ F 5 "BSS83P" H -100 0   50  0001 C CNN "Part No."
 	1    2250 2850
 	0    1    -1   0   
 $EndComp
-$Comp
-L 74xGxx:74AUC2G04 U2
-U 1 1 5D8076D2
-P 1900 2350
-F 0 "U2" V 1700 2500 50  0000 L CNN
-F 1 "SN74LVC1G04" V 1800 2500 50  0000 L CNN
-F 2 "" H 1900 2350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 1900 2350 50  0001 C CNN
-F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
-F 5 "SN74LVC1G04DBVR" H -100 0   50  0001 C CNN "Part No."
-F 6 "Texas Instruments" H -100 0   50  0001 C CNN "Manufacturer"
-F 7 "SOT-23-5" H -100 0   50  0001 C CNN "Package"
-F 8 "LCSC" H -100 0   50  0001 C CNN "Vendor"
-F 9 "https://lcsc.com/product-detail/74-Series_TI_SN74LVC1G04DBVR_SN74LVC1G04DBVR_C7827.html" H -100 0   50  0001 C CNN "Vendor link"
-F 10 "0.095" H -100 0   50  0001 C CNN "Unit cost"
-	1    1900 2350
-	0    1    1    0   
-$EndComp
 Text Label 8150 3400 2    50   ~ 0
 IR_Receiver
 Wire Wire Line
@@ -6836,10 +6804,6 @@ F 5 "AP2112K-2.6" H -100 0   50  0001 C CNN "Part No."
 	1    3450 1650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1650 1950 1900 1950
-Wire Wire Line
-	1900 1950 1900 2050
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5D7FCA7A
@@ -6891,8 +6855,6 @@ Wire Wire Line
 Wire Wire Line
 	1350 2750 2050 2750
 Connection ~ 2050 2750
-Wire Wire Line
-	1900 2600 1900 3050
 Wire Wire Line
 	1900 3050 2250 3050
 Connection ~ 2250 3050
@@ -7039,10 +7001,8 @@ Wire Wire Line
 	2200 3450 1750 3450
 Text Label 5200 1850 0    50   ~ 0
 2V6
-Text Label 5750 1300 0    50   ~ 0
+Text Label 5750 1650 0    50   ~ 0
 2V6
-Wire Wire Line
-	5750 1500 5750 1300
 Text Label 10450 3450 0    50   ~ 0
 2V6
 Text Label 7700 4750 0    50   ~ 0
@@ -7191,11 +7151,9 @@ F 3 "~" H 2900 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 1550 2100 1550
+	1650 1550 1900 1550
 Wire Wire Line
 	5650 2100 5750 2100
-Wire Wire Line
-	5750 1800 5750 2100
 Connection ~ 5750 2100
 Wire Wire Line
 	5750 2100 6350 2100
@@ -7628,8 +7586,6 @@ Wire Wire Line
 	1800 5450 1900 5450
 Wire Wire Line
 	2200 5450 2200 5200
-Wire Wire Line
-	1800 5750 1800 5450
 $Comp
 L Jumper:SolderJumper_2_Open JP3
 U 1 1 5D854735
@@ -7708,4 +7664,16 @@ Wire Notes Line
 	10650 950  10650 6100
 Text Notes 1650 7000 0    28   Italic 0
 DNP: Pogopins\nwill be used for\nprogramming\nthe bootloader
+NoConn ~ 1650 1950
+Wire Wire Line
+	1900 1550 1900 3050
+Connection ~ 1900 1550
+Wire Wire Line
+	1900 1550 2100 1550
+Wire Wire Line
+	5750 1650 5750 2100
+Wire Wire Line
+	1600 5450 1600 5850
+Wire Wire Line
+	1800 5450 1800 5750
 $EndSCHEMATC
