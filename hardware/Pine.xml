@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 September 19, Thursday 14:03:53</date>
+    <date>2019 September 19, Thursday 14:54:18</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -20,7 +20,7 @@
   </design>
   <components>
     <comp ref="U1">
-      <value>TSOP4838</value>
+      <value>IR Receiver</value>
       <footprint>OptoDevice:Vishay_MOLD-3Pin</footprint>
       <datasheet>http://www.vishay.com/docs/82460/tsop45.pdf</datasheet>
       <fields>
@@ -40,13 +40,18 @@
       <tstamp>5D38286F</tstamp>
     </comp>
     <comp ref="Q2">
-      <value>2N2222</value>
+      <value>NPN Transistor</value>
       <footprint>Package_TO_SOT_THT:TO-39-3</footprint>
-      <datasheet>http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-BC817-25LT3G_C191221.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">ON Semiconductor</field>
-        <field name="Part No.">2N2222</field>
+        <field name="Minimum Order">5</field>
+        <field name="Package">SOT-23</field>
+        <field name="Part No.">BC817-25LT3G</field>
+        <field name="Unit cost">0.021</field>
+        <field name="Vendor">LCSC</field>
+        <field name="Vendor link">https://lcsc.com/product-detail/Transistors-NPN-PNP_ON-Semicon_BC817-25LT3G_ON-Semicon-ON-BC817-25LT3G_C191221.html</field>
       </fields>
       <libsource lib="Transistor_BJT" part="2N2219" description="800mA Ic, 50V Vce, NPN Transistor, TO-39"/>
       <sheetpath names="/" tstamps="/"/>
@@ -55,10 +60,11 @@
     <comp ref="R3">
       <value>220R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1811231531_Prosperity-Dielectrics-FNF05JT-220_C335230.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">Prosperity Dielectrics</field>
+        <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">FNF05JT-220</field>
         <field name="Unit cost">0.027</field>
@@ -104,7 +110,7 @@
       <tstamp>5D77E188</tstamp>
     </comp>
     <comp ref="SW2">
-      <value>SW_Push</value>
+      <value>Push button</value>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Connector</field>
@@ -119,10 +125,11 @@
     </comp>
     <comp ref="C4">
       <value>1uF</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">CL21B105KOFNNNE</field>
         <field name="Unit cost">0.028</field>
@@ -134,11 +141,12 @@
       <tstamp>5D7A2BCE</tstamp>
     </comp>
     <comp ref="J1">
-      <value>USB_B_Micro</value>
-      <datasheet>~</datasheet>
+      <value>USB Micro type-B</value>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Jing-Extension-of-the-Electronic-Co-LCSC-MICRO-USB-5S-B-Type-horns-High-temperature_C10418.pdf</datasheet>
       <fields>
         <field name="Category">Connector</field>
         <field name="Manufacturer">Jing Extension of the Electronic Co.</field>
+        <field name="Minimum Order">5</field>
         <field name="Package">SMD</field>
         <field name="Part No.">C10418</field>
         <field name="Unit cost">0.079</field>
@@ -150,32 +158,52 @@
       <tstamp>5D7EA3D5</tstamp>
     </comp>
     <comp ref="D1">
-      <value>D_Schottky</value>
-      <datasheet>~</datasheet>
+      <value>Schottky diode</value>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="Manufacturer">ON Semi</field>
+        <field name="Minimum Order">5</field>
+        <field name="Package">SOD-123F </field>
+        <field name="Part No.">MBR230LSFT1G</field>
+        <field name="Unit cost">0.087</field>
+        <field name="Vendor">LCSC</field>
+        <field name="Vendor link">https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_ON-Semicon_MBR230LSFT1G_ON-Semicon-ON-MBR230LSFT1G_C126673.html</field>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D7EC8A5</tstamp>
     </comp>
     <comp ref="D2">
-      <value>D_Schottky</value>
-      <datasheet>~</datasheet>
+      <value>Schottky diode</value>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="Manufacturer">ON Semi</field>
+        <field name="Minimum Order">5</field>
+        <field name="Package">SOD-123F </field>
+        <field name="Part No.">MBR230LSFT1G</field>
+        <field name="Unit cost">0.087</field>
+        <field name="Vendor">LCSC</field>
+        <field name="Vendor link">https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_ON-Semicon_MBR230LSFT1G_ON-Semicon-ON-MBR230LSFT1G_C126673.html</field>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D7EECB2</tstamp>
     </comp>
     <comp ref="Q1">
-      <value>BSS83P</value>
+      <value>p-channel MOSFET</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>http://www.farnell.com/datasheets/1835997.pdf</datasheet>
+      <datasheet>https://docs-apac.rs-online.com/webdocs/0f74/0900766b80f74f2c.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="Part No.">BSS83P</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Minimum Order">20</field>
+        <field name="Package">SOT-23</field>
+        <field name="Part No.">BSH203,215 </field>
+        <field name="Unit cost">0.312</field>
+        <field name="Vendor">RS Components</field>
+        <field name="Vendor link">https://sg.rs-online.com/web/p/mosfets/7258366/</field>
       </fields>
       <libsource lib="Transistor_FET" part="BSS83P" description="-0.33A Id, -60V Vds, P-Channel MOSFET, SOT-23-3"/>
       <sheetpath names="/" tstamps="/"/>
@@ -196,23 +224,30 @@
       <tstamp>5D85EFAF</tstamp>
     </comp>
     <comp ref="U2">
-      <value>AP2112K-2.6</value>
+      <value>LDO</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
-      <datasheet>https://www.diodes.com/assets/Datasheets/AP2112.pdf</datasheet>
+      <datasheet>https://docs-apac.rs-online.com/webdocs/151f/0900766b8151fea1.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="Part No.">AP2112K-2.6</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Minimum Order">5</field>
+        <field name="Package">SOT-23</field>
+        <field name="Part No.">LD3985M28R</field>
+        <field name="Unit cost">0.316</field>
+        <field name="Vendor">RS Components</field>
+        <field name="Vendor link">https://sg.rs-online.com/web/p/low-dropout-voltage-regulators/6868792/</field>
       </fields>
       <libsource lib="Regulator_Linear" part="AP2112K-2.6" description="600mA low dropout linear regulator, with enable pin, 3.1V-6V input voltage range, 2.6V fixed positive output, SOT-23-5 package"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D85FB5D</tstamp>
     </comp>
     <comp ref="SW1">
-      <value>DIP SPST</value>
-      <datasheet>~</datasheet>
+      <value>DIP switch SPST</value>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/XKB-DSIC01LS-P_C319044.pdf</datasheet>
       <fields>
         <field name="Category">Connector</field>
         <field name="Manufacturer">XKB Enterprise</field>
+        <field name="Minimum Order">1</field>
         <field name="Package">SMD</field>
         <field name="Part No.">DSIC01LS-P</field>
         <field name="Unit cost">0.48</field>
@@ -224,11 +259,15 @@
       <tstamp>5D7FCA7A</tstamp>
     </comp>
     <comp ref="BT1">
-      <value>4.5V</value>
+      <value>3AA batteries: 4.5V</value>
       <datasheet>https://docs-apac.rs-online.com/webdocs/1659/0900766b81659aed.pdf</datasheet>
       <fields>
         <field name="Category">Power</field>
+        <field name="Manufacturer">Takachi Electric Industrial</field>
+        <field name="Minimum Order">5</field>
         <field name="Package">AA</field>
+        <field name="Part No.">SN3-3PC</field>
+        <field name="Unit cost">2.484</field>
         <field name="Vendor">RS Components</field>
         <field name="Vendor link">https://sg.rs-online.com/web/p/products/1756075/</field>
       </fields>
@@ -237,11 +276,13 @@
       <tstamp>5D7FA86F</tstamp>
     </comp>
     <comp ref="U4">
-      <value>ATSAMD21G18A-AUT</value>
+      <value>MCU ATSAMD21G18A-AUT</value>
       <footprint>Package_QFP:TQFP-48_7x7mm_P0.5mm</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="Manufacturer">Microchip Tech</field>
+        <field name="Minimum Order">1</field>
         <field name="Package">TQFN-48</field>
         <field name="Part No.">ATSAMD21G18A-AUT</field>
         <field name="Unit cost">6.05</field>
@@ -254,10 +295,11 @@
     </comp>
     <comp ref="R2">
       <value>100k</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">RALEC</field>
+        <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">RTT051003BTP</field>
         <field name="Unit cost">0.042</field>
@@ -270,10 +312,11 @@
     </comp>
     <comp ref="C3">
       <value>100nF</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">Murata Electronics</field>
+        <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">GCM21BR72A104KA37L</field>
         <field name="Unit cost">0.030</field>
@@ -286,10 +329,11 @@
     </comp>
     <comp ref="C2">
       <value>100nF</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">Murata Electronics</field>
+        <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">GCM21BR72A104KA37L</field>
         <field name="Unit cost">0.030</field>
@@ -302,10 +346,11 @@
     </comp>
     <comp ref="C1">
       <value>100nF</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">Murata Electronics</field>
+        <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">GCM21BR72A104KA37L</field>
         <field name="Unit cost">0.030</field>
@@ -317,11 +362,12 @@
       <tstamp>5DB59128</tstamp>
     </comp>
     <comp ref="U3">
-      <value>Si7021-A20</value>
+      <value>Temperature sensor</value>
       <footprint>Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm</footprint>
       <datasheet>https://www.silabs.com/documents/public/data-sheets/Si7021-A20.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="Package">DFN</field>
         <field name="Part No.">Si7021-A20</field>
         <field name="Stock">1</field>
         <field name="Stock No.">5</field>
@@ -333,11 +379,12 @@
     </comp>
     <comp ref="R6">
       <value>470R</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="DNP">Yes</field>
         <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
         <field name="Unit cost">0.0049</field>
@@ -350,11 +397,12 @@
     </comp>
     <comp ref="D4">
       <value>yellow</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="DNP">Yes</field>
         <field name="Manufacturer">Everlight Elec</field>
+        <field name="Minimum Order">10</field>
         <field name="Package">0805</field>
         <field name="Part No.">17-215UYC/S530-A3/TR8</field>
         <field name="Unit cost">0.058</field>
@@ -367,11 +415,12 @@
     </comp>
     <comp ref="D5">
       <value>yellow</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="DNP">Yes</field>
         <field name="Manufacturer">Everlight Elec</field>
+        <field name="Minimum Order">10</field>
         <field name="Package">0805</field>
         <field name="Part No.">17-215UYC/S530-A3/TR8</field>
         <field name="Unit cost">0.058</field>
@@ -384,11 +433,12 @@
     </comp>
     <comp ref="R7">
       <value>470R</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="DNP">Yes</field>
         <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
         <field name="Unit cost">0.0049</field>
@@ -401,10 +451,11 @@
     </comp>
     <comp ref="D6">
       <value>yellow</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">Everlight Elec</field>
+        <field name="Minimum Order">10</field>
         <field name="Package">0805</field>
         <field name="Part No.">17-215UYC/S530-A3/TR8</field>
         <field name="Unit cost">0.058</field>
@@ -417,10 +468,11 @@
     </comp>
     <comp ref="R8">
       <value>470R</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
         <field name="Unit cost">0.0049</field>
@@ -433,10 +485,11 @@
     </comp>
     <comp ref="D7">
       <value>yellow</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">Everlight Elec</field>
+        <field name="Minimum Order">10</field>
         <field name="Package">0805</field>
         <field name="Part No.">17-215UYC/S530-A3/TR8</field>
         <field name="Unit cost">0.058</field>
@@ -449,10 +502,11 @@
     </comp>
     <comp ref="R10">
       <value>470R</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
         <field name="Unit cost">0.0049</field>
@@ -464,7 +518,7 @@
       <tstamp>5D839392</tstamp>
     </comp>
     <comp ref="J2">
-      <value>Conn_01x06_Male</value>
+      <value>01x06 Male conn</value>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Connector</field>
@@ -477,13 +531,12 @@
       <tstamp>5D7FC57C</tstamp>
     </comp>
     <comp ref="JP2">
-      <value>SolderJumper_2_Open</value>
+      <value>Open solder jumper</value>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
-        <field name="Unit cost">0.00</field>
         <field name="Vendor">DNP</field>
       </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
@@ -491,13 +544,12 @@
       <tstamp>5D80DB41</tstamp>
     </comp>
     <comp ref="JP1">
-      <value>SolderJumper_2_Open</value>
+      <value>Open solder jumper</value>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
-        <field name="Unit cost">0.00</field>
         <field name="Vendor">DNP</field>
       </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
@@ -505,13 +557,12 @@
       <tstamp>5D83509E</tstamp>
     </comp>
     <comp ref="JP3">
-      <value>SolderJumper_2_Open</value>
+      <value>Open solder jumper</value>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
-        <field name="Unit cost">0.00</field>
         <field name="Vendor">DNP</field>
       </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
@@ -519,13 +570,12 @@
       <tstamp>5D854735</tstamp>
     </comp>
     <comp ref="JP4">
-      <value>SolderJumper_2_Open</value>
+      <value>Open solder jumper</value>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="DNP">Yes</field>
         <field name="Package">Solder</field>
-        <field name="Unit cost">0.00</field>
         <field name="Vendor">DNP</field>
       </fields>
       <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
@@ -534,9 +584,14 @@
     </comp>
     <comp ref="R4">
       <value>100k</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">Yes</field>
+        <field name="Manufacturer">RALEC</field>
+        <field name="Minimum Order">20</field>
+        <field name="Package">0805</field>
+        <field name="Part No.">RTT051003BTP</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html</field>
       </fields>
@@ -546,9 +601,14 @@
     </comp>
     <comp ref="R5">
       <value>100k</value>
-      <datasheet>~</datasheet>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">Yes</field>
+        <field name="Manufacturer">RALEC</field>
+        <field name="Minimum Order">20</field>
+        <field name="Package">0805</field>
+        <field name="Part No.">RTT051003BTP</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html</field>
       </fields>
@@ -1214,7 +1274,7 @@
       <node ref="U2" pin="5"/>
       <node ref="JP2" pin="1"/>
     </net>
-    <net code="64" name="/2V6">
+    <net code="64" name="/2V8">
       <node ref="R9" pin="2"/>
       <node ref="U4" pin="17"/>
       <node ref="D6" pin="2"/>
@@ -1225,7 +1285,6 @@
       <node ref="JP2" pin="2"/>
       <node ref="JP1" pin="2"/>
       <node ref="JP3" pin="2"/>
-      <node ref="R4" pin="1"/>
       <node ref="JP4" pin="2"/>
       <node ref="U4" pin="36"/>
       <node ref="C1" pin="1"/>
@@ -1243,6 +1302,9 @@
     </net>
     <net code="67" name="+3V3">
       <node ref="J2" pin="1"/>
+    </net>
+    <net code="68" name="/2V6">
+      <node ref="R4" pin="1"/>
     </net>
   </nets>
 </export>

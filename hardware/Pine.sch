@@ -19,7 +19,7 @@ L Interface_Optical:TSOP43xx U1
 U 1 1 5D38286F
 P 1600 5050
 F 0 "U1" V 1200 4650 50  0000 L CNN
-F 1 "TSOP4838" V 1100 4900 50  0000 L CNN
+F 1 "IR Receiver" V 1100 4850 50  0000 L CNN
 F 2 "OptoDevice:Vishay_MOLD-3Pin" H 1550 4675 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/82460/tsop45.pdf" H 2250 5350 50  0001 C CNN
 F 4 "Electronics" H -150 3300 50  0001 C CNN "Category"
@@ -5745,12 +5745,17 @@ L Transistor_BJT:2N2219 Q2
 U 1 1 5D3886A5
 P 4900 5350
 F 0 "Q2" H 4700 5450 50  0000 L CNN
-F 1 "2N2222" H 5100 5350 50  0000 L CNN
+F 1 "NPN Transistor" H 5100 5350 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-39-3" H 5100 5275 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 4900 5350 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-BC817-25LT3G_C191221.pdf" H 4900 5350 50  0001 L CNN
 F 4 "Electronics" H -500 3200 50  0001 C CNN "Category"
 F 5 "ON Semiconductor" H -500 3200 50  0001 C CNN "Manufacturer"
-F 6 "2N2222" H -500 3200 50  0001 C CNN "Part No."
+F 6 "BC817-25LT3G" H -500 3200 50  0001 C CNN "Part No."
+F 7 "LCSC" H 0   0   50  0001 C CNN "Vendor"
+F 8 "https://lcsc.com/product-detail/Transistors-NPN-PNP_ON-Semicon_BC817-25LT3G_ON-Semicon-ON-BC817-25LT3G_C191221.html" H 0   0   50  0001 C CNN "Vendor link"
+F 9 "5" H 0   0   50  0001 C CNN "Minimum Order"
+F 10 "0.021" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "SOT-23" H 0   0   50  0001 C CNN "Package"
 	1    4900 5350
 	1    0    0    -1  
 $EndComp
@@ -5772,7 +5777,7 @@ P 4350 5350
 F 0 "R3" V 4250 5350 50  0000 C CNN
 F 1 "220R" V 4450 5350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4350 5350 50  0001 C CNN
-F 3 "~" H 4350 5350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811231531_Prosperity-Dielectrics-FNF05JT-220_C335230.pdf" H 4350 5350 50  0001 C CNN
 F 4 "Electronics" H -500 3200 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Prosperity Dielectrics" H 0   0   50  0001 C CNN "Manufacturer"
@@ -5780,6 +5785,7 @@ F 7 "FNF05JT-220" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Others_Prosperity-Dielectrics-FNF05JT-220_C335230.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.027" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "20" H 0   0   50  0001 C CNN "Minimum Order"
 	1    4350 5350
 	0    1    1    0   
 $EndComp
@@ -6614,7 +6620,7 @@ L Switch:SW_Push SW2
 U 1 1 5D77FC5D
 P 9950 3700
 F 0 "SW2" V 9950 3850 50  0000 L CNN
-F 1 "SW_Push" V 10050 3850 50  0000 L CNN
+F 1 "Push button" V 10050 3850 50  0000 L CNN
 F 2 "" H 9950 3900 50  0001 C CNN
 F 3 "~" H 9950 3900 50  0001 C CNN
 F 4 "Connector" H 0   200 50  0001 C CNN "Category"
@@ -6643,7 +6649,7 @@ P 6300 1850
 F 0 "C4" V 6350 1750 50  0000 C CNN
 F 1 "1uF" V 6350 1950 50  0000 C CNN
 F 2 "" H 6300 1850 50  0001 C CNN
-F 3 "~" H 6300 1850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf" H 6300 1850 50  0001 C CNN
 F 4 "Electronics" H 0   100 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "Manufacturer"
@@ -6651,6 +6657,7 @@ F 7 "CL21B105KOFNNNE" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.028" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "20" H 0   0   50  0001 C CNN "Minimum Order"
 	1    6300 1850
 	0    -1   -1   0   
 $EndComp
@@ -6669,10 +6676,10 @@ $Comp
 L Connector:USB_B_Micro J1
 U 1 1 5D7EA3D5
 P 1350 1750
-F 0 "J1" H 1150 2200 50  0000 C CNN
-F 1 "USB_B_Micro" H 1350 2100 50  0000 C CNN
+F 0 "J1" H 1200 2150 50  0000 C CNN
+F 1 "USB Micro type-B" H 1500 2250 50  0000 C CNN
 F 2 "" H 1500 1700 50  0001 C CNN
-F 3 "~" H 1500 1700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Jing-Extension-of-the-Electronic-Co-LCSC-MICRO-USB-5S-B-Type-horns-High-temperature_C10418.pdf" H 1500 1700 50  0001 C CNN
 F 4 "Connector" H -100 0   50  0001 C CNN "Category"
 F 5 "SMD" H -100 0   50  0001 C CNN "Package"
 F 6 "Jing Extension of the Electronic Co." H -100 0   50  0001 C CNN "Manufacturer"
@@ -6680,6 +6687,7 @@ F 7 "C10418" H -100 0   50  0001 C CNN "Part No."
 F 8 "LCSC" H -100 0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-Jing-Extension-of-the-Electronic-Co-MICRO-USB-5S-B-Type-horns-High-temperature_C10418.html" H -100 0   50  0001 C CNN "Vendor link"
 F 10 "0.079" H -100 0   50  0001 C CNN "Unit cost"
+F 11 "5" H 0   0   50  0001 C CNN "Minimum Order"
 	1    1350 1750
 	1    0    0    -1  
 $EndComp
@@ -6688,10 +6696,17 @@ L Device:D_Schottky D1
 U 1 1 5D7EC8A5
 P 2250 1550
 F 0 "D1" H 2250 1334 50  0000 C CNN
-F 1 "D_Schottky" H 2250 1425 50  0000 C CNN
+F 1 "Schottky diode" H 2250 1425 50  0000 C CNN
 F 2 "" H 2250 1550 50  0001 C CNN
-F 3 "~" H 2250 1550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf" H 2250 1550 50  0001 C CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
+F 5 "ON Semi" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "MBR230LSFT1G" H 0   0   50  0001 C CNN "Part No."
+F 7 "LCSC" H 0   0   50  0001 C CNN "Vendor"
+F 8 "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_ON-Semicon_MBR230LSFT1G_ON-Semicon-ON-MBR230LSFT1G_C126673.html" H 0   0   50  0001 C CNN "Vendor link"
+F 9 "5" H 0   0   50  0001 C CNN "Minimum Order"
+F 10 "0.087" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "SOD-123F " H 0   0   50  0001 C CNN "Package"
 	1    2250 1550
 	-1   0    0    1   
 $EndComp
@@ -6701,11 +6716,18 @@ $Comp
 L Device:D_Schottky D2
 U 1 1 5D7EECB2
 P 2600 2450
-F 0 "D2" V 2500 2600 50  0000 C CNN
-F 1 "D_Schottky" V 2600 2750 50  0000 C CNN
+F 0 "D2" V 2550 2600 50  0000 C CNN
+F 1 "Schottky diode" V 2650 2800 50  0000 C CNN
 F 2 "" H 2600 2450 50  0001 C CNN
-F 3 "~" H 2600 2450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf" H 2600 2450 50  0001 C CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
+F 5 "ON Semi" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "MBR230LSFT1G" H 0   0   50  0001 C CNN "Part No."
+F 7 "LCSC" H 0   0   50  0001 C CNN "Vendor"
+F 8 "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_ON-Semicon_MBR230LSFT1G_ON-Semicon-ON-MBR230LSFT1G_C126673.html" H 0   0   50  0001 C CNN "Vendor link"
+F 9 "5" H 0   0   50  0001 C CNN "Minimum Order"
+F 10 "0.087" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "SOD-123F " H 0   0   50  0001 C CNN "Package"
 	1    2600 2450
 	0    1    1    0   
 $EndComp
@@ -6748,12 +6770,18 @@ $Comp
 L Transistor_FET:BSS83P Q1
 U 1 1 5D8038F4
 P 2250 2850
-F 0 "Q1" V 2593 2850 50  0000 C CNN
-F 1 "BSS83P" V 2502 2850 50  0000 C CNN
+F 0 "Q1" V 2500 2850 50  0000 C CNN
+F 1 "p-channel MOSFET" V 2250 3350 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 2775 50  0001 L CIN
-F 3 "http://www.farnell.com/datasheets/1835997.pdf" H 2250 2850 50  0001 L CNN
+F 3 "https://docs-apac.rs-online.com/webdocs/0f74/0900766b80f74f2c.pdf" H 2250 2850 50  0001 L CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
-F 5 "BSS83P" H -100 0   50  0001 C CNN "Part No."
+F 5 "BSH203,215 " H -100 0   50  0001 C CNN "Part No."
+F 6 "Nexperia" H 0   0   50  0001 C CNN "Manufacturer"
+F 7 "RS Components" H 0   0   50  0001 C CNN "Vendor"
+F 8 "https://sg.rs-online.com/web/p/mosfets/7258366/" H 0   0   50  0001 C CNN "Vendor link"
+F 9 "20" H 0   0   50  0001 C CNN "Minimum Order"
+F 10 "0.312" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "SOT-23" H 0   0   50  0001 C CNN "Package"
 	1    2250 2850
 	0    1    -1   0   
 $EndComp
@@ -6793,12 +6821,18 @@ $Comp
 L Regulator_Linear:AP2112K-2.6 U2
 U 1 1 5D85FB5D
 P 3450 1650
-F 0 "U2" H 3450 1992 50  0000 C CNN
-F 1 "AP2112K-2.6" H 3450 1901 50  0000 C CNN
+F 0 "U2" H 3300 1900 50  0000 C CNN
+F 1 "LDO" H 3450 1900 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3450 1975 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2112.pdf" H 3450 1750 50  0001 C CNN
+F 3 "https://docs-apac.rs-online.com/webdocs/151f/0900766b8151fea1.pdf" H 3450 1750 50  0001 C CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
-F 5 "AP2112K-2.6" H -100 0   50  0001 C CNN "Part No."
+F 5 "LD3985M28R" H -100 0   50  0001 C CNN "Part No."
+F 6 "STMicroelectronics" H 0   0   50  0001 C CNN "Manufacturer"
+F 7 "RS Components" H 0   0   50  0001 C CNN "Vendor"
+F 8 "https://sg.rs-online.com/web/p/low-dropout-voltage-regulators/6868792/" H 0   0   50  0001 C CNN "Vendor link"
+F 9 "5" H 0   0   50  0001 C CNN "Minimum Order"
+F 10 "0.316" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "SOT-23" H 0   0   50  0001 C CNN "Package"
 	1    3450 1650
 	1    0    0    -1  
 $EndComp
@@ -6806,10 +6840,10 @@ $Comp
 L Switch:SW_SPST SW1
 U 1 1 5D7FCA7A
 P 1350 2950
-F 0 "SW1" V 1396 2862 50  0000 R CNN
-F 1 "DIP SPST" V 1305 2862 50  0000 R CNN
+F 0 "SW1" V 1300 2850 50  0000 R CNN
+F 1 "DIP switch SPST" V 1100 2900 50  0000 R CNN
 F 2 "" H 1350 2950 50  0001 C CNN
-F 3 "~" H 1350 2950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/XKB-DSIC01LS-P_C319044.pdf" H 1350 2950 50  0001 C CNN
 F 4 "Connector" H -100 0   50  0001 C CNN "Category"
 F 5 "SMD" H -100 0   50  0001 C CNN "Package"
 F 6 "XKB Enterprise" H -100 0   50  0001 C CNN "Manufacturer"
@@ -6817,6 +6851,7 @@ F 7 "DSIC01LS-P" H -100 0   50  0001 C CNN "Part No."
 F 8 "LCSC" H -100 0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/DIP-Switches_XKB-Enterprise-DSIC01LS-P_C319044.html" H -100 0   50  0001 C CNN "Vendor link"
 F 10 "0.48" H -100 0   50  0001 C CNN "Unit cost"
+F 11 "1" H 0   0   50  0001 C CNN "Minimum Order"
 	1    1350 2950
 	0    -1   -1   0   
 $EndComp
@@ -6825,13 +6860,17 @@ L Device:Battery BT1
 U 1 1 5D7FA86F
 P 1550 3450
 F 0 "BT1" V 1450 3550 50  0000 L CNN
-F 1 "4.5V" V 1450 3150 50  0000 L CNN
+F 1 "3AA batteries: 4.5V" V 1350 3050 50  0000 L CNN
 F 2 "" V 1550 3510 50  0001 C CNN
 F 3 "https://docs-apac.rs-online.com/webdocs/1659/0900766b81659aed.pdf" V 1550 3510 50  0001 C CNN
 F 4 "Power" H -100 0   50  0001 C CNN "Category"
 F 5 "AA" H -100 0   50  0001 C CNN "Package"
 F 6 "RS Components" H 0   0   50  0001 C CNN "Vendor"
 F 7 "https://sg.rs-online.com/web/p/products/1756075/" H 0   0   50  0001 C CNN "Vendor link"
+F 8 "Takachi Electric Industrial" H 0   0   50  0001 C CNN "Manufacturer"
+F 9 "SN3-3PC" H 0   0   50  0001 C CNN "Part No."
+F 10 "5" H 0   0   50  0001 C CNN "Minimum Order"
+F 11 "2.484" H 0   0   50  0001 C CNN "Unit cost"
 	1    1550 3450
 	0    -1   -1   0   
 $EndComp
@@ -6886,7 +6925,7 @@ L MCU_Microchip_SAMD:ATSAMD21G18A-AUT U4
 U 1 1 5D778115
 P 8450 2200
 F 0 "U4" V 9300 2150 50  0000 C CNN
-F 1 "ATSAMD21G18A-AUT" V 9300 900 50  0000 C CNN
+F 1 "MCU ATSAMD21G18A-AUT" V 9300 1000 50  0000 C CNN
 F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 7500 450 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf" H 8450 3200 50  0001 C CNN
 F 4 "Electronics" H 0   100 50  0001 C CNN "Category"
@@ -6895,6 +6934,8 @@ F 6 "6.05" H 0   0   50  0001 C CNN "Unit cost"
 F 7 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 8 "https://lcsc.com/product-detail/ATMEL-AVR_ATMEL_ATSAMD21G18A-AU_ATSAMD21G18A-AU_C78624.html" H 0   0   50  0001 C CNN "Vendor link"
 F 9 "TQFN-48" H 0   0   50  0001 C CNN "Package"
+F 10 "Microchip Tech" H 0   0   50  0001 C CNN "Manufacturer"
+F 11 "1" H 0   0   50  0001 C CNN "Minimum Order"
 	1    8450 2200
 	0    -1   -1   0   
 $EndComp
@@ -6941,7 +6982,7 @@ P 2950 1650
 F 0 "R2" V 3050 1650 50  0000 C CNN
 F 1 "100k" V 3150 1650 50  0000 C CNN
 F 2 "" H 2950 1650 50  0001 C CNN
-F 3 "~" H 2950 1650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 2950 1650 50  0001 C CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
 F 5 "0805" H -100 0   50  0001 C CNN "Package"
 F 6 "RALEC" H -100 0   50  0001 C CNN "Manufacturer"
@@ -6949,6 +6990,7 @@ F 7 "RTT051003BTP" H -100 0   50  0001 C CNN "Part No."
 F 8 "LCSC" H -100 0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H -100 0   50  0001 C CNN "Vendor link"
 F 10 "0.042" H -100 0   50  0001 C CNN "Unit cost"
+F 11 "20" H 0   0   50  0001 C CNN "Minimum Order"
 	1    2950 1650
 	0    1    1    0   
 $EndComp
@@ -6982,7 +7024,7 @@ Wire Notes Line
 	7600 4400 7600 4150
 NoConn ~ 2000 2350
 Text Label 4350 1550 0    50   ~ 0
-2V6
+2V8
 Wire Wire Line
 	1350 3150 1350 3450
 Wire Wire Line
@@ -6997,17 +7039,17 @@ Connection ~ 2200 3450
 Wire Wire Line
 	2200 3450 1750 3450
 Text Label 5200 1850 0    50   ~ 0
-2V6
+2V8
 Text Label 5750 1650 0    50   ~ 0
-2V6
+2V8
 Text Label 10450 3450 0    50   ~ 0
-2V6
+2V8
 Text Label 7700 4750 0    50   ~ 0
-2V6
+2V8
 Text Label 5750 4450 0    50   ~ 0
-2V6
+2V8
 Text Label 2200 5200 0    50   ~ 0
-2V6
+2V8
 $Comp
 L power:PWR_FLAG #FLG04
 U 1 1 5DAFE5AB
@@ -7051,7 +7093,7 @@ P 5550 2100
 F 0 "C3" V 5450 2100 50  0000 C CNN
 F 1 "100nF" V 5650 2100 50  0000 C CNN
 F 2 "" H 5550 2100 50  0001 C CNN
-F 3 "~" H 5550 2100 50  0001 C CNN
+F 3 "https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 5550 2100 50  0001 C CNN
 F 4 "Electronics" H 0   100 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Murata Electronics" H 0   0   50  0001 C CNN "Manufacturer"
@@ -7059,6 +7101,7 @@ F 7 "GCM21BR72A104KA37L" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GCM21BR72A104KA37L_100nF-104-10-100V-Car-level_C85866.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.030" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "20" H 0   0   50  0001 C CNN "Minimum Order"
 	1    5550 2100
 	0    1    1    0   
 $EndComp
@@ -7069,7 +7112,7 @@ P 5100 2450
 F 0 "C2" V 5200 2350 50  0000 C CNN
 F 1 "100nF" V 5200 2600 50  0000 C CNN
 F 2 "" H 5100 2450 50  0001 C CNN
-F 3 "~" H 5100 2450 50  0001 C CNN
+F 3 "https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 5100 2450 50  0001 C CNN
 F 4 "Electronics" H 0   100 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Murata Electronics" H 0   0   50  0001 C CNN "Manufacturer"
@@ -7077,6 +7120,7 @@ F 7 "GCM21BR72A104KA37L" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GCM21BR72A104KA37L_100nF-104-10-100V-Car-level_C85866.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.030" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "20" H 0   0   50  0001 C CNN "Minimum Order"
 	1    5100 2450
 	0    1    1    0   
 $EndComp
@@ -7088,7 +7132,7 @@ P 4750 2250
 F 0 "C1" V 4700 2150 50  0000 C CNN
 F 1 "100nF" V 4700 2400 50  0000 C CNN
 F 2 "" H 4750 2250 50  0001 C CNN
-F 3 "~" H 4750 2250 50  0001 C CNN
+F 3 "https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 4750 2250 50  0001 C CNN
 F 4 "Electronics" H 0   100 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Murata Electronics" H 0   0   50  0001 C CNN "Manufacturer"
@@ -7096,6 +7140,7 @@ F 7 "GCM21BR72A104KA37L" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GCM21BR72A104KA37L_100nF-104-10-100V-Car-level_C85866.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.030" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "20" H 0   0   50  0001 C CNN "Minimum Order"
 	1    4750 2250
 	0    1    1    0   
 $EndComp
@@ -7158,8 +7203,8 @@ $Comp
 L Sensor_Humidity:Si7021-A20 U3
 U 1 1 5D78D887
 P 7100 5150
-F 0 "U3" H 7544 5196 50  0000 L CNN
-F 1 "Si7021-A20" H 7544 5105 50  0000 L CNN
+F 0 "U3" H 7250 4900 50  0000 L CNN
+F 1 "Temperature sensor" H 7250 4800 50  0000 L CNN
 F 2 "Package_DFN_QFN:DFN-6-1EP_3x3mm_P1mm_EP1.5x2.4mm" H 7100 4750 50  0001 C CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/Si7021-A20.pdf" H 6900 5450 50  0001 C CNN
 F 4 "Si7021-A20" H -2250 200 50  0001 C CNN "Part No."
@@ -7167,6 +7212,7 @@ F 5 "Electronics" H -2250 200 50  0001 C CNN "Category"
 F 6 "1" H 0   0   50  0001 C CNN "Stock"
 F 7 "5" H 0   0   50  0001 C CNN "Stock No."
 F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
+F 9 "DFN" H 0   0   50  0001 C CNN "Package"
 	1    7100 5150
 	1    0    0    -1  
 $EndComp
@@ -7213,7 +7259,7 @@ P 8450 5100
 F 0 "R6" H 8500 5100 50  0000 L CNN
 F 1 "470R" H 8200 5100 50  0000 L CNN
 F 2 "" H 8450 5100 50  0001 C CNN
-F 3 "~" H 8450 5100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 8450 5100 50  0001 C CNN
 F 4 "Electronics" H -1700 1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
@@ -7222,6 +7268,7 @@ F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.0049" H 0   0   50  0001 C CNN "Unit cost"
 F 11 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 12 "50" H 0   0   50  0001 C CNN "Minimum Order"
 	1    8450 5100
 	1    0    0    -1  
 $EndComp
@@ -7232,7 +7279,7 @@ P 8450 4750
 F 0 "D4" V 8489 4633 50  0000 R CNN
 F 1 "yellow" V 8398 4633 50  0000 R CNN
 F 2 "" H 8450 4750 50  0001 C CNN
-F 3 "~" H 8450 4750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 8450 4750 50  0001 C CNN
 F 4 "Electronics" H 0   200 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Everlight Elec" H 0   0   50  0001 C CNN "Manufacturer"
@@ -7241,13 +7288,14 @@ F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.058" H 0   0   50  0001 C CNN "Unit cost"
 F 11 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 12 "10" H 0   0   50  0001 C CNN "Minimum Order"
 	1    8450 4750
 	0    -1   -1   0   
 $EndComp
 Text Label 8450 4550 2    50   ~ 0
-2V6
+2V8
 Text Label 9050 4550 2    50   ~ 0
-2V6
+2V8
 $Comp
 L Device:LED D5
 U 1 1 5D81359F
@@ -7255,7 +7303,7 @@ P 9050 4750
 F 0 "D5" V 9089 4633 50  0000 R CNN
 F 1 "yellow" V 8998 4633 50  0000 R CNN
 F 2 "" H 9050 4750 50  0001 C CNN
-F 3 "~" H 9050 4750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 9050 4750 50  0001 C CNN
 F 4 "Electronics" H 50  200 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Everlight Elec" H 0   0   50  0001 C CNN "Manufacturer"
@@ -7264,6 +7312,7 @@ F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.058" H 0   0   50  0001 C CNN "Unit cost"
 F 11 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 12 "10" H 0   0   50  0001 C CNN "Minimum Order"
 	1    9050 4750
 	0    -1   -1   0   
 $EndComp
@@ -7274,7 +7323,7 @@ P 9050 5100
 F 0 "R7" H 9100 5100 50  0000 L CNN
 F 1 "470R" H 8800 5100 50  0000 L CNN
 F 2 "" H 9050 5100 50  0001 C CNN
-F 3 "~" H 9050 5100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 9050 5100 50  0001 C CNN
 F 4 "Electronics" H -1100 1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
@@ -7283,13 +7332,14 @@ F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.0049" H 0   0   50  0001 C CNN "Unit cost"
 F 11 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 12 "50" H 0   0   50  0001 C CNN "Minimum Order"
 	1    9050 5100
 	1    0    0    -1  
 $EndComp
 Text Label 9050 5800 2    50   ~ 0
 RX_LED
 Text Label 9600 4550 2    50   ~ 0
-2V6
+2V8
 $Comp
 L Device:LED D6
 U 1 1 5D81C9CF
@@ -7297,7 +7347,7 @@ P 9600 4750
 F 0 "D6" V 9639 4633 50  0000 R CNN
 F 1 "yellow" V 9548 4633 50  0000 R CNN
 F 2 "" H 9600 4750 50  0001 C CNN
-F 3 "~" H 9600 4750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 9600 4750 50  0001 C CNN
 F 4 "Electronics" H 100 200 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Everlight Elec" H 0   0   50  0001 C CNN "Manufacturer"
@@ -7305,6 +7355,7 @@ F 7 "17-215UYC/S530-A3/TR8" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.058" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "10" H 0   0   50  0001 C CNN "Minimum Order"
 	1    9600 4750
 	0    -1   -1   0   
 $EndComp
@@ -7315,7 +7366,7 @@ P 9600 5100
 F 0 "R8" H 9650 5100 50  0000 L CNN
 F 1 "470R" H 9350 5100 50  0000 L CNN
 F 2 "" H 9600 5100 50  0001 C CNN
-F 3 "~" H 9600 5100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 9600 5100 50  0001 C CNN
 F 4 "Electronics" H -550 1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
@@ -7323,6 +7374,7 @@ F 7 "WR08X4700FTL" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.0049" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "50" H 0   0   50  0001 C CNN "Minimum Order"
 	1    9600 5100
 	1    0    0    -1  
 $EndComp
@@ -7344,7 +7396,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 3600 8150 3600
 Text Label 10200 4550 2    50   ~ 0
-2V6
+2V8
 $Comp
 L Device:LED D7
 U 1 1 5D8386A1
@@ -7352,7 +7404,7 @@ P 10200 4750
 F 0 "D7" V 10239 4633 50  0000 R CNN
 F 1 "yellow" V 10148 4633 50  0000 R CNN
 F 2 "" H 10200 4750 50  0001 C CNN
-F 3 "~" H 10200 4750 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 10200 4750 50  0001 C CNN
 F 4 "Electronics" H 100 200 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Everlight Elec" H 0   0   50  0001 C CNN "Manufacturer"
@@ -7360,6 +7412,7 @@ F 7 "17-215UYC/S530-A3/TR8" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.058" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "10" H 0   0   50  0001 C CNN "Minimum Order"
 	1    10200 4750
 	0    -1   -1   0   
 $EndComp
@@ -7370,7 +7423,7 @@ P 10200 5100
 F 0 "R10" H 10250 5100 50  0000 L CNN
 F 1 "470R" H 9950 5100 50  0000 L CNN
 F 2 "" H 10200 5100 50  0001 C CNN
-F 3 "~" H 10200 5100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 10200 5100 50  0001 C CNN
 F 4 "Electronics" H 50  1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
@@ -7378,6 +7431,7 @@ F 7 "WR08X4700FTL" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.0049" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "50" H 0   0   50  0001 C CNN "Minimum Order"
 	1    10200 5100
 	1    0    0    -1  
 $EndComp
@@ -7411,7 +7465,7 @@ Text Notes 2350 2750 0    39   ~ 0
 D
 Text Notes 3900 1900 0    28   Italic 0
 solder after \ntesting power \nmanagement circuit\n
-Text Notes 1900 5750 0    28   Italic 0
+Text Notes 1900 5800 0    28   Italic 0
 solder after \ntesting power \nmanagement circuit\n
 Text Notes 5200 4300 0    28   Italic 0
 solder after \ntesting power \nmanagement circuit\n
@@ -7466,7 +7520,7 @@ L Connector:Conn_01x06_Male J2
 U 1 1 5D7FC57C
 P 2150 6850
 F 0 "J2" H 2050 7050 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 2300 6450 50  0000 C CNN
+F 1 "01x06 Male conn" H 2300 6450 50  0000 C CNN
 F 2 "" H 2150 6850 50  0001 C CNN
 F 3 "~" H 2150 6850 50  0001 C CNN
 F 4 "Connector" H 150 150 50  0001 C CNN "Category"
@@ -7546,14 +7600,13 @@ L Jumper:SolderJumper_2_Open JP2
 U 1 1 5D80DB41
 P 4050 1550
 F 0 "JP2" H 4050 1650 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4100 1400 50  0000 C CNN
+F 1 "Open solder jumper" H 4100 1400 50  0000 C CNN
 F 2 "" H 4050 1550 50  0001 C CNN
 F 3 "~" H 4050 1550 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
-F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
-F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
-F 8 "DNP" H 0   0   50  0001 C CNN "Vendor"
+F 6 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 7 "DNP" H 0   0   50  0001 C CNN "Vendor"
 	1    4050 1550
 	1    0    0    -1  
 $EndComp
@@ -7566,14 +7619,13 @@ L Jumper:SolderJumper_2_Open JP1
 U 1 1 5D83509E
 P 2050 5450
 F 0 "JP1" H 2050 5550 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2250 5350 50  0000 C CNN
+F 1 "Open solder jumper" H 2250 5300 50  0000 C CNN
 F 2 "" H 2050 5450 50  0001 C CNN
 F 3 "~" H 2050 5450 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
-F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
-F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
-F 8 "DNP" H 0   0   50  0001 C CNN "Vendor"
+F 6 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 7 "DNP" H 0   0   50  0001 C CNN "Vendor"
 	1    2050 5450
 	1    0    0    -1  
 $EndComp
@@ -7586,14 +7638,13 @@ L Jumper:SolderJumper_2_Open JP3
 U 1 1 5D854735
 P 5350 4450
 F 0 "JP3" H 5350 4550 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 5550 4350 50  0000 C CNN
+F 1 "Open solder jumper" H 5550 4350 50  0000 C CNN
 F 2 "" H 5350 4450 50  0001 C CNN
 F 3 "~" H 5350 4450 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
-F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
-F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
-F 8 "DNP" H 0   0   50  0001 C CNN "Vendor"
+F 6 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 7 "DNP" H 0   0   50  0001 C CNN "Vendor"
 	1    5350 4450
 	1    0    0    -1  
 $EndComp
@@ -7606,14 +7657,13 @@ L Jumper:SolderJumper_2_Open JP4
 U 1 1 5D86D561
 P 7350 4750
 F 0 "JP4" H 7350 4850 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 7550 4650 50  0000 C CNN
+F 1 "Open solder jumper" H 7550 4650 50  0000 C CNN
 F 2 "" H 7350 4750 50  0001 C CNN
 F 3 "~" H 7350 4750 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
-F 6 "0.00" H 0   0   50  0001 C CNN "Unit cost"
-F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
-F 8 "DNP" H 0   0   50  0001 C CNN "Vendor"
+F 6 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 7 "DNP" H 0   0   50  0001 C CNN "Vendor"
 	1    7350 4750
 	1    0    0    -1  
 $EndComp
@@ -7710,10 +7760,15 @@ P 5700 6500
 F 0 "R4" H 5759 6546 50  0000 L CNN
 F 1 "100k" H 5759 6455 50  0000 L CNN
 F 2 "" H 5700 6500 50  0001 C CNN
-F 3 "~" H 5700 6500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5700 6500 50  0001 C CNN
 F 4 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 0   0   50  0001 C CNN "Vendor link"
 F 6 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 8 "RALEC" H 0   0   50  0001 C CNN "Manufacturer"
+F 9 "RTT051003BTP" H 0   0   50  0001 C CNN "Part No."
+F 10 "20" H 0   0   50  0001 C CNN "Minimum Order"
+F 11 "0805" H 0   0   50  0001 C CNN "Package"
 	1    5700 6500
 	1    0    0    -1  
 $EndComp
@@ -7724,10 +7779,15 @@ P 5700 6850
 F 0 "R5" H 5759 6896 50  0000 L CNN
 F 1 "100k" H 5759 6805 50  0000 L CNN
 F 2 "" H 5700 6850 50  0001 C CNN
-F 3 "~" H 5700 6850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5700 6850 50  0001 C CNN
 F 4 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 0   0   50  0001 C CNN "Vendor link"
 F 6 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 7 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 8 "RALEC" H 0   0   50  0001 C CNN "Manufacturer"
+F 9 "RTT051003BTP" H 0   0   50  0001 C CNN "Part No."
+F 10 "20" H 0   0   50  0001 C CNN "Minimum Order"
+F 11 "0805" H 0   0   50  0001 C CNN "Package"
 	1    5700 6850
 	1    0    0    -1  
 $EndComp
