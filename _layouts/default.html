@@ -52,6 +52,12 @@
   {% endif %}
 {% endif %}
 
+{% if site.data.pages.lessons == true %}
+  {% if page.url == "/lessons" %}
+    {%- include lessons.html -%}
+  {% endif %}
+{% endif %}
+
 {% if site.data.pages.references == true %}
   {% if page.url == "/references" %}
     {%- include references.html -%}
