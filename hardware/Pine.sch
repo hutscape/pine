@@ -28,7 +28,7 @@ F 6 "5" H -150 3300 50  0001 C CNN "Minimum Order"
 F 7 "TH" H -150 3300 50  0001 C CNN "Package"
 F 8 "TSOP4838" H -150 3300 50  0001 C CNN "Part No."
 F 9 "1.876" H -150 3300 50  0001 C CNN "Unit cost"
-F 10 "Internal stock" H -150 3300 50  0001 C CNN "Vendor"
+F 10 "RS Components" H -150 3300 50  0001 C CNN "Vendor"
 F 11 "https://sg.rs-online.com/web/p/ir-receivers/7085115/?sra=pstk" H -150 3300 50  0001 C CNN "Vendor link"
 F 12 "4" H -100 0   50  0001 C CNN "Stock"
 F 13 "38" H -100 0   50  0001 C CNN "Stock No."
@@ -5804,7 +5804,7 @@ F 7 "TH" H -500 3200 50  0001 C CNN "Package"
 F 8 "SIR-56ST3F " H -500 3200 50  0001 C CNN "Part No."
 F 9 "9" H -500 3200 50  0001 C CNN "Stock"
 F 10 "0.778" H -500 3200 50  0001 C CNN "Unit cost"
-F 11 "Internal stock" H -500 3200 50  0001 C CNN "Vendor"
+F 11 "RS Components" H -500 3200 50  0001 C CNN "Vendor"
 F 12 "https://sg.rs-online.com/web/p/ir-leds/1780575/?sra=pstk" H -500 3200 50  0001 C CNN "Vendor link"
 F 13 "39" H 0   0   50  0001 C CNN "Stock No."
 	1    5000 4700
@@ -7226,6 +7226,7 @@ F 7 "WR08X4700FTL" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.0049" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    8450 5100
 	1    0    0    -1  
 $EndComp
@@ -7244,6 +7245,7 @@ F 7 "17-215UYC/S530-A3/TR8" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.058" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    8450 4750
 	0    -1   -1   0   
 $EndComp
@@ -7266,6 +7268,7 @@ F 7 "17-215UYC/S530-A3/TR8" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.058" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    9050 4750
 	0    -1   -1   0   
 $EndComp
@@ -7284,6 +7287,7 @@ F 7 "WR08X4700FTL" H 0   0   50  0001 C CNN "Part No."
 F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 F 10 "0.0049" H 0   0   50  0001 C CNN "Unit cost"
+F 11 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    9050 5100
 	1    0    0    -1  
 $EndComp
@@ -7330,12 +7334,12 @@ $EndComp
 $Comp
 L power:GND #PWR013
 U 1 1 5D822E57
-P 9600 5700
-F 0 "#PWR013" H 9600 5450 50  0001 C CNN
-F 1 "GND" H 9600 5550 50  0000 C CNN
-F 2 "" H 9600 5700 50  0001 C CNN
-F 3 "" H 9600 5700 50  0001 C CNN
-	1    9600 5700
+P 9600 5600
+F 0 "#PWR013" H 9600 5350 50  0001 C CNN
+F 1 "GND" H 9600 5450 50  0000 C CNN
+F 2 "" H 9600 5600 50  0001 C CNN
+F 3 "" H 9600 5600 50  0001 C CNN
+	1    9600 5600
 	1    0    0    -1  
 $EndComp
 Text Label 8150 3600 2    50   ~ 0
@@ -7402,8 +7406,6 @@ Wire Wire Line
 	8450 5200 8450 5800
 Wire Wire Line
 	9050 5200 9050 5800
-Wire Wire Line
-	9600 5200 9600 5700
 Text Label 10200 5800 2    50   ~ 0
 LED
 Text Notes 2250 2950 0    39   ~ 0
@@ -7676,4 +7678,24 @@ Wire Wire Line
 	1600 5450 1600 5850
 Wire Wire Line
 	1800 5450 1800 5750
+Text Notes 8300 5950 0    50   ~ 0
+TX led
+Text Notes 8900 5950 0    50   ~ 0
+RX led
+Text Notes 9450 5950 0    50   ~ 0
+power led
+Wire Wire Line
+	9600 5200 9600 5600
+Text Notes 10000 5950 0    50   ~ 0
+program led
+Text Notes 8250 5250 0    50   ~ 0
+DNP
+Text Notes 8850 4800 0    50   ~ 0
+DNP
+Text Notes 8250 4800 0    50   ~ 0
+DNP
+Text Notes 8850 5250 0    50   ~ 0
+DNP
+Text Notes 8150 6050 0    43   ~ 0
+optional to populate TX / RX LEDs
 $EndSCHEMATC
