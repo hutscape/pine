@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 September 19, Thursday 14:54:18</date>
+    <date>2019 September 19, Thursday 16:24:39</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -587,11 +587,11 @@
       <datasheet>https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="DNP">Yes</field>
         <field name="Manufacturer">RALEC</field>
         <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">RTT051003BTP</field>
+        <field name="Unit cost">0.042</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html</field>
       </fields>
@@ -604,17 +604,116 @@
       <datasheet>https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="DNP">Yes</field>
         <field name="Manufacturer">RALEC</field>
         <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">RTT051003BTP</field>
+        <field name="Unit cost">0.042</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D858007</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>1uF</value>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Minimum Order">20</field>
+        <field name="Package">0805</field>
+        <field name="Part No.">CL21B105KOFNNNE</field>
+        <field name="Unit cost">0.028</field>
+        <field name="Vendor">LCSC</field>
+        <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D84C85B</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1uF</value>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Minimum Order">20</field>
+        <field name="Package">0805</field>
+        <field name="Part No.">CL21B105KOFNNNE</field>
+        <field name="Unit cost">0.028</field>
+        <field name="Vendor">LCSC</field>
+        <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D84D506</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>1k</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Package">0805</field>
+        <field name="Stock">40</field>
+        <field name="Stock No.">18</field>
+        <field name="Vendor">Internal stock</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D876A22</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>1uF</value>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Manufacturer">Samsung Electro-Mechanics</field>
+        <field name="Minimum Order">20</field>
+        <field name="Package">0805</field>
+        <field name="Part No.">CL21B105KOFNNNE</field>
+        <field name="Unit cost">0.028</field>
+        <field name="Vendor">LCSC</field>
+        <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D942F99</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Minimum Order">50</field>
+        <field name="Package">0805</field>
+        <field name="Part No.">WR08X4700FTL</field>
+        <field name="Stock">5</field>
+        <field name="Stock No.">31</field>
+        <field name="Unit cost">0.0049</field>
+        <field name="Vendor">Internal stock</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D96BAB5</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Minimum Order">50</field>
+        <field name="Package">0805</field>
+        <field name="Part No.">WR08X4700FTL</field>
+        <field name="Stock">5</field>
+        <field name="Stock No.">31</field>
+        <field name="Unit cost">0.0049</field>
+        <field name="Vendor">Internal stock</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D96CA00</tstamp>
     </comp>
   </components>
   <libparts>
@@ -1035,276 +1134,288 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
+    <net code="1" name="/IR_Receiver">
+      <node ref="U1" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="U4" pin="24"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="U4" pin="18"/>
+      <node ref="C7" pin="2"/>
+      <node ref="U4" pin="35"/>
+      <node ref="U4" pin="42"/>
       <node ref="U1" pin="2"/>
-      <node ref="Q2" pin="1"/>
-      <node ref="BT1" pin="2"/>
-      <node ref="U2" pin="2"/>
-      <node ref="R5" pin="2"/>
-      <node ref="R1" pin="1"/>
-      <node ref="J2" pin="3"/>
-      <node ref="R8" pin="2"/>
-      <node ref="U3" pin="2"/>
+      <node ref="U4" pin="5"/>
       <node ref="SW2" pin="2"/>
       <node ref="C4" pin="1"/>
       <node ref="J1" pin="5"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="J2" pin="3"/>
+      <node ref="U2" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="BT1" pin="2"/>
       <node ref="C1" pin="2"/>
       <node ref="C2" pin="2"/>
       <node ref="C3" pin="2"/>
-      <node ref="U4" pin="5"/>
-      <node ref="U4" pin="42"/>
-      <node ref="U4" pin="35"/>
-      <node ref="U4" pin="18"/>
     </net>
-    <net code="2" name="Net-(Q2-Pad2)">
+    <net code="3" name="Net-(C5-Pad1)">
+      <node ref="C5" pin="1"/>
+      <node ref="R11" pin="2"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="4" name="Net-(Q2-Pad2)">
       <node ref="R3" pin="1"/>
       <node ref="Q2" pin="2"/>
     </net>
-    <net code="3" name="/IR_Emitter">
+    <net code="5" name="/IR_Emitter">
       <node ref="U4" pin="12"/>
       <node ref="R3" pin="2"/>
     </net>
-    <net code="4" name="Net-(D3-Pad1)">
+    <net code="6" name="Net-(D3-Pad1)">
       <node ref="D3" pin="1"/>
       <node ref="Q2" pin="3"/>
     </net>
-    <net code="5" name="/IR_Receiver">
-      <node ref="U1" pin="1"/>
-      <node ref="U4" pin="24"/>
-    </net>
-    <net code="6" name="Net-(U3-Pad7)">
+    <net code="7" name="Net-(U3-Pad7)">
       <node ref="U3" pin="7"/>
     </net>
-    <net code="7" name="Net-(JP4-Pad1)">
-      <node ref="U3" pin="5"/>
-      <node ref="JP4" pin="1"/>
-    </net>
-    <net code="8" name="/SCL">
-      <node ref="U4" pin="32"/>
-      <node ref="U3" pin="6"/>
-    </net>
-    <net code="9" name="/SDA">
-      <node ref="U3" pin="1"/>
-      <node ref="U4" pin="31"/>
-    </net>
-    <net code="10" name="Net-(C4-Pad2)">
+    <net code="8" name="Net-(C4-Pad2)">
       <node ref="C4" pin="2"/>
       <node ref="U4" pin="43"/>
     </net>
-    <net code="11" name="Net-(D1-Pad2)">
+    <net code="9" name="Net-(D1-Pad2)">
       <node ref="R1" pin="2"/>
       <node ref="Q1" pin="1"/>
-      <node ref="D1" pin="2"/>
       <node ref="J1" pin="1"/>
+      <node ref="D1" pin="2"/>
     </net>
-    <net code="12" name="Net-(J1-Pad4)">
+    <net code="10" name="Net-(J1-Pad4)">
       <node ref="J1" pin="4"/>
     </net>
-    <net code="13" name="Net-(J1-Pad6)">
+    <net code="11" name="Net-(J1-Pad6)">
       <node ref="J1" pin="6"/>
     </net>
-    <net code="14" name="Net-(D2-Pad2)">
+    <net code="12" name="Net-(D2-Pad2)">
       <node ref="D2" pin="2"/>
       <node ref="Q1" pin="3"/>
     </net>
-    <net code="15" name="Net-(D1-Pad1)">
-      <node ref="D1" pin="1"/>
+    <net code="13" name="Net-(D1-Pad1)">
+      <node ref="R2" pin="2"/>
       <node ref="D2" pin="1"/>
       <node ref="U2" pin="1"/>
-      <node ref="R2" pin="2"/>
+      <node ref="D1" pin="1"/>
     </net>
-    <net code="16" name="Net-(U2-Pad4)">
+    <net code="14" name="Net-(U2-Pad4)">
       <node ref="U2" pin="4"/>
     </net>
-    <net code="17" name="Net-(Q1-Pad2)">
-      <node ref="SW1" pin="2"/>
+    <net code="15" name="Net-(Q1-Pad2)">
       <node ref="Q1" pin="2"/>
+      <node ref="SW1" pin="2"/>
     </net>
-    <net code="18" name="Net-(BT1-Pad1)">
+    <net code="16" name="Net-(BT1-Pad1)">
       <node ref="BT1" pin="1"/>
       <node ref="SW1" pin="1"/>
     </net>
-    <net code="19" name="Net-(U4-Pad1)">
+    <net code="17" name="Net-(U4-Pad1)">
       <node ref="U4" pin="1"/>
     </net>
-    <net code="20" name="Net-(U4-Pad10)">
+    <net code="18" name="Net-(U4-Pad10)">
       <node ref="U4" pin="10"/>
     </net>
-    <net code="21" name="/Batt">
+    <net code="19" name="/Batt">
+      <node ref="U4" pin="11"/>
       <node ref="R4" pin="2"/>
       <node ref="R5" pin="1"/>
-      <node ref="U4" pin="11"/>
     </net>
-    <net code="22" name="Net-(U4-Pad13)">
+    <net code="20" name="Net-(U4-Pad13)">
       <node ref="U4" pin="13"/>
     </net>
-    <net code="23" name="Net-(U4-Pad14)">
+    <net code="21" name="Net-(U4-Pad14)">
       <node ref="U4" pin="14"/>
     </net>
-    <net code="24" name="Net-(U4-Pad15)">
+    <net code="22" name="Net-(U4-Pad15)">
       <node ref="U4" pin="15"/>
     </net>
-    <net code="25" name="Net-(U4-Pad16)">
+    <net code="23" name="Net-(U4-Pad16)">
       <node ref="U4" pin="16"/>
     </net>
-    <net code="26" name="Net-(U4-Pad19)">
+    <net code="24" name="Net-(U4-Pad19)">
       <node ref="U4" pin="19"/>
     </net>
-    <net code="27" name="Net-(U4-Pad2)">
+    <net code="25" name="Net-(U4-Pad2)">
       <node ref="U4" pin="2"/>
     </net>
-    <net code="28" name="Net-(U4-Pad20)">
+    <net code="26" name="Net-(U4-Pad20)">
       <node ref="U4" pin="20"/>
     </net>
-    <net code="29" name="Net-(U4-Pad21)">
+    <net code="27" name="Net-(U4-Pad21)">
       <node ref="U4" pin="21"/>
     </net>
-    <net code="30" name="Net-(U4-Pad22)">
+    <net code="28" name="Net-(U4-Pad22)">
       <node ref="U4" pin="22"/>
     </net>
-    <net code="31" name="Net-(U4-Pad23)">
+    <net code="29" name="Net-(U4-Pad23)">
       <node ref="U4" pin="23"/>
     </net>
-    <net code="32" name="Net-(U4-Pad25)">
+    <net code="30" name="Net-(U4-Pad25)">
       <node ref="U4" pin="25"/>
     </net>
-    <net code="33" name="/LED">
-      <node ref="R10" pin="2"/>
+    <net code="31" name="/LED">
       <node ref="U4" pin="26"/>
+      <node ref="R10" pin="2"/>
     </net>
-    <net code="34" name="Net-(U4-Pad27)">
+    <net code="32" name="Net-(U4-Pad27)">
       <node ref="U4" pin="27"/>
     </net>
-    <net code="35" name="Net-(U4-Pad28)">
+    <net code="33" name="Net-(U4-Pad28)">
       <node ref="U4" pin="28"/>
     </net>
-    <net code="36" name="Net-(U4-Pad29)">
+    <net code="34" name="Net-(U4-Pad29)">
       <node ref="U4" pin="29"/>
     </net>
-    <net code="37" name="Net-(U4-Pad3)">
+    <net code="35" name="Net-(U4-Pad3)">
       <node ref="U4" pin="3"/>
     </net>
-    <net code="38" name="Net-(U4-Pad30)">
+    <net code="36" name="Net-(U4-Pad30)">
       <node ref="U4" pin="30"/>
     </net>
-    <net code="39" name="/USB_D-">
-      <node ref="J1" pin="2"/>
+    <net code="37" name="/USB_D-">
       <node ref="U4" pin="33"/>
+      <node ref="J1" pin="2"/>
     </net>
-    <net code="40" name="/USB_D+">
+    <net code="38" name="/USB_D+">
       <node ref="J1" pin="3"/>
       <node ref="U4" pin="34"/>
     </net>
-    <net code="41" name="Net-(U4-Pad37)">
+    <net code="39" name="Net-(U4-Pad37)">
       <node ref="U4" pin="37"/>
     </net>
-    <net code="42" name="Net-(U4-Pad38)">
+    <net code="40" name="Net-(U4-Pad38)">
       <node ref="U4" pin="38"/>
     </net>
-    <net code="43" name="/TX_LED">
+    <net code="41" name="/TX_LED">
       <node ref="U4" pin="39"/>
       <node ref="R6" pin="2"/>
     </net>
-    <net code="44" name="Net-(U4-Pad4)">
+    <net code="42" name="Net-(U4-Pad4)">
       <node ref="U4" pin="4"/>
     </net>
-    <net code="45" name="/RST">
+    <net code="43" name="/RST">
       <node ref="SW2" pin="1"/>
-      <node ref="U4" pin="40"/>
       <node ref="R9" pin="1"/>
+      <node ref="U4" pin="40"/>
       <node ref="J2" pin="5"/>
     </net>
-    <net code="46" name="Net-(U4-Pad41)">
+    <net code="44" name="Net-(U4-Pad41)">
       <node ref="U4" pin="41"/>
     </net>
-    <net code="47" name="/SWCLK">
-      <node ref="U4" pin="45"/>
+    <net code="45" name="/SWCLK">
       <node ref="J2" pin="2"/>
+      <node ref="U4" pin="45"/>
     </net>
-    <net code="48" name="Net-(U4-Pad47)">
+    <net code="46" name="Net-(U4-Pad47)">
       <node ref="U4" pin="47"/>
     </net>
-    <net code="49" name="Net-(U4-Pad7)">
+    <net code="47" name="Net-(U4-Pad7)">
       <node ref="U4" pin="7"/>
     </net>
-    <net code="50" name="Net-(U4-Pad8)">
+    <net code="48" name="Net-(U4-Pad8)">
       <node ref="U4" pin="8"/>
     </net>
-    <net code="51" name="Net-(U4-Pad9)">
+    <net code="49" name="Net-(U4-Pad9)">
       <node ref="U4" pin="9"/>
     </net>
-    <net code="52" name="Net-(R2-Pad1)">
+    <net code="50" name="Net-(R2-Pad1)">
       <node ref="U2" pin="3"/>
       <node ref="R2" pin="1"/>
     </net>
-    <net code="54" name="Net-(U3-Pad3)">
+    <net code="52" name="Net-(U3-Pad3)">
       <node ref="U3" pin="3"/>
     </net>
-    <net code="55" name="Net-(U3-Pad4)">
+    <net code="53" name="Net-(U3-Pad4)">
       <node ref="U3" pin="4"/>
     </net>
-    <net code="56" name="/RX_LED">
-      <node ref="R7" pin="2"/>
+    <net code="54" name="/RX_LED">
       <node ref="U4" pin="48"/>
+      <node ref="R7" pin="2"/>
     </net>
-    <net code="57" name="Net-(D4-Pad1)">
-      <node ref="D4" pin="1"/>
+    <net code="55" name="Net-(D4-Pad1)">
       <node ref="R6" pin="1"/>
+      <node ref="D4" pin="1"/>
     </net>
-    <net code="58" name="Net-(D5-Pad1)">
+    <net code="56" name="Net-(D5-Pad1)">
       <node ref="R7" pin="1"/>
       <node ref="D5" pin="1"/>
     </net>
-    <net code="59" name="Net-(D6-Pad1)">
-      <node ref="D6" pin="1"/>
+    <net code="57" name="Net-(D6-Pad1)">
       <node ref="R8" pin="1"/>
+      <node ref="D6" pin="1"/>
     </net>
-    <net code="60" name="Net-(D7-Pad1)">
+    <net code="58" name="Net-(D7-Pad1)">
       <node ref="R10" pin="1"/>
       <node ref="D7" pin="1"/>
     </net>
-    <net code="61" name="Net-(J2-Pad6)">
+    <net code="59" name="Net-(J2-Pad6)">
       <node ref="J2" pin="6"/>
     </net>
-    <net code="62" name="/SWDIO">
-      <node ref="U4" pin="46"/>
+    <net code="60" name="/SWDIO">
       <node ref="J2" pin="4"/>
+      <node ref="U4" pin="46"/>
     </net>
-    <net code="63" name="Net-(JP2-Pad1)">
+    <net code="61" name="Net-(JP2-Pad1)">
       <node ref="U2" pin="5"/>
       <node ref="JP2" pin="1"/>
     </net>
-    <net code="64" name="/2V8">
+    <net code="62" name="/2V8">
       <node ref="R9" pin="2"/>
-      <node ref="U4" pin="17"/>
-      <node ref="D6" pin="2"/>
-      <node ref="D7" pin="2"/>
-      <node ref="U4" pin="6"/>
-      <node ref="D5" pin="2"/>
-      <node ref="D4" pin="2"/>
       <node ref="JP2" pin="2"/>
       <node ref="JP1" pin="2"/>
-      <node ref="JP3" pin="2"/>
-      <node ref="JP4" pin="2"/>
       <node ref="U4" pin="36"/>
-      <node ref="C1" pin="1"/>
-      <node ref="U4" pin="44"/>
+      <node ref="JP3" pin="2"/>
       <node ref="C2" pin="1"/>
+      <node ref="JP4" pin="1"/>
+      <node ref="D7" pin="2"/>
       <node ref="C3" pin="1"/>
+      <node ref="D6" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="D4" pin="2"/>
+      <node ref="U4" pin="17"/>
+      <node ref="U4" pin="6"/>
+      <node ref="R4" pin="1"/>
+      <node ref="U4" pin="44"/>
+      <node ref="C1" pin="1"/>
     </net>
-    <net code="65" name="Net-(JP1-Pad1)">
-      <node ref="JP1" pin="1"/>
-      <node ref="U1" pin="3"/>
-    </net>
-    <net code="66" name="Net-(D3-Pad2)">
+    <net code="63" name="Net-(D3-Pad2)">
       <node ref="D3" pin="2"/>
       <node ref="JP3" pin="1"/>
     </net>
-    <net code="67" name="+3V3">
+    <net code="64" name="+3V3">
       <node ref="J2" pin="1"/>
     </net>
-    <net code="68" name="/2V6">
-      <node ref="R4" pin="1"/>
+    <net code="65" name="Net-(JP1-Pad1)">
+      <node ref="JP1" pin="1"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="66" name="Net-(C7-Pad1)">
+      <node ref="JP4" pin="2"/>
+      <node ref="R13" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="67" name="/SDA">
+      <node ref="U3" pin="1"/>
+      <node ref="R12" pin="2"/>
+      <node ref="U4" pin="31"/>
+    </net>
+    <net code="68" name="/SCL">
+      <node ref="U3" pin="6"/>
+      <node ref="R13" pin="2"/>
+      <node ref="U4" pin="32"/>
     </net>
   </nets>
 </export>
