@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name USB_Micro-B_Horizontal)(type KiCad)(uri ${KIPRJMOD}/library/Connector_USB-B_Horizontal.pretty)(options "")(descr ""))
+)

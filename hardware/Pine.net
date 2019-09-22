@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch)
-    (date "2019 September 22, Sunday 15:02:41")
+    (date "2019 September 22, Sunday 22:30:26")
     (tool "Eeschema (5.1.0-0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -124,6 +124,7 @@
       (tstamp 5D7A2BCE))
     (comp (ref J1)
       (value "USB Micro type-B")
+      (footprint USB_Micro-B_Horizontal:USB_Micro-B_Horizontal-U254-051T-4BH23-S2B)
       (datasheet https://datasheet.lcsc.com/szlcsc/Jing-Extension-of-the-Electronic-Co-LCSC-MICRO-USB-5S-B-Type-horns-High-temperature_C10418.pdf)
       (fields
         (field (name Category) Connector)

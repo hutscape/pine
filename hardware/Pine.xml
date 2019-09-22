@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 September 22, Sunday 15:02:46</date>
+    <date>2019 September 22, Sunday 22:30:36</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -142,6 +142,7 @@
     </comp>
     <comp ref="J1">
       <value>USB Micro type-B</value>
+      <footprint>USB_Micro-B_Horizontal:USB_Micro-B_Horizontal-U254-051T-4BH23-S2B</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Jing-Extension-of-the-Electronic-Co-LCSC-MICRO-USB-5S-B-Type-horns-High-temperature_C10418.pdf</datasheet>
       <fields>
         <field name="Category">Connector</field>

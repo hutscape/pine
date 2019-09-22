@@ -976,7 +976,7 @@ U 1 1 5D7EA3D5
 P 1350 1750
 F 0 "J1" H 1200 2150 50  0000 C CNN
 F 1 "USB Micro type-B" H 1500 2250 50  0000 C CNN
-F 2 "" H 1500 1700 50  0001 C CNN
+F 2 "USB_Micro-B_Horizontal:USB_Micro-B_Horizontal-U254-051T-4BH23-S2B" H 1500 1700 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Jing-Extension-of-the-Electronic-Co-LCSC-MICRO-USB-5S-B-Type-horns-High-temperature_C10418.pdf" H 1500 1700 50  0001 C CNN
 F 4 "Connector" H -100 0   50  0001 C CNN "Category"
 F 5 "SMD" H -100 0   50  0001 C CNN "Package"
