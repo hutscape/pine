@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch)
-    (date "2019 September 22, Sunday 14:36:59")
+    (date "2019 September 22, Sunday 14:56:34")
     (tool "Eeschema (5.1.0-0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -86,7 +86,6 @@
     (comp (ref R9)
       (value 10k)
       (footprint LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
-      (datasheet ~)
       (fields
         (field (name Category) Electronics)
         (field (name Package) 0805)
@@ -98,6 +97,7 @@
       (tstamp 5D77E188))
     (comp (ref SW2)
       (value "Push button")
+      (footprint Push_Button:Tactile_pushbutton)
       (datasheet ~)
       (fields
         (field (name Category) Connector)
@@ -188,7 +188,6 @@
     (comp (ref R1)
       (value 10k)
       (footprint LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
-      (datasheet ~)
       (fields
         (field (name Category) Electronics)
         (field (name Package) 0805)
@@ -200,6 +199,7 @@
       (tstamp 5D85EFAF))
     (comp (ref SW1)
       (value "DIP switch SPST")
+      (footprint Button_Switch_SMD:SW_SPDT_PCM12)
       (datasheet https://datasheet.lcsc.com/szlcsc/XKB-DSIC01LS-P_C319044.pdf)
       (fields
         (field (name Category) Connector)
@@ -590,7 +590,6 @@
     (comp (ref R12)
       (value 10k)
       (footprint LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
-      (datasheet https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf)
       (fields
         (field (name Category) Electronics)
         (field (name Package) 0805)
@@ -603,7 +602,6 @@
     (comp (ref R13)
       (value 10k)
       (footprint LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
-      (datasheet https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf)
       (fields
         (field (name Category) Electronics)
         (field (name Package) 0805)
