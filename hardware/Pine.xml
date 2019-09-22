@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 September 19, Thursday 16:24:39</date>
+    <date>2019 September 22, Sunday 14:37:06</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Pine</title>
         <company>Hutscape</company>
         <rev>V1.0</rev>
-        <date>2019-09-16</date>
+        <date>2019-09-22</date>
         <source>Pine.sch</source>
         <comment number="1" value="Control aircon by monitoring temperature in other parts of the room"/>
         <comment number="2" value=""/>
@@ -22,7 +22,7 @@
     <comp ref="U1">
       <value>IR Receiver</value>
       <footprint>OptoDevice:Vishay_MOLD-3Pin</footprint>
-      <datasheet>http://www.vishay.com/docs/82460/tsop45.pdf</datasheet>
+      <datasheet>https://docs-apac.rs-online.com/webdocs/0e30/0900766b80e30b9e.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Manufacturer">Vishay</field>
@@ -58,18 +58,18 @@
       <tstamp>5D3886A5</tstamp>
     </comp>
     <comp ref="R3">
-      <value>220R</value>
-      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>https://datasheet.lcsc.com/szlcsc/1811231531_Prosperity-Dielectrics-FNF05JT-220_C335230.pdf</datasheet>
+      <value>470R</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="Manufacturer">Prosperity Dielectrics</field>
-        <field name="Minimum Order">20</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
-        <field name="Part No.">FNF05JT-220</field>
-        <field name="Unit cost">0.027</field>
+        <field name="Part No.">WR08X4700FTL</field>
+        <field name="Unit cost">0.0050 </field>
         <field name="Vendor">LCSC</field>
-        <field name="Vendor link">https://lcsc.com/product-detail/Others_Prosperity-Dielectrics-FNF05JT-220_C335230.html</field>
+        <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
@@ -97,6 +97,7 @@
     </comp>
     <comp ref="R9">
       <value>10k</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -125,16 +126,15 @@
     </comp>
     <comp ref="C4">
       <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
-        <field name="Part No.">CL21B105KOFNNNE</field>
-        <field name="Unit cost">0.028</field>
-        <field name="Vendor">LCSC</field>
-        <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html</field>
+        <field name="Stock">40</field>
+        <field name="Stock No.">17</field>
+        <field name="Unit cost">0</field>
+        <field name="Vendor">Internal stock</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
@@ -159,6 +159,7 @@
     </comp>
     <comp ref="D1">
       <value>Schottky diode</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -176,6 +177,7 @@
     </comp>
     <comp ref="D2">
       <value>Schottky diode</value>
+      <footprint>Diode_SMD:D_SOD-123F</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -211,6 +213,7 @@
     </comp>
     <comp ref="R1">
       <value>10k</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -223,36 +226,15 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D85EFAF</tstamp>
     </comp>
-    <comp ref="U2">
-      <value>LDO</value>
-      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
-      <datasheet>https://docs-apac.rs-online.com/webdocs/151f/0900766b8151fea1.pdf</datasheet>
-      <fields>
-        <field name="Category">Electronics</field>
-        <field name="Manufacturer">STMicroelectronics</field>
-        <field name="Minimum Order">5</field>
-        <field name="Package">SOT-23</field>
-        <field name="Part No.">LD3985M28R</field>
-        <field name="Unit cost">0.316</field>
-        <field name="Vendor">RS Components</field>
-        <field name="Vendor link">https://sg.rs-online.com/web/p/low-dropout-voltage-regulators/6868792/</field>
-      </fields>
-      <libsource lib="Regulator_Linear" part="AP2112K-2.6" description="600mA low dropout linear regulator, with enable pin, 3.1V-6V input voltage range, 2.6V fixed positive output, SOT-23-5 package"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5D85FB5D</tstamp>
-    </comp>
     <comp ref="SW1">
       <value>DIP switch SPST</value>
       <datasheet>https://datasheet.lcsc.com/szlcsc/XKB-DSIC01LS-P_C319044.pdf</datasheet>
       <fields>
         <field name="Category">Connector</field>
-        <field name="Manufacturer">XKB Enterprise</field>
-        <field name="Minimum Order">1</field>
         <field name="Package">SMD</field>
-        <field name="Part No.">DSIC01LS-P</field>
-        <field name="Unit cost">0.48</field>
-        <field name="Vendor">LCSC</field>
-        <field name="Vendor link">https://lcsc.com/product-detail/DIP-Switches_XKB-Enterprise-DSIC01LS-P_C319044.html</field>
+        <field name="Stock">50</field>
+        <field name="Stock No.">40</field>
+        <field name="Vendor">Internal stock</field>
       </fields>
       <libsource lib="Switch" part="SW_SPST" description="Single Pole Single Throw (SPST) switch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -276,7 +258,7 @@
       <tstamp>5D7FA86F</tstamp>
     </comp>
     <comp ref="U4">
-      <value>MCU ATSAMD21G18A-AUT</value>
+      <value>MCU</value>
       <footprint>Package_QFP:TQFP-48_7x7mm_P0.5mm</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf</datasheet>
       <fields>
@@ -295,6 +277,7 @@
     </comp>
     <comp ref="R2">
       <value>100k</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -312,6 +295,7 @@
     </comp>
     <comp ref="C3">
       <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -329,6 +313,7 @@
     </comp>
     <comp ref="C2">
       <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -346,6 +331,7 @@
     </comp>
     <comp ref="C1">
       <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -379,6 +365,7 @@
     </comp>
     <comp ref="R6">
       <value>470R</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -387,7 +374,7 @@
         <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
-        <field name="Unit cost">0.0049</field>
+        <field name="Unit cost">0.0050 </field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
       </fields>
@@ -397,6 +384,7 @@
     </comp>
     <comp ref="D4">
       <value>yellow</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -415,6 +403,7 @@
     </comp>
     <comp ref="D5">
       <value>yellow</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -433,6 +422,7 @@
     </comp>
     <comp ref="R7">
       <value>470R</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -441,7 +431,7 @@
         <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
-        <field name="Unit cost">0.0049</field>
+        <field name="Unit cost">0.0050 </field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
       </fields>
@@ -451,6 +441,7 @@
     </comp>
     <comp ref="D6">
       <value>yellow</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -468,6 +459,7 @@
     </comp>
     <comp ref="R8">
       <value>470R</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -475,7 +467,7 @@
         <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
-        <field name="Unit cost">0.0049</field>
+        <field name="Unit cost">0.0050 </field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
       </fields>
@@ -485,6 +477,7 @@
     </comp>
     <comp ref="D7">
       <value>yellow</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -502,6 +495,7 @@
     </comp>
     <comp ref="R10">
       <value>470R</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -509,7 +503,7 @@
         <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
-        <field name="Unit cost">0.0049</field>
+        <field name="Unit cost">0.0050 </field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
       </fields>
@@ -519,6 +513,7 @@
     </comp>
     <comp ref="J2">
       <value>01x06 Male conn</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Connector</field>
@@ -532,6 +527,7 @@
     </comp>
     <comp ref="JP2">
       <value>Open solder jumper</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -545,6 +541,7 @@
     </comp>
     <comp ref="JP1">
       <value>Open solder jumper</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -558,6 +555,7 @@
     </comp>
     <comp ref="JP3">
       <value>Open solder jumper</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -571,6 +569,7 @@
     </comp>
     <comp ref="JP4">
       <value>Open solder jumper</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -584,6 +583,7 @@
     </comp>
     <comp ref="R4">
       <value>100k</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -601,6 +601,7 @@
     </comp>
     <comp ref="R5">
       <value>100k</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -616,49 +617,35 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D858007</tstamp>
     </comp>
-    <comp ref="C6">
-      <value>1uF</value>
-      <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf</datasheet>
-      <fields>
-        <field name="Category">Electronics</field>
-        <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="Minimum Order">20</field>
-        <field name="Package">0805</field>
-        <field name="Part No.">CL21B105KOFNNNE</field>
-        <field name="Unit cost">0.028</field>
-        <field name="Vendor">LCSC</field>
-        <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html</field>
-      </fields>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5D84C85B</tstamp>
-    </comp>
     <comp ref="C5">
       <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
-        <field name="Part No.">CL21B105KOFNNNE</field>
-        <field name="Unit cost">0.028</field>
-        <field name="Vendor">LCSC</field>
-        <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html</field>
+        <field name="Stock">40</field>
+        <field name="Stock No.">17</field>
+        <field name="Unit cost">0</field>
+        <field name="Vendor">Internal stock</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D84D506</tstamp>
     </comp>
     <comp ref="R11">
-      <value>1k</value>
-      <datasheet>~</datasheet>
+      <value>470R</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
-        <field name="Stock">40</field>
-        <field name="Stock No.">18</field>
-        <field name="Vendor">Internal stock</field>
+        <field name="Part No.">WR08X4700FTL</field>
+        <field name="Unit cost">0.0050 </field>
+        <field name="Vendor">LCSC</field>
+        <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
@@ -666,16 +653,15 @@
     </comp>
     <comp ref="C7">
       <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="Manufacturer">Samsung Electro-Mechanics</field>
-        <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
-        <field name="Part No.">CL21B105KOFNNNE</field>
-        <field name="Unit cost">0.028</field>
-        <field name="Vendor">LCSC</field>
-        <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html</field>
+        <field name="Stock">40</field>
+        <field name="Stock No.">17</field>
+        <field name="Unit cost">0</field>
+        <field name="Vendor">Internal stock</field>
       </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
@@ -683,15 +669,13 @@
     </comp>
     <comp ref="R12">
       <value>10k</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
-        <field name="Part No.">WR08X4700FTL</field>
         <field name="Stock">5</field>
         <field name="Stock No.">31</field>
-        <field name="Unit cost">0.0049</field>
         <field name="Vendor">Internal stock</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
@@ -700,20 +684,101 @@
     </comp>
     <comp ref="R13">
       <value>10k</value>
+      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
-        <field name="Part No.">WR08X4700FTL</field>
         <field name="Stock">5</field>
         <field name="Stock No.">31</field>
-        <field name="Unit cost">0.0049</field>
         <field name="Vendor">Internal stock</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D96CA00</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Package">0805</field>
+        <field name="Stock">3</field>
+        <field name="Stock No.">30</field>
+        <field name="Unit cost">0</field>
+        <field name="Vendor">Internal stock</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D887ED7</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>LDO</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://docs-apac.rs-online.com/webdocs/151f/0900766b8151fea1.pdf</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Manufacturer">STMicroelectronics</field>
+        <field name="Package">SOT-23</field>
+        <field name="Part No.">LD3985M28R_SOT23</field>
+        <field name="Unit cost">0.32</field>
+        <field name="Vendor">RS Components</field>
+        <field name="Vendor link">https://sg.rs-online.com/web/p/low-dropout-voltage-regulators/6868792/</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="LD3985M28R_SOT23" description="150mA Low Dropout Voltage Regulator, Fixed Output 2.8V, SOT-23-5"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D901E16</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Package">0805</field>
+        <field name="Stock">40</field>
+        <field name="Stock No.">17</field>
+        <field name="Unit cost">0</field>
+        <field name="Vendor">Internal stock</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D90F0D3</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>10nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/1811301232_Huaxin-S-T-0805B103K631CT_C338146.pdf</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Minimum Order">20</field>
+        <field name="Package">0805</field>
+        <field name="Part No.">0805B103K631CT</field>
+        <field name="Unit cost">0.026</field>
+        <field name="Vendor">LCSC</field>
+        <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Walsin-Tech-Corp-0805B103K631CT_C338146.html</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D90F40F</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Package">0805</field>
+        <field name="Stock">40</field>
+        <field name="Stock No.">17</field>
+        <field name="Unit cost">0</field>
+        <field name="Vendor">Internal stock</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D90FAE9</tstamp>
     </comp>
   </components>
   <libparts>
@@ -961,45 +1026,33 @@
         <pin num="48" name="PB03" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="Regulator_Linear" part="AP2204K-1.5">
+    <libpart lib="Regulator_Linear" part="LD3985M122R_SOT23">
       <aliases>
-        <alias>AP2204K-1.8</alias>
-        <alias>AP2204K-2.5</alias>
-        <alias>AP2204K-2.8</alias>
-        <alias>AP2204K-3.0</alias>
-        <alias>AP2204K-3.3</alias>
-        <alias>AP2204K-5.0</alias>
-        <alias>AP2127K-1.0</alias>
-        <alias>AP2127K-1.2</alias>
-        <alias>AP2127K-1.5</alias>
-        <alias>AP2127K-1.8</alias>
-        <alias>AP2127K-2.5</alias>
-        <alias>AP2127K-2.8</alias>
-        <alias>AP2127K-3.0</alias>
-        <alias>AP2127K-3.3</alias>
-        <alias>AP2127K-4.2</alias>
-        <alias>AP2127K-4.75</alias>
-        <alias>AP2112K-1.2</alias>
-        <alias>AP2112K-1.8</alias>
-        <alias>AP2112K-2.5</alias>
-        <alias>AP2112K-2.6</alias>
-        <alias>AP2112K-3.3</alias>
+        <alias>LD3985M18R_SOT23</alias>
+        <alias>LD3985M25R_SOT23</alias>
+        <alias>LD3985M26R_SOT23</alias>
+        <alias>LD3985M27R_SOT23</alias>
+        <alias>LD3985M28R_SOT23</alias>
+        <alias>LD3985M29R_SOT23</alias>
+        <alias>LD3985M30R_SOT23</alias>
+        <alias>LD3985M33R_SOT23</alias>
+        <alias>LD3985M47R_SOT23</alias>
       </aliases>
-      <description>150mA low dropout linear regulator, wide input voltage range, 1.5V fixed positive output, SOT-23-5 package</description>
-      <docs>https://www.diodes.com/assets/Datasheets/AP2204.pdf</docs>
+      <description>150mA Low Dropout Voltage Regulator, Fixed Output 1.22V, SOT-23-5</description>
+      <docs>http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00003395.pdf</docs>
       <footprints>
-        <fp>SOT?23?5*</fp>
+        <fp>SOT?23*</fp>
       </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">AP2204K-1.5</field>
+        <field name="Value">LD3985M122R_SOT23</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
       </fields>
       <pins>
         <pin num="1" name="VIN" type="power_in"/>
         <pin num="2" name="GND" type="power_in"/>
-        <pin num="3" name="EN" type="input"/>
-        <pin num="4" name="NC" type="NotConnected"/>
+        <pin num="3" name="INH" type="input"/>
+        <pin num="4" name="BYP" type="input"/>
         <pin num="5" name="VOUT" type="power_out"/>
       </pins>
     </libpart>
@@ -1134,64 +1187,66 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/IR_Receiver">
-      <node ref="U1" pin="1"/>
-      <node ref="C6" pin="1"/>
-      <node ref="U4" pin="24"/>
-    </net>
-    <net code="2" name="GND">
-      <node ref="U4" pin="18"/>
-      <node ref="C7" pin="2"/>
-      <node ref="U4" pin="35"/>
-      <node ref="U4" pin="42"/>
+    <net code="1" name="GND">
       <node ref="U1" pin="2"/>
-      <node ref="U4" pin="5"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="R8" pin="2"/>
       <node ref="SW2" pin="2"/>
       <node ref="C4" pin="1"/>
+      <node ref="C7" pin="2"/>
       <node ref="J1" pin="5"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="Q2" pin="1"/>
-      <node ref="R5" pin="2"/>
-      <node ref="R1" pin="1"/>
       <node ref="J2" pin="3"/>
-      <node ref="U2" pin="2"/>
-      <node ref="R8" pin="2"/>
-      <node ref="U3" pin="2"/>
-      <node ref="BT1" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C2" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U4" pin="35"/>
       <node ref="C3" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U4" pin="18"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U4" pin="42"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="U4" pin="5"/>
     </net>
-    <net code="3" name="Net-(C5-Pad1)">
+    <net code="2" name="Net-(C5-Pad1)">
       <node ref="C5" pin="1"/>
       <node ref="R11" pin="2"/>
       <node ref="U1" pin="3"/>
     </net>
-    <net code="4" name="Net-(Q2-Pad2)">
+    <net code="3" name="Net-(Q2-Pad2)">
       <node ref="R3" pin="1"/>
       <node ref="Q2" pin="2"/>
     </net>
-    <net code="5" name="/IR_Emitter">
+    <net code="4" name="/IR_Emitter">
       <node ref="U4" pin="12"/>
       <node ref="R3" pin="2"/>
     </net>
-    <net code="6" name="Net-(D3-Pad1)">
-      <node ref="D3" pin="1"/>
+    <net code="5" name="Net-(D3-Pad1)">
       <node ref="Q2" pin="3"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="6" name="/IR_Receiver">
+      <node ref="U1" pin="1"/>
+      <node ref="U4" pin="24"/>
     </net>
     <net code="7" name="Net-(U3-Pad7)">
       <node ref="U3" pin="7"/>
     </net>
     <net code="8" name="Net-(C4-Pad2)">
-      <node ref="C4" pin="2"/>
       <node ref="U4" pin="43"/>
+      <node ref="C4" pin="2"/>
     </net>
     <net code="9" name="Net-(D1-Pad2)">
-      <node ref="R1" pin="2"/>
-      <node ref="Q1" pin="1"/>
       <node ref="J1" pin="1"/>
       <node ref="D1" pin="2"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="R1" pin="2"/>
     </net>
     <net code="10" name="Net-(J1-Pad4)">
       <node ref="J1" pin="4"/>
@@ -1203,219 +1258,223 @@
       <node ref="D2" pin="2"/>
       <node ref="Q1" pin="3"/>
     </net>
-    <net code="13" name="Net-(D1-Pad1)">
-      <node ref="R2" pin="2"/>
-      <node ref="D2" pin="1"/>
-      <node ref="U2" pin="1"/>
-      <node ref="D1" pin="1"/>
-    </net>
-    <net code="14" name="Net-(U2-Pad4)">
-      <node ref="U2" pin="4"/>
-    </net>
-    <net code="15" name="Net-(Q1-Pad2)">
+    <net code="13" name="Net-(Q1-Pad2)">
       <node ref="Q1" pin="2"/>
       <node ref="SW1" pin="2"/>
     </net>
-    <net code="16" name="Net-(BT1-Pad1)">
-      <node ref="BT1" pin="1"/>
+    <net code="14" name="Net-(BT1-Pad1)">
       <node ref="SW1" pin="1"/>
+      <node ref="BT1" pin="1"/>
     </net>
-    <net code="17" name="Net-(U4-Pad1)">
+    <net code="15" name="Net-(U4-Pad1)">
       <node ref="U4" pin="1"/>
     </net>
-    <net code="18" name="Net-(U4-Pad10)">
+    <net code="16" name="Net-(U4-Pad10)">
       <node ref="U4" pin="10"/>
     </net>
-    <net code="19" name="/Batt">
+    <net code="17" name="/Batt">
       <node ref="U4" pin="11"/>
-      <node ref="R4" pin="2"/>
       <node ref="R5" pin="1"/>
+      <node ref="R4" pin="2"/>
     </net>
-    <net code="20" name="Net-(U4-Pad13)">
+    <net code="18" name="Net-(U4-Pad13)">
       <node ref="U4" pin="13"/>
     </net>
-    <net code="21" name="Net-(U4-Pad14)">
+    <net code="19" name="Net-(U4-Pad14)">
       <node ref="U4" pin="14"/>
     </net>
-    <net code="22" name="Net-(U4-Pad15)">
+    <net code="20" name="Net-(U4-Pad15)">
       <node ref="U4" pin="15"/>
     </net>
-    <net code="23" name="Net-(U4-Pad16)">
+    <net code="21" name="Net-(U4-Pad16)">
       <node ref="U4" pin="16"/>
     </net>
-    <net code="24" name="Net-(U4-Pad19)">
+    <net code="22" name="Net-(U4-Pad19)">
       <node ref="U4" pin="19"/>
     </net>
-    <net code="25" name="Net-(U4-Pad2)">
+    <net code="23" name="Net-(U4-Pad2)">
       <node ref="U4" pin="2"/>
     </net>
-    <net code="26" name="Net-(U4-Pad20)">
+    <net code="24" name="Net-(U4-Pad20)">
       <node ref="U4" pin="20"/>
     </net>
-    <net code="27" name="Net-(U4-Pad21)">
+    <net code="25" name="Net-(U4-Pad21)">
       <node ref="U4" pin="21"/>
     </net>
-    <net code="28" name="Net-(U4-Pad22)">
+    <net code="26" name="Net-(U4-Pad22)">
       <node ref="U4" pin="22"/>
     </net>
-    <net code="29" name="Net-(U4-Pad23)">
+    <net code="27" name="Net-(U4-Pad23)">
       <node ref="U4" pin="23"/>
     </net>
-    <net code="30" name="Net-(U4-Pad25)">
+    <net code="28" name="Net-(U4-Pad25)">
       <node ref="U4" pin="25"/>
     </net>
-    <net code="31" name="/LED">
+    <net code="29" name="/LED">
       <node ref="U4" pin="26"/>
       <node ref="R10" pin="2"/>
     </net>
-    <net code="32" name="Net-(U4-Pad27)">
+    <net code="30" name="Net-(U4-Pad27)">
       <node ref="U4" pin="27"/>
     </net>
-    <net code="33" name="Net-(U4-Pad28)">
+    <net code="31" name="Net-(U4-Pad28)">
       <node ref="U4" pin="28"/>
     </net>
-    <net code="34" name="Net-(U4-Pad29)">
+    <net code="32" name="Net-(U4-Pad29)">
       <node ref="U4" pin="29"/>
     </net>
-    <net code="35" name="Net-(U4-Pad3)">
+    <net code="33" name="Net-(U4-Pad3)">
       <node ref="U4" pin="3"/>
     </net>
-    <net code="36" name="Net-(U4-Pad30)">
+    <net code="34" name="Net-(U4-Pad30)">
       <node ref="U4" pin="30"/>
     </net>
-    <net code="37" name="/USB_D-">
-      <node ref="U4" pin="33"/>
+    <net code="35" name="/USB_D-">
       <node ref="J1" pin="2"/>
+      <node ref="U4" pin="33"/>
     </net>
-    <net code="38" name="/USB_D+">
+    <net code="36" name="/USB_D+">
       <node ref="J1" pin="3"/>
       <node ref="U4" pin="34"/>
     </net>
-    <net code="39" name="Net-(U4-Pad37)">
+    <net code="37" name="Net-(U4-Pad37)">
       <node ref="U4" pin="37"/>
     </net>
-    <net code="40" name="Net-(U4-Pad38)">
+    <net code="38" name="Net-(U4-Pad38)">
       <node ref="U4" pin="38"/>
     </net>
-    <net code="41" name="/TX_LED">
-      <node ref="U4" pin="39"/>
+    <net code="39" name="/TX_LED">
       <node ref="R6" pin="2"/>
+      <node ref="U4" pin="39"/>
     </net>
-    <net code="42" name="Net-(U4-Pad4)">
+    <net code="40" name="Net-(U4-Pad4)">
       <node ref="U4" pin="4"/>
     </net>
-    <net code="43" name="/RST">
-      <node ref="SW2" pin="1"/>
+    <net code="41" name="/RST">
       <node ref="R9" pin="1"/>
-      <node ref="U4" pin="40"/>
+      <node ref="SW2" pin="1"/>
       <node ref="J2" pin="5"/>
+      <node ref="U4" pin="40"/>
     </net>
-    <net code="44" name="Net-(U4-Pad41)">
+    <net code="42" name="Net-(U4-Pad41)">
       <node ref="U4" pin="41"/>
     </net>
-    <net code="45" name="/SWCLK">
-      <node ref="J2" pin="2"/>
+    <net code="43" name="/SWCLK">
       <node ref="U4" pin="45"/>
+      <node ref="J2" pin="2"/>
     </net>
-    <net code="46" name="Net-(U4-Pad47)">
+    <net code="44" name="Net-(U4-Pad47)">
       <node ref="U4" pin="47"/>
     </net>
-    <net code="47" name="Net-(U4-Pad7)">
+    <net code="45" name="Net-(U4-Pad7)">
       <node ref="U4" pin="7"/>
     </net>
-    <net code="48" name="Net-(U4-Pad8)">
+    <net code="46" name="Net-(U4-Pad8)">
       <node ref="U4" pin="8"/>
     </net>
-    <net code="49" name="Net-(U4-Pad9)">
+    <net code="47" name="Net-(U4-Pad9)">
       <node ref="U4" pin="9"/>
     </net>
-    <net code="50" name="Net-(R2-Pad1)">
+    <net code="48" name="Net-(R2-Pad1)">
       <node ref="U2" pin="3"/>
       <node ref="R2" pin="1"/>
     </net>
-    <net code="52" name="Net-(U3-Pad3)">
+    <net code="49" name="Net-(U3-Pad3)">
       <node ref="U3" pin="3"/>
     </net>
-    <net code="53" name="Net-(U3-Pad4)">
+    <net code="50" name="Net-(U3-Pad4)">
       <node ref="U3" pin="4"/>
     </net>
-    <net code="54" name="/RX_LED">
-      <node ref="U4" pin="48"/>
+    <net code="51" name="/RX_LED">
       <node ref="R7" pin="2"/>
+      <node ref="U4" pin="48"/>
     </net>
-    <net code="55" name="Net-(D4-Pad1)">
+    <net code="52" name="Net-(D4-Pad1)">
       <node ref="R6" pin="1"/>
       <node ref="D4" pin="1"/>
     </net>
-    <net code="56" name="Net-(D5-Pad1)">
+    <net code="53" name="Net-(D5-Pad1)">
       <node ref="R7" pin="1"/>
       <node ref="D5" pin="1"/>
     </net>
-    <net code="57" name="Net-(D6-Pad1)">
-      <node ref="R8" pin="1"/>
+    <net code="54" name="Net-(D6-Pad1)">
       <node ref="D6" pin="1"/>
+      <node ref="R8" pin="1"/>
     </net>
-    <net code="58" name="Net-(D7-Pad1)">
+    <net code="55" name="Net-(D7-Pad1)">
       <node ref="R10" pin="1"/>
       <node ref="D7" pin="1"/>
     </net>
-    <net code="59" name="Net-(J2-Pad6)">
+    <net code="56" name="Net-(J2-Pad6)">
       <node ref="J2" pin="6"/>
     </net>
-    <net code="60" name="/SWDIO">
+    <net code="57" name="/SWDIO">
       <node ref="J2" pin="4"/>
       <node ref="U4" pin="46"/>
     </net>
-    <net code="61" name="Net-(JP2-Pad1)">
-      <node ref="U2" pin="5"/>
-      <node ref="JP2" pin="1"/>
-    </net>
-    <net code="62" name="/2V8">
-      <node ref="R9" pin="2"/>
-      <node ref="JP2" pin="2"/>
-      <node ref="JP1" pin="2"/>
-      <node ref="U4" pin="36"/>
+    <net code="58" name="/2V8">
       <node ref="JP3" pin="2"/>
-      <node ref="C2" pin="1"/>
+      <node ref="C8" pin="1"/>
       <node ref="JP4" pin="1"/>
+      <node ref="JP1" pin="2"/>
+      <node ref="U4" pin="6"/>
+      <node ref="JP2" pin="2"/>
+      <node ref="U4" pin="44"/>
+      <node ref="U4" pin="36"/>
+      <node ref="U4" pin="17"/>
       <node ref="D7" pin="2"/>
-      <node ref="C3" pin="1"/>
       <node ref="D6" pin="2"/>
+      <node ref="R4" pin="1"/>
       <node ref="D5" pin="2"/>
       <node ref="D4" pin="2"/>
-      <node ref="U4" pin="17"/>
-      <node ref="U4" pin="6"/>
-      <node ref="R4" pin="1"/>
-      <node ref="U4" pin="44"/>
+      <node ref="R9" pin="2"/>
       <node ref="C1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C3" pin="1"/>
     </net>
-    <net code="63" name="Net-(D3-Pad2)">
+    <net code="59" name="Net-(D3-Pad2)">
       <node ref="D3" pin="2"/>
       <node ref="JP3" pin="1"/>
     </net>
-    <net code="64" name="+3V3">
+    <net code="60" name="+3V3">
       <node ref="J2" pin="1"/>
     </net>
-    <net code="65" name="Net-(JP1-Pad1)">
-      <node ref="JP1" pin="1"/>
+    <net code="61" name="Net-(JP1-Pad1)">
       <node ref="R11" pin="1"/>
+      <node ref="JP1" pin="1"/>
     </net>
-    <net code="66" name="Net-(C7-Pad1)">
-      <node ref="JP4" pin="2"/>
-      <node ref="R13" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="R12" pin="1"/>
+    <net code="62" name="Net-(C7-Pad1)">
       <node ref="U3" pin="5"/>
+      <node ref="C7" pin="1"/>
+      <node ref="R13" pin="1"/>
+      <node ref="JP4" pin="2"/>
+      <node ref="R12" pin="1"/>
     </net>
-    <net code="67" name="/SDA">
+    <net code="63" name="/SDA">
       <node ref="U3" pin="1"/>
       <node ref="R12" pin="2"/>
       <node ref="U4" pin="31"/>
     </net>
-    <net code="68" name="/SCL">
+    <net code="64" name="/SCL">
+      <node ref="U4" pin="32"/>
       <node ref="U3" pin="6"/>
       <node ref="R13" pin="2"/>
-      <node ref="U4" pin="32"/>
+    </net>
+    <net code="65" name="Net-(C9-Pad1)">
+      <node ref="U2" pin="4"/>
+      <node ref="C9" pin="1"/>
+    </net>
+    <net code="66" name="Net-(C10-Pad1)">
+      <node ref="C10" pin="1"/>
+      <node ref="JP2" pin="1"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="67" name="Net-(C6-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="R2" pin="2"/>
     </net>
   </nets>
 </export>

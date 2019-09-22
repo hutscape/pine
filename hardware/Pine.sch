@@ -85,15 +85,15 @@ P 4350 5350
 F 0 "R3" V 4250 5350 50  0000 C CNN
 F 1 "470R" V 4450 5350 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4350 5350 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811231531_Prosperity-Dielectrics-FNF05JT-220_C335230.pdf" H 4350 5350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 4350 5350 50  0001 C CNN
 F 4 "Electronics" H -500 3200 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
-F 6 "Prosperity Dielectrics" H 0   0   50  0001 C CNN "Manufacturer"
-F 7 "FNF05JT-220" H 0   0   50  0001 C CNN "Part No."
-F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
-F 9 "20" H 0   0   50  0001 C CNN "Minimum Order"
-F 10 "40" H 0   0   50  0001 C CNN "Stock"
-F 11 "18" H 0   0   50  0001 C CNN "Stock No."
+F 6 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
+F 7 "WR08X4700FTL" H 0   0   50  0001 C CNN "Part No."
+F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
+F 9 "50" H 0   0   50  0001 C CNN "Minimum Order"
+F 10 "0.0050 " H 0   0   50  0001 C CNN "Unit cost"
+F 11 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 	1    4350 5350
 	0    1    1    0   
 $EndComp
@@ -952,12 +952,10 @@ F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6050 1850 50  
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf" H 6050 1850 50  0001 C CNN
 F 4 "Electronics" H -250 100 50  0001 C CNN "Category"
 F 5 "0805" H -250 0   50  0001 C CNN "Package"
-F 6 "Samsung Electro-Mechanics" H -250 0   50  0001 C CNN "Manufacturer"
-F 7 "CL21B105KOFNNNE" H -250 0   50  0001 C CNN "Part No."
-F 8 "LCSC" H -250 0   50  0001 C CNN "Vendor"
-F 9 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html" H -250 0   50  0001 C CNN "Vendor link"
-F 10 "0.028" H -250 0   50  0001 C CNN "Unit cost"
-F 11 "20" H -250 0   50  0001 C CNN "Minimum Order"
+F 6 "Internal stock" H -250 0   50  0001 C CNN "Vendor"
+F 7 "0" H -250 0   50  0001 C CNN "Unit cost"
+F 8 "40" H 0   0   50  0001 C CNN "Stock"
+F 9 "17" H 0   0   50  0001 C CNN "Stock No."
 	1    6050 1850
 	0    -1   -1   0   
 $EndComp
@@ -997,7 +995,7 @@ U 1 1 5D7EC8A5
 P 2250 1550
 F 0 "D1" H 2400 1500 50  0000 C CNN
 F 1 "Schottky diode" H 2250 1400 50  0000 C CNN
-F 2 "" H 2250 1550 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 2250 1550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf" H 2250 1550 50  0001 C CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
 F 5 "ON Semi" H 0   0   50  0001 C CNN "Manufacturer"
@@ -1018,7 +1016,7 @@ U 1 1 5D7EECB2
 P 2600 2450
 F 0 "D2" V 2550 2600 50  0000 C CNN
 F 1 "Schottky diode" V 2650 2800 50  0000 C CNN
-F 2 "" H 2600 2450 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 2600 2450 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf" H 2600 2450 50  0001 C CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
 F 5 "ON Semi" H 0   0   50  0001 C CNN "Manufacturer"
@@ -1123,12 +1121,9 @@ F 2 "" H 1350 2950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/XKB-DSIC01LS-P_C319044.pdf" H 1350 2950 50  0001 C CNN
 F 4 "Connector" H -100 0   50  0001 C CNN "Category"
 F 5 "SMD" H -100 0   50  0001 C CNN "Package"
-F 6 "XKB Enterprise" H -100 0   50  0001 C CNN "Manufacturer"
-F 7 "DSIC01LS-P" H -100 0   50  0001 C CNN "Part No."
-F 8 "Internal stock" H -100 0   50  0001 C CNN "Vendor"
-F 9 "1" H 0   0   50  0001 C CNN "Minimum Order"
-F 10 "50" H 0   0   50  0001 C CNN "Stock"
-F 11 "40" H 0   0   50  0001 C CNN "Stock No."
+F 6 "Internal stock" H -100 0   50  0001 C CNN "Vendor"
+F 7 "50" H 0   0   50  0001 C CNN "Stock"
+F 8 "40" H 0   0   50  0001 C CNN "Stock No."
 	1    1350 2950
 	0    -1   -1   0   
 $EndComp
@@ -1510,9 +1505,11 @@ F 4 "Electronics" H -1700 1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
 F 7 "WR08X4700FTL" H 0   0   50  0001 C CNN "Part No."
-F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
+F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "Yes" H 0   0   50  0001 C CNN "DNP"
 F 10 "50" H 0   0   50  0001 C CNN "Minimum Order"
+F 11 "0.0050 " H 0   0   50  0001 C CNN "Unit cost"
+F 12 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 	1    8450 5100
 	1    0    0    -1  
 $EndComp
@@ -1572,9 +1569,11 @@ F 4 "Electronics" H -1100 1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
 F 7 "WR08X4700FTL" H 0   0   50  0001 C CNN "Part No."
-F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
+F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "Yes" H 0   0   50  0001 C CNN "DNP"
 F 10 "50" H 0   0   50  0001 C CNN "Minimum Order"
+F 11 "0.0050 " H 0   0   50  0001 C CNN "Unit cost"
+F 12 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 	1    9050 5100
 	1    0    0    -1  
 $EndComp
@@ -1613,10 +1612,10 @@ F 4 "Electronics" H -550 1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
 F 7 "WR08X4700FTL" H 0   0   50  0001 C CNN "Part No."
-F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
+F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "50" H 0   0   50  0001 C CNN "Minimum Order"
-F 10 "40" H 0   0   50  0001 C CNN "Stock"
-F 11 "18" H 0   0   50  0001 C CNN "Stock No."
+F 10 "0.0050 " H 0   0   50  0001 C CNN "Unit cost"
+F 11 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 	1    9600 5100
 	1    0    0    -1  
 $EndComp
@@ -1670,10 +1669,10 @@ F 4 "Electronics" H 50  1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
 F 7 "WR08X4700FTL" H 0   0   50  0001 C CNN "Part No."
-F 8 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
+F 8 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 9 "50" H 0   0   50  0001 C CNN "Minimum Order"
-F 10 "40" H 0   0   50  0001 C CNN "Stock"
-F 11 "18" H 0   0   50  0001 C CNN "Stock No."
+F 10 "0.0050 " H 0   0   50  0001 C CNN "Unit cost"
+F 11 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 	1    10200 5100
 	1    0    0    -1  
 $EndComp
@@ -1745,7 +1744,7 @@ U 1 1 5D7FC57C
 P 2150 6850
 F 0 "J2" H 2050 7050 50  0000 C CNN
 F 1 "01x06 Male conn" H 2300 6450 50  0000 C CNN
-F 2 "" H 2150 6850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2150 6850 50  0001 C CNN
 F 3 "~" H 2150 6850 50  0001 C CNN
 F 4 "Connector" H 150 150 50  0001 C CNN "Category"
 F 5 "TH" H 150 150 50  0001 C CNN "Package"
@@ -1825,7 +1824,7 @@ U 1 1 5D80DB41
 P 4200 1550
 F 0 "JP2" H 4200 1650 50  0000 C CNN
 F 1 "Open solder jumper" H 4250 1400 50  0001 C CNN
-F 2 "" H 4200 1550 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4200 1550 50  0001 C CNN
 F 3 "~" H 4200 1550 50  0001 C CNN
 F 4 "Electronics" H 150 0   50  0001 C CNN "Category"
 F 5 "Solder" H 150 0   50  0001 C CNN "Package"
@@ -1840,7 +1839,7 @@ U 1 1 5D83509E
 P 3100 4800
 F 0 "JP1" H 3100 4900 50  0000 C CNN
 F 1 "Open solder jumper" H 3100 4700 50  0000 C CNN
-F 2 "" H 3100 4800 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3100 4800 50  0001 C CNN
 F 3 "~" H 3100 4800 50  0001 C CNN
 F 4 "Electronics" H 1050 -650 50  0001 C CNN "Category"
 F 5 "Solder" H 1050 -650 50  0001 C CNN "Package"
@@ -1855,7 +1854,7 @@ U 1 1 5D854735
 P 5350 4450
 F 0 "JP3" H 5350 4550 50  0000 C CNN
 F 1 "Open solder jumper" H 5400 4350 50  0000 C CNN
-F 2 "" H 5350 4450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5350 4450 50  0001 C CNN
 F 3 "~" H 5350 4450 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Solder" H 0   0   50  0001 C CNN "Package"
@@ -1874,7 +1873,7 @@ U 1 1 5D86D561
 P 7750 4750
 F 0 "JP4" H 7750 4850 50  0000 C CNN
 F 1 "Open solder jumper" H 7750 4650 50  0001 C CNN
-F 2 "" H 7750 4750 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7750 4750 50  0001 C CNN
 F 3 "~" H 7750 4750 50  0001 C CNN
 F 4 "Electronics" H 400 0   50  0001 C CNN "Category"
 F 5 "Solder" H 400 0   50  0001 C CNN "Package"
@@ -2044,13 +2043,11 @@ F 1 "1uF" H 2442 5005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2350 5050 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf" H 2350 5050 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-F 5 "LCSC" H 0   0   50  0001 C CNN "Vendor"
-F 6 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "Manufacturer"
-F 7 "20" H 0   0   50  0001 C CNN "Minimum Order"
-F 8 "0805" H 0   0   50  0001 C CNN "Package"
-F 9 "CL21B105KOFNNNE" H 0   0   50  0001 C CNN "Part No."
-F 10 "0.028" H 0   0   50  0001 C CNN "Unit cost"
-F 11 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html" H 0   0   50  0001 C CNN "Vendor link"
+F 5 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "0" H 0   0   50  0001 C CNN "Unit cost"
+F 8 "40" H 0   0   50  0001 C CNN "Stock"
+F 9 "17" H 0   0   50  0001 C CNN "Stock No."
 	1    2350 5050
 	1    0    0    -1  
 $EndComp
@@ -2061,12 +2058,15 @@ P 2550 4800
 F 0 "R11" V 2354 4800 50  0000 C CNN
 F 1 "470R" V 2445 4800 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2550 4800 50  0001 C CNN
-F 3 "~" H 2550 4800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 2550 4800 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-F 5 "40" H 0   0   50  0001 C CNN "Stock"
-F 6 "18" H 0   0   50  0001 C CNN "Stock No."
-F 7 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
-F 8 "0805" H 0   0   50  0001 C CNN "Package"
+F 5 "LCSC" H 0   0   50  0001 C CNN "Vendor"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
+F 8 "50" H 0   0   50  0001 C CNN "Minimum Order"
+F 9 "WR08X4700FTL" H 0   0   50  0001 C CNN "Part No."
+F 10 "0.0050 " H 0   0   50  0001 C CNN "Unit cost"
+F 11 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
 	1    2550 4800
 	0    1    1    0   
 $EndComp
@@ -2118,13 +2118,11 @@ F 1 "1uF" H 7050 4800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6950 4850 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf" H 6950 4850 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-F 5 "LCSC" H 0   0   50  0001 C CNN "Vendor"
-F 6 "Samsung Electro-Mechanics" H 0   0   50  0001 C CNN "Manufacturer"
-F 7 "20" H 0   0   50  0001 C CNN "Minimum Order"
-F 8 "0805" H 0   0   50  0001 C CNN "Package"
-F 9 "CL21B105KOFNNNE" H 0   0   50  0001 C CNN "Part No."
-F 10 "0.028" H 0   0   50  0001 C CNN "Unit cost"
-F 11 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_SAMSUNG_CL21B105KOFNNNE_1uF-105-10-16V_C24123.html" H 0   0   50  0001 C CNN "Vendor link"
+F 5 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
+F 6 "0805" H 0   0   50  0001 C CNN "Package"
+F 7 "0" H 0   0   50  0001 C CNN "Unit cost"
+F 8 "40" H 0   0   50  0001 C CNN "Stock"
+F 9 "17" H 0   0   50  0001 C CNN "Stock No."
 	1    6950 4850
 	1    0    0    -1  
 $EndComp
@@ -2158,11 +2156,9 @@ F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7300 5000 50  0001
 F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 7300 5000 50  0001 C CNN
 F 4 "Electronics" H -2850 1850 50  0001 C CNN "Category"
 F 5 "0805" H -1150 -100 50  0001 C CNN "Package"
-F 6 "WR08X4700FTL" H -1150 -100 50  0001 C CNN "Part No."
-F 7 "Internal stock" H -1150 -100 50  0001 C CNN "Vendor"
-F 8 "50" H -1150 -100 50  0001 C CNN "Minimum Order"
-F 9 "5" H 0   0   50  0001 C CNN "Stock"
-F 10 "31" H 0   0   50  0001 C CNN "Stock No."
+F 6 "Internal stock" H -1150 -100 50  0001 C CNN "Vendor"
+F 7 "5" H 0   0   50  0001 C CNN "Stock"
+F 8 "31" H 0   0   50  0001 C CNN "Stock No."
 	1    7300 5000
 	1    0    0    -1  
 $EndComp
@@ -2176,11 +2172,9 @@ F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7600 5150 50  0001
 F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 7600 5150 50  0001 C CNN
 F 4 "Electronics" H -2550 2000 50  0001 C CNN "Category"
 F 5 "0805" H -850 50  50  0001 C CNN "Package"
-F 6 "WR08X4700FTL" H -850 50  50  0001 C CNN "Part No."
-F 7 "Internal stock" H -850 50  50  0001 C CNN "Vendor"
-F 8 "50" H -850 50  50  0001 C CNN "Minimum Order"
-F 9 "5" H 0   0   50  0001 C CNN "Stock"
-F 10 "31" H 0   0   50  0001 C CNN "Stock No."
+F 6 "Internal stock" H -850 50  50  0001 C CNN "Vendor"
+F 7 "5" H 0   0   50  0001 C CNN "Stock"
+F 8 "31" H 0   0   50  0001 C CNN "Stock No."
 	1    7600 5150
 	1    0    0    -1  
 $EndComp
@@ -2213,6 +2207,12 @@ F 0 "C8" H 5442 3396 50  0000 L CNN
 F 1 "10uF" H 5442 3305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5350 3350 50  0001 C CNN
 F 3 "~" H 5350 3350 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "0805" H 0   0   50  0001 C CNN "Package"
+F 6 "3" H 0   0   50  0001 C CNN "Stock"
+F 7 "30" H 0   0   50  0001 C CNN "Stock No."
+F 8 "0" H 0   0   50  0001 C CNN "Unit cost"
+F 9 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 	1    5350 3350
 	1    0    0    -1  
 $EndComp
@@ -2248,7 +2248,7 @@ Connection ~ 2350 5700
 Wire Notes Line
 	2950 5550 2950 6100
 Text Notes 3750 6050 0    50   ~ 0
-470R is used.\n\nAccording to \ntransistor calculation:\nMax 3.36K\nMin:168R
+470R is used.\n\nAccording to \ntransistor calculation:\nMax 3.36K\nMin: 168R
 Wire Notes Line
 	4650 5550 4650 6100
 Wire Notes Line
@@ -2281,8 +2281,14 @@ U 1 1 5D90F0D3
 P 3100 2050
 F 0 "C6" H 2900 2050 50  0000 L CNN
 F 1 "1uF" H 2900 1950 50  0000 L CNN
-F 2 "" H 3100 2050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3100 2050 50  0001 C CNN
 F 3 "~" H 3100 2050 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "0805" H 0   0   50  0001 C CNN "Package"
+F 6 "40" H 0   0   50  0001 C CNN "Stock"
+F 7 "17" H 0   0   50  0001 C CNN "Stock No."
+F 8 "0" H 0   0   50  0001 C CNN "Unit cost"
+F 9 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 	1    3100 2050
 	1    0    0    -1  
 $EndComp
@@ -2292,8 +2298,16 @@ U 1 1 5D90F40F
 P 3850 1950
 F 0 "C9" H 3650 1950 50  0000 L CNN
 F 1 "10nF" H 3650 1850 50  0000 L CNN
-F 2 "" H 3850 1950 50  0001 C CNN
-F 3 "~" H 3850 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3850 1950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811301232_Huaxin-S-T-0805B103K631CT_C338146.pdf" H 3850 1950 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "20" H 0   0   50  0001 C CNN "Minimum Order"
+F 7 "0805" H 0   0   50  0001 C CNN "Package"
+F 8 "0805B103K631CT" H 0   0   50  0001 C CNN "Part No."
+F 9 "LCSC" H 0   0   50  0001 C CNN "Vendor"
+F 10 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Walsin-Tech-Corp-0805B103K631CT_C338146.html" H 0   0   50  0001 C CNN "Vendor link"
+F 11 "0.026" H 0   0   50  0001 C CNN "Unit cost"
 	1    3850 1950
 	1    0    0    -1  
 $EndComp
@@ -2303,8 +2317,14 @@ U 1 1 5D90FAE9
 P 4000 1800
 F 0 "C10" H 4100 1800 50  0000 L CNN
 F 1 "1uF" H 4100 1700 50  0000 L CNN
-F 2 "" H 4000 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 1800 50  0001 C CNN
 F 3 "~" H 4000 1800 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "0805" H 0   0   50  0001 C CNN "Package"
+F 6 "40" H 0   0   50  0001 C CNN "Stock"
+F 7 "17" H 0   0   50  0001 C CNN "Stock No."
+F 8 "0" H 0   0   50  0001 C CNN "Unit cost"
+F 9 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 	1    4000 1800
 	1    0    0    -1  
 $EndComp
