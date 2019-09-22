@@ -25,6 +25,8 @@ references:
         url: https://hutscape.com/components/ir-emitter
       - name: 171 Arduino Guide to Infrared (IR) Communication also for ESP32 and ESP8266 by Andreas Spiess
         url: https://www.youtube.com/watch?v=gADIb1Xw8PE
+      - name: How should I wire up the circuit to connect a TSOP4838 (Radio Shack 276-64) infrared receiver to an Arduino?
+        url: https://electronics.stackexchange.com/questions/68098/how-should-i-wire-up-the-circuit-to-connect-a-tsop4838-radio-shack-276-64-infr
 
   - topic: SAMD21
     list:
@@ -62,6 +64,13 @@ references:
       - name: JTAG/SWD debugging via Black Magic Probe on an STM32 blue pill and blinking a LED using STM32CubeMX, libopencm3, and bare metal C
         url: https://satoshinm.github.io/blog/171223_jtagswdpillblink_jtagswd_debugging_via_black_magic_probe_on_an_stm32_blue_pill_and_blinking_a_led_using_stm32cubemx_libopencm3_and_bare_metal_c.html
 
+  - topic: Transistor
+    list:
+      - name: Transistors by Sparkfun
+        url: https://learn.sparkfun.com/tutorials/transistors/applications-i-switches
+      - name: NPN Transistor
+        url: https://www.electronics-tutorials.ws/transistor/tran_2.html
+
   - topic: Power and battery
     list:
       - name: switch between battery and usb power no microcontroller circuit
@@ -91,7 +100,7 @@ references:
       - name: Why Arduino UNO cannot be used with webusb
         url: https://forum.arduino.cc/index.php?topic=464751.0
 
-  - topic: EFM32
+  - topic: EFM32 (not used in this project)
     list:
       - name: EFM32 HG Datasheet page 112/168, Section 5.6.1 Pinout
         url: https://www.silabs.com/documents/public/data-sheets/efm32hg-datasheet.pdf
