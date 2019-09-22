@@ -1118,7 +1118,7 @@ P 1350 2950
 F 0 "SW1" V 1300 2850 50  0000 R CNN
 F 1 "DIP switch SPST" V 1100 2900 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 1350 2950 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/XKB-DSIC01LS-P_C319044.pdf" H 1350 2950 50  0001 C CNN
+F 3 "" H 1350 2950 50  0001 C CNN
 F 4 "Connector" H -100 0   50  0001 C CNN "Category"
 F 5 "SMD" H -100 0   50  0001 C CNN "Package"
 F 6 "Internal stock" H -100 0   50  0001 C CNN "Vendor"
@@ -1454,6 +1454,7 @@ F 6 "1" H -450 300 50  0001 C CNN "Stock"
 F 7 "5" H -450 300 50  0001 C CNN "Stock No."
 F 8 "Internal stock" H -450 300 50  0001 C CNN "Vendor"
 F 9 "DFN" H -450 300 50  0001 C CNN "Package"
+F 10 "Si Labds" H 0   0   50  0001 C CNN "Manufacturer"
 	1    6650 5450
 	-1   0    0    -1  
 $EndComp

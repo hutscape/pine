@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch)
-    (date "2019 September 22, Sunday 14:56:34")
+    (date "2019 September 22, Sunday 15:02:41")
     (tool "Eeschema (5.1.0-0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -200,7 +200,6 @@
     (comp (ref SW1)
       (value "DIP switch SPST")
       (footprint Button_Switch_SMD:SW_SPDT_PCM12)
-      (datasheet https://datasheet.lcsc.com/szlcsc/XKB-DSIC01LS-P_C319044.pdf)
       (fields
         (field (name Category) Connector)
         (field (name Package) SMD)
@@ -311,6 +310,7 @@
       (datasheet https://www.silabs.com/documents/public/data-sheets/Si7021-A20.pdf)
       (fields
         (field (name Category) Electronics)
+        (field (name Manufacturer) "Si Labds")
         (field (name Package) DFN)
         (field (name "Part No.") Si7021-A20)
         (field (name Stock) 1)
