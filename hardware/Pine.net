@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch)
-    (date "2019 September 22, Sunday 22:30:26")
+    (date "2019 September 23, Monday 16:33:38")
     (tool "Eeschema (5.1.0-0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -111,7 +111,6 @@
     (comp (ref C4)
       (value 1uF)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
-      (datasheet https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf)
       (fields
         (field (name Category) Electronics)
         (field (name Package) 0805)
@@ -547,7 +546,6 @@
     (comp (ref C5)
       (value 1uF)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
-      (datasheet https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf)
       (fields
         (field (name Category) Electronics)
         (field (name Package) 0805)
@@ -577,7 +575,6 @@
     (comp (ref C7)
       (value 1uF)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
-      (datasheet https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf)
       (fields
         (field (name Category) Electronics)
         (field (name Package) 0805)
@@ -644,7 +641,6 @@
     (comp (ref C6)
       (value 1uF)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
-      (datasheet ~)
       (fields
         (field (name Category) Electronics)
         (field (name Package) 0805)
@@ -674,7 +670,6 @@
     (comp (ref C10)
       (value 1uF)
       (footprint Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder)
-      (datasheet ~)
       (fields
         (field (name Category) Electronics)
         (field (name Package) 0805)

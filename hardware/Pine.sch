@@ -949,7 +949,7 @@ P 6050 1850
 F 0 "C4" V 6100 1750 50  0000 C CNN
 F 1 "1uF" V 6100 1950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6050 1850 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf" H 6050 1850 50  0001 C CNN
+F 3 "" H 6050 1850 50  0001 C CNN
 F 4 "Electronics" H -250 100 50  0001 C CNN "Category"
 F 5 "0805" H -250 0   50  0001 C CNN "Package"
 F 6 "Internal stock" H -250 0   50  0001 C CNN "Vendor"
@@ -2042,7 +2042,7 @@ P 2350 5050
 F 0 "C5" H 2442 5096 50  0000 L CNN
 F 1 "1uF" H 2442 5005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2350 5050 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf" H 2350 5050 50  0001 C CNN
+F 3 "" H 2350 5050 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 F 6 "0805" H 0   0   50  0001 C CNN "Package"
@@ -2117,7 +2117,7 @@ P 6950 4850
 F 0 "C7" H 7050 4900 50  0000 L CNN
 F 1 "1uF" H 7050 4800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6950 4850 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B105KOFNNNE_C24123.pdf" H 6950 4850 50  0001 C CNN
+F 3 "" H 6950 4850 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 F 6 "0805" H 0   0   50  0001 C CNN "Package"
@@ -2283,7 +2283,7 @@ P 3100 2050
 F 0 "C6" H 2900 2050 50  0000 L CNN
 F 1 "1uF" H 2900 1950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3100 2050 50  0001 C CNN
-F 3 "~" H 3100 2050 50  0001 C CNN
+F 3 "" H 3100 2050 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "40" H 0   0   50  0001 C CNN "Stock"
@@ -2319,7 +2319,7 @@ P 4000 1800
 F 0 "C10" H 4100 1800 50  0000 L CNN
 F 1 "1uF" H 4100 1700 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 1800 50  0001 C CNN
-F 3 "~" H 4000 1800 50  0001 C CNN
+F 3 "" H 4000 1800 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
 F 6 "40" H 0   0   50  0001 C CNN "Stock"
