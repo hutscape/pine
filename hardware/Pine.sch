@@ -994,12 +994,12 @@ L Device:D_Schottky D1
 U 1 1 5D7EC8A5
 P 2250 1550
 F 0 "D1" H 2400 1500 50  0000 C CNN
-F 1 "Schottky diode" H 2250 1400 50  0000 C CNN
+F 1 "Schottky diode" H 2250 1400 50  0001 C CNN
 F 2 "Diode_SMD:D_SOD-123F" H 2250 1550 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf" H 2250 1550 50  0001 C CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
 F 5 "ON Semi" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "MBR230LSFT1G" H 2250 1300 50  0000 C CNN "Part No."
+F 6 "MBR230LSFT1G" H 2250 1400 50  0000 C CNN "Part No."
 F 7 "LCSC" H 0   0   50  0001 C CNN "Vendor"
 F 8 "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_ON-Semicon_MBR230LSFT1G_ON-Semicon-ON-MBR230LSFT1G_C126673.html" H 0   0   50  0001 C CNN "Vendor link"
 F 9 "5" H 0   0   50  0001 C CNN "Minimum Order"
@@ -1010,25 +1010,6 @@ F 11 "SOD-123F " H 0   0   50  0001 C CNN "Package"
 $EndComp
 Text Notes 1100 1100 0    79   ~ 16
 Power Management
-$Comp
-L Device:D_Schottky D2
-U 1 1 5D7EECB2
-P 2600 2450
-F 0 "D2" V 2550 2600 50  0000 C CNN
-F 1 "Schottky diode" V 2650 2800 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" H 2600 2450 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf" H 2600 2450 50  0001 C CNN
-F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
-F 5 "ON Semi" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "MBR230LSFT1G" V 2750 2800 50  0000 C CNN "Part No."
-F 7 "LCSC" H 0   0   50  0001 C CNN "Vendor"
-F 8 "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_ON-Semicon_MBR230LSFT1G_ON-Semicon-ON-MBR230LSFT1G_C126673.html" H 0   0   50  0001 C CNN "Vendor link"
-F 9 "5" H 0   0   50  0001 C CNN "Minimum Order"
-F 10 "0.087" H 0   0   50  0001 C CNN "Unit cost"
-F 11 "SOD-123F " H 0   0   50  0001 C CNN "Package"
-	1    2600 2450
-	0    1    1    0   
-$EndComp
 Text Label 8650 3550 2    50   ~ 0
 USB_D-
 Text Label 8650 3650 2    50   ~ 0
@@ -1065,11 +1046,11 @@ L Transistor_FET:BSS83P Q1
 U 1 1 5D8038F4
 P 2250 2850
 F 0 "Q1" V 2500 2850 50  0000 C CNN
-F 1 "p-channel MOSFET" V 2250 3350 50  0000 C CNN
+F 1 "p-channel MOSFET" V 2250 2250 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 2775 50  0001 L CIN
 F 3 "https://docs-apac.rs-online.com/webdocs/0f74/0900766b80f74f2c.pdf" H 2250 2850 50  0001 L CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
-F 5 "BSH203,215 " V 2150 3250 50  0000 C CNN "Part No."
+F 5 "BSH203,215 " V 2150 2350 50  0000 C CNN "Part No."
 F 6 "Nexperia" H 0   0   50  0001 C CNN "Manufacturer"
 F 7 "RS Components" H 0   0   50  0001 C CNN "Vendor"
 F 8 "https://sg.rs-online.com/web/p/mosfets/7258366/" H 0   0   50  0001 C CNN "Vendor link"
@@ -1077,7 +1058,7 @@ F 9 "20" H 0   0   50  0001 C CNN "Minimum Order"
 F 10 "0.312" H 0   0   50  0001 C CNN "Unit cost"
 F 11 "SOT-23" H 0   0   50  0001 C CNN "Package"
 	1    2250 2850
-	0    1    -1   0   
+	0    -1   -1   0   
 $EndComp
 Text Label 7900 3400 2    50   ~ 0
 IR_Receiver
@@ -1115,8 +1096,8 @@ $Comp
 L Switch:SW_SPST SW1
 U 1 1 5D7FCA7A
 P 1350 2950
-F 0 "SW1" V 1300 2850 50  0000 R CNN
-F 1 "DIP switch SPST" V 1100 2900 50  0000 R CNN
+F 0 "SW1" V 1450 3150 50  0000 R CNN
+F 1 "Switch" V 1450 2850 50  0000 R CNN
 F 2 "Button_Switch_SMD:SW_SPDT_PCM12" H 1350 2950 50  0001 C CNN
 F 3 "" H 1350 2950 50  0001 C CNN
 F 4 "Connector" H -100 0   50  0001 C CNN "Category"
@@ -1125,25 +1106,6 @@ F 6 "Internal stock" H -100 0   50  0001 C CNN "Vendor"
 F 7 "50" H 0   0   50  0001 C CNN "Stock"
 F 8 "40" H 0   0   50  0001 C CNN "Stock No."
 	1    1350 2950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Battery BT1
-U 1 1 5D7FA86F
-P 1550 3450
-F 0 "BT1" V 1450 3550 50  0000 L CNN
-F 1 "3AA batteries: 4.5V" V 1350 3050 50  0000 L CNN
-F 2 "BatteryHolder_Takachi_SN3-3PC_3xAA:BatteryHolder_Takachi_SN3-3PC_3AA" V 1550 3510 50  0001 C CNN
-F 3 "https://docs-apac.rs-online.com/webdocs/1659/0900766b81659aed.pdf" V 1550 3510 50  0001 C CNN
-F 4 "Power" H -100 0   50  0001 C CNN "Category"
-F 5 "AA" H -100 0   50  0001 C CNN "Package"
-F 6 "RS Components" H 0   0   50  0001 C CNN "Vendor"
-F 7 "https://sg.rs-online.com/web/p/products/1756075/" H 0   0   50  0001 C CNN "Vendor link"
-F 8 "Takachi Electric Industrial" H 0   0   50  0001 C CNN "Manufacturer"
-F 9 "SN3-3PC" H 0   0   50  0001 C CNN "Part No."
-F 10 "5" H 0   0   50  0001 C CNN "Minimum Order"
-F 11 "2.484" H 0   0   50  0001 C CNN "Unit cost"
-	1    1550 3450
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1160,17 +1122,13 @@ $EndComp
 Wire Wire Line
 	2050 2750 2150 2750
 Wire Wire Line
-	1350 2750 2050 2750
+	1350 2750 1650 2750
 Connection ~ 2050 2750
 Wire Wire Line
 	1900 3050 2250 3050
 Connection ~ 2250 3050
 Wire Wire Line
 	2400 1550 2600 1550
-Wire Wire Line
-	2600 2300 2600 1550
-Wire Wire Line
-	2600 2600 2600 2750
 Wire Wire Line
 	2600 2750 2450 2750
 Wire Notes Line
@@ -1294,7 +1252,7 @@ Wire Notes Line
 Text Label 4350 1550 0    50   ~ 0
 2V8
 Wire Wire Line
-	1350 3150 1350 3450
+	1350 3150 1350 3300
 Wire Wire Line
 	2600 3050 2600 3150
 Wire Wire Line
@@ -1304,8 +1262,6 @@ Wire Wire Line
 Wire Wire Line
 	2600 3450 2200 3450
 Connection ~ 2200 3450
-Wire Wire Line
-	2200 3450 1750 3450
 Text Label 5550 1650 0    50   ~ 0
 2V8
 Text Label 10200 3450 0    50   ~ 0
@@ -1417,7 +1373,7 @@ F 3 "" H 4850 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 2150 1350 2450
+	1350 2150 1350 2200
 Wire Wire Line
 	2900 1550 3100 1550
 Wire Wire Line
@@ -1435,7 +1391,7 @@ F 3 "~" H 2900 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 1550 1900 1550
+	1650 1550 1750 1550
 Wire Wire Line
 	5450 2100 5550 2100
 Connection ~ 5550 2100
@@ -1954,59 +1910,59 @@ Wire Wire Line
 	7200 3400 7150 3400
 Wire Wire Line
 	7300 3200 7300 3600
-Text Label 5400 6700 2    50   ~ 0
+Text Label 5500 6700 2    50   ~ 0
 Batt
 Text Notes 3750 6300 0    79   ~ 16
 Measure battery voltage
 $Comp
 L Device:R_Small R4
 U 1 1 5D85783A
-P 5700 6500
-F 0 "R4" H 5759 6546 50  0000 L CNN
-F 1 "100k" H 5759 6455 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5700 6500 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5700 6500 50  0001 C CNN
-F 4 "LCSC" H 0   0   50  0001 C CNN "Vendor"
-F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 0   0   50  0001 C CNN "Vendor link"
-F 6 "Electronics" H 0   0   50  0001 C CNN "Category"
-F 7 "RALEC" H 0   0   50  0001 C CNN "Manufacturer"
-F 8 "RTT051003BTP" H 0   0   50  0001 C CNN "Part No."
-F 9 "20" H 0   0   50  0001 C CNN "Minimum Order"
-F 10 "0805" H 0   0   50  0001 C CNN "Package"
-F 11 "0.042" H 0   0   50  0001 C CNN "Unit cost"
-	1    5700 6500
+P 5800 6500
+F 0 "R4" H 5859 6546 50  0000 L CNN
+F 1 "100k" H 5859 6455 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5800 6500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5800 6500 50  0001 C CNN
+F 4 "LCSC" H 100 0   50  0001 C CNN "Vendor"
+F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 100 0   50  0001 C CNN "Vendor link"
+F 6 "Electronics" H 100 0   50  0001 C CNN "Category"
+F 7 "RALEC" H 100 0   50  0001 C CNN "Manufacturer"
+F 8 "RTT051003BTP" H 100 0   50  0001 C CNN "Part No."
+F 9 "20" H 100 0   50  0001 C CNN "Minimum Order"
+F 10 "0805" H 100 0   50  0001 C CNN "Package"
+F 11 "0.042" H 100 0   50  0001 C CNN "Unit cost"
+	1    5800 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5D858007
-P 5700 6850
-F 0 "R5" H 5759 6896 50  0000 L CNN
-F 1 "100k" H 5759 6805 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5700 6850 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5700 6850 50  0001 C CNN
-F 4 "LCSC" H 0   0   50  0001 C CNN "Vendor"
-F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 0   0   50  0001 C CNN "Vendor link"
-F 6 "Electronics" H 0   0   50  0001 C CNN "Category"
-F 7 "RALEC" H 0   0   50  0001 C CNN "Manufacturer"
-F 8 "RTT051003BTP" H 0   0   50  0001 C CNN "Part No."
-F 9 "20" H 0   0   50  0001 C CNN "Minimum Order"
-F 10 "0805" H 0   0   50  0001 C CNN "Package"
-F 11 "0.042" H 0   0   50  0001 C CNN "Unit cost"
-	1    5700 6850
+P 5800 6850
+F 0 "R5" H 5859 6896 50  0000 L CNN
+F 1 "100k" H 5859 6805 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5800 6850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5800 6850 50  0001 C CNN
+F 4 "LCSC" H 100 0   50  0001 C CNN "Vendor"
+F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 100 0   50  0001 C CNN "Vendor link"
+F 6 "Electronics" H 100 0   50  0001 C CNN "Category"
+F 7 "RALEC" H 100 0   50  0001 C CNN "Manufacturer"
+F 8 "RTT051003BTP" H 100 0   50  0001 C CNN "Part No."
+F 9 "20" H 100 0   50  0001 C CNN "Minimum Order"
+F 10 "0805" H 100 0   50  0001 C CNN "Package"
+F 11 "0.042" H 100 0   50  0001 C CNN "Unit cost"
+	1    5800 6850
 	1    0    0    -1  
 $EndComp
-Text Label 5700 6250 0    50   ~ 0
-2V8
+Text Label 5800 6250 0    50   ~ 0
+VBAT
 Wire Wire Line
-	5700 6250 5700 6400
+	5800 6250 5800 6400
 Wire Wire Line
-	5700 6600 5700 6700
+	5800 6600 5800 6700
 Wire Wire Line
-	5400 6700 5700 6700
-Connection ~ 5700 6700
+	5500 6700 5800 6700
+Connection ~ 5800 6700
 Wire Wire Line
-	5700 6700 5700 6750
+	5800 6700 5800 6750
 Wire Notes Line
 	3700 6350 5250 6350
 Wire Notes Line
@@ -2016,7 +1972,7 @@ Wire Notes Line
 Wire Notes Line
 	1050 7350 6200 7350
 Text Notes 3750 7300 0    50   ~ 0
-Read the battery voltage\nfrom this analog pin Batt.\n\nMeasured battery voltage\n= analogRead(Batt) * 2 * 2.8 / 1024
+Read the battery voltage from this \nanalog pin Batt.\nBatt_EN = input when NOT measuring,\nBatt_EN = 0 when measuring.\n\nMeasured battery voltage\n= analogRead(Batt) * 2 * 2.8 / 1024
 $Comp
 L Device:C_Small C5
 U 1 1 5D84D506
@@ -2236,10 +2192,6 @@ Wire Notes Line
 	4650 5550 4650 6100
 Wire Notes Line
 	2950 5550 4650 5550
-Wire Notes Line
-	3700 6850 5300 6850
-Wire Notes Line
-	5300 6850 5300 7350
 $Comp
 L Regulator_Linear:LD3985M28R_SOT23 U2
 U 1 1 5D901E16
@@ -2369,10 +2321,92 @@ Wire Wire Line
 	8300 3200 8300 3600
 Wire Wire Line
 	8300 3600 7900 3600
-Text Label 5650 7150 2    50   ~ 0
+Text Label 5750 7150 2    50   ~ 0
 Batt_EN
 Wire Wire Line
-	5650 7150 5700 7150
+	5750 7150 5800 7150
 Wire Wire Line
-	5700 6950 5700 7150
+	5800 6950 5800 7150
+Wire Wire Line
+	2600 1550 2600 2750
+$Comp
+L Device:C_Small C11
+U 1 1 5D8AA8EF
+P 1750 2100
+F 0 "C11" H 1842 2146 50  0000 L CNN
+F 1 "10uF" H 1842 2055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1750 2100 50  0001 C CNN
+F 3 "~" H 1750 2100 50  0001 C CNN
+	1    1750 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1550 1750 2000
+Connection ~ 1750 1550
+Wire Wire Line
+	1750 1550 1900 1550
+Wire Wire Line
+	1750 2200 1350 2200
+Connection ~ 1350 2200
+Wire Wire Line
+	1350 2200 1350 2450
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5D8BB59E
+P 1500 3650
+F 0 "J3" V 1600 3450 50  0000 R CNN
+F 1 "Battery connector" V 1400 3900 50  0000 R CNN
+F 2 "BatteryHolder_Takachi_SN3-3PC_3xAA:BatteryHolder_Takachi_SN3-3PC_3AA" H 1500 3650 50  0001 C CNN
+F 3 "~" H 1500 3650 50  0001 C CNN
+	1    1500 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 3450 1500 3450
+Wire Wire Line
+	1600 3450 1700 3450
+Text Notes 1450 3450 0    50   ~ 0
++
+Text Notes 1600 3450 0    50   ~ 0
+-
+$Comp
+L Device:D_Schottky D2
+U 1 1 5D8CD108
+P 1550 3300
+F 0 "D2" H 1650 3350 50  0000 C CNN
+F 1 "Schottky diode" H 1700 3400 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 1550 3300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf" H 1550 3300 50  0001 C CNN
+F 4 "Electronics" H -800 1750 50  0001 C CNN "Category"
+F 5 "ON Semi" H -700 1750 50  0001 C CNN "Manufacturer"
+F 6 "MBR230LSFT1G" H 1700 3450 50  0000 C CNN "Part No."
+F 7 "LCSC" H -700 1750 50  0001 C CNN "Vendor"
+F 8 "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_ON-Semicon_MBR230LSFT1G_ON-Semicon-ON-MBR230LSFT1G_C126673.html" H -700 1750 50  0001 C CNN "Vendor link"
+F 9 "5" H -700 1750 50  0001 C CNN "Minimum Order"
+F 10 "0.087" H -700 1750 50  0001 C CNN "Unit cost"
+F 11 "SOD-123F " H -700 1750 50  0001 C CNN "Package"
+	1    1550 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3300 1700 3450
+Connection ~ 1700 3450
+Wire Wire Line
+	1700 3450 2200 3450
+Wire Wire Line
+	1400 3300 1350 3300
+Connection ~ 1350 3300
+Wire Wire Line
+	1350 3300 1350 3450
+Text Label 1650 2600 0    50   ~ 0
+VBAT
+Wire Wire Line
+	1650 2600 1650 2750
+Connection ~ 1650 2750
+Wire Wire Line
+	1650 2750 2050 2750
+Wire Notes Line
+	5300 6700 3700 6700
+Wire Notes Line
+	5300 6700 5300 7350
 $EndSCHEMATC
