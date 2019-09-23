@@ -1133,7 +1133,7 @@ U 1 1 5D7FA86F
 P 1550 3450
 F 0 "BT1" V 1450 3550 50  0000 L CNN
 F 1 "3AA batteries: 4.5V" V 1350 3050 50  0000 L CNN
-F 2 "" V 1550 3510 50  0001 C CNN
+F 2 "BatteryHolder_Takachi_SN3-3PC_3xAA:BatteryHolder_Takachi_SN3-3PC_3AA" V 1550 3510 50  0001 C CNN
 F 3 "https://docs-apac.rs-online.com/webdocs/1659/0900766b81659aed.pdf" V 1550 3510 50  0001 C CNN
 F 4 "Power" H -100 0   50  0001 C CNN "Category"
 F 5 "AA" H -100 0   50  0001 C CNN "Package"
