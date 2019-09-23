@@ -54,7 +54,7 @@ U 1 1 5D3886A5
 P 4900 5350
 F 0 "Q2" H 4700 5450 50  0000 L CNN
 F 1 "NPN Transistor" H 5100 5400 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-39-3" H 5100 5275 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 5275 50  0001 L CIN
 F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-BC817-25LT3G_C191221.pdf" H 4900 5350 50  0001 L CNN
 F 4 "Electronics" H -500 3200 50  0001 C CNN "Category"
 F 5 "ON Semiconductor" H -500 3200 50  0001 C CNN "Manufacturer"

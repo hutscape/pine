@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch)
-    (date "2019 September 23, Monday 16:33:38")
+    (date "2019 September 23, Monday 19:01:44")
     (tool "Eeschema (5.1.0-0)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -35,7 +35,7 @@
       (tstamp 5D38286F))
     (comp (ref Q2)
       (value "NPN Transistor")
-      (footprint Package_TO_SOT_THT:TO-39-3)
+      (footprint Package_TO_SOT_SMD:SOT-23)
       (datasheet https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-BC817-25LT3G_C191221.pdf)
       (fields
         (field (name Category) Electronics)
@@ -211,6 +211,7 @@
       (tstamp 5D7FCA7A))
     (comp (ref BT1)
       (value "3AA batteries: 4.5V")
+      (footprint BatteryHolder_Takachi_SN3-3PC_3xAA:BatteryHolder_Takachi_SN3-3PC_3AA)
       (datasheet https://docs-apac.rs-online.com/webdocs/1659/0900766b81659aed.pdf)
       (fields
         (field (name Category) Power)
