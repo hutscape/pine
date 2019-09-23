@@ -1232,7 +1232,6 @@ NoConn ~ 7700 3200
 NoConn ~ 7800 3200
 NoConn ~ 7900 3200
 NoConn ~ 8000 3200
-NoConn ~ 8200 3200
 NoConn ~ 8400 3200
 NoConn ~ 8500 3200
 NoConn ~ 8600 3200
@@ -1633,10 +1632,6 @@ F 3 "" H 9600 5600 50  0001 C CNN
 $EndComp
 Text Label 7900 3600 2    50   ~ 0
 LED
-Wire Wire Line
-	8300 3200 8300 3600
-Wire Wire Line
-	8300 3600 7900 3600
 Text Label 10200 4550 2    50   ~ 0
 2V8
 $Comp
@@ -2012,19 +2007,6 @@ Wire Wire Line
 Connection ~ 5700 6700
 Wire Wire Line
 	5700 6700 5700 6750
-$Comp
-L power:GND #PWR011
-U 1 1 5D865CC1
-P 5700 7000
-F 0 "#PWR011" H 5700 6750 50  0001 C CNN
-F 1 "GND" H 5705 6827 50  0000 C CNN
-F 2 "" H 5700 7000 50  0001 C CNN
-F 3 "" H 5700 7000 50  0001 C CNN
-	1    5700 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 6950 5700 7000
 Wire Notes Line
 	3700 6350 5250 6350
 Wire Notes Line
@@ -2377,4 +2359,20 @@ Wire Wire Line
 	5550 2450 6150 2450
 Connection ~ 5550 2450
 Connection ~ 6150 2450
+Wire Wire Line
+	7900 3500 8200 3500
+Wire Wire Line
+	8200 3500 8200 3200
+Text Label 7900 3500 2    50   ~ 0
+Batt_EN
+Wire Wire Line
+	8300 3200 8300 3600
+Wire Wire Line
+	8300 3600 7900 3600
+Text Label 5650 7150 2    50   ~ 0
+Batt_EN
+Wire Wire Line
+	5650 7150 5700 7150
+Wire Wire Line
+	5700 6950 5700 7150
 $EndSCHEMATC
