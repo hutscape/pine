@@ -2333,10 +2333,16 @@ $Comp
 L Device:C_Small C11
 U 1 1 5D8AA8EF
 P 1750 2100
-F 0 "C11" H 1842 2146 50  0000 L CNN
-F 1 "10uF" H 1842 2055 50  0000 L CNN
+F 0 "C11" H 1700 1950 50  0000 L CNN
+F 1 "10uF" H 1700 1850 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1750 2100 50  0001 C CNN
 F 3 "~" H 1750 2100 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
+F 5 "0805" H 0   0   50  0001 C CNN "Package"
+F 6 "3" H 0   0   50  0001 C CNN "Stock"
+F 7 "30" H 0   0   50  0001 C CNN "Stock No."
+F 8 "0" H 0   0   50  0001 C CNN "Unit cost"
+F 9 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
 	1    1750 2100
 	1    0    0    -1  
 $EndComp
@@ -2357,7 +2363,15 @@ P 1500 3650
 F 0 "J3" V 1600 3450 50  0000 R CNN
 F 1 "Battery connector" V 1400 3900 50  0000 R CNN
 F 2 "BatteryHolder_Takachi_SN3-3PC_3xAA:BatteryHolder_Takachi_SN3-3PC_3AA" H 1500 3650 50  0001 C CNN
-F 3 "~" H 1500 3650 50  0001 C CNN
+F 3 "https://docs-apac.rs-online.com/webdocs/1659/0900766b81659aed.pdf" H 1500 3650 50  0001 C CNN
+F 4 "Connector" H 0   0   50  0001 C CNN "Category"
+F 5 "Takachi Electric Industrial" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "1" H 0   0   50  0001 C CNN "Minimum Order"
+F 7 "TH" H 0   0   50  0001 C CNN "Package"
+F 8 "SN3-3PC" H 0   0   50  0001 C CNN "Part No."
+F 9 "2.484" H 0   0   50  0001 C CNN "Unit cost"
+F 10 "RS Components" H 0   0   50  0001 C CNN "Vendor"
+F 11 "https://sg.rs-online.com/web/p/products/1756075" H 0   0   50  0001 C CNN "Vendor link"
 	1    1500 3650
 	0    -1   -1   0   
 $EndComp

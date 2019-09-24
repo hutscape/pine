@@ -464,7 +464,7 @@
   )
 
   (module OptoDevice:Vishay_MOLD-3Pin (layer F.Cu) (tedit 5B888673) (tstamp 5D89191F)
-    (at 104.14 78.74 90)
+    (at 139.7 74.93 90)
     (descr "IR Receiver Vishay TSOP-xxxx, MOLD package, see https://www.vishay.com/docs/82669/tsop32s40f.pdf")
     (tags "IR Receiver Vishay TSOP-xxxx MOLD")
     (path /5D38286F)
@@ -1546,7 +1546,7 @@
   )
 
   (module LED_THT:LED_D5.0mm_IRGrey (layer F.Cu) (tedit 5A6C9BB8) (tstamp 5D8916E3)
-    (at 104.14 68.58 90)
+    (at 118.11 96.52 90)
     (descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
     (tags "LED diameter 5.0mm 2 pins")
     (path /5D38C59F)

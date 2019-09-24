@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 September 23, Monday 22:15:44</date>
+    <date>2019 September 24, Tuesday 22:46:57</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -743,6 +743,14 @@
       <value>10uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Package">0805</field>
+        <field name="Stock">3</field>
+        <field name="Stock No.">30</field>
+        <field name="Unit cost">0</field>
+        <field name="Vendor">Internal stock</field>
+      </fields>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D8AA8EF</tstamp>
@@ -750,7 +758,17 @@
     <comp ref="J3">
       <value>Battery connector</value>
       <footprint>BatteryHolder_Takachi_SN3-3PC_3xAA:BatteryHolder_Takachi_SN3-3PC_3AA</footprint>
-      <datasheet>~</datasheet>
+      <datasheet>https://doc&#xD;s-apac.rs-online.com/webdocs/1659/0900766b81659aed.pdf</datasheet>
+      <fields>
+        <field name="Category">Connector</field>
+        <field name="Manufacturer">Takachi Electric Industrial</field>
+        <field name="Minimum Order">1</field>
+        <field name="Package">TH</field>
+        <field name="Part No.">SN3-3PC</field>
+        <field name="Unit cost">2.484</field>
+        <field name="Vendor">RS Components</field>
+        <field name="Vendor link">https://sg.rs-online.com/web/p/products/1756075</field>
+      </fields>
       <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D8BB59E</tstamp>
