@@ -1,0 +1,7 @@
+name: Conform
+on: [push]
+jobs:
+  build:
+    steps:
+    - name: Conform Action
+      uses: talos-systems/conform@v0.1.0-alpha.16
