@@ -1,0 +1,8 @@
+policies:
+  - type: commit
+    spec:
+      conventional:
+        types:
+          - "type"
+        scopes:
+          - "scope"
