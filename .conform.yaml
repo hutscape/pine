@@ -3,6 +3,11 @@ policies:
     spec:
       conventional:
         types:
-          - "type"
-        scopes:
-          - "scope"
+          - "ci"
+          - "build"
+          - "chore"
+          - "docs"
+          - "style"
+          - "refactor"
+          - "perf"
+          - "test"
