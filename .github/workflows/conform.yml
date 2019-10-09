@@ -2,6 +2,8 @@ name: Conform
 on: [push]
 jobs:
   build:
+    env:
+      GOLANG_IMAGE: golang:1.12.6
     runs-on: ubuntu-latest
     steps:
     - name: Conform Action
