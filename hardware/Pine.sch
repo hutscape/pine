@@ -1409,7 +1409,7 @@ F 6 "1" H -450 300 50  0001 C CNN "Stock"
 F 7 "5" H -450 300 50  0001 C CNN "Stock No."
 F 8 "Internal stock" H -450 300 50  0001 C CNN "Vendor"
 F 9 "DFN" H -450 300 50  0001 C CNN "Package"
-F 10 "Si Labds" H 0   0   50  0001 C CNN "Manufacturer"
+F 10 "Si Labs" H 0   0   50  0001 C CNN "Manufacturer"
 	1    6650 5450
 	-1   0    0    -1  
 $EndComp
@@ -1474,7 +1474,7 @@ L Device:LED D4
 U 1 1 5D80BD25
 P 8450 4750
 F 0 "D4" V 8489 4633 50  0000 R CNN
-F 1 "yellow" V 8398 4633 50  0000 R CNN
+F 1 "LED Yellow" V 8398 4633 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 8450 4750 50  0001 C CNN
 F 4 "Electronics" H 0   200 50  0001 C CNN "Category"
@@ -1498,7 +1498,7 @@ L Device:LED D5
 U 1 1 5D81359F
 P 9050 4750
 F 0 "D5" V 9089 4633 50  0000 R CNN
-F 1 "yellow" V 8998 4633 50  0000 R CNN
+F 1 "LED Yellow" V 8998 4633 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9050 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 9050 4750 50  0001 C CNN
 F 4 "Electronics" H 50  200 50  0001 C CNN "Category"
@@ -1542,7 +1542,7 @@ L Device:LED D6
 U 1 1 5D81C9CF
 P 9600 4750
 F 0 "D6" V 9639 4633 50  0000 R CNN
-F 1 "yellow" V 9548 4633 50  0000 R CNN
+F 1 "LED Yellow" V 9548 4633 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9600 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 9600 4750 50  0001 C CNN
 F 4 "Electronics" H 100 200 50  0001 C CNN "Category"
@@ -1595,7 +1595,7 @@ L Device:LED D7
 U 1 1 5D8386A1
 P 10200 4750
 F 0 "D7" V 10239 4633 50  0000 R CNN
-F 1 "yellow" V 10148 4633 50  0000 R CNN
+F 1 "LED Yellow" V 10148 4633 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10200 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 10200 4750 50  0001 C CNN
 F 4 "Electronics" H 100 200 50  0001 C CNN "Category"

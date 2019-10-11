@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 September 24, Tuesday 22:46:57</date>
+    <date>2019 October 11, Friday 15:01:29</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -317,7 +317,7 @@
       <datasheet>https://www.silabs.com/documents/public/data-sheets/Si7021-A20.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="Manufacturer">Si Labds</field>
+        <field name="Manufacturer">Si Labs</field>
         <field name="Package">DFN</field>
         <field name="Part No.">Si7021-A20</field>
         <field name="Stock">1</field>
@@ -348,7 +348,7 @@
       <tstamp>5D80AD25</tstamp>
     </comp>
     <comp ref="D4">
-      <value>yellow</value>
+      <value>LED Yellow</value>
       <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
@@ -367,7 +367,7 @@
       <tstamp>5D80BD25</tstamp>
     </comp>
     <comp ref="D5">
-      <value>yellow</value>
+      <value>LED Yellow</value>
       <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
@@ -405,7 +405,7 @@
       <tstamp>5D813FF5</tstamp>
     </comp>
     <comp ref="D6">
-      <value>yellow</value>
+      <value>LED Yellow</value>
       <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
@@ -441,7 +441,7 @@
       <tstamp>5D81D0F9</tstamp>
     </comp>
     <comp ref="D7">
-      <value>yellow</value>
+      <value>LED Yellow</value>
       <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
