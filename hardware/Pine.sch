@@ -132,10 +132,10 @@ Text Notes 5000 5600 0    50   ~ 0
 E
 Text Notes 4800 5500 0    50   ~ 0
 B
-Text Notes 4550 4950 0    50   ~ 0
-Cathode\n(short leg)
-Text Notes 4550 4600 0    50   ~ 0
-Anode\n(long leg)
+Text Notes 4500 5000 0    50   ~ 0
+Cathode (+)\n(short leg)
+Text Notes 4500 4600 0    50   ~ 0
+Anode (-)\n(long leg)
 Wire Wire Line
 	5000 4450 5000 4600
 $Bitmap
@@ -1473,8 +1473,8 @@ $Comp
 L Device:LED D4
 U 1 1 5D80BD25
 P 8450 4750
-F 0 "D4" V 8489 4633 50  0000 R CNN
-F 1 "LED Yellow" V 8398 4633 50  0000 R CNN
+F 0 "D4" V 8550 4750 50  0000 R CNN
+F 1 "LED Yellow" H 8600 4600 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 8450 4750 50  0001 C CNN
 F 4 "Electronics" H 0   200 50  0001 C CNN "Category"
@@ -1497,8 +1497,8 @@ $Comp
 L Device:LED D5
 U 1 1 5D81359F
 P 9050 4750
-F 0 "D5" V 9089 4633 50  0000 R CNN
-F 1 "LED Yellow" V 8998 4633 50  0000 R CNN
+F 0 "D5" V 9150 4750 50  0000 R CNN
+F 1 "LED Yellow" H 9250 4600 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9050 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 9050 4750 50  0001 C CNN
 F 4 "Electronics" H 50  200 50  0001 C CNN "Category"
@@ -1541,8 +1541,8 @@ $Comp
 L Device:LED D6
 U 1 1 5D81C9CF
 P 9600 4750
-F 0 "D6" V 9639 4633 50  0000 R CNN
-F 1 "LED Yellow" V 9548 4633 50  0000 R CNN
+F 0 "D6" V 9700 4750 50  0000 R CNN
+F 1 "LED Yellow" H 9800 4600 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9600 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 9600 4750 50  0001 C CNN
 F 4 "Electronics" H 100 200 50  0001 C CNN "Category"
@@ -1594,8 +1594,8 @@ $Comp
 L Device:LED D7
 U 1 1 5D8386A1
 P 10200 4750
-F 0 "D7" V 10239 4633 50  0000 R CNN
-F 1 "LED Yellow" V 10148 4633 50  0000 R CNN
+F 0 "D7" V 10300 4750 50  0000 R CNN
+F 1 "LED Yellow" H 10400 4600 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10200 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 10200 4750 50  0001 C CNN
 F 4 "Electronics" H 100 200 50  0001 C CNN "Category"
