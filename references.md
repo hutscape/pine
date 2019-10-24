@@ -81,6 +81,10 @@ references:
         url: https://www.analog.com/en/products/ltc4412.html#product-overview
       - name: Measuring battery voltage in Adafruit feather M0
         url: https://learn.adafruit.com/adafruit-feather-m0-adalogger/power-management#measuring-battery-4-9
+      - name: Measuring Lithium battery voltage with nRF52
+        url: https://devzone.nordicsemi.com/nordic/nordic-blog/b/blog/posts/measuring-lithium-battery-voltage-with-nrf52
+      - name: RC Charging Circuit
+        url: https://www.electronics-tutorials.ws/rc/rc_1.html
 
   - topic: Sleep
     list:
