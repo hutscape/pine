@@ -18,7 +18,7 @@ manufacturing: false
             <article class="tile is-child notification">
               <p class="title">Step 1</p>
               <p class="subtitle">Wire up the prototype components.</p>
-              <a href="{{site.url}}/images/hardware/schematic.png"><img src="{{site.url}}/images/hardware/schematic.png" alt="Schematic"></a>
+              <a href="{{site.url}}/images/prototype/breadboard-schematic.png"><img src="{{site.url}}/images/prototype/breadboard-schematic.png" alt="Breadboard Schematic"></a>
             </article>
           </div>
           <div class="tile is-parent">
