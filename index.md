@@ -9,6 +9,58 @@ manufacturing: false
 
 <section class="section is-small">
   <div class="container">
+    <h2 class="title is-1">Downloads</h2>
+
+    <div class="content is-medium">
+      <div class="buttons">
+        <a class="button is-info is-outlined" href="{{ site.url }}/hardware/docs/schematic.pdf">
+          <span class="icon">
+            <i class="far fa-file-pdf"></i>
+          </span>
+          <span>Schematic</span>
+        </a>
+
+        <a class="button is-info is-outlined" href="{{ site.url }}/hardware/docs/layout.pdf">
+          <span class="icon">
+            <i class="far fa-file-pdf"></i>
+          </span>
+          <span>Layout</span>
+        </a>
+
+        <a class="button is-info is-outlined" href="{{site.github.repository_url}}/tree/master/hardware">
+          <span class="icon">
+            <i class="fas fa-file-contract"></i>
+          </span>
+          <span>ECAD KiCad files</span>
+        </a>
+
+        <a class="button is-success is-outlined" href="{{site.github.repository_url}}/tree/master/firmware">
+          <span class="icon">
+            <i class="fas fa-file-code"></i>
+          </span>
+          <span>Firmware</span>
+        </a>
+
+        <a class="button is-success is-outlined" href="{{site.github.repository_url}}/tree/master/webusb">
+          <span class="icon">
+            <i class="fas fa-file-code"></i>
+          </span>
+          <span>WebUSB</span>
+        </a>
+
+        <a class="button is-danger is-outlined" href="{{site.url}}/_data/bill_of_materials.csv">
+          <span class="icon">
+            <i class="fas fa-table"></i>
+          </span>
+          <span>Bill of Materials</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
     <h2 class="title is-1">Getting Started</h2>
 
     <div class="tile is-ancestor">
