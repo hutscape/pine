@@ -5,6 +5,6 @@ permalink: /hardware
 sequence: 2
 
 three_d: true
-footprint: true
+pcb_layout: true
 manufacturing: false
 ---
