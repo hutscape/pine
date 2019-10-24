@@ -84,7 +84,7 @@ U 1 1 5D38A758
 P 4350 5350
 F 0 "R3" V 4250 5350 50  0000 C CNN
 F 1 "470R" V 4450 5350 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4350 5350 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4350 5350 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 4350 5350 50  0001 C CNN
 F 4 "Electronics" H -500 3200 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -905,7 +905,7 @@ U 1 1 5D77E188
 P 9900 3450
 F 0 "R9" V 10000 3400 50  0000 L CNN
 F 1 "10k" V 9800 3400 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9900 3450 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9900 3450 50  0001 C CNN
 F 3 "" H 9900 3450 50  0001 C CNN
 F 4 "Electronics" H -250 300 50  0001 C CNN "Category"
 F 5 "0805" H -250 200 50  0001 C CNN "Package"
@@ -948,7 +948,7 @@ U 1 1 5D7A2BCE
 P 6050 1850
 F 0 "C4" V 6100 1750 50  0000 C CNN
 F 1 "1uF" V 6100 1950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6050 1850 50  0001 C CNN
+F 2 "Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6050 1850 50  0001 C CNN
 F 3 "" H 6050 1850 50  0001 C CNN
 F 4 "Electronics" H -250 100 50  0001 C CNN "Category"
 F 5 "0805" H -250 0   50  0001 C CNN "Package"
@@ -1082,7 +1082,7 @@ U 1 1 5D85EFAF
 P 2600 3250
 F 0 "R1" H 2500 3250 50  0000 C CNN
 F 1 "10k" H 2750 3250 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2600 3250 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2600 3250 50  0001 C CNN
 F 3 "" H 2600 3250 50  0001 C CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
 F 5 "0805" H -100 0   50  0001 C CNN "Package"
@@ -1208,7 +1208,7 @@ U 1 1 5DA3ACF8
 P 2950 1650
 F 0 "R2" V 3050 1650 50  0000 C CNN
 F 1 "100k" V 3150 1650 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2950 1650 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2950 1650 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 2950 1650 50  0001 C CNN
 F 4 "Electronics" H -100 0   50  0001 C CNN "Category"
 F 5 "0805" H -100 0   50  0001 C CNN "Package"
@@ -1293,7 +1293,7 @@ U 1 1 5D7B30A9
 P 5350 2100
 F 0 "C3" V 5250 2100 50  0000 C CNN
 F 1 "100nF" V 5450 2100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5350 2100 50  0001 C CNN
+F 2 "Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5350 2100 50  0001 C CNN
 F 3 "https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 5350 2100 50  0001 C CNN
 F 4 "Electronics" H -200 100 50  0001 C CNN "Category"
 F 5 "0805" H -200 0   50  0001 C CNN "Package"
@@ -1312,7 +1312,7 @@ U 1 1 5DB58B62
 P 5450 2450
 F 0 "C2" V 5550 2350 50  0000 C CNN
 F 1 "100nF" V 5550 2600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5450 2450 50  0001 C CNN
+F 2 "Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5450 2450 50  0001 C CNN
 F 3 "https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 5450 2450 50  0001 C CNN
 F 4 "Electronics" H 350 100 50  0001 C CNN "Category"
 F 5 "0805" H 350 0   50  0001 C CNN "Package"
@@ -1331,7 +1331,7 @@ U 1 1 5DB59128
 P 4950 2250
 F 0 "C1" V 4900 2150 50  0000 C CNN
 F 1 "100nF" V 4800 2200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4950 2250 50  0001 C CNN
+F 2 "Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4950 2250 50  0001 C CNN
 F 3 "https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf" H 4950 2250 50  0001 C CNN
 F 4 "Electronics" H 200 100 50  0001 C CNN "Category"
 F 5 "0805" H 200 0   50  0001 C CNN "Package"
@@ -1455,7 +1455,7 @@ U 1 1 5D80AD25
 P 8450 5100
 F 0 "R6" H 8500 5100 50  0000 L CNN
 F 1 "470R" H 8200 5100 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 5100 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 5100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 8450 5100 50  0001 C CNN
 F 4 "Electronics" H -1700 1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -1475,7 +1475,7 @@ U 1 1 5D80BD25
 P 8450 4750
 F 0 "D4" V 8550 4750 50  0000 R CNN
 F 1 "LED Yellow" H 8600 4600 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 4750 50  0001 C CNN
+F 2 "Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8450 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 8450 4750 50  0001 C CNN
 F 4 "Electronics" H 0   200 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -1499,7 +1499,7 @@ U 1 1 5D81359F
 P 9050 4750
 F 0 "D5" V 9150 4750 50  0000 R CNN
 F 1 "LED Yellow" H 9250 4600 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9050 4750 50  0001 C CNN
+F 2 "Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9050 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 9050 4750 50  0001 C CNN
 F 4 "Electronics" H 50  200 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -1519,7 +1519,7 @@ U 1 1 5D813FF5
 P 9050 5100
 F 0 "R7" H 9100 5100 50  0000 L CNN
 F 1 "470R" H 8800 5100 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9050 5100 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9050 5100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 9050 5100 50  0001 C CNN
 F 4 "Electronics" H -1100 1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -1543,7 +1543,7 @@ U 1 1 5D81C9CF
 P 9600 4750
 F 0 "D6" V 9700 4750 50  0000 R CNN
 F 1 "LED Yellow" H 9800 4600 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9600 4750 50  0001 C CNN
+F 2 "Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9600 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 9600 4750 50  0001 C CNN
 F 4 "Electronics" H 100 200 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -1562,7 +1562,7 @@ U 1 1 5D81D0F9
 P 9600 5100
 F 0 "R8" H 9650 5100 50  0000 L CNN
 F 1 "470R" H 9350 5100 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9600 5100 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9600 5100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 9600 5100 50  0001 C CNN
 F 4 "Electronics" H -550 1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -1596,7 +1596,7 @@ U 1 1 5D8386A1
 P 10200 4750
 F 0 "D7" V 10300 4750 50  0000 R CNN
 F 1 "LED Yellow" H 10400 4600 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10200 4750 50  0001 C CNN
+F 2 "Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10200 4750 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf" H 10200 4750 50  0001 C CNN
 F 4 "Electronics" H 100 200 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -1615,7 +1615,7 @@ U 1 1 5D839392
 P 10200 5100
 F 0 "R10" H 10250 5100 50  0000 L CNN
 F 1 "470R" H 9950 5100 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10200 5100 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10200 5100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 10200 5100 50  0001 C CNN
 F 4 "Electronics" H 50  1950 50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -1656,8 +1656,8 @@ Text Notes 2100 2750 0    39   ~ 0
 S
 Text Notes 2350 2750 0    39   ~ 0
 D
-Text Notes 4100 1400 0    28   Italic 0
-solder after \ntesting power \nmanagement circuit\n
+Text Notes 4050 1400 0    28   Italic 0
+solder after \ntesting power \nmanagement circuit\nand programming \nMCU via the SWD
 Text Notes 2950 4600 0    28   Italic 0
 solder after \ntesting power \nmanagement circuit\n
 Text Notes 5200 4300 0    28   Italic 0
@@ -1760,17 +1760,6 @@ NoConn ~ 2350 7150
 Wire Notes Line
 	1050 4150 10650 4150
 $Comp
-L power:+3V3 #PWR04
-U 1 1 5D8087D7
-P 2500 6450
-F 0 "#PWR04" H 2500 6300 50  0001 C CNN
-F 1 "+3V3" H 2515 6623 50  0000 C CNN
-F 2 "" H 2500 6450 50  0001 C CNN
-F 3 "" H 2500 6450 50  0001 C CNN
-	1    2500 6450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Jumper:SolderJumper_2_Open JP2
 U 1 1 5D80DB41
 P 4200 1550
@@ -1852,22 +1841,6 @@ Text Label 2500 7050 0    50   ~ 0
 RST
 Wire Wire Line
 	2350 7050 2500 7050
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 5D845F3C
-P 2500 6550
-F 0 "#FLG02" H 2500 6625 50  0001 C CNN
-F 1 "PWR_FLAG" V 2500 6678 50  0000 L CNN
-F 2 "" H 2500 6550 50  0001 C CNN
-F 3 "~" H 2500 6550 50  0001 C CNN
-	1    2500 6550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2500 6450 2500 6550
-Connection ~ 2500 6550
-Wire Wire Line
-	2500 6550 2500 6650
 Wire Notes Line
 	1050 950  1050 7350
 Wire Notes Line
@@ -1920,7 +1893,7 @@ U 1 1 5D85783A
 P 5800 6500
 F 0 "R4" H 5859 6546 50  0000 L CNN
 F 1 "100k" H 5859 6455 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5800 6500 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5800 6500 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5800 6500 50  0001 C CNN
 F 4 "LCSC" H 100 0   50  0001 C CNN "Vendor"
 F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 100 0   50  0001 C CNN "Vendor link"
@@ -1939,7 +1912,7 @@ U 1 1 5D858007
 P 5800 6850
 F 0 "R5" H 5859 6896 50  0000 L CNN
 F 1 "100k" H 5859 6805 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5800 6850 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5800 6850 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5800 6850 50  0001 C CNN
 F 4 "LCSC" H 100 0   50  0001 C CNN "Vendor"
 F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 100 0   50  0001 C CNN "Vendor link"
@@ -1979,7 +1952,7 @@ U 1 1 5D84D506
 P 2350 5050
 F 0 "C5" H 2442 5096 50  0000 L CNN
 F 1 "1uF" H 2442 5005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2350 5050 50  0001 C CNN
+F 2 "Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2350 5050 50  0001 C CNN
 F 3 "" H 2350 5050 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
@@ -1996,7 +1969,7 @@ U 1 1 5D876A22
 P 2550 4800
 F 0 "R11" V 2354 4800 50  0000 C CNN
 F 1 "470R" V 2445 4800 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2550 4800 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2550 4800 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 2550 4800 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "LCSC" H 0   0   50  0001 C CNN "Vendor"
@@ -2054,7 +2027,7 @@ U 1 1 5D942F99
 P 6950 4850
 F 0 "C7" H 7050 4900 50  0000 L CNN
 F 1 "1uF" H 7050 4800 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6950 4850 50  0001 C CNN
+F 2 "Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6950 4850 50  0001 C CNN
 F 3 "" H 6950 4850 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
@@ -2091,7 +2064,7 @@ U 1 1 5D96BAB5
 P 7300 5000
 F 0 "R12" H 7350 5050 50  0000 L CNN
 F 1 "10k" H 7350 4950 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7300 5000 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7300 5000 50  0001 C CNN
 F 3 "" H 7300 5000 50  0001 C CNN
 F 4 "Electronics" H -2850 1850 50  0001 C CNN "Category"
 F 5 "0805" H -1150 -100 50  0001 C CNN "Package"
@@ -2107,7 +2080,7 @@ U 1 1 5D96CA00
 P 7600 5150
 F 0 "R13" H 7650 5200 50  0000 L CNN
 F 1 "10k" H 7650 5100 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7600 5150 50  0001 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7600 5150 50  0001 C CNN
 F 3 "" H 7600 5150 50  0001 C CNN
 F 4 "Electronics" H -2550 2000 50  0001 C CNN "Category"
 F 5 "0805" H -850 50  50  0001 C CNN "Package"
@@ -2144,7 +2117,7 @@ U 1 1 5D887ED7
 P 5350 3350
 F 0 "C8" H 5442 3396 50  0000 L CNN
 F 1 "10uF" H 5442 3305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5350 3350 50  0001 C CNN
+F 2 "Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5350 3350 50  0001 C CNN
 F 3 "~" H 5350 3350 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -2216,7 +2189,7 @@ U 1 1 5D90F0D3
 P 3100 2050
 F 0 "C6" H 2900 2050 50  0000 L CNN
 F 1 "1uF" H 2900 1950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3100 2050 50  0001 C CNN
+F 2 "Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3100 2050 50  0001 C CNN
 F 3 "" H 3100 2050 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -2233,7 +2206,7 @@ U 1 1 5D90F40F
 P 3850 1950
 F 0 "C9" H 3650 1950 50  0000 L CNN
 F 1 "10nF" H 3650 1850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3850 1950 50  0001 C CNN
+F 2 "Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3850 1950 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/1811301232_Huaxin-S-T-0805B103K631CT_C338146.pdf" H 3850 1950 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
@@ -2252,7 +2225,7 @@ U 1 1 5D90FAE9
 P 4000 1800
 F 0 "C10" H 4100 1800 50  0000 L CNN
 F 1 "1uF" H 4100 1700 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 1800 50  0001 C CNN
+F 2 "Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 1800 50  0001 C CNN
 F 3 "" H 4000 1800 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -2335,7 +2308,7 @@ U 1 1 5D8AA8EF
 P 1750 2100
 F 0 "C11" H 1700 1950 50  0000 L CNN
 F 1 "10uF" H 1700 1850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1750 2100 50  0001 C CNN
+F 2 "Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1750 2100 50  0001 C CNN
 F 3 "~" H 1750 2100 50  0001 C CNN
 F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 F 5 "0805" H 0   0   50  0001 C CNN "Package"
@@ -2423,4 +2396,12 @@ Wire Notes Line
 	5300 6700 3700 6700
 Wire Notes Line
 	5300 6700 5300 7350
+Text Label 2500 6650 0    50   ~ 0
+SWD_POWER_IN
+Text Label 2750 1150 0    50   ~ 0
+SWD_POWER_IN
+Wire Wire Line
+	2750 1150 2600 1150
+Wire Wire Line
+	2600 1150 2600 1550
 $EndSCHEMATC

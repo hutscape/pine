@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name USB_Micro-B_Horizontal)(type KiCad)(uri ${KIPRJMOD}/library/Connector_USB-B_Horizontal.pretty)(options "")(descr ""))
   (lib (name BatteryHolder_Takachi_SN3-3PC_3xAA)(type KiCad)(uri ${KIPRJMOD}/library/BatteryHolder_Takachi_SN3-3PC_3xAA.pretty)(options "")(descr ""))
+  (lib (name Passives_0805)(type KiCad)(uri ${KIPRJMOD}/library/Passives_0805.pretty)(options "")(descr ""))
 )
