@@ -1060,14 +1060,10 @@ F 11 "SOT-23" H 0   0   50  0001 C CNN "Package"
 	1    2250 2850
 	0    -1   -1   0   
 $EndComp
-Text Label 7900 3400 2    50   ~ 0
+Text Label 8000 3800 2    50   ~ 0
 IR_Receiver
-Wire Wire Line
-	8100 3200 8100 3400
 Text Label 7150 3600 2    50   ~ 0
 IR_Emitter
-Wire Wire Line
-	7900 3400 8100 3400
 Text Label 8650 3450 2    50   ~ 0
 SCL
 Text Label 8650 3350 2    50   ~ 0
@@ -1187,8 +1183,6 @@ NoConn ~ 7400 3200
 NoConn ~ 7500 3200
 NoConn ~ 7600 3200
 NoConn ~ 7700 3200
-NoConn ~ 7800 3200
-NoConn ~ 7900 3200
 NoConn ~ 8000 3200
 NoConn ~ 8400 3200
 NoConn ~ 8500 3200
@@ -1197,8 +1191,6 @@ NoConn ~ 8700 3200
 NoConn ~ 9300 3200
 NoConn ~ 7300 1200
 NoConn ~ 6600 1200
-NoConn ~ 6800 1200
-NoConn ~ 6900 1200
 NoConn ~ 7000 1200
 NoConn ~ 7100 1200
 NoConn ~ 7200 1200
@@ -1433,10 +1425,8 @@ Wire Wire Line
 	9200 3750 8650 3750
 Wire Notes Line
 	5650 1150 4550 1150
-Text Label 6850 1050 0    50   ~ 0
+Text Label 6500 1050 2    50   ~ 0
 RX_LED
-Wire Wire Line
-	6850 1050 6700 1050
 Wire Wire Line
 	6700 1050 6700 1200
 Wire Notes Line
@@ -1586,7 +1576,7 @@ F 3 "" H 9600 5600 50  0001 C CNN
 	1    9600 5600
 	1    0    0    -1  
 $EndComp
-Text Label 7900 3600 2    50   ~ 0
+Text Label 8000 4000 2    50   ~ 0
 LED
 Text Label 10200 4550 2    50   ~ 0
 2V8
@@ -2284,16 +2274,8 @@ Wire Wire Line
 	5550 2450 6150 2450
 Connection ~ 5550 2450
 Connection ~ 6150 2450
-Wire Wire Line
-	7900 3500 8200 3500
-Wire Wire Line
-	8200 3500 8200 3200
-Text Label 7900 3500 2    50   ~ 0
+Text Label 8000 3900 2    50   ~ 0
 Batt_EN
-Wire Wire Line
-	8300 3200 8300 3600
-Wire Wire Line
-	8300 3600 7900 3600
 Text Label 5750 7150 2    50   ~ 0
 Batt_EN
 Wire Wire Line
@@ -2404,4 +2386,94 @@ Wire Wire Line
 	2750 1150 2600 1150
 Wire Wire Line
 	2600 1150 2600 1550
+Wire Wire Line
+	6500 1050 6700 1050
+$Comp
+L Connector:TestPoint_Probe TP1
+U 1 1 5DB61D31
+P 7550 1200
+F 0 "TP1" H 7703 1255 50  0000 L CNN
+F 1 "TestPoint_Probe" H 7703 1210 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7750 1200 50  0001 C CNN
+F 3 "~" H 7750 1200 50  0001 C CNN
+	1    7550 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP2
+U 1 1 5DB62E76
+P 7550 1300
+F 0 "TP2" H 7703 1355 50  0000 L CNN
+F 1 "TestPoint_Probe" H 7703 1310 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7750 1300 50  0001 C CNN
+F 3 "~" H 7750 1300 50  0001 C CNN
+	1    7550 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1200 6800 1050
+Wire Wire Line
+	7500 1050 7500 1200
+Wire Wire Line
+	7500 1200 7550 1200
+Wire Wire Line
+	6800 1050 7500 1050
+Wire Wire Line
+	6900 1100 7450 1100
+Wire Wire Line
+	7450 1100 7450 1300
+Wire Wire Line
+	7450 1300 7550 1300
+Wire Wire Line
+	6900 1100 6900 1200
+Wire Wire Line
+	7800 3200 7800 3300
+Wire Wire Line
+	7800 3300 7400 3300
+Wire Wire Line
+	7400 3300 7400 3750
+Wire Wire Line
+	7400 3750 7150 3750
+Wire Wire Line
+	8100 3200 8100 3800
+Wire Wire Line
+	8200 3200 8200 3900
+Wire Wire Line
+	8300 3200 8300 4000
+Wire Wire Line
+	7900 3200 7900 3400
+Wire Wire Line
+	7900 3400 7500 3400
+Wire Wire Line
+	7500 3400 7500 3900
+Wire Wire Line
+	7500 3900 7150 3900
+Wire Wire Line
+	8000 3800 8100 3800
+Wire Wire Line
+	8000 3900 8200 3900
+Wire Wire Line
+	8000 4000 8300 4000
+$Comp
+L Connector:TestPoint_Probe TP3
+U 1 1 5DC3C693
+P 7150 3750
+F 0 "TP3" V 7200 3950 50  0000 C CNN
+F 1 "TestPoint_Probe" H 7303 3760 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7350 3750 50  0001 C CNN
+F 3 "~" H 7350 3750 50  0001 C CNN
+	1    7150 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP4
+U 1 1 5DC3DCFC
+P 7150 3900
+F 0 "TP4" V 7200 4100 50  0000 C CNN
+F 1 "TestPoint_Probe" H 7303 3910 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7350 3900 50  0001 C CNN
+F 3 "~" H 7350 3900 50  0001 C CNN
+	1    7150 3900
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
