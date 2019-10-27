@@ -45,10 +45,10 @@ power_tree: true
           <td></td>
         </tr>
         <tr>
-          <td><a href="https://www.diodes.com/assets/Datasheets/AP2112.pdf">AP2112</a></td>
-          <td>Low dropout linear regulator</td>
+          <td><a href="https://docs-apac.rs-online.com/webdocs/151f/0900766b8151fea1.pdf">LD3985</a></td>
+          <td>Low dropout voltage regulator</td>
           <td><code>2.5V</code> to <code>6.0V</code></td>
-          <td><code>1.2V</code>, <code>1.8V</code>, <code>2.5V</code>, <code>2.6V</code>, or <code>3.3V</code></td>
+          <td><code>1.22 V</code>, <code>1.8 V</code>, <code>2.5 V</code>, <code>2.6 V</code>, <code>2.7 V</code>, <code>2.8 V</code>, <code>2.9 V</code>, <code>3 V</code>, <code>3.3 V</code>, <code>4.7 V</code></td>
         </tr>
       </tbody>
     </table>
