@@ -83,7 +83,7 @@ manufacturing: false
             <article class="tile is-child notification">
               <p class="title">Step 2</p>
               <p class="subtitle">Flash the <a href="software#firmware">firmware</a> onto the Arduino compatible M0 board with SAMD21 micro-controller.</p>
-              <p class="subtitle">Open the <a href="/webusb">setup page</a> with <a href="software#web-usb">Web USB</a> and record the aircon's ON and OFF infrared commands by pressing the relevant buttons on the remote controller.</p>
+              <p class="subtitle">Open the <a href="webusb">setup page</a> with <a href="software#web-usb">Web USB</a> and record the aircon's ON and OFF infrared commands by pressing the relevant buttons on the remote controller.</p>
               <a href="{{site.url}}/images/prototype/serial.png"><img src="{{site.url}}/images/prototype/serial.png" alt="Serial console"></a>
               <a href="{{site.url}}/images/prototype/setup-page.png"><img src="{{site.url}}/images/prototype/setup-page.png" alt="Web USB setup page"></a>
             </article>
