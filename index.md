@@ -66,7 +66,7 @@ manufacturing: false
       <span class="tag is-medium is-white">status</span>
       <span class="tag is-medium is-warning">ongoing</span>
     </div>
-    <p class="subtitle">Note: Currently this project is on-going where the PCB schematics and layout are being made for manufacturing so that breadboarding will not be required upon completion.</p>
+    <p class="subtitle">Note: Currently this project is on-going where the <a href="/hardware">PCB schematics and layout</a> are being made for manufacturing so that breadboarding will not be required upon completion.</p>
 
     <div class="tile is-ancestor">
       <div class="tile is-vertical is-12">
