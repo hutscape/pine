@@ -102,6 +102,23 @@ comparison:
 
 <section class="section is-small">
   <div class="container">
+    <h2 class="title is-1">Aircon compatibility for IR protocols</h2>
+    <p class="subtitle">Options for both supported and unsupported IR protocols are available.</p>
+    <div class="content is-medium">
+      <ul>
+        <li><strong>Supported protocols:</strong> Check <a href="https://github.com/cyborg5/IRLib2/blob/master/IRLibProtocols/IRLibProtocols.h#L15-L29">IRLib2 supported protocols</a></li>
+        <li><strong>Unsupported protocols:</strong> Record the IR raw code.</li>
+        <li>
+          Example of unsupported protocols: Mitsubishi Aircon remote
+          <img src="{{site.url}}/images/design/example-aircon.jpg" alt="Example aircon model for unsupported protocol">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section is-small">
+  <div class="container">
     <h2 class="title is-1">SAMD21 vs ATmega328p</h2>
     <div class="table-container">
       <table class="table is-fullwidth is-hoverable">

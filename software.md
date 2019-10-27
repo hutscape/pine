@@ -4,8 +4,9 @@ title: Software
 permalink: /software
 sequence: 3
 features:
-  - detail: Turn on or off the aircon
-  - detail: Measure temperature of the room in another part with <code>Si7021</code>
+  - detail: Record and store the ON and OFF aircon commands with IR receiver
+  - detail: Turn on or off the aircon with the IR emitter
+  - detail: Measure temperature of another part of the room
   - detail: Go into sleep mode after turning on or off the aircon
 
 test: false
