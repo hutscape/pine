@@ -63,10 +63,10 @@ manufacturing: false
   <div class="container">
     <h2 class="title is-1">Getting Started</h2>
     <div class="tags has-addons">
-      <span class="tag is-medium is-white">status</span>
+      <span class="tag is-medium is-light">status</span>
       <span class="tag is-medium is-warning">ongoing</span>
     </div>
-    <p class="subtitle">Note: Currently this project is on-going where the <a href="/hardware">PCB schematics and layout</a> are being made for manufacturing so that breadboarding will not be required upon completion.</p>
+    <p class="subtitle">Note: Currently this project is on-going where the <a href="hardware">PCB schematics and layout</a> are being made for manufacturing so that breadboarding will not be required upon completion.</p>
 
     <div class="tile is-ancestor">
       <div class="tile is-vertical is-12">
