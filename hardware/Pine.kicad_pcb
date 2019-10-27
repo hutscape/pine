@@ -526,7 +526,7 @@
       (net 8 "Net-(D3-Pad2)"))
     (pad 1 thru_hole rect (at 0 0 180) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
       (net 9 "Net-(D3-Pad1)"))
-    (model ${KISYS3DMOD}/LED_THT.3dshapes/LED_D5.0mm_IRGrey.wrl
+    (model ${KISYS3DMOD}/LED_THT.3dshapes/LED_D5.0mm_Clear.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
