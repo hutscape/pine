@@ -11,4 +11,17 @@ lessons:
       - name: Do not copy and paste symbols for different parts of the schematic as they might copy over other field values
       - name: Refer to application circuit in datasheets to connect various passives
       - name: Consider pulling out some unused pins as pads if the board is to be used for future development and iteration E.g. <a href="https://www.pjrc.com/store/teensy36b.jpg">Teensy</a>
+improvements:
+  - title: Improvements
+    subtitle: Simple iterations that were implemented in this project because of the learnings from the previous projects
+    list:
+      - name: Added power annotations on the silkscreen
+      - name: Used standard grid size for component placements and routing
+      - name: Used standard text size
+      - name: Used standard component sizes
+      - name: Added a power on/off button
+      - name: De-modularised to use only the micro-controller and no dev boards
+      - name: Created a complete 3D rendering with all components
+      - name: Pulled out some unused pins as test points
+      - name: Added solder jumper points for circuit isolation
 ---
