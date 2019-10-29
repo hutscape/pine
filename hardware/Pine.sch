@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pine"
-Date "2019-10-27"
+Date "2019-10-29"
 Rev "V1.0"
 Comp "Hutscape"
 Comment1 "Control aircon by monitoring temperature in other parts of the room"
@@ -1642,9 +1642,9 @@ Text Label 10200 5800 2    50   ~ 0
 LED
 Text Notes 2250 2950 0    39   ~ 0
 G
-Text Notes 2100 2750 0    39   ~ 0
-S
 Text Notes 2350 2750 0    39   ~ 0
+S
+Text Notes 2100 2750 0    39   ~ 0
 D
 Text Notes 4050 1400 0    28   Italic 0
 solder after \ntesting power \nmanagement circuit\nand programming \nMCU via the SWD
