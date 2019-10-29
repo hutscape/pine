@@ -438,7 +438,7 @@ Text Label 10200 3450 0    50   ~ 0
 2V8
 Text Label 7900 4450 0    50   ~ 0
 2V8
-Text Label 3450 4600 0    50   ~ 0
+Text Label 3000 4800 0    50   ~ 0
 2V8
 Wire Wire Line
 	6300 2450 6150 2450
@@ -824,7 +824,7 @@ Text Notes 2100 2750 0    39   ~ 0
 D
 Text Notes 4050 1400 0    28   Italic 0
 solder after \ntesting power \nmanagement circuit\nand programming \nMCU via the SWD
-Text Notes 2950 4600 0    28   Italic 0
+Text Notes 2550 4500 0    28   Italic 0
 solder after \ntesting power \nmanagement circuit\n
 $Comp
 L power:PWR_FLAG #FLG01
@@ -1096,20 +1096,21 @@ $EndComp
 $Comp
 L Device:R_Small R11
 U 1 1 5D876A22
-P 2550 4800
-F 0 "R11" V 2354 4800 50  0000 C CNN
-F 1 "470R" V 2445 4800 50  0000 C CNN
-F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2550 4800 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 2550 4800 50  0001 C CNN
-F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
-F 5 "LCSC" H 0   0   50  0001 C CNN "Vendor"
-F 6 "0805" H 0   0   50  0001 C CNN "Package"
-F 7 "Walsin Tech Corp" H 0   0   50  0001 C CNN "Manufacturer"
-F 8 "50" H 0   0   50  0001 C CNN "Minimum Order"
-F 9 "WR08X4700FTL" H 0   0   50  0001 C CNN "Part No."
-F 10 "0.0050 " H 0   0   50  0001 C CNN "Unit cost"
-F 11 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 0   0   50  0001 C CNN "Vendor link"
-	1    2550 4800
+P 2700 4800
+F 0 "R11" V 2504 4800 50  0000 C CNN
+F 1 "470R" V 2595 4800 50  0000 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2700 4800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 2700 4800 50  0001 C CNN
+F 4 "Electronics" H 150 0   50  0001 C CNN "Category"
+F 5 "LCSC" H 150 0   50  0001 C CNN "Vendor"
+F 6 "0805" H 150 0   50  0001 C CNN "Package"
+F 7 "Walsin Tech Corp" H 150 0   50  0001 C CNN "Manufacturer"
+F 8 "50" H 150 0   50  0001 C CNN "Minimum Order"
+F 9 "WR08X4700FTL" H 150 0   50  0001 C CNN "Part No."
+F 10 "0.0050 " H 150 0   50  0001 C CNN "Unit cost"
+F 11 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 150 0   50  0001 C CNN "Vendor link"
+F 12 "Yes" H 0   0   50  0001 C CNN "DNP"
+	1    2700 4800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1122,8 +1123,6 @@ Wire Wire Line
 	2350 4800 2350 4950
 Connection ~ 2350 4800
 Wire Wire Line
-	2350 4800 2450 4800
-Wire Wire Line
 	2050 5450 2200 5450
 Wire Wire Line
 	2200 5450 2200 5700
@@ -1131,12 +1130,6 @@ Wire Wire Line
 	2200 5700 2350 5700
 Wire Wire Line
 	2350 5150 2350 5700
-Wire Wire Line
-	2650 4800 2950 4800
-Wire Wire Line
-	3250 4800 3450 4800
-Wire Wire Line
-	3450 4800 3450 4600
 Connection ~ 2200 4800
 $Comp
 L power:PWR_FLAG #FLG06
@@ -1737,19 +1730,8 @@ F 11 "SOT-23" H 100 0   50  0001 C CNN "Package"
 	1    5000 5350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5D83509E
-P 3100 4800
-F 0 "JP1" H 3100 4900 50  0000 C CNN
-F 1 "Open solder jumper" H 3100 4700 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3100 4800 50  0001 C CNN
-F 3 "~" H 3100 4800 50  0001 C CNN
-F 4 "Electronics" H 1050 -650 50  0001 C CNN "Category"
-F 5 "Solder" H 1050 -650 50  0001 C CNN "Package"
-F 6 "Yes" H 1050 -650 50  0001 C CNN "DNP"
-F 7 "DNP" H 1050 -650 50  0001 C CNN "Vendor"
-	1    3100 4800
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	2350 4800 2600 4800
+Wire Wire Line
+	2800 4800 3000 4800
 $EndSCHEMATC
