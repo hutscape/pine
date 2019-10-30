@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 October 11, Friday 15:01:29</date>
+    <date>2019 October 30, Wednesday 10:08:23</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Pine</title>
         <company>Hutscape</company>
         <rev>V1.0</rev>
-        <date>2019-09-22</date>
+        <date>2019-10-30</date>
         <source>Pine.sch</source>
         <comment number="1" value="Control aircon by monitoring temperature in other parts of the room"/>
         <comment number="2" value=""/>
@@ -39,65 +39,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D38286F</tstamp>
     </comp>
-    <comp ref="Q2">
-      <value>NPN Transistor</value>
-      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
-      <datasheet>https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-BC817-25LT3G_C191221.pdf</datasheet>
-      <fields>
-        <field name="Category">Electronics</field>
-        <field name="Manufacturer">ON Semiconductor</field>
-        <field name="Minimum Order">5</field>
-        <field name="Package">SOT-23</field>
-        <field name="Part No.">BC817-25LT3G</field>
-        <field name="Unit cost">0.021</field>
-        <field name="Vendor">LCSC</field>
-        <field name="Vendor link">https://lcsc.com/product-detail/Transistors-NPN-PNP_ON-Semicon_BC817-25LT3G_ON-Semicon-ON-BC817-25LT3G_C191221.html</field>
-      </fields>
-      <libsource lib="Transistor_BJT" part="2N2219" description="800mA Ic, 50V Vce, NPN Transistor, TO-39"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5D3886A5</tstamp>
-    </comp>
-    <comp ref="R3">
-      <value>470R</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
-      <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
-      <fields>
-        <field name="Category">Electronics</field>
-        <field name="Manufacturer">Walsin Tech Corp</field>
-        <field name="Minimum Order">50</field>
-        <field name="Package">0805</field>
-        <field name="Part No.">WR08X4700FTL</field>
-        <field name="Unit cost">0.0050 </field>
-        <field name="Vendor">LCSC</field>
-        <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
-      </fields>
-      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5D38A758</tstamp>
-    </comp>
-    <comp ref="D3">
-      <value>IR LED Emitter</value>
-      <footprint>LED_THT:LED_D5.0mm_IRGrey</footprint>
-      <datasheet>https://docs-apac.rs-online.com/webdocs/1674/0900766b816747ad.pdf</datasheet>
-      <fields>
-        <field name="Category">Electronics</field>
-        <field name="Manufacturer">ROHM</field>
-        <field name="Minimum Order">10</field>
-        <field name="Package">TH</field>
-        <field name="Part No.">SIR-56ST3F </field>
-        <field name="Stock">9</field>
-        <field name="Stock No.">39</field>
-        <field name="Unit cost">0.778</field>
-        <field name="Vendor">RS Components</field>
-        <field name="Vendor link">https://sg.rs-online.com/web/p/ir-leds/1780575/?sra=pstk</field>
-      </fields>
-      <libsource lib="LED" part="LD274" description="950nm IR-LED, 5mm"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5D38C59F</tstamp>
-    </comp>
     <comp ref="R9">
       <value>10k</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Package">0805</field>
@@ -126,7 +70,7 @@
     </comp>
     <comp ref="C4">
       <value>1uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Package">0805</field>
@@ -195,7 +139,7 @@
     </comp>
     <comp ref="R1">
       <value>10k</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Package">0805</field>
@@ -241,7 +185,7 @@
     </comp>
     <comp ref="R2">
       <value>100k</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -259,7 +203,7 @@
     </comp>
     <comp ref="C3">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -277,7 +221,7 @@
     </comp>
     <comp ref="C2">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -295,7 +239,7 @@
     </comp>
     <comp ref="C1">
       <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -330,7 +274,7 @@
     </comp>
     <comp ref="R6">
       <value>470R</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -349,7 +293,7 @@
     </comp>
     <comp ref="D4">
       <value>LED Yellow</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -368,7 +312,7 @@
     </comp>
     <comp ref="D5">
       <value>LED Yellow</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -387,7 +331,7 @@
     </comp>
     <comp ref="R7">
       <value>470R</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -406,7 +350,7 @@
     </comp>
     <comp ref="D6">
       <value>LED Yellow</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -424,7 +368,7 @@
     </comp>
     <comp ref="R8">
       <value>470R</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -442,7 +386,7 @@
     </comp>
     <comp ref="D7">
       <value>LED Yellow</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Everlight-Elec-17-215UYC-S530-A3-TR8_C72036.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -460,7 +404,7 @@
     </comp>
     <comp ref="R10">
       <value>470R</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -504,34 +448,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D80DB41</tstamp>
     </comp>
-    <comp ref="JP1">
-      <value>Open solder jumper</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Category">Electronics</field>
-        <field name="DNP">Yes</field>
-        <field name="Package">Solder</field>
-        <field name="Vendor">DNP</field>
-      </fields>
-      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5D83509E</tstamp>
-    </comp>
-    <comp ref="JP3">
-      <value>Open solder jumper</value>
-      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
-      <datasheet>~</datasheet>
-      <fields>
-        <field name="Category">Electronics</field>
-        <field name="DNP">Yes</field>
-        <field name="Package">Solder</field>
-        <field name="Vendor">DNP</field>
-      </fields>
-      <libsource lib="Jumper" part="SolderJumper_2_Open" description="Solder Jumper, 2-pole, open"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5D854735</tstamp>
-    </comp>
     <comp ref="JP4">
       <value>Open solder jumper</value>
       <footprint>Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm</footprint>
@@ -548,7 +464,7 @@
     </comp>
     <comp ref="R4">
       <value>100k</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -566,7 +482,7 @@
     </comp>
     <comp ref="R5">
       <value>100k</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -584,7 +500,7 @@
     </comp>
     <comp ref="C5">
       <value>1uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Package">0805</field>
@@ -599,10 +515,11 @@
     </comp>
     <comp ref="R11">
       <value>470R</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">Yes</field>
         <field name="Manufacturer">Walsin Tech Corp</field>
         <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
@@ -617,7 +534,7 @@
     </comp>
     <comp ref="C7">
       <value>1uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Package">0805</field>
@@ -632,7 +549,7 @@
     </comp>
     <comp ref="R12">
       <value>10k</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Package">0805</field>
@@ -646,7 +563,7 @@
     </comp>
     <comp ref="R13">
       <value>10k</value>
-      <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Package">0805</field>
@@ -660,7 +577,7 @@
     </comp>
     <comp ref="C8">
       <value>10uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -693,7 +610,7 @@
     </comp>
     <comp ref="C6">
       <value>1uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Package">0805</field>
@@ -708,7 +625,7 @@
     </comp>
     <comp ref="C9">
       <value>10nF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/szlcsc/1811301232_Huaxin-S-T-0805B103K631CT_C338146.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -726,7 +643,7 @@
     </comp>
     <comp ref="C10">
       <value>1uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <fields>
         <field name="Category">Electronics</field>
         <field name="Package">0805</field>
@@ -741,7 +658,7 @@
     </comp>
     <comp ref="C11">
       <value>10uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <footprint>Passives_0805:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
@@ -791,6 +708,107 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5D8CD108</tstamp>
     </comp>
+    <comp ref="TP1">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB61D31</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB62E76</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC3C693</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DC3DCFC</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>IR LED Emitter</value>
+      <footprint>LED_THT:LED_D5.0mm_IRGrey</footprint>
+      <datasheet>https://docs-apac.rs-online.com/webdocs/1674/0900766b816747ad.pdf</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Manufacturer">ROHM</field>
+        <field name="Minimum Order">10</field>
+        <field name="Package">TH</field>
+        <field name="Part No.">SIR-56ST3F </field>
+        <field name="Stock">9</field>
+        <field name="Stock No.">39</field>
+        <field name="Unit cost">0.778</field>
+        <field name="Vendor">RS Components</field>
+        <field name="Vendor link">https://sg.rs-online.com/web/p/ir-leds/1780575/?sra=pstk</field>
+      </fields>
+      <libsource lib="LED" part="LD274" description="950nm IR-LED, 5mm"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D38C59F</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>470R</value>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Manufacturer">Walsin Tech Corp</field>
+        <field name="Minimum Order">50</field>
+        <field name="Package">0805</field>
+        <field name="Part No.">WR08X4700FTL</field>
+        <field name="Unit cost">0.0050 </field>
+        <field name="Vendor">LCSC</field>
+        <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D38A758</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>NPN Transistor</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-BC817-25LT3G_C191221.pdf</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Minimum Order">5</field>
+        <field name="Package">SOT-23</field>
+        <field name="Part No.">BC817-25LT3G</field>
+        <field name="Unit cost">0.021</field>
+        <field name="Vendor">LCSC</field>
+        <field name="Vendor link">https://lcsc.com/product-detail/Transistors-NPN-PNP_ON-Semicon_BC817-25LT3G_ON-Semicon-ON-BC817-25LT3G_C191221.html</field>
+      </fields>
+      <libsource lib="Transistor_BJT" part="2N2219" description="800mA Ic, 50V Vce, NPN Transistor, TO-39"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D3886A5</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>0R</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="DNP">Yes</field>
+        <field name="Stock">42</field>
+        <field name="Stock No.">15</field>
+        <field name="Vendor">Internal stock</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DB98984</tstamp>
+    </comp>
   </components>
   <libparts>
     <libpart lib="Connector" part="Conn_01x02_Male">
@@ -825,6 +843,21 @@
         <pin num="4" name="Pin_4" type="passive"/>
         <pin num="5" name="Pin_5" type="passive"/>
         <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint_Probe">
+      <description>test point (alternative probe-style design)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint_Probe</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector" part="USB_B_Micro">
@@ -1203,292 +1236,290 @@
   <nets>
     <net code="1" name="GND">
       <node ref="U1" pin="2"/>
-      <node ref="Q2" pin="1"/>
-      <node ref="C7" pin="2"/>
-      <node ref="U4" pin="5"/>
-      <node ref="D2" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="J2" pin="3"/>
       <node ref="SW2" pin="2"/>
       <node ref="C4" pin="1"/>
-      <node ref="J3" pin="2"/>
-      <node ref="J2" pin="3"/>
-      <node ref="U4" pin="42"/>
+      <node ref="Q2" pin="1"/>
       <node ref="J1" pin="5"/>
-      <node ref="C11" pin="2"/>
-      <node ref="U4" pin="35"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
       <node ref="C3" pin="2"/>
-      <node ref="R8" pin="2"/>
       <node ref="R1" pin="1"/>
+      <node ref="D2" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="U4" pin="18"/>
+      <node ref="U4" pin="5"/>
       <node ref="C8" pin="2"/>
+      <node ref="U4" pin="42"/>
+      <node ref="C11" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="U4" pin="35"/>
       <node ref="C10" pin="2"/>
       <node ref="C9" pin="2"/>
       <node ref="C6" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="U3" pin="2"/>
       <node ref="U2" pin="2"/>
-      <node ref="U4" pin="18"/>
     </net>
     <net code="2" name="Net-(C5-Pad1)">
-      <node ref="C5" pin="1"/>
       <node ref="U1" pin="3"/>
       <node ref="R11" pin="2"/>
+      <node ref="C5" pin="1"/>
     </net>
-    <net code="3" name="Net-(Q2-Pad2)">
-      <node ref="Q2" pin="2"/>
-      <node ref="R3" pin="1"/>
-    </net>
-    <net code="4" name="/IR_Emitter">
-      <node ref="R3" pin="2"/>
-      <node ref="U4" pin="12"/>
-    </net>
-    <net code="5" name="Net-(D3-Pad1)">
-      <node ref="Q2" pin="3"/>
-      <node ref="D3" pin="1"/>
-    </net>
-    <net code="6" name="/IR_Receiver">
+    <net code="3" name="/IR_Receiver">
       <node ref="U1" pin="1"/>
       <node ref="U4" pin="24"/>
     </net>
-    <net code="7" name="Net-(U3-Pad7)">
+    <net code="4" name="Net-(U3-Pad7)">
       <node ref="U3" pin="7"/>
     </net>
-    <net code="8" name="Net-(C4-Pad2)">
-      <node ref="U4" pin="43"/>
+    <net code="5" name="Net-(C4-Pad2)">
       <node ref="C4" pin="2"/>
+      <node ref="U4" pin="43"/>
     </net>
-    <net code="9" name="Net-(J1-Pad4)">
+    <net code="6" name="Net-(J1-Pad4)">
       <node ref="J1" pin="4"/>
     </net>
-    <net code="10" name="Net-(J1-Pad6)">
+    <net code="7" name="Net-(J1-Pad6)">
       <node ref="J1" pin="6"/>
     </net>
-    <net code="11" name="Net-(U4-Pad1)">
+    <net code="8" name="Net-(U4-Pad1)">
       <node ref="U4" pin="1"/>
     </net>
-    <net code="12" name="Net-(U4-Pad10)">
+    <net code="9" name="Net-(U4-Pad10)">
       <node ref="U4" pin="10"/>
     </net>
-    <net code="13" name="/Batt">
-      <node ref="U4" pin="11"/>
-      <node ref="R4" pin="2"/>
+    <net code="10" name="/Batt">
       <node ref="R5" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="U4" pin="11"/>
     </net>
-    <net code="14" name="Net-(U4-Pad13)">
+    <net code="11" name="/IR_Emitter">
+      <node ref="R3" pin="2"/>
+      <node ref="U4" pin="12"/>
+    </net>
+    <net code="12" name="Net-(U4-Pad13)">
       <node ref="U4" pin="13"/>
     </net>
-    <net code="15" name="Net-(U4-Pad14)">
+    <net code="13" name="Net-(U4-Pad14)">
       <node ref="U4" pin="14"/>
     </net>
-    <net code="16" name="Net-(U4-Pad15)">
+    <net code="14" name="Net-(U4-Pad15)">
       <node ref="U4" pin="15"/>
     </net>
-    <net code="17" name="Net-(U4-Pad16)">
+    <net code="15" name="Net-(U4-Pad16)">
       <node ref="U4" pin="16"/>
     </net>
-    <net code="18" name="Net-(U4-Pad19)">
+    <net code="16" name="Net-(U4-Pad19)">
       <node ref="U4" pin="19"/>
     </net>
-    <net code="19" name="Net-(U4-Pad2)">
+    <net code="17" name="Net-(U4-Pad2)">
       <node ref="U4" pin="2"/>
     </net>
-    <net code="20" name="Net-(U4-Pad20)">
+    <net code="18" name="Net-(U4-Pad20)">
       <node ref="U4" pin="20"/>
     </net>
-    <net code="21" name="Net-(U4-Pad21)">
+    <net code="19" name="Net-(TP3-Pad1)">
       <node ref="U4" pin="21"/>
+      <node ref="TP3" pin="1"/>
     </net>
-    <net code="22" name="Net-(U4-Pad22)">
+    <net code="20" name="Net-(TP4-Pad1)">
+      <node ref="TP4" pin="1"/>
       <node ref="U4" pin="22"/>
     </net>
-    <net code="23" name="Net-(U4-Pad23)">
+    <net code="21" name="Net-(U4-Pad23)">
       <node ref="U4" pin="23"/>
     </net>
-    <net code="24" name="/LED">
+    <net code="22" name="Net-(U4-Pad25)">
+      <node ref="U4" pin="25"/>
+    </net>
+    <net code="23" name="/LED">
       <node ref="R10" pin="2"/>
       <node ref="U4" pin="26"/>
     </net>
-    <net code="25" name="Net-(U4-Pad27)">
+    <net code="24" name="Net-(U4-Pad27)">
       <node ref="U4" pin="27"/>
     </net>
-    <net code="26" name="Net-(U4-Pad28)">
+    <net code="25" name="Net-(U4-Pad28)">
       <node ref="U4" pin="28"/>
     </net>
-    <net code="27" name="Net-(U4-Pad29)">
+    <net code="26" name="Net-(U4-Pad29)">
       <node ref="U4" pin="29"/>
     </net>
-    <net code="28" name="Net-(U4-Pad3)">
+    <net code="27" name="Net-(U4-Pad3)">
       <node ref="U4" pin="3"/>
     </net>
-    <net code="29" name="Net-(U4-Pad30)">
+    <net code="28" name="Net-(U4-Pad30)">
       <node ref="U4" pin="30"/>
     </net>
-    <net code="30" name="/USB_D-">
-      <node ref="U4" pin="33"/>
+    <net code="29" name="/USB_D-">
       <node ref="J1" pin="2"/>
+      <node ref="U4" pin="33"/>
     </net>
-    <net code="31" name="/USB_D+">
+    <net code="30" name="/USB_D+">
       <node ref="U4" pin="34"/>
       <node ref="J1" pin="3"/>
     </net>
-    <net code="32" name="Net-(U4-Pad37)">
+    <net code="31" name="Net-(U4-Pad37)">
       <node ref="U4" pin="37"/>
     </net>
-    <net code="33" name="Net-(U4-Pad38)">
+    <net code="32" name="Net-(U4-Pad38)">
       <node ref="U4" pin="38"/>
     </net>
-    <net code="34" name="/TX_LED">
-      <node ref="U4" pin="39"/>
+    <net code="33" name="/TX_LED">
       <node ref="R6" pin="2"/>
+      <node ref="U4" pin="39"/>
     </net>
-    <net code="35" name="Net-(U4-Pad4)">
+    <net code="34" name="Net-(U4-Pad4)">
       <node ref="U4" pin="4"/>
     </net>
-    <net code="36" name="/RST">
+    <net code="35" name="/RST">
       <node ref="R9" pin="1"/>
       <node ref="SW2" pin="1"/>
-      <node ref="U4" pin="40"/>
       <node ref="J2" pin="5"/>
+      <node ref="U4" pin="40"/>
     </net>
-    <net code="37" name="Net-(U4-Pad41)">
+    <net code="36" name="Net-(U4-Pad41)">
       <node ref="U4" pin="41"/>
     </net>
-    <net code="38" name="/SWCLK">
+    <net code="37" name="/SWCLK">
       <node ref="J2" pin="2"/>
       <node ref="U4" pin="45"/>
     </net>
-    <net code="39" name="Net-(U4-Pad47)">
+    <net code="38" name="Net-(U4-Pad47)">
       <node ref="U4" pin="47"/>
     </net>
-    <net code="40" name="Net-(U4-Pad7)">
-      <node ref="U4" pin="7"/>
+    <net code="39" name="/RX_LED">
+      <node ref="R7" pin="2"/>
+      <node ref="U4" pin="48"/>
     </net>
-    <net code="41" name="Net-(U4-Pad8)">
-      <node ref="U4" pin="8"/>
-    </net>
-    <net code="42" name="Net-(U4-Pad9)">
+    <net code="40" name="Net-(U4-Pad9)">
       <node ref="U4" pin="9"/>
     </net>
-    <net code="43" name="Net-(R2-Pad1)">
+    <net code="41" name="Net-(R2-Pad1)">
       <node ref="U2" pin="3"/>
       <node ref="R2" pin="1"/>
     </net>
-    <net code="44" name="Net-(U3-Pad3)">
+    <net code="42" name="Net-(U3-Pad3)">
       <node ref="U3" pin="3"/>
     </net>
-    <net code="45" name="Net-(U3-Pad4)">
+    <net code="43" name="Net-(U3-Pad4)">
       <node ref="U3" pin="4"/>
     </net>
-    <net code="46" name="/RX_LED">
-      <node ref="U4" pin="48"/>
-      <node ref="R7" pin="2"/>
-    </net>
-    <net code="47" name="Net-(D4-Pad1)">
+    <net code="44" name="Net-(D4-Pad1)">
       <node ref="D4" pin="1"/>
       <node ref="R6" pin="1"/>
     </net>
-    <net code="48" name="Net-(D5-Pad1)">
+    <net code="45" name="Net-(D5-Pad1)">
       <node ref="R7" pin="1"/>
       <node ref="D5" pin="1"/>
     </net>
-    <net code="49" name="Net-(D6-Pad1)">
-      <node ref="R8" pin="1"/>
+    <net code="46" name="Net-(D6-Pad1)">
       <node ref="D6" pin="1"/>
+      <node ref="R8" pin="1"/>
     </net>
-    <net code="50" name="Net-(D7-Pad1)">
-      <node ref="R10" pin="1"/>
+    <net code="47" name="Net-(D7-Pad1)">
       <node ref="D7" pin="1"/>
+      <node ref="R10" pin="1"/>
     </net>
-    <net code="51" name="Net-(J2-Pad6)">
+    <net code="48" name="/SWD_POWER_IN">
+      <node ref="Q1" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="49" name="Net-(J2-Pad6)">
       <node ref="J2" pin="6"/>
     </net>
-    <net code="52" name="/SWDIO">
+    <net code="50" name="/SWDIO">
       <node ref="J2" pin="4"/>
       <node ref="U4" pin="46"/>
     </net>
-    <net code="53" name="/2V8">
-      <node ref="JP2" pin="2"/>
-      <node ref="JP1" pin="2"/>
-      <node ref="JP3" pin="2"/>
-      <node ref="JP4" pin="1"/>
-      <node ref="R9" pin="2"/>
-      <node ref="D7" pin="2"/>
+    <net code="51" name="/2V8">
       <node ref="D6" pin="2"/>
       <node ref="D5" pin="2"/>
+      <node ref="R11" pin="1"/>
+      <node ref="U4" pin="6"/>
+      <node ref="D4" pin="2"/>
+      <node ref="U4" pin="36"/>
+      <node ref="R14" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="D7" pin="2"/>
+      <node ref="JP4" pin="1"/>
+      <node ref="JP2" pin="2"/>
+      <node ref="R9" pin="2"/>
+      <node ref="U4" pin="44"/>
       <node ref="C3" pin="1"/>
       <node ref="C2" pin="1"/>
       <node ref="C1" pin="1"/>
-      <node ref="D4" pin="2"/>
       <node ref="U4" pin="17"/>
-      <node ref="U4" pin="36"/>
-      <node ref="U4" pin="44"/>
-      <node ref="U4" pin="6"/>
-      <node ref="C8" pin="1"/>
     </net>
-    <net code="54" name="Net-(D3-Pad2)">
-      <node ref="JP3" pin="1"/>
-      <node ref="D3" pin="2"/>
-    </net>
-    <net code="55" name="+3V3">
-      <node ref="J2" pin="1"/>
-    </net>
-    <net code="56" name="/VBAT">
+    <net code="52" name="/VBAT">
       <node ref="Q1" pin="3"/>
       <node ref="SW1" pin="2"/>
       <node ref="R4" pin="1"/>
     </net>
-    <net code="57" name="Net-(JP1-Pad1)">
-      <node ref="R11" pin="1"/>
-      <node ref="JP1" pin="1"/>
-    </net>
-    <net code="58" name="Net-(C7-Pad1)">
-      <node ref="R12" pin="1"/>
+    <net code="53" name="Net-(C7-Pad1)">
       <node ref="R13" pin="1"/>
-      <node ref="U3" pin="5"/>
+      <node ref="R12" pin="1"/>
       <node ref="C7" pin="1"/>
       <node ref="JP4" pin="2"/>
+      <node ref="U3" pin="5"/>
     </net>
-    <net code="59" name="/SDA">
-      <node ref="U3" pin="1"/>
-      <node ref="U4" pin="31"/>
+    <net code="54" name="/SDA">
       <node ref="R12" pin="2"/>
+      <node ref="U4" pin="31"/>
+      <node ref="U3" pin="1"/>
     </net>
-    <net code="60" name="/SCL">
-      <node ref="U4" pin="32"/>
-      <node ref="U3" pin="6"/>
+    <net code="55" name="/SCL">
       <node ref="R13" pin="2"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U4" pin="32"/>
     </net>
-    <net code="61" name="Net-(C9-Pad1)">
+    <net code="56" name="Net-(C9-Pad1)">
       <node ref="U2" pin="4"/>
       <node ref="C9" pin="1"/>
     </net>
-    <net code="62" name="Net-(C10-Pad1)">
+    <net code="57" name="Net-(C10-Pad1)">
       <node ref="JP2" pin="1"/>
-      <node ref="U2" pin="5"/>
       <node ref="C10" pin="1"/>
+      <node ref="U2" pin="5"/>
     </net>
-    <net code="63" name="Net-(C6-Pad1)">
-      <node ref="C6" pin="1"/>
-      <node ref="U2" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="Q1" pin="2"/>
-      <node ref="R2" pin="2"/>
-    </net>
-    <net code="64" name="/Batt_EN">
-      <node ref="R5" pin="2"/>
-      <node ref="U4" pin="25"/>
-    </net>
-    <net code="65" name="Net-(C11-Pad1)">
+    <net code="58" name="Net-(C11-Pad1)">
       <node ref="C11" pin="1"/>
-      <node ref="Q1" pin="1"/>
-      <node ref="D1" pin="2"/>
       <node ref="J1" pin="1"/>
+      <node ref="D1" pin="2"/>
       <node ref="R1" pin="2"/>
+      <node ref="Q1" pin="1"/>
     </net>
-    <net code="66" name="Net-(D2-Pad1)">
+    <net code="59" name="Net-(D2-Pad1)">
       <node ref="D2" pin="1"/>
-      <node ref="J3" pin="1"/>
       <node ref="SW1" pin="1"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="60" name="Net-(TP1-Pad1)">
+      <node ref="U4" pin="7"/>
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="61" name="Net-(TP2-Pad1)">
+      <node ref="U4" pin="8"/>
+      <node ref="TP2" pin="1"/>
+    </net>
+    <net code="62" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="Q2" pin="3"/>
+    </net>
+    <net code="63" name="Net-(Q2-Pad2)">
+      <node ref="R3" pin="1"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="64" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="R14" pin="2"/>
     </net>
   </nets>
 </export>

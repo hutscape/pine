@@ -1588,27 +1588,8 @@ Wire Notes Line
 Wire Notes Line
 	4750 5550 4750 6100
 Text Notes 3750 6050 0    50   ~ 0
-470R is used, but it is \ninterchangeable.\n\nTransistor calculation:\nMax: 3.36K\nMin: 168R
-Wire Wire Line
-	5600 4450 5850 4450
-Wire Wire Line
-	5100 4450 5300 4450
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5D854735
-P 5450 4450
-F 0 "JP3" H 5450 4550 50  0000 C CNN
-F 1 "Open solder jumper" H 5500 4350 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5450 4450 50  0001 C CNN
-F 3 "~" H 5450 4450 50  0001 C CNN
-F 4 "Electronics" H 100 0   50  0001 C CNN "Category"
-F 5 "Solder" H 100 0   50  0001 C CNN "Package"
-F 6 "Yes" H 100 0   50  0001 C CNN "DNP"
-F 7 "DNP" H 100 0   50  0001 C CNN "Vendor"
-	1    5450 4450
-	1    0    0    -1  
-$EndComp
-Text Notes 5300 4300 0    28   Italic 0
+R3 value 470R is used, \nbut it is interchangeable.\n\nTransistor calculation:\nMax: 3.36K\nMin: 168R
+Text Notes 5650 4600 0    28   Italic 0
 solder after \ntesting power \nmanagement circuit\n
 Text Label 5850 4450 0    50   ~ 0
 2V8
@@ -1733,9 +1714,32 @@ Wire Notes Line
 Wire Notes Line
 	5200 7000 5200 7350
 Wire Notes Line
-	6100 4150 6100 6100
-Wire Notes Line
 	5700 7350 5700 6100
 Wire Notes Line
 	1050 7350 5700 7350
+$Comp
+L Device:R_Small R14
+U 1 1 5DB98984
+P 5450 4450
+F 0 "R14" V 5550 4350 50  0000 C CNN
+F 1 "0R" V 5550 4550 50  0000 C CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5450 4450 50  0001 C CNN
+F 3 "~" H 5450 4450 50  0001 C CNN
+F 4 "Yes" H 0   0   50  0001 C CNN "DNP"
+F 5 "42" H 0   0   50  0001 C CNN "Stock"
+F 6 "15" H 0   0   50  0001 C CNN "Stock No."
+F 7 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
+	1    5450 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 4450 5850 4450
+Wire Wire Line
+	5100 4450 5350 4450
+Text Notes 4550 4300 0    31   ~ 0
+R14 can be 0R:\ngithub.com/hutscape/pine/issues/14#issuecomment-547702446
+Wire Notes Line
+	6200 4150 6200 6100
+Wire Notes Line
+	4500 4350 6200 4350
 $EndSCHEMATC
