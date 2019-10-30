@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pine"
-Date "2019-10-29"
+Date "2019-10-30"
 Rev "V1.0"
 Comp "Hutscape"
 Comment1 "Control aircon by monitoring temperature in other parts of the room"
@@ -1013,69 +1013,65 @@ Wire Wire Line
 	7200 3400 7150 3400
 Wire Wire Line
 	7300 3200 7300 3600
-Text Label 5500 6700 2    50   ~ 0
+Text Label 5050 6700 2    50   ~ 0
 Batt
 Text Notes 3750 6300 0    79   ~ 16
 Measure battery voltage
 $Comp
 L Device:R_Small R4
 U 1 1 5D85783A
-P 5800 6500
-F 0 "R4" H 5859 6546 50  0000 L CNN
-F 1 "100k" H 5859 6455 50  0000 L CNN
-F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5800 6500 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5800 6500 50  0001 C CNN
-F 4 "LCSC" H 100 0   50  0001 C CNN "Vendor"
-F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 100 0   50  0001 C CNN "Vendor link"
-F 6 "Electronics" H 100 0   50  0001 C CNN "Category"
-F 7 "RALEC" H 100 0   50  0001 C CNN "Manufacturer"
-F 8 "RTT051003BTP" H 100 0   50  0001 C CNN "Part No."
-F 9 "20" H 100 0   50  0001 C CNN "Minimum Order"
-F 10 "0805" H 100 0   50  0001 C CNN "Package"
-F 11 "0.042" H 100 0   50  0001 C CNN "Unit cost"
-	1    5800 6500
+P 5350 6500
+F 0 "R4" H 5409 6546 50  0000 L CNN
+F 1 "100k" H 5409 6455 50  0000 L CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5350 6500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5350 6500 50  0001 C CNN
+F 4 "LCSC" H -350 0   50  0001 C CNN "Vendor"
+F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H -350 0   50  0001 C CNN "Vendor link"
+F 6 "Electronics" H -350 0   50  0001 C CNN "Category"
+F 7 "RALEC" H -350 0   50  0001 C CNN "Manufacturer"
+F 8 "RTT051003BTP" H -350 0   50  0001 C CNN "Part No."
+F 9 "20" H -350 0   50  0001 C CNN "Minimum Order"
+F 10 "0805" H -350 0   50  0001 C CNN "Package"
+F 11 "0.042" H -350 0   50  0001 C CNN "Unit cost"
+	1    5350 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5D858007
-P 5800 6850
-F 0 "R5" H 5859 6896 50  0000 L CNN
-F 1 "100k" H 5859 6805 50  0000 L CNN
-F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5800 6850 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5800 6850 50  0001 C CNN
-F 4 "LCSC" H 100 0   50  0001 C CNN "Vendor"
-F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H 100 0   50  0001 C CNN "Vendor link"
-F 6 "Electronics" H 100 0   50  0001 C CNN "Category"
-F 7 "RALEC" H 100 0   50  0001 C CNN "Manufacturer"
-F 8 "RTT051003BTP" H 100 0   50  0001 C CNN "Part No."
-F 9 "20" H 100 0   50  0001 C CNN "Minimum Order"
-F 10 "0805" H 100 0   50  0001 C CNN "Package"
-F 11 "0.042" H 100 0   50  0001 C CNN "Unit cost"
-	1    5800 6850
+P 5350 6850
+F 0 "R5" H 5409 6896 50  0000 L CNN
+F 1 "100k" H 5409 6805 50  0000 L CNN
+F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5350 6850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/RALEC-RTT051003BTP_C312260.pdf" H 5350 6850 50  0001 C CNN
+F 4 "LCSC" H -350 0   50  0001 C CNN "Vendor"
+F 5 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H -350 0   50  0001 C CNN "Vendor link"
+F 6 "Electronics" H -350 0   50  0001 C CNN "Category"
+F 7 "RALEC" H -350 0   50  0001 C CNN "Manufacturer"
+F 8 "RTT051003BTP" H -350 0   50  0001 C CNN "Part No."
+F 9 "20" H -350 0   50  0001 C CNN "Minimum Order"
+F 10 "0805" H -350 0   50  0001 C CNN "Package"
+F 11 "0.042" H -350 0   50  0001 C CNN "Unit cost"
+	1    5350 6850
 	1    0    0    -1  
 $EndComp
-Text Label 5800 6250 0    50   ~ 0
+Text Label 5350 6250 0    50   ~ 0
 VBAT
 Wire Wire Line
-	5800 6250 5800 6400
+	5350 6250 5350 6400
 Wire Wire Line
-	5800 6600 5800 6700
+	5350 6600 5350 6700
 Wire Wire Line
-	5500 6700 5800 6700
-Connection ~ 5800 6700
+	5050 6700 5350 6700
+Connection ~ 5350 6700
 Wire Wire Line
-	5800 6700 5800 6750
+	5350 6700 5350 6750
 Wire Notes Line
 	3700 6350 5250 6350
 Wire Notes Line
 	5250 6350 5250 6100
-Wire Notes Line
-	6200 4150 6200 7350
-Wire Notes Line
-	1050 7350 6200 7350
 Text Notes 3750 7300 0    50   ~ 0
-Read the battery voltage from this \nanalog pin Batt.\nBatt_EN = input when NOT measuring,\nBatt_EN = 0 when measuring.\n\nMeasured battery voltage\n= analogRead(Batt) * 2 * 2.8 / 1024
+Measured battery \nvoltage =\nanalogRead(Batt) * 2 * 2.8 / 1024
 $Comp
 L Device:C_Small C5
 U 1 1 5D84D506
@@ -1401,14 +1397,6 @@ Wire Wire Line
 	5550 2450 6150 2450
 Connection ~ 5550 2450
 Connection ~ 6150 2450
-Text Label 8000 3900 2    50   ~ 0
-Batt_EN
-Text Label 5750 7150 2    50   ~ 0
-Batt_EN
-Wire Wire Line
-	5750 7150 5800 7150
-Wire Wire Line
-	5800 6950 5800 7150
 Wire Wire Line
 	2600 1550 2600 2750
 $Comp
@@ -1501,10 +1489,6 @@ Wire Wire Line
 Connection ~ 1650 2750
 Wire Wire Line
 	1650 2750 2050 2750
-Wire Notes Line
-	5300 6700 3700 6700
-Wire Notes Line
-	5300 6700 5300 7350
 Text Label 2500 6650 0    50   ~ 0
 SWD_POWER_IN
 Text Label 2750 1150 0    50   ~ 0
@@ -1564,8 +1548,6 @@ Wire Wire Line
 Wire Wire Line
 	8100 3200 8100 3800
 Wire Wire Line
-	8200 3200 8200 3900
-Wire Wire Line
 	8300 3200 8300 4000
 Wire Wire Line
 	7900 3200 7900 3400
@@ -1577,8 +1559,6 @@ Wire Wire Line
 	7500 3900 7150 3900
 Wire Wire Line
 	8000 3800 8100 3800
-Wire Wire Line
-	8000 3900 8200 3900
 Wire Wire Line
 	8000 4000 8300 4000
 $Comp
@@ -1734,4 +1714,28 @@ Wire Wire Line
 	2350 4800 2600 4800
 Wire Wire Line
 	2800 4800 3000 4800
+$Comp
+L power:GND #PWR0101
+U 1 1 5DBA5765
+P 5350 7050
+F 0 "#PWR0101" H 5350 6800 50  0001 C CNN
+F 1 "GND" H 5355 6877 50  0000 C CNN
+F 2 "" H 5350 7050 50  0001 C CNN
+F 3 "" H 5350 7050 50  0001 C CNN
+	1    5350 7050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 6950 5350 7050
+NoConn ~ 8200 3200
+Wire Notes Line
+	3700 7000 5200 7000
+Wire Notes Line
+	5200 7000 5200 7350
+Wire Notes Line
+	6100 4150 6100 6100
+Wire Notes Line
+	5700 7350 5700 6100
+Wire Notes Line
+	1050 7350 5700 7350
 $EndSCHEMATC
