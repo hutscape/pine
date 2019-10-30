@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 October 30, Wednesday 10:08:23</date>
+    <date>2019 October 30, Wednesday 10:31:14</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -712,6 +712,9 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DB61D31</tstamp>
@@ -720,6 +723,9 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DB62E76</tstamp>
@@ -728,6 +734,9 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DC3C693</tstamp>
@@ -736,6 +745,9 @@
       <value>TestPoint_Probe</value>
       <footprint>TestPoint:TestPoint_Pad_1.5x1.5mm</footprint>
       <datasheet>~</datasheet>
+      <fields>
+        <field name="Category">Electronics</field>
+      </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5DC3DCFC</tstamp>
@@ -798,8 +810,10 @@
     </comp>
     <comp ref="R14">
       <value>0R</value>
+      <footprint>Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="Category">Electronics</field>
         <field name="DNP">Yes</field>
         <field name="Stock">42</field>
         <field name="Stock No.">15</field>

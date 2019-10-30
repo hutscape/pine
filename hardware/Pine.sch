@@ -1507,6 +1507,7 @@ F 0 "TP1" H 7703 1255 50  0000 L CNN
 F 1 "TestPoint_Probe" H 7703 1210 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7750 1200 50  0001 C CNN
 F 3 "~" H 7750 1200 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	1    7550 1200
 	1    0    0    -1  
 $EndComp
@@ -1518,6 +1519,7 @@ F 0 "TP2" H 7703 1355 50  0000 L CNN
 F 1 "TestPoint_Probe" H 7703 1310 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7750 1300 50  0001 C CNN
 F 3 "~" H 7750 1300 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	1    7550 1300
 	1    0    0    -1  
 $EndComp
@@ -1569,6 +1571,7 @@ F 0 "TP3" V 7200 3950 50  0000 C CNN
 F 1 "TestPoint_Probe" H 7303 3760 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7350 3750 50  0001 C CNN
 F 3 "~" H 7350 3750 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	1    7150 3750
 	0    -1   -1   0   
 $EndComp
@@ -1580,6 +1583,7 @@ F 0 "TP4" V 7200 4100 50  0000 C CNN
 F 1 "TestPoint_Probe" H 7303 3910 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7350 3900 50  0001 C CNN
 F 3 "~" H 7350 3900 50  0001 C CNN
+F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	1    7150 3900
 	0    -1   -1   0   
 $EndComp
@@ -1729,6 +1733,7 @@ F 4 "Yes" H 0   0   50  0001 C CNN "DNP"
 F 5 "42" H 0   0   50  0001 C CNN "Stock"
 F 6 "15" H 0   0   50  0001 C CNN "Stock No."
 F 7 "Internal stock" H 0   0   50  0001 C CNN "Vendor"
+F 8 "Electronics" H 0   0   50  0001 C CNN "Category"
 	1    5450 4450
 	0    1    1    0   
 $EndComp
