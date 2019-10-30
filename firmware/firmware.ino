@@ -50,28 +50,28 @@ void setup() {
 void loop() {
   // IR Receive
   if (myReceiver.getResults()) {
-    SerialUSB.println("Received user IR code...");
-    SerialUSB.print(F("\n#define RAW_DATA_LEN "));
-    SerialUSB.println(recvGlobal.recvLength, DEC);
-    SerialUSB.print(F("uint16_t rawData[RAW_DATA_LEN]={\n"));
+    if (isValidIRCode()) {
+      SerialUSB.println("\n\nReceived user IR code...");
+      SerialUSB.print(F("#define RAW_DATA_LEN "));
+      SerialUSB.println(recvGlobal.recvLength, DEC);
+      SerialUSB.print(F("uint16_t rawData[RAW_DATA_LEN]={\n"));
 
-    for (bufIndex_t i = 1; i < recvGlobal.recvLength; i++) {
-      SerialUSB.print(recvGlobal.recvBuffer[i], DEC);
-      SerialUSB.print(F(", "));
-      if ((i % 8) == 0) {
-        SerialUSB.print(F("\n"));
+      for (bufIndex_t i = 1; i < recvGlobal.recvLength; i++) {
+        SerialUSB.print(recvGlobal.recvBuffer[i], DEC);
+        SerialUSB.print(F(", "));
+        if ((i % 8) == 0) {
+          SerialUSB.print(F("\n"));
+        }
       }
-    }
 
-    WebUSBSerial.write((const uint8_t *)recvGlobal.recvBuffer,
-      recvGlobal.recvLength*2);
-    SerialUSB.println(F("1000};"));
-    WebUSBSerial.flush();
+      WebUSBSerial.write((const uint8_t *)recvGlobal.recvBuffer,
+        recvGlobal.recvLength*2);
+      SerialUSB.println(F("1000};"));
+      WebUSBSerial.flush();
+    }
 
     myReceiver.enableIRIn();
   }
-
-  // Send user config from MCU to browser
 
   // IR Emit
   char input = SerialUSB.read();
@@ -107,6 +107,8 @@ void loop() {
       WebUSBSerial.print("Received interval, duration and ideal temperature:");
       WebUSBSerial.flush();
       configIndex = 0;
+
+      // storeIRCode();
     }
   }
 }
@@ -151,6 +153,17 @@ void readSensor() {
   SerialUSB.print(sensor.readTemperature(), 2);
   SerialUSB.println(" C");
 }
+
+bool isValidIRCode() {
+  // Total array length of the raw IR code should be more than 10
+  // First array element of the raw IR code should be more than 3000
+  if ((int) recvGlobal.recvLength > 10 && (int) recvGlobal.recvBuffer[1] > 3000) {
+    return true;
+  }
+
+  return false;
+}
+
 
 void storeIRCode() {
   for (int i = 0; i < RAW_DATA_LEN; i++) {
