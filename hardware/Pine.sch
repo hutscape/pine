@@ -842,11 +842,11 @@ L power:PWR_FLAG #FLG05
 U 1 1 5D8154F9
 P 6150 2450
 F 0 "#FLG05" H 6150 2525 50  0001 C CNN
-F 1 "PWR_FLAG" H 6150 2623 50  0000 C CNN
+F 1 "PWR_FLAG" H 5900 2500 50  0000 C CNN
 F 2 "" H 6150 2450 50  0001 C CNN
 F 3 "~" H 6150 2450 50  0001 C CNN
 	1    6150 2450
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	10200 5200 10200 5800
@@ -1071,7 +1071,7 @@ Wire Notes Line
 Wire Notes Line
 	5250 6350 5250 6100
 Text Notes 3750 7300 0    50   ~ 0
-Measured battery \nvoltage =\nanalogRead(Batt) * 2 * 2.8 / 1024
+Measured battery voltage =\nanalogRead(Batt) * 2 * 2.8 / 1024
 $Comp
 L Device:C_Small C5
 U 1 1 5D84D506
@@ -1272,7 +1272,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 5250 3000 5250
 Text Notes 3000 6000 0    50   ~ 0
-R = 470R\nC = 1uF\n\nCut off frequency \n= 330.8Hz
+R11 = 470R\nC5 = 1uF\n\nCut off frequency \n= 330.8Hz
 Wire Wire Line
 	2350 5700 2350 5750
 Connection ~ 2350 5700
@@ -1588,8 +1588,6 @@ F 4 "Electronics" H 0   0   50  0001 C CNN "Category"
 	0    -1   -1   0   
 $EndComp
 Wire Notes Line
-	3050 5550 4750 5550
-Wire Notes Line
 	4750 5550 4750 6100
 Text Notes 3750 6050 0    50   ~ 0
 R3 value 470R is used, \nbut it is interchangeable.\n\nTransistor calculation:\nMax: 3.36K\nMin: 168R
@@ -1714,10 +1712,6 @@ Wire Wire Line
 	5350 6950 5350 7050
 NoConn ~ 8200 3200
 Wire Notes Line
-	3700 7000 5200 7000
-Wire Notes Line
-	5200 7000 5200 7350
-Wire Notes Line
 	5700 7350 5700 6100
 Wire Notes Line
 	1050 7350 5700 7350
@@ -1747,4 +1741,10 @@ Wire Notes Line
 	6200 4150 6200 6100
 Wire Notes Line
 	4500 4350 6200 4350
+Wire Notes Line
+	2950 5550 4750 5550
+Wire Notes Line
+	3700 7100 5200 7100
+Wire Notes Line
+	5200 7100 5200 7350
 $EndSCHEMATC
