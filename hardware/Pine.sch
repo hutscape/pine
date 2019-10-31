@@ -11,8 +11,8 @@ Rev "V1.0"
 Comp "Hutscape"
 Comment1 "Control aircon by monitoring temperature in other parts of the room"
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Authored by: Sayanee Basu"
+Comment4 "Project website: https://hutscape.com/pine"
 $EndDescr
 $Comp
 L Interface_Optical:TSOP43xx U1
