@@ -104,12 +104,18 @@ recordONButton.addEventListener('click', function() {
   recordONButton.classList.add("is-warning")
   recordONButton.textContent = 'Recording ON Command...'
   isRecordingON = true
+  port.send(textEncoder.encode('A')).catch(error => {
+    console.log('Send error: ' + error)
+  })
 })
 
 recordOFFButton.addEventListener('click', function() {
   recordOFFButton.classList.add("is-warning")
   recordOFFButton.textContent = 'Recording OFF Command...'
   isRecordingOFF = true
+  port.send(textEncoder.encode('B')).catch(error => {
+    console.log('Send error: ' + error)
+  })
 })
 
 connectButton.addEventListener('click', function() {
