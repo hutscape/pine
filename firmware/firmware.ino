@@ -35,6 +35,8 @@ IRRawCode userConfigRead;
 WebUSB WebUSBSerial(1, "hutscape.com/pine/webusb/");
 int config[3];
 int configIndex;
+bool isRecordingON = false;
+bool isRecordingOFF = true;
 
 void setup() {
   initSerial();
@@ -64,6 +66,31 @@ void loop() {
         }
       }
 
+      if (isRecordingON) {
+        for (bufIndex_t i = 1; i < recvGlobal.recvLength; i++) {
+          userConfig.rawDataON[i] = recvGlobal.recvBuffer[i];
+        }
+
+        recvGlobal.recvBuffer[recvGlobal.recvLength] = 1000;
+        userConfig.sizeofON = RAW_DATA_LEN;
+        userConfig.sizeofOFF = RAW_DATA_LEN;
+
+        isRecordingON = false;
+
+        SerialUSB.println("***************************");
+        SerialUSB.println("Recoded ON command:");
+
+        SerialUSB.print(F("uint16_t rawData[RAW_DATA_LEN]={\n"));
+        for (bufIndex_t i = 1; i < recvGlobal.recvLength; i++) {
+          SerialUSB.print(userConfig.rawDataON[i], DEC);
+          SerialUSB.print(F(", "));
+          if ((i % 8) == 0) {
+            SerialUSB.print(F("\n"));
+          }
+        }
+        SerialUSB.println("***************************");
+      }
+
       WebUSBSerial.write((const uint8_t *)recvGlobal.recvBuffer,
         recvGlobal.recvLength*2);
       SerialUSB.println(F("1000};"));
@@ -86,29 +113,39 @@ void loop() {
 
   // Read user config from browser
   if (WebUSBSerial && WebUSBSerial.available()) {
-    config[configIndex++] = WebUSBSerial.read();
-    if (configIndex == 3) {
-      SerialUSB.println("\nReceived user config...");
-      SerialUSB.print("Interval: ");
-      SerialUSB.print(config[0]);
-      SerialUSB.println(" minutes");
-      userConfig.interval = config[0];
+    int byte = WebUSBSerial.read();
 
-      SerialUSB.print("Duration: ");
-      SerialUSB.print(config[1]);
-      SerialUSB.println(" hours");
-      userConfig.duration = config[1];
+    if (byte == 'A') {
+      SerialUSB.println("Recording ON IR command");
+      isRecordingON = true;
+    } else if (byte == 'B') {
+      SerialUSB.println("Recording OFF IR command");
+      isRecordingOFF = true;
+    } else {
+      config[configIndex++] = byte;
+      if (configIndex == 3) {
+        SerialUSB.println("\nReceived user config...");
+        SerialUSB.print("Interval: ");
+        SerialUSB.print(config[0]);
+        SerialUSB.println(" minutes");
+        userConfig.interval = config[0];
 
-      SerialUSB.print("Ideal temperature: ");
-      SerialUSB.print(config[2]);
-      SerialUSB.println(" C");
-      userConfig.temperature = config[2];
+        SerialUSB.print("Duration: ");
+        SerialUSB.print(config[1]);
+        SerialUSB.println(" hours");
+        userConfig.duration = config[1];
 
-      WebUSBSerial.print("Received interval, duration and ideal temperature:");
-      WebUSBSerial.flush();
-      configIndex = 0;
+        SerialUSB.print("Ideal temperature: ");
+        SerialUSB.print(config[2]);
+        SerialUSB.println(" C");
+        userConfig.temperature = config[2];
 
-      // storeIRCode();
+        WebUSBSerial.print("Received interval, duration and ideal temperature:");
+        WebUSBSerial.flush();
+        configIndex = 0;
+
+        // storeIRCode();
+      }
     }
   }
 }
@@ -163,7 +200,6 @@ bool isValidIRCode() {
 
   return false;
 }
-
 
 void storeIRCode() {
   for (int i = 0; i < RAW_DATA_LEN; i++) {

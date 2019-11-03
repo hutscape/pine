@@ -104,6 +104,7 @@ recordONButton.addEventListener('click', function() {
   recordONButton.classList.add("is-warning")
   recordONButton.textContent = 'Recording ON Command...'
   isRecordingON = true
+  console.log("Waiting for ON command...")
   port.send(textEncoder.encode('A')).catch(error => {
     console.log('Send error: ' + error)
   })
