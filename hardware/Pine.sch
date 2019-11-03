@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pine"
-Date "2019-10-30"
+Date "2019-11-03"
 Rev "V1.0"
 Comp "Hutscape"
 Comment1 "Control aircon by monitoring temperature in other parts of the room"
@@ -1831,7 +1831,7 @@ Wire Notes Line
 Wire Notes Line
 	2500 5900 2500 7550
 Text Notes 4250 6250 0    79   ~ 16
-Footnotes
+Footnotes: Design explanations
 Wire Notes Line width 12 style solid
 	6850 7700 6850 6050
 Wire Notes Line
@@ -1844,10 +1844,12 @@ Wire Notes Line width 8 style solid
 	6850 6050 4200 6050
 Wire Notes Line width 8 style solid
 	4200 6050 4200 7700
-Wire Notes Line width 12 style solid
-	4200 7700 6850 7700
 Wire Notes Line
 	4200 6300 6850 6300
 Wire Wire Line
 	4300 1350 4350 1350
+Wire Notes Line
+	2500 6150 4050 6150
+Wire Notes Line width 12 style solid
+	4200 7700 6850 7700
 $EndSCHEMATC
