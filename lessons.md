@@ -11,6 +11,10 @@ lessons:
       - name: Do not copy and paste symbols for different parts of the schematic as they might copy over other field values
       - name: Refer to application circuit in datasheets to connect various passives
       - name: Consider pulling out some unused pins as pads if the board is to be used for future development and iteration E.g. <a href="https://www.pjrc.com/store/teensy36b.jpg">Teensy</a>
+  - title: V2.0
+    subtitle: For next iteration
+    list:
+      - name: Use SMD components for IR receiver and emitter
 improvements:
   - title: Improvements
     subtitle: Simple iterations that were implemented in this project because of the learnings from the previous projects
@@ -24,4 +28,5 @@ improvements:
       - name: Created a complete 3D rendering with all components
       - name: Pulled out some unused pins as test points
       - name: Added solder jumper points for circuit isolation
+
 ---
