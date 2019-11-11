@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pine"
-Date "2019-11-03"
+Date "2019-11-11"
 Rev "V1.0"
 Comp "Hutscape"
 Comment1 "Control aircon by monitoring temperature in other parts of the room"
@@ -180,12 +180,12 @@ F 1 "Schottky diode" H 2200 1200 50  0001 C CNN
 F 2 "Diode_SMD:D_SOD-123F" H 2200 1350 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf" H 2200 1350 50  0001 C CNN
 F 4 "Electronics" H -150 -200 50  0001 C CNN "Category"
-F 5 "ON Semi" H -50 -200 50  0001 C CNN "Manufacturer"
-F 6 "MBR230LSFT1G" H 2200 1200 50  0000 C CNN "Part No."
-F 7 "LCSC" H -50 -200 50  0001 C CNN "Vendor"
-F 8 "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_ON-Semicon_MBR230LSFT1G_ON-Semicon-ON-MBR230LSFT1G_C126673.html" H -50 -200 50  0001 C CNN "Vendor link"
-F 9 "5" H -50 -200 50  0001 C CNN "Minimum Order"
-F 10 "0.087" H -50 -200 50  0001 C CNN "Unit cost"
+F 5 "Nexperia" H -50 -200 50  0001 C CNN "Manufacturer"
+F 6 "PMEG3020EH" H 2200 1200 50  0000 C CNN "Part No."
+F 7 "RS Components" H -50 -200 50  0001 C CNN "Vendor"
+F 8 "https://sg.rs-online.com/web/p/rectifier-diodes-schottky-diodes/0485319" H -50 -200 50  0001 C CNN "Vendor link"
+F 9 "20" H -50 -200 50  0001 C CNN "Minimum Order"
+F 10 "0.388" H -50 -200 50  0001 C CNN "Unit cost"
 F 11 "SOD-123F " H -50 -200 50  0001 C CNN "Package"
 	1    2200 1350
 	-1   0    0    1   
@@ -1331,12 +1331,12 @@ F 1 "Schottky diode" H 1650 3200 50  0001 C CNN
 F 2 "Diode_SMD:D_SOD-123F" H 1500 3100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf" H 1500 3100 50  0001 C CNN
 F 4 "Electronics" H -850 1550 50  0001 C CNN "Category"
-F 5 "ON Semi" H -750 1550 50  0001 C CNN "Manufacturer"
-F 6 "MBR230LSFT1G" H 1650 3250 50  0000 C CNN "Part No."
-F 7 "LCSC" H -750 1550 50  0001 C CNN "Vendor"
-F 8 "https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_ON-Semicon_MBR230LSFT1G_ON-Semicon-ON-MBR230LSFT1G_C126673.html" H -750 1550 50  0001 C CNN "Vendor link"
-F 9 "5" H -750 1550 50  0001 C CNN "Minimum Order"
-F 10 "0.087" H -750 1550 50  0001 C CNN "Unit cost"
+F 5 "Nexperia" H -750 1550 50  0001 C CNN "Manufacturer"
+F 6 "PMEG3020EH" H 1650 3250 50  0000 C CNN "Part No."
+F 7 "RS Components" H -750 1550 50  0001 C CNN "Vendor"
+F 8 "https://sg.rs-online.com/web/p/rectifier-diodes-schottky-diodes/0485319" H -750 1550 50  0001 C CNN "Vendor link"
+F 9 "20" H -750 1550 50  0001 C CNN "Minimum Order"
+F 10 "0.388" H -750 1550 50  0001 C CNN "Unit cost"
 F 11 "SOD-123F " H -750 1550 50  0001 C CNN "Package"
 	1    1500 3100
 	1    0    0    -1  

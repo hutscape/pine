@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 November 03, Sunday 20:17:03</date>
+    <date>2019 November 11, Monday 20:27:29</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -107,13 +107,13 @@
       <datasheet>https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="Manufacturer">ON Semi</field>
-        <field name="Minimum Order">5</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Minimum Order">20</field>
         <field name="Package">SOD-123F </field>
-        <field name="Part No.">MBR230LSFT1G</field>
-        <field name="Unit cost">0.087</field>
-        <field name="Vendor">LCSC</field>
-        <field name="Vendor link">https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_ON-Semicon_MBR230LSFT1G_ON-Semicon-ON-MBR230LSFT1G_C126673.html</field>
+        <field name="Part No.">PMEG3020EH</field>
+        <field name="Unit cost">0.388</field>
+        <field name="Vendor">RS Components</field>
+        <field name="Vendor link">https://sg.rs-online.com/web/p/rectifier-diodes-schottky-diodes/0485319</field>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -640,13 +640,13 @@
       <datasheet>https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-MBR230LSFT1G_C126673.pdf</datasheet>
       <fields>
         <field name="Category">Electronics</field>
-        <field name="Manufacturer">ON Semi</field>
-        <field name="Minimum Order">5</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="Minimum Order">20</field>
         <field name="Package">SOD-123F </field>
-        <field name="Part No.">MBR230LSFT1G</field>
-        <field name="Unit cost">0.087</field>
-        <field name="Vendor">LCSC</field>
-        <field name="Vendor link">https://lcsc.com/product-detail/Schottky-Barrier-Diodes-SBD_ON-Semicon_MBR230LSFT1G_ON-Semicon-ON-MBR230LSFT1G_C126673.html</field>
+        <field name="Part No.">PMEG3020EH</field>
+        <field name="Unit cost">0.388</field>
+        <field name="Vendor">RS Components</field>
+        <field name="Vendor link">https://sg.rs-online.com/web/p/rectifier-diodes-schottky-diodes/0485319</field>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
       <sheetpath names="/" tstamps="/"/>
