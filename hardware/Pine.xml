@@ -2,14 +2,14 @@
 <export version="D">
   <design>
     <source>/Users/sayanee/Documents/hutscape/pine/hardware/Pine.sch</source>
-    <date>2019 November 11, Monday 20:27:29</date>
+    <date>2019 November 16, Saturday 11:13:55</date>
     <tool>Eeschema (5.1.0-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Pine</title>
         <company>Hutscape</company>
         <rev>V1.0</rev>
-        <date>2019-11-03</date>
+        <date>2019-11-11</date>
         <source>Pine.sch</source>
         <comment number="1" value="Control aircon by monitoring temperature in other parts of the room"/>
         <comment number="2" value=""/>
@@ -93,6 +93,7 @@
         <field name="Minimum Order">5</field>
         <field name="Package">SMD</field>
         <field name="Part No.">C10418</field>
+        <field name="Stock No.">60</field>
         <field name="Unit cost">0.079</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-Jing-Extension-of-the-Electronic-Co-MICRO-USB-5S-B-Type-horns-High-temperature_C10418.html</field>
@@ -111,6 +112,7 @@
         <field name="Minimum Order">20</field>
         <field name="Package">SOD-123F </field>
         <field name="Part No.">PMEG3020EH</field>
+        <field name="Stock No.">52</field>
         <field name="Unit cost">0.388</field>
         <field name="Vendor">RS Components</field>
         <field name="Vendor link">https://sg.rs-online.com/web/p/rectifier-diodes-schottky-diodes/0485319</field>
@@ -129,6 +131,7 @@
         <field name="Minimum Order">20</field>
         <field name="Package">SOT-23</field>
         <field name="Part No.">BSH203,215 </field>
+        <field name="Stock No.">49</field>
         <field name="Unit cost">0.312</field>
         <field name="Vendor">RS Components</field>
         <field name="Vendor link">https://sg.rs-online.com/web/p/mosfets/7258366/</field>
@@ -175,6 +178,7 @@
         <field name="Minimum Order">1</field>
         <field name="Package">TQFN-48</field>
         <field name="Part No.">ATSAMD21G18A-AUT</field>
+        <field name="Stock No.">59</field>
         <field name="Unit cost">6.05</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/ATMEL-AVR_ATMEL_ATSAMD21G18A-AU_ATSAMD21G18A-AU_C78624.html</field>
@@ -193,6 +197,7 @@
         <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">RTT051003BTP</field>
+        <field name="Stock No.">56</field>
         <field name="Unit cost">0.042</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html</field>
@@ -211,6 +216,7 @@
         <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">GCM21BR72A104KA37L</field>
+        <field name="Stock No.">53</field>
         <field name="Unit cost">0.030</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GCM21BR72A104KA37L_100nF-104-10-100V-Car-level_C85866.html</field>
@@ -229,6 +235,7 @@
         <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">GCM21BR72A104KA37L</field>
+        <field name="Stock No.">53</field>
         <field name="Unit cost">0.030</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GCM21BR72A104KA37L_100nF-104-10-100V-Car-level_C85866.html</field>
@@ -247,6 +254,7 @@
         <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">GCM21BR72A104KA37L</field>
+        <field name="Stock No.">53</field>
         <field name="Unit cost">0.030</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GCM21BR72A104KA37L_100nF-104-10-100V-Car-level_C85866.html</field>
@@ -283,6 +291,7 @@
         <field name="Minimum Order">10</field>
         <field name="Package">0805</field>
         <field name="Part No.">17-215UYC/S530-A3/TR8</field>
+        <field name="Stock No.">54</field>
         <field name="Unit cost">0.058</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html</field>
@@ -302,6 +311,7 @@
         <field name="Minimum Order">10</field>
         <field name="Package">0805</field>
         <field name="Part No.">17-215UYC/S530-A3/TR8</field>
+        <field name="Stock No.">54</field>
         <field name="Unit cost">0.058</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html</field>
@@ -320,6 +330,7 @@
         <field name="Minimum Order">10</field>
         <field name="Package">0805</field>
         <field name="Part No.">17-215UYC/S530-A3/TR8</field>
+        <field name="Stock No.">54</field>
         <field name="Unit cost">0.058</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html</field>
@@ -338,6 +349,7 @@
         <field name="Minimum Order">10</field>
         <field name="Package">0805</field>
         <field name="Part No.">17-215UYC/S530-A3/TR8</field>
+        <field name="Stock No.">54</field>
         <field name="Unit cost">0.058</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html</field>
@@ -356,6 +368,7 @@
         <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
+        <field name="Stock No.">57</field>
         <field name="Unit cost">0.0050 </field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
@@ -416,6 +429,7 @@
         <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">RTT051003BTP</field>
+        <field name="Stock No.">56</field>
         <field name="Unit cost">0.042</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html</field>
@@ -434,6 +448,7 @@
         <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">RTT051003BTP</field>
+        <field name="Stock No.">56</field>
         <field name="Unit cost">0.042</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html</field>
@@ -468,6 +483,7 @@
         <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
+        <field name="Stock No.">57</field>
         <field name="Unit cost">0.0050 </field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
@@ -544,6 +560,7 @@
         <field name="Manufacturer">STMicroelectronics</field>
         <field name="Package">SOT-23</field>
         <field name="Part No.">LD3985M28R_SOT23</field>
+        <field name="Stock No.">50</field>
         <field name="Unit cost">0.32</field>
         <field name="Vendor">RS Components</field>
         <field name="Vendor link">https://sg.rs-online.com/web/p/low-dropout-voltage-regulators/6868792/</field>
@@ -577,6 +594,7 @@
         <field name="Minimum Order">20</field>
         <field name="Package">0805</field>
         <field name="Part No.">0805B103K631CT</field>
+        <field name="Stock No.">55</field>
         <field name="Unit cost">0.026</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Walsin-Tech-Corp-0805B103K631CT_C338146.html</field>
@@ -644,6 +662,7 @@
         <field name="Minimum Order">20</field>
         <field name="Package">SOD-123F </field>
         <field name="Part No.">PMEG3020EH</field>
+        <field name="Stock No.">52</field>
         <field name="Unit cost">0.388</field>
         <field name="Vendor">RS Components</field>
         <field name="Vendor link">https://sg.rs-online.com/web/p/rectifier-diodes-schottky-diodes/0485319</field>
@@ -658,6 +677,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">Yes</field>
       </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -669,6 +689,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">Yes</field>
       </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -680,6 +701,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">Yes</field>
       </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -691,6 +713,7 @@
       <datasheet>~</datasheet>
       <fields>
         <field name="Category">Electronics</field>
+        <field name="DNP">Yes</field>
       </fields>
       <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
       <sheetpath names="/" tstamps="/"/>
@@ -726,6 +749,7 @@
         <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
+        <field name="Stock No.">57</field>
         <field name="Unit cost">0.0050 </field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
@@ -744,6 +768,7 @@
         <field name="Minimum Order">5</field>
         <field name="Package">SOT-23</field>
         <field name="Part No.">BC817-25LT3G</field>
+        <field name="Stock No.">58</field>
         <field name="Unit cost">0.021</field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Transistors-NPN-PNP_ON-Semicon_BC817-25LT3G_ON-Semicon-ON-BC817-25LT3G_C191221.html</field>
@@ -777,6 +802,7 @@
         <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
+        <field name="Stock No.">57</field>
         <field name="Unit cost">0.0050 </field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
@@ -796,6 +822,7 @@
         <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
+        <field name="Stock No.">57</field>
         <field name="Unit cost">0.0050 </field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>
@@ -815,6 +842,7 @@
         <field name="Minimum Order">50</field>
         <field name="Package">0805</field>
         <field name="Part No.">WR08X4700FTL</field>
+        <field name="Stock No.">57</field>
         <field name="Unit cost">0.0050 </field>
         <field name="Vendor">LCSC</field>
         <field name="Vendor link">https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html</field>

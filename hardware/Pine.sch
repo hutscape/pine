@@ -168,6 +168,7 @@ F 8 "LCSC" H -150 -200 50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-Jing-Extension-of-the-Electronic-Co-MICRO-USB-5S-B-Type-horns-High-temperature_C10418.html" H -150 -200 50  0001 C CNN "Vendor link"
 F 10 "0.079" H -150 -200 50  0001 C CNN "Unit cost"
 F 11 "5" H -50 -200 50  0001 C CNN "Minimum Order"
+F 12 "60" H 0   0   50  0001 C CNN "Stock No."
 	1    1300 1550
 	1    0    0    -1  
 $EndComp
@@ -187,6 +188,7 @@ F 8 "https://sg.rs-online.com/web/p/rectifier-diodes-schottky-diodes/0485319" H 
 F 9 "20" H -50 -200 50  0001 C CNN "Minimum Order"
 F 10 "0.388" H -50 -200 50  0001 C CNN "Unit cost"
 F 11 "SOD-123F " H -50 -200 50  0001 C CNN "Package"
+F 12 "52" H 0   0   50  0001 C CNN "Stock No."
 	1    2200 1350
 	-1   0    0    1   
 $EndComp
@@ -239,6 +241,7 @@ F 8 "https://sg.rs-online.com/web/p/mosfets/7258366/" H -50 -200 50  0001 C CNN 
 F 9 "20" H -50 -200 50  0001 C CNN "Minimum Order"
 F 10 "0.312" H -50 -200 50  0001 C CNN "Unit cost"
 F 11 "SOT-23" H -50 -200 50  0001 C CNN "Package"
+F 12 "49" H 0   0   50  0001 C CNN "Stock No."
 	1    2200 2650
 	0    -1   -1   0   
 $EndComp
@@ -342,6 +345,7 @@ F 8 "https://lcsc.com/product-detail/ATMEL-AVR_ATMEL_ATSAMD21G18A-AU_ATSAMD21G18
 F 9 "TQFN-48" H -300 -200 50  0001 C CNN "Package"
 F 10 "Microchip Tech" H -300 -200 50  0001 C CNN "Manufacturer"
 F 11 "1" H -300 -200 50  0001 C CNN "Minimum Order"
+F 12 "59" H 0   0   50  0001 C CNN "Stock No."
 	1    8150 2000
 	0    -1   -1   0   
 $EndComp
@@ -392,6 +396,7 @@ F 8 "LCSC" H -150 -200 50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Others_RALEC-RTT051003BTP_C312260.html" H -150 -200 50  0001 C CNN "Vendor link"
 F 10 "0.042" H -150 -200 50  0001 C CNN "Unit cost"
 F 11 "20" H -50 -200 50  0001 C CNN "Minimum Order"
+F 12 "56" H 0   0   50  0001 C CNN "Stock No."
 	1    2900 1450
 	0    1    1    0   
 $EndComp
@@ -459,6 +464,7 @@ F 8 "LCSC" H -250 -200 50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GCM21BR72A104KA37L_100nF-104-10-100V-Car-level_C85866.html" H -250 -200 50  0001 C CNN "Vendor link"
 F 10 "0.030" H -250 -200 50  0001 C CNN "Unit cost"
 F 11 "20" H -250 -200 50  0001 C CNN "Minimum Order"
+F 12 "53" H 0   0   50  0001 C CNN "Stock No."
 	1    5300 1900
 	0    1    1    0   
 $EndComp
@@ -478,6 +484,7 @@ F 8 "LCSC" H 300 -200 50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GCM21BR72A104KA37L_100nF-104-10-100V-Car-level_C85866.html" H 300 -200 50  0001 C CNN "Vendor link"
 F 10 "0.030" H 300 -200 50  0001 C CNN "Unit cost"
 F 11 "20" H 300 -200 50  0001 C CNN "Minimum Order"
+F 12 "53" H 0   0   50  0001 C CNN "Stock No."
 	1    5400 2250
 	0    1    1    0   
 $EndComp
@@ -497,6 +504,7 @@ F 8 "LCSC" H 150 -200 50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GCM21BR72A104KA37L_100nF-104-10-100V-Car-level_C85866.html" H 150 -200 50  0001 C CNN "Vendor link"
 F 10 "0.030" H 150 -200 50  0001 C CNN "Unit cost"
 F 11 "20" H 150 -200 50  0001 C CNN "Minimum Order"
+F 12 "53" H 0   0   50  0001 C CNN "Stock No."
 	1    4900 2050
 	0    1    1    0   
 $EndComp
@@ -604,6 +612,7 @@ F 9 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light
 F 10 "0.058" H -50 0   50  0001 C CNN "Unit cost"
 F 11 "Yes" H -50 0   50  0001 C CNN "DNP"
 F 12 "10" H -50 0   50  0001 C CNN "Minimum Order"
+F 13 "54" H 0   0   50  0001 C CNN "Stock No."
 	1    8400 4750
 	0    -1   -1   0   
 $EndComp
@@ -624,6 +633,7 @@ F 9 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light
 F 10 "0.058" H -50 0   50  0001 C CNN "Unit cost"
 F 11 "Yes" H -50 0   50  0001 C CNN "DNP"
 F 12 "10" H -50 0   50  0001 C CNN "Minimum Order"
+F 13 "54" H 0   0   50  0001 C CNN "Stock No."
 	1    9000 4750
 	0    -1   -1   0   
 $EndComp
@@ -645,6 +655,7 @@ F 8 "LCSC" H -50 0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html" H -50 0   50  0001 C CNN "Vendor link"
 F 10 "0.058" H -50 0   50  0001 C CNN "Unit cost"
 F 11 "10" H -50 0   50  0001 C CNN "Minimum Order"
+F 12 "54" H 0   0   50  0001 C CNN "Stock No."
 	1    9550 4750
 	0    -1   -1   0   
 $EndComp
@@ -677,6 +688,7 @@ F 8 "LCSC" H -50 0   50  0001 C CNN "Vendor"
 F 9 "https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0805-Yellow-light_C72036.html" H -50 0   50  0001 C CNN "Vendor link"
 F 10 "0.058" H -50 0   50  0001 C CNN "Unit cost"
 F 11 "10" H -50 0   50  0001 C CNN "Minimum Order"
+F 12 "54" H 0   0   50  0001 C CNN "Stock No."
 	1    10150 4750
 	0    -1   -1   0   
 $EndComp
@@ -696,6 +708,7 @@ F 8 "LCSC" H -50 100 50  0001 C CNN "Vendor"
 F 9 "50" H -50 100 50  0001 C CNN "Minimum Order"
 F 10 "0.0050 " H -50 100 50  0001 C CNN "Unit cost"
 F 11 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H -50 100 50  0001 C CNN "Vendor link"
+F 12 "57" H 0   0   50  0001 C CNN "Stock No."
 	1    10150 5200
 	1    0    0    -1  
 $EndComp
@@ -913,6 +926,7 @@ F 8 "RTT051003BTP" H -2400 50  50  0001 C CNN "Part No."
 F 9 "20" H -2400 50  50  0001 C CNN "Minimum Order"
 F 10 "0805" H -2400 50  50  0001 C CNN "Package"
 F 11 "0.042" H -2400 50  50  0001 C CNN "Unit cost"
+F 12 "56" H 0   0   50  0001 C CNN "Stock No."
 	1    3300 6550
 	1    0    0    -1  
 $EndComp
@@ -932,6 +946,7 @@ F 8 "RTT051003BTP" H -2400 50  50  0001 C CNN "Part No."
 F 9 "20" H -2400 50  50  0001 C CNN "Minimum Order"
 F 10 "0805" H -2400 50  50  0001 C CNN "Package"
 F 11 "0.042" H -2400 50  50  0001 C CNN "Unit cost"
+F 12 "56" H 0   0   50  0001 C CNN "Stock No."
 	1    3300 6900
 	1    0    0    -1  
 $EndComp
@@ -982,6 +997,7 @@ F 9 "WR08X4700FTL" H 100 -200 50  0001 C CNN "Part No."
 F 10 "0.0050 " H 100 -200 50  0001 C CNN "Unit cost"
 F 11 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 100 -200 50  0001 C CNN "Vendor link"
 F 12 "Yes" H -50 -200 50  0001 C CNN "DNP"
+F 13 "57" H 0   0   50  0001 C CNN "Stock No."
 	1    2650 4600
 	0    1    1    0   
 $EndComp
@@ -1165,6 +1181,7 @@ F 7 "LD3985M28R_SOT23" H 3550 1800 50  0000 C CNN "Part No."
 F 8 "0.32" H -50 -200 50  0001 C CNN "Unit cost"
 F 9 "RS Components" H -50 -200 50  0001 C CNN "Vendor"
 F 10 "https://sg.rs-online.com/web/p/low-dropout-voltage-regulators/6868792/" H -50 -200 50  0001 C CNN "Vendor link"
+F 11 "50" H 0   0   50  0001 C CNN "Stock No."
 	1    3400 1450
 	1    0    0    -1  
 $EndComp
@@ -1201,6 +1218,7 @@ F 8 "0805B103K631CT" H -50 -200 50  0001 C CNN "Part No."
 F 9 "LCSC" H -50 -200 50  0001 C CNN "Vendor"
 F 10 "https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Walsin-Tech-Corp-0805B103K631CT_C338146.html" H -50 -200 50  0001 C CNN "Vendor link"
 F 11 "0.026" H -50 -200 50  0001 C CNN "Unit cost"
+F 12 "55" H 0   0   50  0001 C CNN "Stock No."
 	1    3800 1750
 	1    0    0    -1  
 $EndComp
@@ -1338,6 +1356,7 @@ F 8 "https://sg.rs-online.com/web/p/rectifier-diodes-schottky-diodes/0485319" H 
 F 9 "20" H -750 1550 50  0001 C CNN "Minimum Order"
 F 10 "0.388" H -750 1550 50  0001 C CNN "Unit cost"
 F 11 "SOD-123F " H -750 1550 50  0001 C CNN "Package"
+F 12 "52" H 0   0   50  0001 C CNN "Stock No."
 	1    1500 3100
 	1    0    0    -1  
 $EndComp
@@ -1377,6 +1396,7 @@ F 1 "TestPoint_Probe" H 7653 1010 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7700 1000 50  0001 C CNN
 F 3 "~" H 7700 1000 50  0001 C CNN
 F 4 "Electronics" H -50 -200 50  0001 C CNN "Category"
+F 5 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    7500 1000
 	1    0    0    -1  
 $EndComp
@@ -1389,6 +1409,7 @@ F 1 "TestPoint_Probe" H 7653 1110 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7700 1100 50  0001 C CNN
 F 3 "~" H 7700 1100 50  0001 C CNN
 F 4 "Electronics" H -50 -200 50  0001 C CNN "Category"
+F 5 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    7500 1100
 	1    0    0    -1  
 $EndComp
@@ -1441,6 +1462,7 @@ F 1 "TestPoint_Probe" H 7253 3560 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7300 3550 50  0001 C CNN
 F 3 "~" H 7300 3550 50  0001 C CNN
 F 4 "Electronics" H -50 -200 50  0001 C CNN "Category"
+F 5 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    7100 3550
 	0    -1   -1   0   
 $EndComp
@@ -1453,6 +1475,7 @@ F 1 "TestPoint_Probe" H 7253 3710 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 7300 3700 50  0001 C CNN
 F 3 "~" H 7300 3700 50  0001 C CNN
 F 4 "Electronics" H -50 -200 50  0001 C CNN "Category"
+F 5 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    7100 3700
 	0    -1   -1   0   
 $EndComp
@@ -1525,6 +1548,7 @@ F 8 "LCSC" H 50  -200 50  0001 C CNN "Vendor"
 F 9 "50" H 50  -200 50  0001 C CNN "Minimum Order"
 F 10 "0.0050 " H 50  -200 50  0001 C CNN "Unit cost"
 F 11 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H 50  -200 50  0001 C CNN "Vendor link"
+F 12 "57" H 0   0   50  0001 C CNN "Stock No."
 	1    4400 5150
 	0    1    1    0   
 $EndComp
@@ -1555,6 +1579,7 @@ F 8 "https://lcsc.com/product-detail/Transistors-NPN-PNP_ON-Semicon_BC817-25LT3G
 F 9 "5" H 50  -200 50  0001 C CNN "Minimum Order"
 F 10 "0.021" H 50  -200 50  0001 C CNN "Unit cost"
 F 11 "SOT-23" H 50  -200 50  0001 C CNN "Package"
+F 12 "58" H 0   0   50  0001 C CNN "Stock No."
 	1    4950 5150
 	1    0    0    -1  
 $EndComp
@@ -1764,6 +1789,7 @@ F 8 "LCSC" H -50 100 50  0001 C CNN "Vendor"
 F 9 "50" H -50 100 50  0001 C CNN "Minimum Order"
 F 10 "0.0050 " H -50 100 50  0001 C CNN "Unit cost"
 F 11 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H -50 100 50  0001 C CNN "Vendor link"
+F 12 "57" H 0   0   50  0001 C CNN "Stock No."
 	1    9550 5200
 	1    0    0    -1  
 $EndComp
@@ -1786,6 +1812,7 @@ F 9 "Yes" H -50 100 50  0001 C CNN "DNP"
 F 10 "50" H -50 100 50  0001 C CNN "Minimum Order"
 F 11 "0.0050 " H -50 100 50  0001 C CNN "Unit cost"
 F 12 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H -50 100 50  0001 C CNN "Vendor link"
+F 13 "57" H 0   0   50  0001 C CNN "Stock No."
 	1    9000 5200
 	1    0    0    -1  
 $EndComp
@@ -1808,6 +1835,7 @@ F 9 "Yes" H -50 100 50  0001 C CNN "DNP"
 F 10 "50" H -50 100 50  0001 C CNN "Minimum Order"
 F 11 "0.0050 " H -50 100 50  0001 C CNN "Unit cost"
 F 12 "https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_Walsin-Tech-Corp-WR08X4700FTL_C163998.html" H -50 100 50  0001 C CNN "Vendor link"
+F 13 "57" H 0   0   50  0001 C CNN "Stock No."
 	1    8400 5200
 	1    0    0    -1  
 $EndComp

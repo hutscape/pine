@@ -18,7 +18,7 @@
 "R14, ","0R","1","","Electronics","42","","","","Internal stock","","","0","","R_Small: Resistor, small symbol","R14, "
 "SW1, ","Switch","1","SMD","Connector","50","","","","Internal stock","","","0","","SW_SPST: Single Pole Single Throw (SPST) switch",""
 "SW2, ","Push button","1","SMD","Connector","7","","","","Internal stock","","","0","","SW_Push: Push button switch, generic, two pins",""
-"TP1, TP2, TP3, TP4, ","TestPoint_Probe","4","","Electronics","","","","","","","","0","","TestPoint_Probe: test point (alternative probe-style design)",""
+"TP1, TP2, TP3, TP4, ","TestPoint_Probe","4","","Electronics","","","","","","","","0","","TestPoint_Probe: test point (alternative probe-style design)","TP1, TP2, TP3, TP4, "
 "U1, ","IR Receiver","1","TH","Electronics","4","Vishay","TSOP4838","https://docs-apac.rs-online.com/webdocs/0e30/0900766b80e30b9e.pdf","RS Components","https://sg.rs-online.com/web/p/ir-receivers/7085115/?sra=pstk","1.876","1.88","5","TSOP43xx: IR Receiver Modules for Remote Control Systems",""
 "U2, ","LDO","1","SOT-23","Electronics","","STMicroelectronics","LD3985M28R_SOT23","https://docs-apac.rs-online.com/webdocs/151f/0900766b8151fea1.pdf","RS Components","https://sg.rs-online.com/web/p/low-dropout-voltage-regulators/6868792/","0.32","0.32","","LD3985M28R_SOT23: 150mA Low Dropout Voltage Regulator, Fixed Output 2.8V, SOT-23-5",""
 "U3, ","Temperature sensor","1","DFN","Electronics","1","Si Labs","Si7021-A20","https://www.silabs.com/documents/public/data-sheets/Si7021-A20.pdf","Internal stock","","","0","","Si7021-A20: I2C Humidity and Temperature Sensor, DFN-6",""
