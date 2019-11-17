@@ -37,7 +37,7 @@
     (46 B.CrtYd user hide)
     (47 F.CrtYd user)
     (48 B.Fab user hide)
-    (49 F.Fab user)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -2770,10 +2770,10 @@
   (gr_text RST (at 171.704 78.74 45) (layer F.SilkS) (tstamp 5DB4490F)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
-  (gr_text on (at 196.85 57.15) (layer F.SilkS) (tstamp 5DB15059)
+  (gr_text off (at 196.85 57.15) (layer F.SilkS) (tstamp 5DB15059)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
-  (gr_text off (at 196.85 67.31) (layer F.SilkS)
+  (gr_text on (at 196.85 67.31) (layer F.SilkS)
     (effects (font (size 0.8 0.8) (thickness 0.15)))
   )
   (gr_text Reset (at 192.278 76.708) (layer F.SilkS)
