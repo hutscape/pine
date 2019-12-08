@@ -63,6 +63,8 @@ references:
         url: https://medium.com/@paramaggarwal/converting-an-stm32f103-board-to-a-black-magic-probe-c013cf2cc38c
       - name: JTAG/SWD debugging via Black Magic Probe on an STM32 blue pill and blinking a LED using STM32CubeMX, libopencm3, and bare metal C
         url: https://satoshinm.github.io/blog/171223_jtagswdpillblink_jtagswd_debugging_via_black_magic_probe_on_an_stm32_blue_pill_and_blinking_a_led_using_stm32cubemx_libopencm3_and_bare_metal_c.html
+      - name: Topic: burn arduino zero's bootloader to SAMD21 with STlink_v2
+        url: https://forum.arduino.cc/index.php?topic=532385.15
 
   - topic: Transistor
     list:
