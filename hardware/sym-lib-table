@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name power_2V6)(type Legacy)(uri ${KIPRJMOD}/library/symbols/power_2V6.lib)(options "")(descr ""))
+  (lib (name Robotdyn_M0)(type Legacy)(uri ${KIPRJMOD}/library/symbols/Robotdyn_M0.lib)(options "")(descr ""))
 )
