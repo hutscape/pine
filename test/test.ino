@@ -1,12 +1,14 @@
 #include "Adafruit_Si7021.h"
 #include <IRLibSendBase.h>
 #include <IRLib_HashRaw.h>
+#include <WebUSB.h>
+
 #include "./data.h"
 
 #define LED 13
 
 Adafruit_Si7021 sensor = Adafruit_Si7021();
-
+WebUSB WebUSBSerial(1, "webusb.github.io/arduino/demos/console");
 IRsendRaw mySender;
 
 void setup() {
@@ -15,12 +17,13 @@ void setup() {
   SerialUSB.begin(9600);
   while (!SerialUSB) {}
   delay(1000);
+  SerialUSB.println("Start Serial");
 
   SerialUSB.println("Starting Pine design verification test!");
   SerialUSB.println("-------------------------------------\n");
 
   SerialUSB.println("\n\nTest 1: It expects to turn ON and OFF the LED");
-  blink(10);
+  blink(5);
   delay(1000);
 
   SerialUSB.println("\n\nTest 2: It expects to measure the humidity and temp");
@@ -35,18 +38,25 @@ void setup() {
   }
   delay(1000);
 
-  SerialUSB.println("\n\nTest 3: (Point to AC) It expects to turn ON the aircon");
+  SerialUSB.println("\n\nTest 3: It expects to turn ON the aircon");
   mySender.send(rawDataON, RAW_DATA_LEN, 38);
   SerialUSB.println("Sent Turn ON Aircon");
-  delay(1000);
+  delay(2000);
 
-  SerialUSB.println("\n\nTest 4: (Point to AC) It expects to turn OFF the aircon");
+  SerialUSB.println("\n\nTest 4: It expects to turn OFF the aircon");
   mySender.send(rawDataOFF, RAW_DATA_LEN, 38);
   SerialUSB.println("Sent Turn OFF Aircon");
-  delay(1000);
+  delay(2000);
 
   SerialUSB.println("\n\nTest 5: It expects to send message to the browser");
+  WebUSBSerial.write("Hello world to the browser!");
+  WebUSBSerial.flush();
   delay(1000);
+
+  WebUSBSerial.begin(9600);
+  // while (!WebUSBSerial) {}
+  delay(1000);
+  SerialUSB.println("Started Web USB");
 
   SerialUSB.println("\n\nTest 6: It expects to send message from the browser");
   delay(1000);
@@ -55,7 +65,12 @@ void setup() {
   delay(1000);
 }
 
-void loop() { }
+void loop() {
+  WebUSBSerial.write("Hello world to the browser!");
+  WebUSBSerial.flush();
+
+  delay(2000);
+}
 
 void blink(int num) {
   for (int i=0; i < num; i++) {
