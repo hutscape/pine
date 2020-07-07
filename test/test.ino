@@ -17,10 +17,9 @@ void setup() {
   SerialUSB.begin(9600);
   while (!SerialUSB) {}
   delay(1000);
-  SerialUSB.println("Start Serial");
 
   SerialUSB.println("Starting Pine design verification test!");
-  SerialUSB.println("-------------------------------------\n");
+  SerialUSB.println("-------------------------------------");
 
   SerialUSB.println("\n\nTest 1: It expects to turn ON and OFF the LED");
   blink(5);
@@ -28,11 +27,11 @@ void setup() {
 
   SerialUSB.println("\n\nTest 2: It expects to measure the humidity and temp");
   if (initSensor()) {
-    SerialUSB.print("\nHumidity: ");
+    SerialUSB.print("Humidity: ");
     SerialUSB.print(sensor.readHumidity(), 2);
     SerialUSB.println(" RH%");
 
-    SerialUSB.print("\nTemperature: ");
+    SerialUSB.print("Temperature: ");
     SerialUSB.print(sensor.readTemperature(), 2);
     SerialUSB.println(" C");
   }

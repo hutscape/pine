@@ -8,8 +8,6 @@ features:
   - detail: Turn on or off the aircon with the IR emitter
   - detail: Measure temperature of another part of the room
   - detail: Go into sleep mode after turning on or off the aircon
-
-test: false
 ---
 
 <section class="section is-small">
