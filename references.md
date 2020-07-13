@@ -8,6 +8,8 @@ references:
     list:
       - name: Infrared and Universal Remote Projects by Hackaday
         url: https://hackaday.io/list/12912-infrared-and-universal-remote-projects
+      - name: IR kit
+        url: https://getirkit.com/en/
 
   - topic: Infrared
     list:
