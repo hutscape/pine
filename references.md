@@ -30,6 +30,15 @@ references:
       - name: How should I wire up the circuit to connect a TSOP4838 (Radio Shack 276-64) infrared receiver to an Arduino?
         url: https://electronics.stackexchange.com/questions/68098/how-should-i-wire-up-the-circuit-to-connect-a-tsop4838-radio-shack-276-64-infr
 
+  - topic: Increasing IR LED range
+      list:
+        - name: IR LED doesn't work from a distance?
+          url: https://forum.arduino.cc/index.php?topic=361619.0
+        - name: Increase IR transmitter directivity and range
+          url: https://arduino.stackexchange.com/questions/35190/increase-ir-transmitter-directivity-and-range
+        - name: How to get the best range out of an IR LED?
+          url: https://www.instructables.com/community/How-to-get-the-best-range-out-of-an-IR-LED/
+
   - topic: SAMD21
     list:
       - name: Arduino Zero
