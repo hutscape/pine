@@ -1,4 +1,6 @@
 # Temporary
+.DS_Store
+_autosave*
 *.kicad_pcb-bak
 *.bak
 *-cache.lib
