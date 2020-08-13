@@ -2,6 +2,7 @@
 .DS_Store
 _autosave*
 *.kicad_pcb-bak
+*.sch-bak
 *.bak
 *-cache.lib
 *-rescue.lib

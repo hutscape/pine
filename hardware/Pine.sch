@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pine"
-Date "2019-11-11"
-Rev "V1.0"
+Date "2020-08-13"
+Rev "V1.1"
 Comp "Hutscape"
 Comment1 "Control aircon by monitoring temperature in other parts of the room"
 Comment2 ""
@@ -1563,7 +1563,7 @@ F 3 "" H 5050 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:2N2219 Q2
+L Transistor_BJT:BC817 Q2
 U 1 1 5D3886A5
 P 4950 5150
 F 0 "Q2" H 4750 5250 50  0000 L CNN
