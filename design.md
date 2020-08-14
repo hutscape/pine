@@ -3,6 +3,7 @@ layout: default
 title: Design
 permalink: /design
 sequence: 5
+sub_system: true
 state_machine: true
 terminologies:
   - term: Device
