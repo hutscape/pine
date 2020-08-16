@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pine"
-Date "2020-08-13"
+Date "2020-08-16"
 Rev "V1.1"
 Comp "Hutscape"
 Comment1 "Control aircon by monitoring temperature in other parts of the room"
@@ -1536,7 +1536,7 @@ L Device:R_Small R3
 U 1 1 5D38A758
 P 4400 5150
 F 0 "R3" V 4300 5150 50  0000 C CNN
-F 1 "470R" V 4500 5150 50  0000 C CNN
+F 1 "47R" V 4500 5150 50  0000 C CNN
 F 2 "Passives_0805:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4400 5150 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/Huaxin-S-T-WR08X4700FTL_C163998.pdf" H 4400 5150 50  0001 C CNN
 F 4 "Electronics" H -450 3000 50  0001 C CNN "Category"
