@@ -1,10 +1,16 @@
+#define DEBUG
+
+#include <ArduinoTrace.h>
+
 #include <IRLibAll.h>
 #include <IRLibSendBase.h>
 #include <IRLib_HashRaw.h>
-#include "Adafruit_Si7021.h"
 #include <FlashStorage.h>
-#include "./data.h"
 #include <WebUSB.h>
+#include <Adafruit_Si7021.h>
+
+#include "DebugUtils.h"
+#include "./data.h"
 
 // https://github.com/cyborg5/IRLib2/blob/master/IRLibProtocols/IRLibSAMD21.h#L38-L39
 // For SAMD21 boards: We are recommending using Pin 5 for receiving
@@ -151,11 +157,13 @@ void loop() {
 }
 
 void initSerial() {
+  #ifdef DEBUG
   SerialUSB.begin(9600);
   while (!SerialUSB) {}
   delay(100);
+  #endif
 
-  SerialUSB.println("Start!");
+  DEBUG_TRACE();
 }
 
 void initWebUSBSerial() {
@@ -176,19 +184,15 @@ bool initSensor() {
 
 void initIR() {
   myReceiver.enableIRIn();
-  SerialUSB.println("\nReady to receive user config...");
+  DEBUG_TRACE();
 }
 
 void readSensor() {
-  SerialUSB.println("\nReading sensor data... ");
+  float temperature = (float)(sensor.readTemperature()) / 1.0;
+  float humidity = (float)(sensor.readHumidity()) / 1.0;
 
-  SerialUSB.print("Humidity: ");
-  SerialUSB.print(sensor.readHumidity(), 2);
-  SerialUSB.println(" RH%");
-
-  SerialUSB.print("Temperature: ");
-  SerialUSB.print(sensor.readTemperature(), 2);
-  SerialUSB.println(" C");
+  DEBUG_PRINT(temperature);
+  DEBUG_PRINT(humidity);
 }
 
 bool isValidIRCode() {
