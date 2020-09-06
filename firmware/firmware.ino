@@ -163,7 +163,7 @@ void initSerial() {
   delay(100);
   #endif
 
-  DEBUG_TRACE();
+  DEBUG_PRINT("Start Pine debugging...");
 }
 
 void initWebUSBSerial() {
