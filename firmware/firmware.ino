@@ -1,13 +1,13 @@
 #define DEBUG
 
+#include "DebugUtils.h"
+#include "src/sensor/sensor.h"
 #include <IRLibAll.h>
 #include <IRLibSendBase.h>
 #include <IRLib_HashRaw.h>
 #include <FlashStorage.h>
 #include <WebUSB.h>
-#include <Adafruit_Si7021.h>
 
-#include "DebugUtils.h"
 #include "./data.h"
 
 // https://github.com/cyborg5/IRLib2/blob/master/IRLibProtocols/IRLibSAMD21.h#L38-L39
@@ -20,8 +20,6 @@
 
 IRrecvPCI myReceiver(IR_RECEIVE_PIN);
 IRsendRaw mySender;
-
-Adafruit_Si7021 sensor = Adafruit_Si7021();
 
 typedef struct {
   int sizeofON;
@@ -176,27 +174,9 @@ void initWebUSBSerial() {
   WebUSBSerial.flush();
 }
 
-bool initSensor() {
-  if (!sensor.begin()) {
-    return false;
-  }
-
-  return true;
-}
-
 void initIR() {
   myReceiver.enableIRIn();
   DEBUG_TRACE();
-}
-
-float readTemperature() {
-  float temperature = (float)(sensor.readTemperature()) / 1.0;
-  return temperature;
-}
-
-float readHumidity() {
-  float humidity = (float)(sensor.readHumidity()) / 1.0;
-  return humidity;
 }
 
 bool isValidIRCode() {
