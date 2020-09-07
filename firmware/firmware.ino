@@ -2,11 +2,11 @@
 
 #include "DebugUtils.h"
 #include "src/sensor/sensor.h"
+#include "src/webusb/webusb.h"
 #include <IRLibAll.h>
 #include <IRLibSendBase.h>
 #include <IRLib_HashRaw.h>
 #include <FlashStorage.h>
-#include <WebUSB.h>
 
 #include "./data.h"
 
@@ -34,7 +34,6 @@ FlashStorage(my_flash_store, IRRawCode);
 IRRawCode userConfig;
 IRRawCode userConfigRead;
 
-WebUSB WebUSBSerial(1, "hutscape.com/pine/webusb/");
 int config[3];
 int configIndex;
 bool isRecordingON = false;
@@ -62,8 +61,10 @@ void loop() {
   // IR Receive
   if (myReceiver.getResults()) {
     if (isValidIRCode()) {
-      SerialUSB.println("\n\nReceived user IR code...");
-      SerialUSB.print(F("#define RAW_DATA_LEN "));
+      DEBUG_TITLE("Received user IR code...");
+
+      #ifdef DEBUG
+      SerialUSB.print(F("\n#define RAW_DATA_LEN "));
       SerialUSB.println(recvGlobal.recvLength, DEC);
       SerialUSB.print(F("uint16_t rawData[RAW_DATA_LEN]={\n"));
 
@@ -75,35 +76,11 @@ void loop() {
         }
       }
 
-      if (isRecordingON) {
-        for (bufIndex_t i = 1; i < recvGlobal.recvLength; i++) {
-          userConfig.rawDataON[i] = recvGlobal.recvBuffer[i];
-        }
+      SerialUSB.println(F("1000};\n"));
+      #endif
 
-        recvGlobal.recvBuffer[recvGlobal.recvLength] = 1000;
-        userConfig.sizeofON = RAW_DATA_LEN;
-        userConfig.sizeofOFF = RAW_DATA_LEN;
-
-        isRecordingON = false;
-
-        SerialUSB.println("***************************");
-        SerialUSB.println("Recoded ON command:");
-
-        SerialUSB.print(F("uint16_t rawData[RAW_DATA_LEN]={\n"));
-        for (bufIndex_t i = 1; i < recvGlobal.recvLength; i++) {
-          SerialUSB.print(userConfig.rawDataON[i], DEC);
-          SerialUSB.print(F(", "));
-          if ((i % 8) == 0) {
-            SerialUSB.print(F("\n"));
-          }
-        }
-        SerialUSB.println("***************************");
-      }
-
-      WebUSBSerial.write((const uint8_t *)recvGlobal.recvBuffer,
+      writeWebUSB((const uint8_t *)recvGlobal.recvBuffer,
         recvGlobal.recvLength*2);
-      SerialUSB.println(F("1000};"));
-      WebUSBSerial.flush();
     }
 
     myReceiver.enableIRIn();
@@ -121,39 +98,31 @@ void loop() {
   }
 
   // Read user config from browser
-  if (WebUSBSerial && WebUSBSerial.available()) {
-    int byte = WebUSBSerial.read();
+  if (isWebUSBAvailable()) {
+    int byte = readWebUSB();
 
     if (byte == 'A') {
-      SerialUSB.println("Recording ON IR command");
+      DEBUG_TITLE("Recording ON IR command");
       isRecordingON = true;
     } else if (byte == 'B') {
-      SerialUSB.println("Recording OFF IR command");
+      DEBUG_TITLE("Recording OFF IR command");
       isRecordingOFF = true;
     } else {
       config[configIndex++] = byte;
       if (configIndex == 3) {
-        SerialUSB.println("\nReceived user config...");
-        SerialUSB.print("Interval: ");
-        SerialUSB.print(config[0]);
-        SerialUSB.println(" minutes");
-        userConfig.interval = config[0];
-
-        SerialUSB.print("Duration: ");
-        SerialUSB.print(config[1]);
-        SerialUSB.println(" hours");
-        userConfig.duration = config[1];
-
-        SerialUSB.print("Ideal temperature: ");
-        SerialUSB.print(config[2]);
-        SerialUSB.println(" C");
-        userConfig.temperature = config[2];
-
-        WebUSBSerial.print("Received interval, duration and ideal temperature:");
-        WebUSBSerial.flush();
         configIndex = 0;
 
-        // storeIRCode();
+        DEBUG_PRINT(config[0]);
+        userConfig.interval = config[0];
+
+        DEBUG_PRINT(config[1]);
+        userConfig.duration = config[1];
+
+        DEBUG_PRINT(config[2]);
+        userConfig.temperature = config[2];
+
+        printWebUSB("Received interval, duration and ideal temperature:");
+        // TODO: storeIRCode();
       }
     }
   }
@@ -165,13 +134,6 @@ void initSerial() {
   delay(100);
 
   DEBUG_TITLE("Start Pine debugging...");
-}
-
-void initWebUSBSerial() {
-  WebUSBSerial.begin(9600);
-  delay(100);
-
-  WebUSBSerial.flush();
 }
 
 void initIR() {

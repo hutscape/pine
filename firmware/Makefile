@@ -6,7 +6,7 @@ PORT := $(shell ls /dev/cu.usbmodem*)
 default: lint all flash clean
 
 lint:
-	cpplint --extensions=ino --filter=-legal/copyright,-whitespace/line_length,-readability/casting *.ino
+	cpplint --extensions=ino --filter=-legal/copyright,-whitespace/line_length,-readability/casting,-readability/todo *.ino
 
 all:
 	# This custom PCB does not have a crytal on pins PA00 and PA01
