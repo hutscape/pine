@@ -1,7 +1,5 @@
 #define DEBUG
 
-#include <ArduinoTrace.h>
-
 #include <IRLibAll.h>
 #include <IRLibSendBase.h>
 #include <IRLib_HashRaw.h>
@@ -45,7 +43,10 @@ bool isRecordingON = false;
 bool isRecordingOFF = true;
 
 void setup() {
+  #ifdef DEBUG
   initSerial();
+  #endif
+
   initWebUSBSerial();
 
   if (initSensor()) {
@@ -53,6 +54,7 @@ void setup() {
   }
 
   initIR();
+  DEBUG_TITLE("Waiting for user config at hutscape.com/pine/webusb")
 }
 
 void loop() {
@@ -157,13 +159,11 @@ void loop() {
 }
 
 void initSerial() {
-  #ifdef DEBUG
   SerialUSB.begin(9600);
   while (!SerialUSB) {}
   delay(100);
-  #endif
 
-  DEBUG_PRINT("Start Pine debugging...");
+  DEBUG_TITLE("Start Pine debugging...");
 }
 
 void initWebUSBSerial() {
