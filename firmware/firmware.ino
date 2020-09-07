@@ -50,7 +50,10 @@ void setup() {
   initWebUSBSerial();
 
   if (initSensor()) {
-    readSensor();
+    DEBUG_PRINT(readTemperature());
+    DEBUG_PRINT(readHumidity());
+  } else {
+    DEBUG_TITLE("Error: Si7021 Sensor not found.")
   }
 
   initIR();
@@ -175,7 +178,6 @@ void initWebUSBSerial() {
 
 bool initSensor() {
   if (!sensor.begin()) {
-    SerialUSB.println("Did not find Si7021 sensor!");
     return false;
   }
 
@@ -187,12 +189,14 @@ void initIR() {
   DEBUG_TRACE();
 }
 
-void readSensor() {
+float readTemperature() {
   float temperature = (float)(sensor.readTemperature()) / 1.0;
-  float humidity = (float)(sensor.readHumidity()) / 1.0;
+  return temperature;
+}
 
-  DEBUG_PRINT(temperature);
-  DEBUG_PRINT(humidity);
+float readHumidity() {
+  float humidity = (float)(sensor.readHumidity()) / 1.0;
+  return humidity;
 }
 
 bool isValidIRCode() {
