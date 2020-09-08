@@ -38,7 +38,6 @@ int getIRcodeSize() {
 }
 
 void getIRCode(uint16_t irArray[], int size) {
-    SerialUSB.println("IR CODE....");
     for (int i = 1; i < size; i++) {
         irArray[i] = recvGlobal.recvBuffer[i];
     }

@@ -7,6 +7,7 @@
 #include <FlashStorage.h>
 #include "./data.h"
 
+#define IR_LEN 292
 typedef struct {
   int sizeofON;
   uint16_t rawDataON[400];
@@ -17,14 +18,11 @@ typedef struct {
   int temperature;
 } IRRawCode;
 IRRawCode userConfig;
-IRRawCode userConfigRead;
 
 int config[3];
 int configIndex = 0;
 bool isRecordingON = false;
 bool isRecordingOFF = false;
-
-FlashStorage(my_flash_store, IRRawCode);
 
 void setup() {
   #ifdef DEBUG
@@ -42,10 +40,11 @@ void setup() {
   }
 
   initIR();
-  DEBUG_TITLE("Waiting for user config at hutscape.com/pine/webusb")
+  DEBUG_TITLE("Waiting for user config at https://hutscape.com/pine/webusb")
 }
 
 void loop() {
+  // Record IR raw code from the user
   if (receiveIR()) {
     if (isValidIRCode()) {
       receiveIRByUser();
@@ -53,11 +52,13 @@ void loop() {
     enableIR();
   }
 
-  sendIRByUser(SerialUSB.read());
-
+  // Record other configurations from the user
   if (isWebUSBAvailable()) {
     sendConfigByUser(readWebUSB());
   }
+
+  // Emit IR code to control the aircon
+  sendIRByUser(SerialUSB.read());
 }
 
 void initSerial() {
@@ -68,8 +69,8 @@ void initSerial() {
 
 void receiveIRByUser() {
   int irSize = getIRcodeSize();
-  uint16_t irCode[292];
-  getIRCode(irCode, 292);
+  uint16_t irCode[IR_LEN];
+  getIRCode(irCode, IR_LEN);
 
   DEBUG_TITLE("Received user IR code...");
 
@@ -81,13 +82,24 @@ void receiveIRByUser() {
   for (int i = 1; i < irSize; i++) {
     SerialUSB.print(irCode[i], DEC);
     SerialUSB.print(F(", "));
-    if ((i % 8) == 0) {
-      SerialUSB.print(F("\n"));
-    }
   }
 
   SerialUSB.println(F("1000};\n"));
   #endif
+
+  if (isRecordingON) {
+    for (int i = 0; i < IR_LEN - 1; i++) {
+      userConfig.rawDataON[i] = irCode[i+1];
+    }
+    userConfig.rawDataON[IR_LEN - 1] = 1000;
+    isRecordingON = false;
+  } else if (isRecordingOFF) {
+    for (int i = 0; i < IR_LEN - 1; i++) {
+      userConfig.rawDataOFF[i] = irCode[i+1];
+    }
+    userConfig.rawDataOFF[IR_LEN - 1] = 1000;
+    isRecordingOFF = false;
+  }
 
   writeWebUSB((const uint8_t *)irCode, irSize*2);
 }
@@ -124,41 +136,12 @@ void sendConfigByUser(int byte) {
       DEBUG_PRINT(userConfig.temperature);
 
       printWebUSB("Received interval, duration and ideal temperature:");
-      // TODO: storeIRCode();
+      storeUserConfig();
     }
   }
 }
 
-void storeIRCode() {
-  for (int i = 0; i < RAW_DATA_LEN; i++) {
-    userConfig.rawDataON[i] = rawDataON[i];
-    userConfig.rawDataOFF[i] = rawDataOFF[i];
-  }
-
-  userConfig.sizeofON = RAW_DATA_LEN;
-  userConfig.sizeofOFF = RAW_DATA_LEN;
-
+void storeUserConfig() {
+  FlashStorage(my_flash_store, IRRawCode);
   my_flash_store.write(userConfig);
-  SerialUSB.println("Writing in flash completed.");
-
-  userConfigRead = my_flash_store.read();
-
-  SerialUSB.print("\nLength of rawDataON: ");
-  SerialUSB.println(userConfigRead.sizeofON);
-  SerialUSB.print("\nLength of rawDataOFF: ");
-  SerialUSB.println(userConfigRead.sizeofOFF);
-
-  SerialUSB.println("\nrawDataON array: ");
-  for (int i = 0; i < RAW_DATA_LEN; i++) {
-    SerialUSB.print(userConfigRead.rawDataON[i]);
-    SerialUSB.print(", ");
-  }
-
-  SerialUSB.println("\nrawDataOFF array: ");
-  for (int i = 0; i < RAW_DATA_LEN; i++) {
-    SerialUSB.print(userConfigRead.rawDataOFF[i]);
-    SerialUSB.print(", ");
-  }
-
-  SerialUSB.println("\n\n");
 }
