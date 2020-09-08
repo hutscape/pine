@@ -1,10 +1,10 @@
+#define DEBUG
+
 #include <IRLibSendBase.h>
 #include <IRLib_HashRaw.h>
 #include "./data.h"
 
 IRsendRaw mySender;
-
-#define DEBUG 1
 
 void setup() {
   #ifdef DEBUG

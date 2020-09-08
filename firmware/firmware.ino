@@ -5,7 +5,7 @@
 #include "src/webusb/webusb.h"
 #include "src/infrared/infrared.h"
 #include <FlashStorage.h>
-#include "./data.h"
+// #include "./data.h"
 
 #define IR_LEN 292
 typedef struct {
@@ -16,6 +16,7 @@ typedef struct {
   int interval;
   int duration;
   int temperature;
+  bool valid;
 } IRRawCode;
 IRRawCode userConfig;
 
@@ -23,6 +24,8 @@ int config[3];
 int configIndex = 0;
 bool isRecordingON = false;
 bool isRecordingOFF = false;
+
+FlashStorage(my_flash_store, IRRawCode);
 
 void setup() {
   #ifdef DEBUG
@@ -44,21 +47,20 @@ void setup() {
 }
 
 void loop() {
-  // Record IR raw code from the user
-  if (receiveIR()) {
-    if (isValidIRCode()) {
-      receiveIRByUser();
+  if (userConfig.valid) {
+    sendIRByUser();
+  } else {
+    if (receiveIR()) {
+      if (isValidIRCode()) {
+        receiveIRByUser();
+      }
+      enableIR();
     }
-    enableIR();
-  }
 
-  // Record other configurations from the user
-  if (isWebUSBAvailable()) {
-    sendConfigByUser(readWebUSB());
+    if (isWebUSBAvailable()) {
+      sendConfigByUser(readWebUSB());
+    }
   }
-
-  // Emit IR code to control the aircon
-  sendIRByUser(SerialUSB.read());
 }
 
 void initSerial() {
@@ -104,14 +106,17 @@ void receiveIRByUser() {
   writeWebUSB((const uint8_t *)irCode, irSize*2);
 }
 
-void sendIRByUser(int readChar) {
-  if (readChar == '1') {
-    sendIR(rawDataON, RAW_DATA_LEN, 36);
-    DEBUG_TITLE("Sent Turn ON Aircon");
-  } else if (readChar == '0') {
-    sendIR(rawDataOFF, RAW_DATA_LEN, 36);
-    DEBUG_TITLE("Sent Turn OFF Aircon");
-  }
+void sendIRByUser() {
+  IRRawCode readConfig;
+  readConfig = my_flash_store.read();
+
+  delay(5000);
+  sendIR(readConfig.rawDataON, IR_LEN, 36);
+  DEBUG_TITLE("Sent Turn ON Aircon");
+
+  delay(5000);
+  sendIR(readConfig.rawDataOFF, IR_LEN, 36);
+  DEBUG_TITLE("Sent Turn OFF Aircon");
 }
 
 void sendConfigByUser(int byte) {
@@ -135,13 +140,13 @@ void sendConfigByUser(int byte) {
       userConfig.temperature = config[2];
       DEBUG_PRINT(userConfig.temperature);
 
-      printWebUSB("Received interval, duration and ideal temperature:");
+      printWebUSB("Received all user configurations.");
+      userConfig.valid = true;
       storeUserConfig();
     }
   }
 }
 
 void storeUserConfig() {
-  FlashStorage(my_flash_store, IRRawCode);
   my_flash_store.write(userConfig);
 }
