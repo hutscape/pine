@@ -107,6 +107,8 @@ void receiveIRByUser() {
 }
 
 void sendIRByUser() {
+  // TODO: Read from flash only once and not every loop
+  // TODO: Read from user string and not every 5 seconds
   IRRawCode readConfig;
   readConfig = my_flash_store.read();
 
