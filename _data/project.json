@@ -6,7 +6,7 @@
   "power": "AA",
   "wireless":"Infrared",
   "sensor": "Temperature",
-  "mcu": "SAMD21G",
+  "mcu": "SAMD21G18",
 
   "bom-uniq": 24,
   "bom-total": 49,
@@ -14,5 +14,5 @@
   "bom-cost-usd": 9.71,
   "vendors": 2,
 
-  "status": "ongoing"
+  "status": "completed"
 }
