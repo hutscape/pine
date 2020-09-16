@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Pine"
-Date "2020-08-16"
-Rev "V1.1"
+Date "2020-09-16"
+Rev "V1.2"
 Comp "Hutscape"
 Comment1 "Control aircon by monitoring temperature in other parts of the room"
 Comment2 ""
@@ -1478,8 +1478,6 @@ F 5 "Yes" H 0   0   50  0001 C CNN "DNP"
 	1    7100 3700
 	0    -1   -1   0   
 $EndComp
-Text Notes 4250 7350 0    50   ~ 0
-R3 value 470R is used, \nbut it is interchangeable.\n\nTransistor calculation:\nMax: 3.36K\nMin: 168R
 Text Notes 5600 4400 0    28   Italic 0
 solder after \ntesting power \nmanagement circuit\n
 Wire Notes Line
@@ -1620,7 +1618,7 @@ Wire Wire Line
 	5500 4250 5800 4250
 Wire Wire Line
 	5050 4250 5300 4250
-Text Notes 4250 7600 0    50   ~ 0
+Text Notes 4250 7050 0    50   ~ 0
 R14 can be 0R:\ngithub.com/hutscape/pine/issues/14#issuecomment-547702446
 Wire Notes Line
 	6150 3950 6150 5900
@@ -1859,30 +1857,28 @@ Wire Notes Line
 	2500 5900 2500 7550
 Text Notes 4250 6250 0    79   ~ 16
 Footnotes: Design explanations
-Wire Notes Line width 12 style solid
-	6850 7700 6850 6050
 Wire Notes Line
 	4200 6800 6850 6800
-Wire Notes Line
-	4200 7400 6850 7400
 Wire Notes Line
 	1000 7550 4050 7550
 Wire Notes Line width 8 style solid
 	6850 6050 4200 6050
-Wire Notes Line width 8 style solid
-	4200 6050 4200 7700
 Wire Notes Line
 	4200 6300 6850 6300
 Wire Wire Line
 	4300 1350 4350 1350
 Wire Notes Line
 	2500 6150 4050 6150
-Wire Notes Line width 12 style solid
-	4200 7700 6850 7700
 Text Notes 4550 3900 0    50   ~ 0
 Note: MCU does not have any crystal at pins PA00 \nand PA01. Use crystalless options when uploading \nthe bootloader and firmware application code.
 Wire Notes Line
 	4500 3600 6550 3600
 Wire Notes Line
 	6550 3600 6550 3950
+Wire Notes Line width 8 style solid
+	6850 6050 6850 7100
+Wire Notes Line width 8 style solid
+	6850 7100 4200 7100
+Wire Notes Line width 8 style solid
+	4200 7100 4200 6050
 $EndSCHEMATC
