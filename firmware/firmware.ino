@@ -48,7 +48,7 @@ void setup() {
 
 void loop() {
   if (userConfig.valid) {
-    sendIRByUser();
+    receiveIRByUser();
   } else {
     if (receiveIR()) {
       if (isValidIRCode()) {
@@ -58,7 +58,7 @@ void loop() {
     }
 
     if (isWebUSBAvailable()) {
-      sendConfigByUser(readWebUSB());
+      receiveConfigByUser(readWebUSB());
     }
   }
 }
@@ -121,7 +121,7 @@ void sendIRByUser() {
   DEBUG_TITLE("Sent Turn OFF Aircon");
 }
 
-void sendConfigByUser(int byte) {
+void receiveConfigByUser(int byte) {
   if (byte == 'A') {
     DEBUG_TITLE("Recording ON IR command");
     isRecordingON = true;
