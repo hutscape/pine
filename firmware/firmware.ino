@@ -48,17 +48,17 @@ void setup() {
 
 void loop() {
   if (userConfig.valid) {
-    receiveIRByUser();
+    emitIR();
   } else {
     if (receiveIR()) {
       if (isValidIRCode()) {
-        receiveIRByUser();
+        receiveIRFromUser();
       }
       enableIR();
     }
 
     if (isWebUSBAvailable()) {
-      receiveConfigByUser(readWebUSB());
+      receiveConfigFromUser(readWebUSB());
     }
   }
 }
@@ -69,7 +69,8 @@ void initSerial() {
   delay(100);
 }
 
-void receiveIRByUser() {
+// Print out raw IR code received from the user pressing a remote control
+void receiveIRFromUser() {
   int irSize = getIRcodeSize();
   uint16_t irCode[IR_LEN];
   getIRCode(irCode, IR_LEN);
@@ -106,22 +107,24 @@ void receiveIRByUser() {
   writeWebUSB((const uint8_t *)irCode, irSize*2);
 }
 
-void sendIRByUser() {
+// Emit IR code that is stored in the flash memory
+void emitIR() {
   // TODO: Read from flash only once and not every loop
   // TODO: Read from user string and not every 5 seconds
   IRRawCode readConfig;
   readConfig = my_flash_store.read();
 
   delay(5000);
-  sendIR(readConfig.rawDataON, IR_LEN, 36);
+  sendIR(readConfig.rawDataON, sizeofON, 36);
   DEBUG_TITLE("Sent Turn ON Aircon");
 
   delay(5000);
-  sendIR(readConfig.rawDataOFF, IR_LEN, 36);
+  sendIR(readConfig.rawDataOFF, sizeofOFF, 36);
   DEBUG_TITLE("Sent Turn OFF Aircon");
 }
 
-void receiveConfigByUser(int byte) {
+// Read config values from the user and store in flash memory
+void receiveConfigFromUser(int byte) {
   if (byte == 'A') {
     DEBUG_TITLE("Recording ON IR command");
     isRecordingON = true;
