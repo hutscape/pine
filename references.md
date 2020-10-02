@@ -3,6 +3,22 @@ layout: default
 title: References
 permalink: /references
 sequence: 10
+similar:
+  - name: IR Kit
+    url: https://getirkit.com/en/
+    year: 2018
+    type: developer
+    components:
+      - type: mcu
+        mpn: ATMEGA32U
+        datasheet_url: http://ww1.microchip.com/downloads/en/devicedoc/atmel-7766-8-bit-avr-atmega16u4-32u4_datasheet.pdf
+      - type: wifi
+        mpn: GX1011MX
+        datasheet_url: https://www.digikey.bg/htmldatasheets/production/1947555/0/0/1/gs1011m-datasheet.html
+      - type: ir led
+        mpn: VSLB3940
+        datasheet_url: https://www.vishay.com/docs/81931/vslb3940.pdf
+
 references:
   - topic:  Similar projects
     list:
