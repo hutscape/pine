@@ -26,7 +26,7 @@ int config[3];
 int configIndex = 0;
 bool isRecordingON = false;
 bool isRecordingOFF = false;
-bool isConnectedViaWebUSB = false;
+bool isConfigMode = false;
 bool hasSentUserConfig = false;
 
 FlashStorage(my_flash_store, IRRawCode);
@@ -52,11 +52,24 @@ void setup() {
 }
 
 void loop() {
-  // NEXT: 4 scenarios of web usb
-  if (isConnectedViaWebUSB) {
-    if (readConfig.valid && !hasSentUserConfig) {
-      DEBUG_TITLE("IF: readConfig.valid && !hasSentUserConfig");
-      displayUserString();
+  // Scenario: Very first setup
+  if (!readConfig.valid && !isConfigMode) {
+    DEBUG_TITLE("Add user config at https://hutscape.com/pine/webusb");
+    blink();
+  }
+
+  // Scenario: Normal operation
+  if (readConfig.valid && !isConfigMode) {
+    DEBUG_TITLE("Do Task");
+    delay(1000);
+    // doTask();
+  }
+
+  // Scenario: Config mode
+  if (isConfigMode) {
+    if (!hasSentUserConfig && readConfig.valid) {
+      DEBUG_TITLE("Sending user config to web browser");
+      sendUserConfig();
       hasSentUserConfig = true;
     }
 
@@ -65,21 +78,6 @@ void loop() {
         receiveIRFromUser();
       }
       enableIR();
-    }
-
-    if (isWebUSBAvailable()) {
-      receiveConfigFromUser(readWebUSB());
-    }
-  } else {
-    if (readConfig.valid) {
-      doTask();
-    } else {
-      DEBUG_TITLE("Add user config at https://hutscape.com/pine/webusb");
-      blink();
-    }
-
-    if (isWebUSBAvailable()) {
-      receiveConfigFromUser(readWebUSB());
     }
   }
 
@@ -134,8 +132,6 @@ void receiveIRFromUser() {
 
 // Emit IR code that is stored in the flash memory
 void doTask() {
-  // TODO: Read from flash only once and not every loop
-  // TODO: Read from user string and not every 5 seconds
   delay(5000);
   sendIR(readConfig.rawDataON, readConfig.sizeofON, 36);
   DEBUG_TITLE("Sent Turn ON Aircon");
@@ -155,16 +151,13 @@ void receiveConfigFromUser(int byte) {
     isRecordingOFF = true;
   } else if (byte == '1') {
     DEBUG_TITLE("Connected via Web USB");
-    isConnectedViaWebUSB = true;
-    hasSentUserConfig = false;
-  } else if (byte == '2') {
-    DEBUG_TITLE("Disconnected via Web USB");
-    isConnectedViaWebUSB = false;
+    isConfigMode = true;
     hasSentUserConfig = false;
   } else {
     config[configIndex++] = byte;
     if (configIndex == 3) {
       configIndex = 0;
+      DEBUG_TITLE("Received user config from the browser");
 
       userConfig.interval = config[0];
       DEBUG_PRINT(userConfig.interval);
@@ -177,18 +170,26 @@ void receiveConfigFromUser(int byte) {
 
       printWebUSB("From MCU: Received all user configurations.");
       userConfig.valid = true;
+      isConfigMode = false;
       storeUserConfig();
     }
   }
 }
 
-void displayUserString() {
-  DEBUG_TITLE("Sending readConfig to web browser");
-  printWebUSB("From MCU: Sending readConfig to web browser");
-  // String interval = "{\"interval\":" + String(readConfig.interval) + "}";
-  printWebUSB("{\"interval\":30}");
-  // printWebUSB(String(readConfig.temperature));
-  // printWebUSB(String(readConfig.duration));
+void sendUserConfig() {
+  DEBUG_PRINT(readConfig.interval);
+  DEBUG_PRINT(readConfig.duration);
+  DEBUG_PRINT(readConfig.temperature);
+
+  String config = "{\"interval\":"
+    + String(readConfig.interval)
+    + ", \"duration\":"
+    + String(readConfig.duration)
+    + ", \"temperature\":"
+    + String(readConfig.temperature)
+    + "}";
+
+  printWebUSB(config);
 }
 
 void storeUserConfig() {

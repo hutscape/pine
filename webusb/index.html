@@ -14,52 +14,54 @@
 </section>
 
 <section class="section is-small is-hidden" id="configure">
-  <div class="container">
-    <!-- TODO: Aircon ON / OFF commands should be able to be read again and tested before submitting -->
-    <div class="field">
-      <label class="label is-large">Aircon ON</label>
-      <button id="on" class="button is-info">Record ON command</button>
-      <p class="help">Point the aircon remote controller to Pine and press the on button.</p>
-      <p id="on-command"></p>
-    </div>
+  <form id="form">
+    <div class="container">
+      <!-- TODO: Aircon ON / OFF commands should be able to be read again and tested before submitting -->
+      <div class="field">
+        <p class="label is-large">Aircon ON</p>
+        <button id="on" class="button is-info">Record ON command</button>
+        <p class="help">Point the aircon remote controller to Pine and press the on button.</p>
+        <p id="on-command"></p>
+      </div>
 
-    <div class="field">
-      <label class="label is-large">Aircon OFF</label>
-      <button id="off" class="button is-info">Record OFF command</button>
-      <p class="help">Point the aircon remote controller to Pine and press the off button.</p>
-      <p id="off-command"></p>
-    </div>
+      <div class="field">
+        <p class="label is-large">Aircon OFF</p>
+        <button id="off" class="button is-info">Record OFF command</button>
+        <p class="help">Point the aircon remote controller to Pine and press the off button.</p>
+        <p id="off-command"></p>
+      </div>
 
-    <div class="field">
-      <label class="label is-large">Interval (minutes)</label>
-      <div class="control">
-        <input class="input is-large" id="interval" type="number" min=10 placeholder="Interval (mins)">
-        <p class="help">Pine will check for the room temperature every interval set. Example every 20 minutes.</p>
+      <div class="field">
+        <label class="label is-large">Interval (minutes)</label>
+        <div class="control">
+          <input class="input is-large" id="interval" required="required" type="number" min=10 placeholder="Interval (mins)"/>
+          <p class="help">Pine will check for the room temperature every interval set. Example every 20 minutes.</p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label is-large">Total duration (hours)</label>
+        <div class="control">
+          <input class="input is-large" id="duration" type="number" required="required" min=1 placeholder="Total period (hours)"/>
+          <p class="help">Pine will check for the room temperature every interval set for a total of this duration.</p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label is-large">Ideal room temperature (C)</label>
+        <div class="control">
+          <input class="input is-large" id="temperature" type="number" required="required" min=15 max=28 placeholder="Ideal temperature (C)"/>
+          <p class="help">Pine will turn on or off the aircon according to this temperature.</p>
+        </div>
       </div>
     </div>
-
-    <div class="field">
-      <label class="label is-large">Total duration (hours)</label>
-      <div class="control">
-        <input class="input is-large" id="duration" type="number" min=1 placeholder="Total period (hours)">
-        <p class="help">Pine will check for the room temperature every interval set for a total of this duration.</p>
-      </div>
-    </div>
-
-    <div class="field">
-      <label class="label is-large">Ideal room temperature (C)</label>
-      <div class="control">
-        <input class="input is-large" id="temperature" type="number" min=15 max=28 placeholder="Ideal temperature (C)">
-        <p class="help">Pine will turn on or off the aircon according to this temperature.</p>
-      </div>
-    </div>
-  </div>
+  </form>
 </section>
 
 <section class="section is-small">
   <div class="container">
     <div class="control">
-      <button class="button is-info is-large" id="connect">Connect to Pine</button>
+      <input class="button is-info is-large" id="connect" type="submit" value="Connect to Pine">
       <div class="content is-large">
         <p id="info"></p>
       </div>
@@ -70,8 +72,13 @@
 <script src="serial.js"></script>
 <script>
 var port
+let formSection = document.querySelector('#form')
 let connectButton = document.querySelector('#connect')
 let submitButton = document.querySelector('#submit')
+
+let intervalEl = document.getElementById("interval")
+let durationEl = document.getElementById("duration")
+let temperatureEl = document.getElementById("temperature")
 
 let recordONButton = document.querySelector('#on')
 var isRecordingON = false
@@ -82,29 +89,32 @@ let configureSection = document.querySelector('#configure')
 let infoSection = document.querySelector('#info')
 let textEncoder = new TextEncoder()
 let textDecoder = new TextDecoder()
-let intervalValue = document.getElementById("interval").value
-let durationValue = document.getElementById("duration").value
-let temperatureValue = document.getElementById("temperature").value
 var irCode = []
 
 connectButton.addEventListener('click', function() {
   if (port) { // If port is already connected, disconnect it
+    // FIXME: Form validation is failing upon adding IR Raw code
+    // if (!formSection.checkValidity()) {
+    //   console.log("form has errors")
+    //   return
+    // }
+
     let config = new Uint8Array(3)
     config[0] = document.getElementById("interval").value
     config[1] = document.getElementById("duration").value
     config[2] = document.getElementById("temperature").value
-    port.send(config);
-
-    port.send(textEncoder.encode('2')).catch(error => {
+    console.log("Sending config to MCU")
+    port.send(config).catch(error => {
       console.log('Send error: ' + error)
     })
     port.disconnect()
     port = null
 
-    connectButton.textContent = 'Connect to Pine'
+    connectButton.value = 'Connect to Pine'
     configureSection.classList.add("is-hidden")
-    infoSection.innerHTML = 'Submitting interval, duration and temperature.'
+    infoSection.innerHTML = '<br>Submitting interval, duration and temperature.'
   } else { // If there is no port, then connect to a new port
+    console.log("Connect!")
     serial.requestPort().then(selectedPort => {
       port = selectedPort
       configureSection.classList.remove("is-hidden")
@@ -117,7 +127,7 @@ connectButton.addEventListener('click', function() {
           console.log('Send error: ' + error)
         })
 
-        connectButton.textContent = 'Disconnect'
+        connectButton.value = 'Submit'
         port.onReceive = data => { processReceievedData(data) }
         port.onReceiveError = error => { console.log('Receive error: ' + error)}
       }, error => { console.log('Connection error: ' + error) })
@@ -155,14 +165,11 @@ function processReceievedData(data) {
   // Data received type: JSON user config
   if (isJson(str)) {
     var userConfig = JSON.parse(str)
+    console.log(userConfig)
 
-    if (userConfig.interval) {
-      intervalValue = userConfig.interval
-    } else if (userConfig.duration) {
-      durationValue = userConfig.duration
-    } else if (userConfig.temperature) {
-      temperatureValue = userConfig.temperature
-    }
+    intervalEl.value = userConfig.interval
+    durationEl.value = userConfig.duration
+    temperatureEl.value = userConfig.temperature
 
     return
   }
