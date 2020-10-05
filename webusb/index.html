@@ -13,17 +13,6 @@
   </div>
 </section>
 
-<section class="section is-small">
-  <div class="container">
-    <div class="control">
-      <button class="button is-info is-large" id="connect">Connect to Pine</button>
-      <div class="content is-large">
-        <p id="info"></p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section is-small is-hidden" id="configure">
   <div class="container">
     <!-- TODO: Aircon ON / OFF commands should be able to be read again and tested before submitting -->
@@ -64,9 +53,16 @@
         <p class="help">Pine will turn on or off the aircon according to this temperature.</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="field">
-      <button class="button is-primary is-large" id="submit">Submit</button>
+<section class="section is-small">
+  <div class="container">
+    <div class="control">
+      <button class="button is-info is-large" id="connect">Connect to Pine</button>
+      <div class="content is-large">
+        <p id="info"></p>
+      </div>
     </div>
   </div>
 </section>
@@ -87,26 +83,52 @@ let infoSection = document.querySelector('#info')
 let textEncoder = new TextEncoder()
 let textDecoder = new TextDecoder()
 let intervalValue = document.getElementById("interval").value
+let durationValue = document.getElementById("duration").value
+let temperatureValue = document.getElementById("temperature").value
 var irCode = []
 
-submitButton.addEventListener('click', function() {
-  if (port !== undefined) {
+connectButton.addEventListener('click', function() {
+  if (port) { // If port is already connected, disconnect it
     let config = new Uint8Array(3)
     config[0] = document.getElementById("interval").value
     config[1] = document.getElementById("duration").value
     config[2] = document.getElementById("temperature").value
     port.send(config);
 
-    console.log('Submitting interval, duration and temperature.')
+    port.send(textEncoder.encode('2')).catch(error => {
+      console.log('Send error: ' + error)
+    })
+    port.disconnect()
+    port = null
+
+    connectButton.textContent = 'Connect to Pine'
+    configureSection.classList.add("is-hidden")
+    infoSection.innerHTML = 'Submitting interval, duration and temperature.'
+  } else { // If there is no port, then connect to a new port
+    serial.requestPort().then(selectedPort => {
+      port = selectedPort
+      configureSection.classList.remove("is-hidden")
+      port.connect().then(() => {
+        infoSection.innerHTML = '<br><strong>Pine is now connected via Web USB!</strong>' +
+          '<br>Product ID: 0x' + port.device_.productId.toString(16) +
+          '<br>Vendor ID: 0x' + port.device_.vendorId.toString(16)
+
+        port.send(textEncoder.encode('1')).catch(error => {
+          console.log('Send error: ' + error)
+        })
+
+        connectButton.textContent = 'Disconnect'
+        port.onReceive = data => { processReceievedData(data) }
+        port.onReceiveError = error => { console.log('Receive error: ' + error)}
+      }, error => { console.log('Connection error: ' + error) })
+    }).catch(error => { console.log('Connection error: ' + error) })
   }
-  // TODO: change the html page to a sucess html page clicking submit
 })
 
 recordONButton.addEventListener('click', function() {
   recordONButton.classList.add("is-warning")
   recordONButton.textContent = 'Recording ON Command...'
   isRecordingON = true
-  console.log("Waiting for ON command...")
   port.send(textEncoder.encode('A')).catch(error => {
     console.log('Send error: ' + error)
   })
@@ -121,40 +143,31 @@ recordOFFButton.addEventListener('click', function() {
   })
 })
 
-connectButton.addEventListener('click', function() {
-  if (port) { // If port is already connected, disconnect it
-    connectButton.textContent = 'Connect'
-    configureSection.classList.add("is-hidden")
-    infoSection.innerHTML = ''
-    port.disconnect()
-    port = null
-    console.log('Pine is disconnected.')
-  } else { // If there is no port, then connect to a new port
-    serial.requestPort().then(selectedPort => {
-      port = selectedPort
-      configureSection.classList.remove("is-hidden")
-      port.connect().then(() => {
-        infoSection.innerHTML = '<br><strong>Pine is now connected via Web USB!</strong>' +
-          '<br>Product ID: 0x' + port.device_.productId.toString(16) +
-          '<br>Vendor ID: 0x' + port.device_.vendorId.toString(16)
-
-        // console.log('Pine is now connected via Web USB!')
-        // console.log('Pine Product ID: 0x' + port.device_.productId.toString(16))
-        // console.log('Pine Vendor ID: 0x' + port.device_.vendorId.toString(16))
-
-        connectButton.textContent = 'Disconnect'
-        port.onReceive = data => { processReceievedData(data) }
-        port.onReceiveError = error => { console.log('Receive error: ' + error)}
-      }, error => { console.log('Connection error: ' + error) })
-    }).catch(error => { console.log('Connection error: ' + error) })
-  }
-})
-
 function processReceievedData(data) {
-  // Other texts
-  // console.log(textDecoder.decode(data))
+  var str = textDecoder.decode(data)
 
-  // IR Code array
+  // Data received: string message "From MCU: "
+  if (isMessage(str)) {
+    console.log(str)
+    return
+  }
+
+  // Data received type: JSON user config
+  if (isJson(str)) {
+    var userConfig = JSON.parse(str)
+
+    if (userConfig.interval) {
+      intervalValue = userConfig.interval
+    } else if (userConfig.duration) {
+      durationValue = userConfig.duration
+    } else if (userConfig.temperature) {
+      temperatureValue = userConfig.temperature
+    }
+
+    return
+  }
+
+  // Data received type: int 16 array for IR raw code
   var irCodeReceieved = new Int16Array(data.buffer)
 
   if (irCodeReceieved.length == 32) {
@@ -187,6 +200,19 @@ function processReceievedData(data) {
 
     irCode = [] // Clear array
   }
+}
+
+function isJson(str) {
+  try {
+    JSON.parse(str);
+  } catch (e) {
+    return false;
+  }
+  return true;
+}
+
+function isMessage(str) {
+  return str.substring(0, 8) === "From MCU"
 }
 </script>
 </body>
