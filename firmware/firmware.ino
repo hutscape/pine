@@ -62,7 +62,8 @@ void loop() {
   if (readConfig.valid && !isConfigMode) {
     DEBUG_TITLE("Do Task");
     delay(1000);
-    // doTask();
+    // FIXME: Turning ON and OFF every 5 seconds is not working
+    doTask();
   }
 
   // Scenario: Config mode

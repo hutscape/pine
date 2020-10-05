@@ -14,23 +14,23 @@
 </section>
 
 <section class="section is-small is-hidden" id="configure">
-  <form id="form">
-    <div class="container">
-      <!-- TODO: Aircon ON / OFF commands should be able to be read again and tested before submitting -->
-      <div class="field">
-        <p class="label is-large">Aircon ON</p>
-        <button id="on" class="button is-info">Record ON command</button>
-        <p class="help">Point the aircon remote controller to Pine and press the on button.</p>
-        <p id="on-command"></p>
-      </div>
+  <div class="container">
+    <!-- TODO: Aircon ON / OFF commands should be able to be read again and tested before submitting -->
+    <div class="field">
+      <p class="label is-large">Aircon ON</p>
+      <button id="on" class="button is-info">Record ON command</button>
+      <p class="help">Point the aircon remote controller to Pine and press the on button.</p>
+      <p id="on-command"></p>
+    </div>
 
-      <div class="field">
-        <p class="label is-large">Aircon OFF</p>
-        <button id="off" class="button is-info">Record OFF command</button>
-        <p class="help">Point the aircon remote controller to Pine and press the off button.</p>
-        <p id="off-command"></p>
-      </div>
+    <div class="field">
+      <p class="label is-large">Aircon OFF</p>
+      <button id="off" class="button is-info">Record OFF command</button>
+      <p class="help">Point the aircon remote controller to Pine and press the off button.</p>
+      <p id="off-command"></p>
+    </div>
 
+    <form id="form">
       <div class="field">
         <label class="label is-large">Interval (minutes)</label>
         <div class="control">
@@ -54,8 +54,8 @@
           <p class="help">Pine will turn on or off the aircon according to this temperature.</p>
         </div>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
 </section>
 
 <section class="section is-small">
@@ -93,11 +93,9 @@ var irCode = []
 
 connectButton.addEventListener('click', function() {
   if (port) { // If port is already connected, disconnect it
-    // FIXME: Form validation is failing upon adding IR Raw code
-    // if (!formSection.checkValidity()) {
-    //   console.log("form has errors")
-    //   return
-    // }
+    if (!formSection.checkValidity()) {
+      return
+    }
 
     let config = new Uint8Array(3)
     config[0] = document.getElementById("interval").value
