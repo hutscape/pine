@@ -13,18 +13,26 @@
   </div>
 </section>
 
+<section class="section is-small">
+  <div class="container">
+    <div class="content is-large">
+      <p id="info"></p>
+    </div>
+  </div>
+</section>
+
 <section class="section is-small is-hidden" id="configure">
   <div class="container">
     <!-- TODO: Aircon ON / OFF commands should be able to be read again and tested before submitting -->
     <div class="field">
-      <p class="label is-large">Aircon ON</p>
+      <label class="label is-large">Aircon ON</label>
       <button id="on" class="button is-info">Record ON command</button>
       <p class="help">Point the aircon remote controller to Pine and press the on button.</p>
       <p id="on-command"></p>
     </div>
 
     <div class="field">
-      <p class="label is-large">Aircon OFF</p>
+      <label class="label is-large">Aircon OFF</label>
       <button id="off" class="button is-info">Record OFF command</button>
       <p class="help">Point the aircon remote controller to Pine and press the off button.</p>
       <p id="off-command"></p>
@@ -62,9 +70,6 @@
   <div class="container">
     <div class="control">
       <input class="button is-info is-large" id="connect" type="submit" value="Connect to Pine">
-      <div class="content is-large">
-        <p id="info"></p>
-      </div>
     </div>
   </div>
 </section>
@@ -94,6 +99,7 @@ var irCode = []
 connectButton.addEventListener('click', function() {
   if (port) { // If port is already connected, disconnect it
     if (!formSection.checkValidity()) {
+      console.log("Form fields are not valid. Please check.")
       return
     }
 
@@ -110,14 +116,14 @@ connectButton.addEventListener('click', function() {
 
     connectButton.value = 'Connect to Pine'
     configureSection.classList.add("is-hidden")
-    infoSection.innerHTML = '<br>Submitting interval, duration and temperature.'
+    infoSection.innerHTML = 'User config stored successfully!'
   } else { // If there is no port, then connect to a new port
     console.log("Connect!")
     serial.requestPort().then(selectedPort => {
       port = selectedPort
       configureSection.classList.remove("is-hidden")
       port.connect().then(() => {
-        infoSection.innerHTML = '<br><strong>Pine is now connected via Web USB!</strong>' +
+        infoSection.innerHTML = '<strong>Pine is now connected via Web USB!</strong>' +
           '<br>Product ID: 0x' + port.device_.productId.toString(16) +
           '<br>Vendor ID: 0x' + port.device_.vendorId.toString(16)
 
@@ -133,6 +139,7 @@ connectButton.addEventListener('click', function() {
   }
 })
 
+// TODO: Refactor recordONButton and recordOFFButton into a single function
 recordONButton.addEventListener('click', function() {
   recordONButton.classList.add("is-warning")
   recordONButton.textContent = 'Recording ON Command...'
@@ -203,7 +210,7 @@ function processReceievedData(data) {
       }
     }
 
-    irCode = [] // Clear array
+    irCode = []
   }
 }
 
@@ -217,6 +224,7 @@ function isJson(str) {
 }
 
 function isMessage(str) {
+  // A message from the micro-controller will start with "From MCU"
   return str.substring(0, 8) === "From MCU"
 }
 </script>

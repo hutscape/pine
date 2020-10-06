@@ -6,14 +6,13 @@
 #include "src/infrared/infrared.h"
 #include "src/led/led.h"
 #include <FlashStorage.h>
-// #include "./data.h"
 
-#define IR_LEN 292
+#define MAX_IR_LEN 300
 typedef struct {
   int sizeofON;
-  uint16_t rawDataON[400];
+  uint16_t rawDataON[MAX_IR_LEN];
   int sizeofOFF;
-  uint16_t rawDataOFF[400];
+  uint16_t rawDataOFF[MAX_IR_LEN];
   int interval;
   int duration;
   int temperature;
@@ -34,7 +33,7 @@ FlashStorage(my_flash_store, IRRawCode);
 void setup() {
   #ifdef DEBUG
   initSerial();
-  SerialUSB.println("Start Pine debugging...");
+  SerialUSB.println("Start Pine...");
   #endif
 
   initWebUSBSerial();
@@ -61,8 +60,6 @@ void loop() {
   // Scenario: Normal operation
   if (readConfig.valid && !isConfigMode) {
     DEBUG_TITLE("Do Task");
-    delay(1000);
-    // FIXME: Turning ON and OFF every 5 seconds is not working
     doTask();
   }
 
@@ -82,6 +79,7 @@ void loop() {
     }
   }
 
+  // All scenarios: alway check if web usb is connected
   if (isWebUSBAvailable()) {
     receiveConfigFromUser(readWebUSB());
   }
@@ -96,13 +94,13 @@ void initSerial() {
 // Print out raw IR code received from the user pressing a remote control
 void receiveIRFromUser() {
   int irSize = getIRcodeSize();
-  uint16_t irCode[IR_LEN];
-  getIRCode(irCode, IR_LEN);
+  uint16_t irCode[MAX_IR_LEN];
+  getIRCode(irCode, MAX_IR_LEN);
 
   DEBUG_TITLE("Received user IR code...");
 
   #ifdef DEBUG
-  SerialUSB.print(F("\n#define RAW_DATA_LEN "));
+  SerialUSB.print(F("#define RAW_DATA_LEN "));
   SerialUSB.println(irSize, DEC);
   SerialUSB.print(F("uint16_t rawData[RAW_DATA_LEN]={\n"));
 
@@ -114,17 +112,24 @@ void receiveIRFromUser() {
   SerialUSB.println(F("1000};\n"));
   #endif
 
+  // TODO: Abstract out into a single function
   if (isRecordingON) {
-    for (int i = 0; i < IR_LEN - 1; i++) {
+    userConfig.sizeofON = irSize;
+
+    for (int i = 0; i < irSize - 1; i++) {
       userConfig.rawDataON[i] = irCode[i+1];
     }
-    userConfig.rawDataON[IR_LEN - 1] = 1000;
+
+    userConfig.rawDataON[irSize - 1] = 1000;
     isRecordingON = false;
   } else if (isRecordingOFF) {
-    for (int i = 0; i < IR_LEN - 1; i++) {
+    userConfig.sizeofOFF = irSize;
+
+    for (int i = 0; i < irSize - 1; i++) {
       userConfig.rawDataOFF[i] = irCode[i+1];
     }
-    userConfig.rawDataOFF[IR_LEN - 1] = 1000;
+
+    userConfig.rawDataOFF[irSize - 1] = 1000;
     isRecordingOFF = false;
   }
 
@@ -172,6 +177,7 @@ void receiveConfigFromUser(int byte) {
       printWebUSB("From MCU: Received all user configurations.");
       userConfig.valid = true;
       isConfigMode = false;
+
       storeUserConfig();
     }
   }
@@ -182,6 +188,7 @@ void sendUserConfig() {
   DEBUG_PRINT(readConfig.duration);
   DEBUG_PRINT(readConfig.temperature);
 
+  // NOTE: Send to the web browser as a JSON string
   String config = "{\"interval\":"
     + String(readConfig.interval)
     + ", \"duration\":"

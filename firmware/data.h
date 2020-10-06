@@ -1,3 +1,5 @@
+// Sample raw IR code to turn ON and OFF aircon
+// Aircon model: Mitsubishi MSY-GE10VA
 #define RAW_DATA_LEN 292
 
 uint16_t rawDataON[RAW_DATA_LEN]={
