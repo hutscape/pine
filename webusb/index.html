@@ -112,13 +112,16 @@ connectButton.addEventListener('click', function() {
       console.log('Send error: ' + error)
     })
 
-    // TODO: Disconnect only after successfully sending all the config to the mcu
-    port.disconnect()
-    port = null
+    // FIXME: Disconnect only after successfully sending all the config to the mcu
+    // Not after 1 second delay
+    setTimeout(function() {
+      port.disconnect()
+      port = null
 
-    connectButton.value = 'Connect to Pine'
-    configureSection.classList.add("is-hidden")
-    infoSection.innerHTML = 'User config stored successfully!'
+      connectButton.value = 'Connect to Pine'
+      configureSection.classList.add("is-hidden")
+      infoSection.innerHTML = 'User config stored successfully!'
+    }, 1000);
   } else { // If there is no port, then connect to a new port
     console.log("Connect!")
     serial.requestPort().then(selectedPort => {

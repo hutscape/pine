@@ -1,4 +1,4 @@
-#define DEBUG
+// #define DEBUG
 
 #include "DebugUtils.h"
 #include "src/serial/serial.h"
@@ -60,7 +60,7 @@ void loop() {
 
   // Scenario: Normal operation
   if (readConfig.valid && !isConfigMode) {
-    DEBUG_TITLE("Do Task");
+    DEBUG_TITLE("Do demo task: Turn on/off aircon every 5s");
     doTask();
   }
 

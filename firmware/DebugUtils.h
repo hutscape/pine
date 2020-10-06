@@ -25,6 +25,7 @@
   SerialUSB.print(": "); \
   TRACE();
 #else
+  #define DEBUG_TITLE(x)
   #define DEBUG_PRINT(x)
   #define DEBUG_TRACE()
 #endif
