@@ -111,6 +111,8 @@ connectButton.addEventListener('click', function() {
     port.send(config).catch(error => {
       console.log('Send error: ' + error)
     })
+
+    // TODO: Disconnect only after successfully sending all the config to the mcu
     port.disconnect()
     port = null
 

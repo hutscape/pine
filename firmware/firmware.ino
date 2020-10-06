@@ -1,6 +1,7 @@
 #define DEBUG
 
 #include "DebugUtils.h"
+#include "src/serial/serial.h"
 #include "src/sensor/sensor.h"
 #include "src/webusb/webusb.h"
 #include "src/infrared/infrared.h"
@@ -83,12 +84,6 @@ void loop() {
   if (isWebUSBAvailable()) {
     receiveConfigFromUser(readWebUSB());
   }
-}
-
-void initSerial() {
-  SerialUSB.begin(9600);
-  while (!SerialUSB) {}
-  delay(100);
 }
 
 // Print out raw IR code received from the user pressing a remote control
