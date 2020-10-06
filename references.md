@@ -29,13 +29,6 @@ similar:
         datasheet_url: https://www.vishay.com/docs/81931/vslb3940.pdf
 
 references:
-  - topic:  Similar projects
-    list:
-      - name: Infrared and Universal Remote Projects by Hackaday
-        url: https://hackaday.io/list/12912-infrared-and-universal-remote-projects
-      - name: IR kit
-        url: https://getirkit.com/en/
-
   - topic: Infrared
     list:
       - name: IRLib2
