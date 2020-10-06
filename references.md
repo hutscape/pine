@@ -4,6 +4,15 @@ title: References
 permalink: /references
 sequence: 10
 similar:
+# TODO: Add https://en.nature.global/nature-remo-3/
+  - name: Nature Remo Mini
+    url: https://en.nature.global/nature-remo-3/
+    year: 2020
+    type: consumer
+    cost: 69
+    components:
+      - type: wifi
+      - type: temperature sensor
   - name: IR Kit
     url: https://getirkit.com/en/
     year: 2018
