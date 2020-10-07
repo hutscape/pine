@@ -4,7 +4,17 @@ title: References
 permalink: /references
 sequence: 10
 similar:
-# TODO: Add https://en.nature.global/nature-remo-3/
+  - name: CHUNGHOP Universal Air Conditioner Remote Controls
+    url: https://www.amazon.com/Chunghop-Universal-Conditioner-Controller-Conditioning/dp/B07C6STH7P/
+    type: consumer
+    cost: 8
+  - name: Xiaomi Mijia IR Blaster Remote Control
+    url: https://sea.banggood.com/Xiaomi-Mijia-Universal-IR-Remote-Controller-Smart-Home-APP-Remote-Switch-Support-Mi-AI-Speaker-Voice-Control-p-1215271.html?rmmds=buy&cur_warehouse=CN
+    year: 2019
+    type: consumer
+    cost: 20
+    components:
+      - type: wifi
   - name: Nature Remo Mini
     url: https://en.nature.global/nature-remo-3/
     year: 2020
@@ -13,6 +23,18 @@ similar:
     components:
       - type: wifi
       - type: temperature sensor
+  - name: IR Blaster with CEC
+    url: https://hackaday.io/project/18911-ir-blaster-with-cec
+    year: 2017
+    type: developer
+    components:
+      - type: raspberry pi
+      - type: IR receiver
+        mpn: RMP7100
+        datasheet_url: https://www.jaycar.com.au/medias/sys_master/images/images/9403522842654/ZD1952-dataSheetMain.pdf
+      - type: software
+        mpn: Home Assisstant
+        datasheet_url: https://www.home-assistant.io/
   - name: IR Kit
     url: https://getirkit.com/en/
     year: 2018
