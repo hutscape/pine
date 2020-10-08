@@ -12,6 +12,7 @@ lessons:
       - name: Refer to application circuit in datasheets to connect various passives
       - name: Consider pulling out some unused pins as pads if the board is to be used for future development and iteration E.g. <a href="https://www.pjrc.com/store/teensy36b.jpg">Teensy</a>
       - name: Consolidate shipping orders for parts and components so that fewer deliveries are made
+      - name: Use a <a href="https://www.youtube.com/watch?v=IrB-FPcv1Dc">p-channel MOSFET for reverse polarity circuit protection</a>
   - title: V2.0
     subtitle: For next iteration
     list:
