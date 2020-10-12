@@ -30,25 +30,25 @@ similar:
     components:
       - type: raspberry pi
       - type: IR receiver
-        mpn: RMP7100
-        datasheet_url: https://www.jaycar.com.au/medias/sys_master/images/images/9403522842654/ZD1952-dataSheetMain.pdf
+        name: RMP7100
+        url: https://www.jaycar.com.au/medias/sys_master/images/images/9403522842654/ZD1952-dataSheetMain.pdf
       - type: software
-        mpn: Home Assisstant
-        datasheet_url: https://www.home-assistant.io/
+        name: Home Assisstant
+        url: https://www.home-assistant.io/
   - name: IR Kit
     url: https://getirkit.com/en/
     year: 2018
     type: developer
     components:
       - type: mcu
-        mpn: ATMEGA32U
-        datasheet_url: http://ww1.microchip.com/downloads/en/devicedoc/atmel-7766-8-bit-avr-atmega16u4-32u4_datasheet.pdf
+        name: ATMEGA32U
+        url: http://ww1.microchip.com/downloads/en/devicedoc/atmel-7766-8-bit-avr-atmega16u4-32u4_datasheet.pdf
       - type: wifi
-        mpn: GX1011MX
-        datasheet_url: https://www.digikey.bg/htmldatasheets/production/1947555/0/0/1/gs1011m-datasheet.html
+        name: GX1011MX
+        url: https://www.digikey.bg/htmldatasheets/production/1947555/0/0/1/gs1011m-datasheet.html
       - type: ir led
-        mpn: VSLB3940
-        datasheet_url: https://www.vishay.com/docs/81931/vslb3940.pdf
+        name: VSLB3940
+        url: https://www.vishay.com/docs/81931/vslb3940.pdf
 
 references:
   - topic: Infrared
