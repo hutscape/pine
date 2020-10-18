@@ -49,6 +49,13 @@ similar:
       - type: ir led
         name: VSLB3940
         url: https://www.vishay.com/docs/81931/vslb3940.pdf
+  - name: Logitech Harmony 350 universal remote
+    url: https://www.logitech.com/assets/51207/4/harmony-350-qsg-and-iid.pdf
+    type: consumer
+    components:
+      - type: demo
+        name: How to Program Your LOGITECH Universal Remote to ANY Device!
+        url: https://www.youtube.com/watch?v=J9r9m82f_hc&t=201
 
 references:
   - topic: Infrared
