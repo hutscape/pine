@@ -19,6 +19,7 @@ lessons:
       - name: Use SMD components for IR receiver and emitter
       - name: Use standard 9-pin JTAG/SWD connector for burning the bootloader
         image: 9-pin-jtag-swd-pins.png
+      - name: Use WiFi to control IR emission
 improvements:
   - title: Improvements
     subtitle: Simple iterations that were implemented in this project because of the learnings from the previous projects
