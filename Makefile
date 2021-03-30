@@ -3,8 +3,10 @@ KICAD_XML?=hardware/Pine.xml
 
 .PHONY: serve build install bom
 
-serve: build
-	jekyll serve
+default: serve
+
+serve:
+	bundle exec jekyll serve
 
 build:
 	jekyll build
