@@ -1,4 +1,4 @@
-"Designator","Value","Q","Package","Category","Stock","Manufacturer","MPN","Datasheet","Vendor","Link","Unit","Total","MOQ","Description","DNP"
+"Designator","Value","Qty","Package","Category","Stock","Manufacturer","MPN","Datasheet","Vendor","Link","Unit","Total","MOQ","Description","DNP"
 "C3, C2, C1, ","100nF","3","0805","Electronics","53","Murata Electronics","GCM21BR72A104KA37L","https://www.mouser.sg/datasheet/2/281/murata_03122018_GCM_Series-1310150.pdf","LCSC","https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_MuRata_GCM21BR72A104KA37L_100nF-104-10-100V-Car-level_C85866.html","0.030","0.09","20","C_Small: Unpolarized capacitor, small symbol",""
 "C4, C5, C7, C6, C10, ","1uF","5","0805","Electronics","17","","","","Internal stock","","0","0.0","","C_Small: Unpolarized capacitor, small symbol",""
 "C8, C11, ","10uF","2","0805","Electronics","30","","","","Internal stock","","0","0.0","","C_Small: Unpolarized capacitor, small symbol",""
