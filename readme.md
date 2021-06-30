@@ -1,5 +1,7 @@
 # Pine
 
-> 🌲 Control aircon by monitoring temperature in other parts of the room 🎐
+> 🌲 Indoor Infrared receiver and transmitter with temperature sensor 🎐
 
 Visit [hutscape.com/pine](https://hutscape.com/pine) for more details.
+
+![](images/prototype/front.jpg)

@@ -1,6 +1,6 @@
 {
   "name": "Pine",
-  "description": "🌲 Control aircon by monitoring temperature in other parts of the room 🎐",
+  "description": "🌲 Indoor Infrared receiver and transmitter with temperature sensor 🎐",
   "version": "1.0",
 
   "power": "AA",
