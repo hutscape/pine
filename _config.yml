@@ -1,6 +1,7 @@
 title: Pine
 description: 🌲 Indoor Infrared receiver and transmitter with temperature sensor 🎐
 url: "https://hutscape.com/pine"
+parent: "https://hutscape.com"
 markdown: kramdown
 permalink: /:title
 youtube: https://www.youtube.com/user/sweska/videos
