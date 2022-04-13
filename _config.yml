@@ -14,3 +14,19 @@ collections:
   examples:
     output: true
     permalink: /examples/:name
+
+project:
+  version: 1.0
+  power: AA
+  wireless: Infrared
+  sensor": Temperature
+  mcu: SAMD21G18
+
+  bom-uniq: 24
+  bom-total: 49
+  bom-cost-sgd: 13.21
+  bom-cost-usd: 9.71
+  vendors: 2
+
+  status: completed
+  completion: September 2020
