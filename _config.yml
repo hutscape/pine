@@ -16,7 +16,6 @@ collections:
     permalink: /examples/:name
 
 project:
-  version: 1.0
   power: AA
   wireless: Infrared
   sensor": Temperature
