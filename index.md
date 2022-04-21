@@ -20,10 +20,6 @@ software:
 <section class="section is-small">
 <div class="container">
   <h2 class="title is-1">Getting Started</h2>
-  <div class="tags has-addons">
-    <span class="tag is-medium is-light">status</span>
-    <span class="tag is-medium is-success">completed</span>
-  </div>
 
   <div class="tile is-ancestor">
     <div class="tile is-vertical is-12">
