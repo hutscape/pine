@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: Burning Arduino bootloader
 description: Uploading the Arduino Zero bootloader with J-Link SEGGER
 difficulty: medium
@@ -66,11 +66,11 @@ references:
 
 1. Download and open [SEGGER J-Flash Lite](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
 1. Connect the J-Link SEGGER with SWD pins to the PCB
-    <img src="{{ site.url }}/images/examples/arduino-bootloader-samd21g-pinout.png" alt="J-Link pinout mapping to SWD pins">
-    <img src="{{ site.url }}/images/examples/arduino-bootloader-samd21g-ribbon.JPG" alt="Connecting the J-Link SEGGER via the ribbon cable to the pogo pins">
+    <img src="{{ site.url }}/images/code/arduino-bootloader-samd21g-pinout.png" alt="J-Link pinout mapping to SWD pins">
+    <img src="{{ site.url }}/images/code/arduino-bootloader-samd21g-ribbon.JPG" alt="Connecting the J-Link SEGGER via the ribbon cable to the pogo pins">
 1. Choose the created bootloader data file `samd21_sam_ba.bin`
 1. Click `Program Device`
-    <img src="{{ site.url }}/images/examples/arduino-bootloader-samd21g-jflash.png" alt="">
+    <img src="{{ site.url }}/images/code/arduino-bootloader-samd21g-jflash.png" alt="">
 1. Disconnect J-Link SEGGER and connect the PCB to the laptop
 1. Double press the reset button to bring it into the bootloader mode
 1. Query `ls -al /dev/cu.usbmodem*` to ensure the port is detected

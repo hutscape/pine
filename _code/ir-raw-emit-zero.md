@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: Emit raw infrared code
 description: This code takes in a raw dump of IR and emits it using Arduino Zero with SAMD21G micro-controller on a crystalless custom PCB.
 difficulty: medium

@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: Measure battery voltage
 description: VBAT is connected to the battery or voltage source you wish to measure the voltage of.
 difficulty: easy

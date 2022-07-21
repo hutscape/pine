@@ -1,5 +1,5 @@
 ---
-layout: example
+layout: code
 title: Blinky
 description: Blinky LED on a crystalless Arduino Zero
 difficulty: easy
