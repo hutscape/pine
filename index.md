@@ -12,10 +12,13 @@ downloads:
   gerber: true
   bom: true
 software:
-  - name: Firmware
-    code: firmware
-  - name: WebUSB
-    code: webusb
+  - name: Demo firmware
+    code: _code/demo
+features:
+  - detail: Record and store the ON and OFF aircon commands with IR receiver
+  - detail: Turn on or off the aircon with the IR emitter
+  - detail: Measure temperature of another part of the room
+  - detail: Go into sleep mode after turning on or off the aircon
 ---
 <section class="section is-small">
 <div class="container">
