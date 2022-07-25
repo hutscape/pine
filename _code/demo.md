@@ -1,6 +1,6 @@
 ---
 layout: code
-title: Pine demo
+title: Pine Demo
 description: Send ON and OFF commands to the aircon
 difficulty: medium
 features:
