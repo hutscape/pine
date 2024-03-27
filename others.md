@@ -22,19 +22,6 @@ lessons:
       - name: Use standard 9-pin JTAG/SWD connector for burning the bootloader
         image: 9-pin-jtag-swd-pins.png
       - name: Use WiFi to control IR emission
-improvements:
-  - title: Improvements
-    subtitle: Simple iterations that were implemented in this project because of the learnings from the previous projects
-    list:
-      - name: Added power annotations on the silkscreen
-      - name: Used standard grid size for component placements and routing
-      - name: Used standard text size
-      - name: Used standard component sizes
-      - name: Added a power on/off button
-      - name: De-modularised to use only the micro-controller and no dev boards
-      - name: Created a complete 3D rendering with all components
-      - name: Pulled out some unused pins as test points
-      - name: Added solder jumper points for circuit isolation
 
 # References
 similar:
