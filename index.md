@@ -14,9 +14,6 @@ downloads:
   bom: true
   freecad: false
   case: false
-software:
-  - name: Demo firmware
-    code: _code/demo
 features:
   - detail: Record and store the ON and OFF aircon commands with IR receiver
   - detail: Turn on or off the aircon with the IR emitter
