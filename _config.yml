@@ -1,5 +1,6 @@
 title: Pine
-description: 🌲 Indoor Infrared receiver and transmitter with temperature sensor 🎐
+description: 🌲 An indoor infrared receiver and transmitter with a temperature sensor 🎐
+reasoning: Inspired by the resilient pine tree, which stays evergreen and adaptable, even as seasons and temperatures shift.
 url: "https://hutscape.com/pine"
 parent: "https://hutscape.com"
 markdown: kramdown
